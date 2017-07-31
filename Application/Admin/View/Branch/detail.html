@@ -1,0 +1,47 @@
+<include file="Public/header" title="安全设置" css="__STATIC__/css/member.css"/>
+<div id="page-wrapper">
+	<form action="{:U('branch/update')}" method="post">
+	<input type="hidden" name="id" value="{$branch_info.id}"/>
+	<input type="hidden" name="password1" value="{$branch_info.password}"/>
+	<div class="row">
+		<div class="col-md-2 block edict_gro" style="cursor:pointer">编辑</div>
+		<input class="col-md-2 block"type="submit" value="保存"/>
+	</div>
+	<div class="row">
+		<div class="col-md-2 block">会员昵称</div>
+		<div class="col-md-2 block">{$branch_info.username}</div>
+	</div>
+	<div class="row">
+		<div class="col-md-2 block">会员分校</div>
+		<div class="col-md-2 block type_show"><if condition="$branch_info.type eq 1">总部<else/>分校</if></div>
+		<select name="type"  id="" class="col-md-2 block type_hidden" style="display:none">
+			<option value="1" <if condition="$vo.type eq 1">selected</if>>总部</option>
+			<option value="2" <if condition="$vo.type eq 2">selected</if>>分校</option>
+		</select>
+	</div>
+	<div class="row">
+		<div class="col-md-2 block">微信号</div>
+		<div class="col-md-2 block wechat_show">{$branch_info.wechat}</div>
+		<input  class="col-md-2 block wechat_hidden"  type="text" style="display:none;" name="wechat" value="{$branch_info.wechat}" placeholder="微信号"/>
+	</div>
+	<div class="row">
+		<div class="col-md-2 block">会员手机</div>
+		<div class="col-md-2 block mphone_show">{$branch_info.mphone}</div>
+		<input  class="col-md-2 block mphone_hidden"  type="text" style="display:none;" name="mphone" value="{$branch_info.mphone}" placeholder="会员手机"/>
+	</div>
+	<div class="row">
+		<div class="col-md-2 block">会员密码</div>
+		<div class="col-md-2 block password_show">{$branch_info.password}</div>
+		<input  class="col-md-2 block password_hidden"  type="text" style="display:none;" name="password" value="{$branch_info.password}" placeholder="会员密码"/>
+	</div>
+	<div class="row">
+		<div class="col-md-2 block">会员角色</div>
+		<div class="col-md-2 block type_show"><if condition="$branch_info.type eq 1">管理员<else/>普通</if></div>
+		<select name="type"  id="" class="col-md-2 block type_hidden" style="display:none">
+			<option value="1" <if condition="$vo.type eq 1">selected</if>>管理员</option>
+			<option value="2" <if condition="$vo.type eq 2">selected</if>>普通</option>
+		</select>
+	</div>
+	</form>
+</div>
+<include file="Public/footer" />

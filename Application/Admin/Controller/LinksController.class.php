@@ -16,7 +16,7 @@ class LinksController extends BaseController
             $model = M('links');  
         }else{
             $where['title'] = array('like',"%$key%");
-            $where['url'] = array('like',"%$key%");
+            $where['linkcate'] = array('like',"%$key%");
             $where['_logic'] = 'or';
             $model = M('links')->where($where); 
         } 
@@ -24,7 +24,7 @@ class LinksController extends BaseController
         $count  = $model->where($where)->count();// 查询满足要求的总记录数
         $Page = new \Extend\Page($count,15);// 实例化分页类 传入总记录数和每页显示的记录数(25)
         $show = $Page->show();// 分页显示输出
-        $links = $model->limit($Page->firstRow.','.$Page->listRows)->where($where)->order('id DESC')->select();
+        $links = $model->limit($Page->firstRow.','.$Page->listRows)->where($where)->select();
         $this->assign('model', $links);
         $this->assign('page',$show);
         $this->display();     
@@ -48,9 +48,9 @@ class LinksController extends BaseController
                 exit();
             } else {
                 if ($model->add()) {
-                    $this->success("链接添加成功", U('links/index'));
+                    $this->redirect(U('links/index'));
                 } else {
-                    $this->error("链接添加失败");
+                    $this->redirect(U('links/index'));
                 }
             }
         }
@@ -94,6 +94,86 @@ class LinksController extends BaseController
             $this->success("链接删除成功", U('links/index'));
         }else{
             $this->error("链接删除失败");
+        }
+    }
+
+    /**
+     * 链接详情
+     * */
+    public function details(){
+        $model = M('linkdeta');
+        $result = $model->where('linkid='.I('id'))->order('sortnu')->select();
+        $this->assign('deta',$result);
+        $this->assign('linkid',I('id'));
+        $this->display();
+    }
+
+    /**
+     *在链接详情中添加图片
+     */
+    public function adddeta(){
+        if(!IS_POST){
+            $this->assign('linkid',I('linkid'));
+            $this->display();
+        }
+        if(IS_POST){
+            $data['image'] = uploadImage('/Public/uploads/admin/link/',$_FILES['image']);
+            $data['linkid'] = I('linkid');
+            $data['linkcontent'] = I('linkcontent');
+            $data['remarks'] = I('remarks');
+            $data['sortnu'] = I('sortnu');
+            $result = M('linkdeta')->add($data);
+
+            if($result) {
+                $this->redirect(U('links/details',array('id'=>I('linkid'))),2);
+                exit();
+            }else{
+                $this->redirect(U('links/details',array('id'=>I('linkid'))),2);
+                exit();
+            }
+        }
+    }
+
+    /**
+     *删除链接详情的图片
+     */
+    public  function deletedeta($id){
+        $linkdeta = M('linkdeta')->where('id='.I('id'))->find();
+        unlink('.'.$linkdeta['image']);
+        $result = M('linkdeta')->delete($id);
+        if($result !== false){
+            $this->redirect(U('links/details',array('id'=>I('linkid'))),2);
+        }else{
+            $this->redirect(U('links/details',array('id'=>I('linkid'))),2);
+        }
+    }
+
+    /**
+     *更新链接详情图片
+     */
+    public function updatedeta($id){
+        if(!IS_POST){
+            $result = M('linkdeta')->find($id);
+            $this->assign('deta',$result);
+            $this->display();
+        }
+        if(IS_POST){
+            $model = M('linkdeta');
+            $data['id'] = I('id');
+            if($_FILES['image']['name'] != null){
+                $data['image'] = uploadImage('/Public/uploads/admin/link/',$_FILES['image']);
+            }
+            $data['linkcontent'] = I('linkcontent');
+            $data['remarks'] = I('remarks');
+            $data['sortnu'] = I('sortnu');
+            $update = $model->save($data);
+            if($update) {
+                $this->success('更新成功！',U('links/details',array('id'=>I('linkid'))),2);
+                exit();
+            }else{
+                $this->error('更新失败',U('links/details',array('id'=>I('linkid'))),2);
+                exit();
+            }
         }
     }
 }

@@ -1,0 +1,1758 @@
+[ 2016-02-16T13:10:31+08:00 ] ::1 /ThinkAdmin/grocery.php?m=Grocery&c=Login&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.113006s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.114006s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-02-16T13:10:31+08:00 ] ::1 /ThinkAdmin/grocery.php?m=Grocery&c=login&a=verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-02-16T13:10:37+08:00 ] ::1 /ThinkAdmin/grocery.php?m=Grocery&c=login&a=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015600s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `branch` [ RunTime:0.0710s ]
+SQL: SELECT * FROM `branch` WHERE `username` = '李建中' AND `password` = 'e10adc3949ba59abbe56e057f20f883e' LIMIT 1   [ RunTime:0.0700s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-02-16T13:10:38+08:00 ] ::1 /ThinkAdmin/grocery.php?m=Grocery&c=Index&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015600s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015600s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.045602s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.045602s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-02-16T13:10:46+08:00 ] ::1 /ThinkAdmin/grocery.php?m=Grocery&c=course&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0660s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `course` LIMIT 1   [ RunTime:0.0680s ]
+SQL: SELECT course.*,branch.braName,branch.area,branch.circle FROM `course` INNER JOIN branch on course.branchId=branch.id  WHERE ( branchid=1 ) ORDER BY course.id LIMIT 0,6   [ RunTime:0.0780s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.041002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.041002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-02-16T13:11:27+08:00 ] ::1 /ThinkAdmin/grocery.php?m=Grocery&c=Course&a=index&m=Grocery&p=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0710s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `course` LIMIT 1   [ RunTime:0.0680s ]
+SQL: SELECT course.*,branch.braName,branch.area,branch.circle FROM `course` INNER JOIN branch on course.branchId=branch.id  WHERE ( branchid=1 ) ORDER BY course.id LIMIT 6,6   [ RunTime:0.0760s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-02-16T13:11:31+08:00 ] ::1 /ThinkAdmin/grocery.php?m=Grocery&c=course&a=update&id=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0700s ]
+SQL: SELECT course.*,category.* FROM `course` INNER JOIN category on category.id = course.cate2  WHERE course.id = '10' LIMIT 1   [ RunTime:0.0730s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0700s ]
+SQL: SELECT * FROM `category` WHERE ( pid=0 )  [ RunTime:0.0690s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-02-16T13:12:15+08:00 ] ::1 /ThinkAdmin/grocery.php?m=Grocery&c=course&a=update
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0710s ]
+SQL: SELECT course.*,category.* FROM `course` INNER JOIN category on category.id = course.cate2  WHERE course.id = '10' LIMIT 1   [ RunTime:0.0730s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0680s ]
+SQL: SELECT * FROM `category` WHERE ( pid=0 )  [ RunTime:0.0680s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given E:\wamp\www\ThinkAdmin\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+ERR: 不存在的图像文件
+
+[ 2016-02-16T13:13:56+08:00 ] ::1 /ThinkAdmin/grocery.php?m=Grocery&c=course&a=update
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0770s ]
+SQL: SELECT course.*,category.* FROM `course` INNER JOIN category on category.id = course.cate2  WHERE course.id = '10' LIMIT 1   [ RunTime:0.0820s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0760s ]
+SQL: SELECT * FROM `category` WHERE ( pid=0 )  [ RunTime:0.0750s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given E:\wamp\www\ThinkAdmin\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL: UPDATE `course` SET `name`='php从入门到精通',`image`='/Public/uploads/admin/course/20160216/56c2b013e96fe.png',`price`='23.56',`cate1`='16',`cate2`='20',`age`='12 - 18',`detail`='165379797fdaf ' WHERE `id` = 10 [ RunTime:0.1010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-02-16T13:13:57+08:00 ] ::1 /ThinkAdmin/grocery.php?m=Grocery&c=course&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0770s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `course` LIMIT 1   [ RunTime:0.0780s ]
+SQL: SELECT course.*,branch.braName,branch.area,branch.circle FROM `course` INNER JOIN branch on course.branchId=branch.id  WHERE ( branchid=1 ) ORDER BY course.id LIMIT 0,6   [ RunTime:0.0850s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-02-16T13:14:00+08:00 ] ::1 /ThinkAdmin/grocery.php?m=Grocery&c=Course&a=index&m=Grocery&p=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0670s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `course` LIMIT 1   [ RunTime:0.0800s ]
+SQL: SELECT course.*,branch.braName,branch.area,branch.circle FROM `course` INNER JOIN branch on course.branchId=branch.id  WHERE ( branchid=1 ) ORDER BY course.id LIMIT 6,6   [ RunTime:0.0710s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-02-16T13:14:03+08:00 ] ::1 /ThinkAdmin/grocery.php?m=Grocery&c=course&a=update&id=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0700s ]
+SQL: SELECT course.*,category.* FROM `course` INNER JOIN category on category.id = course.cate2  WHERE course.id = '10' LIMIT 1   [ RunTime:0.0750s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.1590s ]
+SQL: SELECT * FROM `category` WHERE ( pid=0 )  [ RunTime:0.0770s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-02-16T13:54:34+08:00 ] ::1 /ThinkAdmin/grocery.php?m=Grocery&c=course&a=update&id=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0710s ]
+SQL: SELECT course.*,category.* FROM `course` INNER JOIN category on category.id = course.cate2  WHERE course.id = '10' LIMIT 1   [ RunTime:0.0720s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0690s ]
+SQL: SELECT * FROM `category` WHERE ( pid=0 )  [ RunTime:0.0680s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-02-16T15:12:16+08:00 ] ::1 /ThinkAdmin/grocery.php?m=Grocery&c=course&a=update
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0720s ]
+SQL: SELECT course.*,category.* FROM `course` INNER JOIN category on category.id = course.cate2  WHERE course.id = '10' LIMIT 1   [ RunTime:0.0760s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0750s ]
+SQL: SELECT * FROM `category` WHERE ( pid=0 )  [ RunTime:0.0710s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given E:\wamp\www\ThinkAdmin\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL: UPDATE `course` SET `name`='php从入门到精通',`image`='/Public/uploads/admin/course/20160216/56c2cbd0ae14b.png',`price`='23.56',`cate1`='16',`cate2`='20',`age`='12 - 18',`detail`='165379797fdaf ' WHERE `id` = 10 [ RunTime:0.0830s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-02-16T15:12:18+08:00 ] ::1 /ThinkAdmin/grocery.php?m=Grocery&c=course&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0660s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `course` LIMIT 1   [ RunTime:0.0630s ]
+SQL: SELECT course.*,branch.braName,branch.area,branch.circle FROM `course` INNER JOIN branch on course.branchId=branch.id  WHERE ( branchid=1 ) ORDER BY course.id LIMIT 0,6   [ RunTime:0.0700s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-02-16T15:12:34+08:00 ] ::1 /ThinkAdmin/grocery.php?m=Grocery&c=course&a=update&id=8
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0700s ]
+SQL: SELECT course.*,category.* FROM `course` INNER JOIN category on category.id = course.cate2  WHERE course.id = '8' LIMIT 1   [ RunTime:0.0750s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0690s ]
+SQL: SELECT * FROM `category` WHERE ( pid=0 )  [ RunTime:0.0700s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-02-16T15:12:42+08:00 ] ::1 /ThinkAdmin/grocery.php?m=Grocery&c=Course&a=index&m=Grocery&p=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0730s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `course` LIMIT 1   [ RunTime:0.0690s ]
+SQL: SELECT course.*,branch.braName,branch.area,branch.circle FROM `course` INNER JOIN branch on course.branchId=branch.id  WHERE ( branchid=1 ) ORDER BY course.id LIMIT 6,6   [ RunTime:0.0760s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-02-16T15:12:44+08:00 ] ::1 /ThinkAdmin/grocery.php?m=Grocery&c=course&a=update&id=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0780s ]
+SQL: SELECT course.*,category.* FROM `course` INNER JOIN category on category.id = course.cate2  WHERE course.id = '10' LIMIT 1   [ RunTime:0.0860s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0760s ]
+SQL: SELECT * FROM `category` WHERE ( pid=0 )  [ RunTime:0.0750s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-02-16T15:12:49+08:00 ] ::1 /ThinkAdmin/grocery.php?m=Grocery&c=course&a=update
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0720s ]
+SQL: SELECT course.*,category.* FROM `course` INNER JOIN category on category.id = course.cate2  WHERE course.id = '10' LIMIT 1   [ RunTime:0.0730s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0690s ]
+SQL: SELECT * FROM `category` WHERE ( pid=0 )  [ RunTime:0.0680s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given E:\wamp\www\ThinkAdmin\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL: UPDATE `course` SET `name`='php从入门到精通',`image`='/Public/uploads/admin/course/20160216/56c2cbf1a330c.png',`price`='23.56',`cate1`='16',`cate2`='20',`age`='12 - 18',`detail`='165379797fdaf ' WHERE `id` = 10 [ RunTime:0.0790s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-02-16T15:12:51+08:00 ] ::1 /ThinkAdmin/grocery.php?m=Grocery&c=course&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0730s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `course` LIMIT 1   [ RunTime:0.0700s ]
+SQL: SELECT course.*,branch.braName,branch.area,branch.circle FROM `course` INNER JOIN branch on course.branchId=branch.id  WHERE ( branchid=1 ) ORDER BY course.id LIMIT 0,6   [ RunTime:0.0770s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-02-16T15:25:34+08:00 ] ::1 /ThinkAdmin/grocery.php?m=Grocery&c=course&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0720s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `course` LIMIT 1   [ RunTime:0.0670s ]
+SQL: SELECT course.*,branch.braName,branch.area,branch.circle FROM `course` INNER JOIN branch on course.branchId=branch.id  WHERE ( branchid=1 ) ORDER BY course.id LIMIT 0,6   [ RunTime:0.0790s ]
+SQL: SELECT * FROM `course` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0740s ]
+NOTIC: [8] Undefined index: extension E:\wamp\www\ThinkAdmin\Application\Grocery\Controller\CourseController.class.php 第 31 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: extension == 1 E:\wamp\www\ThinkAdmin\Application\Runtime\Cache\Grocery\4e02a9e64e3eb41ea122789253844e71.php 第 84 行.
+NOTIC: [8] Undefined index: extension == 1 E:\wamp\www\ThinkAdmin\Application\Runtime\Cache\Grocery\4e02a9e64e3eb41ea122789253844e71.php 第 84 行.
+NOTIC: [8] Undefined index: extension == 1 E:\wamp\www\ThinkAdmin\Application\Runtime\Cache\Grocery\4e02a9e64e3eb41ea122789253844e71.php 第 84 行.
+NOTIC: [8] Undefined index: extension == 1 E:\wamp\www\ThinkAdmin\Application\Runtime\Cache\Grocery\4e02a9e64e3eb41ea122789253844e71.php 第 84 行.
+NOTIC: [8] Undefined index: extension == 1 E:\wamp\www\ThinkAdmin\Application\Runtime\Cache\Grocery\4e02a9e64e3eb41ea122789253844e71.php 第 84 行.
+NOTIC: [8] Undefined index: extension == 1 E:\wamp\www\ThinkAdmin\Application\Runtime\Cache\Grocery\4e02a9e64e3eb41ea122789253844e71.php 第 84 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-02-16T15:25:57+08:00 ] ::1 /ThinkAdmin/grocery.php?m=Grocery&c=course&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015600s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015600s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0710s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `course` LIMIT 1   [ RunTime:0.0710s ]
+SQL: SELECT course.*,branch.braName,branch.area,branch.circle FROM `course` INNER JOIN branch on course.branchId=branch.id  WHERE ( branchid=1 ) ORDER BY course.id LIMIT 0,6   [ RunTime:0.0760s ]
+SQL: SELECT * FROM `course` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0710s ]
+NOTIC: [8] Undefined index: extension E:\wamp\www\ThinkAdmin\Application\Grocery\Controller\CourseController.class.php 第 31 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: extensionImg E:\wamp\www\ThinkAdmin\Application\Runtime\Cache\Grocery\4e02a9e64e3eb41ea122789253844e71.php 第 84 行.
+NOTIC: [8] Undefined index: extensionImg E:\wamp\www\ThinkAdmin\Application\Runtime\Cache\Grocery\4e02a9e64e3eb41ea122789253844e71.php 第 84 行.
+NOTIC: [8] Undefined index: extensionImg E:\wamp\www\ThinkAdmin\Application\Runtime\Cache\Grocery\4e02a9e64e3eb41ea122789253844e71.php 第 84 行.
+NOTIC: [8] Undefined index: extensionImg E:\wamp\www\ThinkAdmin\Application\Runtime\Cache\Grocery\4e02a9e64e3eb41ea122789253844e71.php 第 84 行.
+NOTIC: [8] Undefined index: extensionImg E:\wamp\www\ThinkAdmin\Application\Runtime\Cache\Grocery\4e02a9e64e3eb41ea122789253844e71.php 第 84 行.
+NOTIC: [8] Undefined index: extensionImg E:\wamp\www\ThinkAdmin\Application\Runtime\Cache\Grocery\4e02a9e64e3eb41ea122789253844e71.php 第 84 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-02-16T15:26:20+08:00 ] ::1 /ThinkAdmin/grocery.php?m=Grocery&c=course&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0750s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `course` LIMIT 1   [ RunTime:0.0700s ]
+SQL: SELECT course.*,branch.braName,branch.area,branch.circle FROM `course` INNER JOIN branch on course.branchId=branch.id  WHERE ( branchid=1 ) ORDER BY course.id LIMIT 0,6   [ RunTime:0.0810s ]
+SQL: SELECT * FROM `course` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0780s ]
+NOTIC: [8] Undefined index: extension E:\wamp\www\ThinkAdmin\Application\Grocery\Controller\CourseController.class.php 第 31 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: extensionImg E:\wamp\www\ThinkAdmin\Application\Runtime\Cache\Grocery\4e02a9e64e3eb41ea122789253844e71.php 第 84 行.
+NOTIC: [8] Undefined index: extensionImg E:\wamp\www\ThinkAdmin\Application\Runtime\Cache\Grocery\4e02a9e64e3eb41ea122789253844e71.php 第 84 行.
+NOTIC: [8] Undefined index: extensionImg E:\wamp\www\ThinkAdmin\Application\Runtime\Cache\Grocery\4e02a9e64e3eb41ea122789253844e71.php 第 84 行.
+NOTIC: [8] Undefined index: extensionImg E:\wamp\www\ThinkAdmin\Application\Runtime\Cache\Grocery\4e02a9e64e3eb41ea122789253844e71.php 第 84 行.
+NOTIC: [8] Undefined index: extensionImg E:\wamp\www\ThinkAdmin\Application\Runtime\Cache\Grocery\4e02a9e64e3eb41ea122789253844e71.php 第 84 行.
+NOTIC: [8] Undefined index: extensionImg E:\wamp\www\ThinkAdmin\Application\Runtime\Cache\Grocery\4e02a9e64e3eb41ea122789253844e71.php 第 84 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-02-16T15:27:50+08:00 ] ::1 /ThinkAdmin/grocery.php?m=Grocery&c=course&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0710s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `course` LIMIT 1   [ RunTime:0.0680s ]
+SQL: SELECT course.*,branch.braName,branch.area,branch.circle FROM `course` INNER JOIN branch on course.branchId=branch.id  WHERE ( branchid=1 ) ORDER BY course.id LIMIT 0,6   [ RunTime:0.0750s ]
+SQL: SELECT * FROM `course` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0660s ]
+NOTIC: [8] Undefined index: extension E:\wamp\www\ThinkAdmin\Application\Grocery\Controller\CourseController.class.php 第 31 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-02-16T15:28:10+08:00 ] ::1 /ThinkAdmin/grocery.php?m=Grocery&c=course&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0760s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `course` LIMIT 1   [ RunTime:0.0720s ]
+SQL: SELECT course.*,branch.braName,branch.area,branch.circle FROM `course` INNER JOIN branch on course.branchId=branch.id  WHERE ( branchid=1 ) ORDER BY course.id LIMIT 0,6   [ RunTime:0.0780s ]
+SQL: SELECT * FROM `course` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0700s ]
+NOTIC: [8] Undefined index: extension E:\wamp\www\ThinkAdmin\Application\Grocery\Controller\CourseController.class.php 第 31 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-02-16T15:28:14+08:00 ] ::1 /ThinkAdmin/grocery.php?m=Grocery&c=Course&a=index&m=Grocery&p=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0690s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `course` LIMIT 1   [ RunTime:0.0680s ]
+SQL: SELECT course.*,branch.braName,branch.area,branch.circle FROM `course` INNER JOIN branch on course.branchId=branch.id  WHERE ( branchid=1 ) ORDER BY course.id LIMIT 6,6   [ RunTime:0.0740s ]
+SQL: SELECT * FROM `course` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0670s ]
+NOTIC: [8] Undefined index: extension E:\wamp\www\ThinkAdmin\Application\Grocery\Controller\CourseController.class.php 第 31 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: extensionImg E:\wamp\www\ThinkAdmin\Application\Runtime\Cache\Grocery\4e02a9e64e3eb41ea122789253844e71.php 第 84 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-02-16T15:28:16+08:00 ] ::1 /ThinkAdmin/grocery.php?m=Grocery&c=course&a=update&id=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0770s ]
+SQL: SELECT course.*,category.* FROM `course` INNER JOIN category on category.id = course.cate2  WHERE course.id = '10' LIMIT 1   [ RunTime:0.0800s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0770s ]
+SQL: SELECT * FROM `category` WHERE ( pid=0 )  [ RunTime:0.0770s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-02-16T15:28:26+08:00 ] ::1 /ThinkAdmin/grocery.php?m=Grocery&c=course&a=update
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0720s ]
+SQL: SELECT course.*,category.* FROM `course` INNER JOIN category on category.id = course.cate2  WHERE course.id = '10' LIMIT 1   [ RunTime:0.0740s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0690s ]
+SQL: SELECT * FROM `category` WHERE ( pid=0 )  [ RunTime:0.0680s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given E:\wamp\www\ThinkAdmin\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL: UPDATE `course` SET `name`='php从入门到精通',`image`='/Public/uploads/admin/course/20160216/56c2cf9a06573.png',`price`='23.56',`cate1`='16',`cate2`='20',`age`='12 - 18',`detail`='165379797fdaf ' WHERE `id` = 10 [ RunTime:0.1470s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-02-16T15:28:27+08:00 ] ::1 /ThinkAdmin/grocery.php?m=Grocery&c=course&a=index&id=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0770s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `course` LIMIT 1   [ RunTime:0.0790s ]
+SQL: SELECT course.*,branch.braName,branch.area,branch.circle FROM `course` INNER JOIN branch on course.branchId=branch.id  WHERE ( branchid=1 ) ORDER BY course.id LIMIT 0,6   [ RunTime:0.0840s ]
+SQL: SELECT * FROM `course` WHERE `id` = 10 LIMIT 1   [ RunTime:0.0780s ]
+NOTIC: [8] Undefined index: extension E:\wamp\www\ThinkAdmin\Application\Grocery\Controller\CourseController.class.php 第 31 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-02-16T15:28:30+08:00 ] ::1 /ThinkAdmin/grocery.php?m=Grocery&c=Course&a=index&m=Grocery&id=10&p=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0710s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `course` LIMIT 1   [ RunTime:0.0670s ]
+SQL: SELECT course.*,branch.braName,branch.area,branch.circle FROM `course` INNER JOIN branch on course.branchId=branch.id  WHERE ( branchid=1 ) ORDER BY course.id LIMIT 6,6   [ RunTime:0.0740s ]
+SQL: SELECT * FROM `course` WHERE `id` = 10 LIMIT 1   [ RunTime:0.0680s ]
+NOTIC: [8] Undefined index: extension E:\wamp\www\ThinkAdmin\Application\Grocery\Controller\CourseController.class.php 第 31 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: extensionImg E:\wamp\www\ThinkAdmin\Application\Runtime\Cache\Grocery\4e02a9e64e3eb41ea122789253844e71.php 第 84 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-02-16T15:28:31+08:00 ] ::1 /ThinkAdmin/grocery.php?m=Grocery&c=Course&a=index&m=Grocery&id=10&p=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0670s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `course` LIMIT 1   [ RunTime:0.0680s ]
+SQL: SELECT course.*,branch.braName,branch.area,branch.circle FROM `course` INNER JOIN branch on course.branchId=branch.id  WHERE ( branchid=1 ) ORDER BY course.id LIMIT 6,6   [ RunTime:0.0780s ]
+SQL: SELECT * FROM `course` WHERE `id` = 10 LIMIT 1   [ RunTime:0.0690s ]
+NOTIC: [8] Undefined index: extension E:\wamp\www\ThinkAdmin\Application\Grocery\Controller\CourseController.class.php 第 31 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: extensionImg E:\wamp\www\ThinkAdmin\Application\Runtime\Cache\Grocery\4e02a9e64e3eb41ea122789253844e71.php 第 84 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-02-16T15:32:27+08:00 ] ::1 /ThinkAdmin/grocery.php?m=Grocery&c=course&a=update&id=9
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0700s ]
+SQL: SELECT course.*,category.* FROM `course` INNER JOIN category on category.id = course.cate2  WHERE course.id = '9' LIMIT 1   [ RunTime:0.0800s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0720s ]
+SQL: SELECT * FROM `category` WHERE ( pid=0 )  [ RunTime:0.0710s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-02-16T15:32:32+08:00 ] ::1 /ThinkAdmin/grocery.php?m=Grocery&c=course&a=update
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0670s ]
+SQL: SELECT course.*,category.* FROM `course` INNER JOIN category on category.id = course.cate2  WHERE course.id = '9' LIMIT 1   [ RunTime:0.0730s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0690s ]
+SQL: SELECT * FROM `category` WHERE ( pid=0 )  [ RunTime:0.0700s ]
+SQL: UPDATE `course` SET `name`='php从入门到精通',`price`='23.56',`cate1`='16',`cate2`='20',`age`='12 - 18',`detail`='16537979713' WHERE `id` = 9 [ RunTime:0.0800s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-02-16T15:32:39+08:00 ] ::1 /ThinkAdmin/grocery.php?m=Grocery&c=course&a=update&id=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0710s ]
+SQL: SELECT course.*,category.* FROM `course` INNER JOIN category on category.id = course.cate2  WHERE course.id = '10' LIMIT 1   [ RunTime:0.0740s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0730s ]
+SQL: SELECT * FROM `category` WHERE ( pid=0 )  [ RunTime:0.0720s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-02-16T15:33:06+08:00 ] ::1 /ThinkAdmin/grocery.php?m=Grocery&c=course&a=update&id=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015600s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015600s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0770s ]
+SQL: SELECT course.*,category.* FROM `course` INNER JOIN category on category.id = course.cate2  WHERE course.id = '10' LIMIT 1   [ RunTime:0.0730s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0690s ]
+SQL: SELECT * FROM `category` WHERE ( pid=0 )  [ RunTime:0.0670s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-02-16T15:42:55+08:00 ] ::1 /ThinkAdmin/grocery.php?m=Grocery&c=course&a=update
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0720s ]
+SQL: SELECT course.*,category.* FROM `course` INNER JOIN category on category.id = course.cate2  WHERE course.id = '10' LIMIT 1   [ RunTime:0.0720s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0700s ]
+SQL: SELECT * FROM `category` WHERE ( pid=0 )  [ RunTime:0.0690s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given E:\wamp\www\ThinkAdmin\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL: UPDATE `course` SET `name`='php从入门到精通',`image`='/Public/uploads/admin/course/20160216/56c2d2ff17f1d.png',`price`='23.56',`cate1`='16',`cate2`='20',`age`='12 - 18',`detail`='165379797fdaf ' WHERE `id` = 10 [ RunTime:0.0860s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-02-16T15:42:56+08:00 ] ::1 /ThinkAdmin/grocery.php?m=Grocery&c=course&a=index&id=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015600s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0660s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `course` LIMIT 1   [ RunTime:0.0690s ]
+SQL: SELECT course.*,branch.braName,branch.area,branch.circle FROM `course` INNER JOIN branch on course.branchId=branch.id  WHERE ( branchid=1 ) ORDER BY course.id LIMIT 0,6   [ RunTime:0.0760s ]
+SQL: SELECT * FROM `course` WHERE `id` = 10 LIMIT 1   [ RunTime:0.0710s ]
+NOTIC: [8] Undefined index: extension E:\wamp\www\ThinkAdmin\Application\Grocery\Controller\CourseController.class.php 第 31 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-02-16T15:43:37+08:00 ] ::1 /ThinkAdmin/grocery.php?m=Grocery&c=course&a=index&id=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0700s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `course` LIMIT 1   [ RunTime:0.0680s ]
+SQL: SELECT course.*,branch.braName,branch.area,branch.circle FROM `course` INNER JOIN branch on course.branchId=branch.id  WHERE ( branchid=1 ) ORDER BY course.id LIMIT 0,6   [ RunTime:0.0740s ]
+SQL: SELECT * FROM `course` WHERE `id` = 10 LIMIT 1   [ RunTime:0.0670s ]
+NOTIC: [8] Undefined index: extension E:\wamp\www\ThinkAdmin\Application\Grocery\Controller\CourseController.class.php 第 31 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-02-16T15:43:46+08:00 ] ::1 /ThinkAdmin/grocery.php?m=Grocery&c=Course&a=index&m=Grocery&id=10&p=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0700s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `course` LIMIT 1   [ RunTime:0.0740s ]
+SQL: SELECT course.*,branch.braName,branch.area,branch.circle FROM `course` INNER JOIN branch on course.branchId=branch.id  WHERE ( branchid=1 ) ORDER BY course.id LIMIT 6,6   [ RunTime:0.0800s ]
+SQL: SELECT * FROM `course` WHERE `id` = 10 LIMIT 1   [ RunTime:0.0730s ]
+NOTIC: [8] Undefined index: extension E:\wamp\www\ThinkAdmin\Application\Grocery\Controller\CourseController.class.php 第 31 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: extensionImg E:\wamp\www\ThinkAdmin\Application\Runtime\Cache\Grocery\4e02a9e64e3eb41ea122789253844e71.php 第 84 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-02-16T15:43:48+08:00 ] ::1 /ThinkAdmin/grocery.php?m=Grocery&c=course&a=update&id=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0720s ]
+SQL: SELECT course.*,category.* FROM `course` INNER JOIN category on category.id = course.cate2  WHERE course.id = '10' LIMIT 1   [ RunTime:0.0730s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0730s ]
+SQL: SELECT * FROM `category` WHERE ( pid=0 )  [ RunTime:0.0690s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-02-16T15:43:54+08:00 ] ::1 /ThinkAdmin/grocery.php?m=Grocery&c=course&a=update
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0660s ]
+SQL: SELECT course.*,category.* FROM `course` INNER JOIN category on category.id = course.cate2  WHERE course.id = '10' LIMIT 1   [ RunTime:0.1480s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0690s ]
+SQL: SELECT * FROM `category` WHERE ( pid=0 )  [ RunTime:0.0700s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given E:\wamp\www\ThinkAdmin\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL: UPDATE `course` SET `name`='php从入门到精通',`image`='/Public/uploads/admin/course/20160216/56c2d33a4d4ea.png',`price`='23.56',`cate1`='16',`cate2`='20',`age`='12 - 18',`detail`='165379797fdaf ' WHERE `id` = 10 [ RunTime:0.0820s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-02-16T15:43:56+08:00 ] ::1 /ThinkAdmin/grocery.php?m=Grocery&c=course&a=index&id=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0700s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `course` LIMIT 1   [ RunTime:0.0700s ]
+SQL: SELECT course.*,branch.braName,branch.area,branch.circle FROM `course` INNER JOIN branch on course.branchId=branch.id  WHERE ( branchid=1 ) ORDER BY course.id LIMIT 0,6   [ RunTime:0.0750s ]
+SQL: SELECT * FROM `course` WHERE `id` = 10 LIMIT 1   [ RunTime:0.0710s ]
+NOTIC: [8] Undefined index: extension E:\wamp\www\ThinkAdmin\Application\Grocery\Controller\CourseController.class.php 第 31 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2016-02-16T15:43:59+08:00 ] ::1 /ThinkAdmin/grocery.php?m=Grocery&c=Course&a=index&m=Grocery&id=10&p=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.015600s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015600s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0710s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `course` LIMIT 1   [ RunTime:0.0720s ]
+SQL: SELECT course.*,branch.braName,branch.area,branch.circle FROM `course` INNER JOIN branch on course.branchId=branch.id  WHERE ( branchid=1 ) ORDER BY course.id LIMIT 6,6   [ RunTime:0.0720s ]
+SQL: SELECT * FROM `course` WHERE `id` = 10 LIMIT 1   [ RunTime:0.0680s ]
+NOTIC: [8] Undefined index: extension E:\wamp\www\ThinkAdmin\Application\Grocery\Controller\CourseController.class.php 第 31 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: extensionImg E:\wamp\www\ThinkAdmin\Application\Runtime\Cache\Grocery\4e02a9e64e3eb41ea122789253844e71.php 第 84 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-02-16T15:45:56+08:00 ] ::1 /ThinkAdmin/grocery.php?m=Grocery&c=Course&a=index&m=Grocery&id=10&p=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0730s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `course` LIMIT 1   [ RunTime:0.0700s ]
+SQL: SELECT course.*,branch.braName,branch.area,branch.circle FROM `course` INNER JOIN branch on course.branchId=branch.id  WHERE ( branchid=1 ) ORDER BY course.id LIMIT 6,6   [ RunTime:0.0740s ]
+SQL: SELECT * FROM `course` WHERE `id` = 10 LIMIT 1   [ RunTime:0.0730s ]
+NOTIC: [8] Undefined index: extension E:\wamp\www\ThinkAdmin\Application\Grocery\Controller\CourseController.class.php 第 32 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: extensionImg E:\wamp\www\ThinkAdmin\Application\Runtime\Cache\Grocery\4e02a9e64e3eb41ea122789253844e71.php 第 84 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-02-16T15:46:31+08:00 ] ::1 /ThinkAdmin/grocery.php?m=Grocery&c=Course&a=index&m=Grocery&id=10&p=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0720s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `course` LIMIT 1   [ RunTime:0.0670s ]
+SQL: SELECT course.*,branch.braName,branch.area,branch.circle FROM `course` INNER JOIN branch on course.branchId=branch.id  WHERE ( branchid=1 ) ORDER BY course.id LIMIT 6,6   [ RunTime:0.0750s ]
+SQL: SELECT * FROM `course` WHERE `id` = 10 LIMIT 1   [ RunTime:0.0690s ]
+NOTIC: [8] Undefined index: extension E:\wamp\www\ThinkAdmin\Application\Grocery\Controller\CourseController.class.php 第 32 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: extensionImg E:\wamp\www\ThinkAdmin\Application\Runtime\Cache\Grocery\4e02a9e64e3eb41ea122789253844e71.php 第 84 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-02-16T15:48:38+08:00 ] ::1 /ThinkAdmin/grocery.php?m=Grocery&c=Course&a=index&m=Grocery&id=10&p=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0700s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `course` LIMIT 1   [ RunTime:0.1490s ]
+SQL: SELECT course.*,branch.braName,branch.area,branch.circle FROM `course` INNER JOIN branch on course.branchId=branch.id  WHERE ( branchid=1 ) ORDER BY course.id LIMIT 0,6   [ RunTime:0.0750s ]
+SQL: SELECT * FROM `course` WHERE `id` = 10 LIMIT 1   [ RunTime:0.0700s ]
+NOTIC: [8] Undefined index: extension E:\wamp\www\ThinkAdmin\Application\Grocery\Controller\CourseController.class.php 第 32 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-02-16T15:48:55+08:00 ] ::1 /ThinkAdmin/grocery.php?m=Grocery&c=Course&a=index&m=Grocery&id=10&p=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0800s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `course` LIMIT 1   [ RunTime:0.0680s ]
+SQL: SELECT course.*,branch.braName,branch.area,branch.circle FROM `course` INNER JOIN branch on course.branchId=branch.id  WHERE ( branchid=1 ) ORDER BY course.id LIMIT 0,6   [ RunTime:0.0760s ]
+SQL: SELECT * FROM `course` WHERE `id` = 10 LIMIT 1   [ RunTime:0.0710s ]
+NOTIC: [8] Undefined index: extension E:\wamp\www\ThinkAdmin\Application\Grocery\Controller\CourseController.class.php 第 32 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-02-16T15:51:23+08:00 ] ::1 /ThinkAdmin/grocery.php?m=Grocery&c=Course&a=index&m=Grocery&id=10&p=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0710s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `course` LIMIT 1   [ RunTime:0.0680s ]
+SQL: SELECT course.*,branch.braName,branch.area,branch.circle FROM `course` INNER JOIN branch on course.branchId=branch.id  WHERE ( branchid=1 ) ORDER BY course.id LIMIT 0,6   [ RunTime:0.0760s ]
+SQL: SELECT * FROM `course` WHERE `id` = 10 LIMIT 1   [ RunTime:0.0780s ]
+NOTIC: [8] Undefined index: extension E:\wamp\www\ThinkAdmin\Application\Grocery\Controller\CourseController.class.php 第 33 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-02-16T15:51:39+08:00 ] ::1 /ThinkAdmin/grocery.php?m=Grocery&c=Course&a=index&m=Grocery&id=10&p=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0710s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `course` LIMIT 1   [ RunTime:0.0700s ]
+SQL: SELECT course.*,branch.braName,branch.area,branch.circle FROM `course` INNER JOIN branch on course.branchId=branch.id  WHERE ( branchid=1 ) ORDER BY course.id LIMIT 0,6   [ RunTime:0.0740s ]
+SQL: SELECT * FROM `course` WHERE `id` = 10 LIMIT 1   [ RunTime:0.0720s ]
+NOTIC: [8] Undefined index: extension E:\wamp\www\ThinkAdmin\Application\Grocery\Controller\CourseController.class.php 第 33 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-02-16T15:53:28+08:00 ] ::1 /ThinkAdmin/grocery.php?m=Grocery&c=Course&a=index&m=Grocery&id=10&p=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0720s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `course` LIMIT 1   [ RunTime:0.0690s ]
+SQL: SELECT course.*,branch.braName,branch.area,branch.circle FROM `course` INNER JOIN branch on course.branchId=branch.id  WHERE ( branchid=1 ) ORDER BY course.id LIMIT 0,6   [ RunTime:0.0790s ]
+SQL: SELECT * FROM `course` WHERE `id` = 10 LIMIT 1   [ RunTime:0.0730s ]
+NOTIC: [8] Undefined index: extension E:\wamp\www\ThinkAdmin\Application\Grocery\Controller\CourseController.class.php 第 33 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2016-02-16T15:53:41+08:00 ] ::1 /ThinkAdmin/grocery.php?m=Grocery&c=Course&a=index&m=Grocery&id=10&p=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0710s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `course` LIMIT 1   [ RunTime:0.0760s ]
+SQL: SELECT course.*,branch.braName,branch.area,branch.circle FROM `course` INNER JOIN branch on course.branchId=branch.id  WHERE ( branchid=1 ) ORDER BY course.id LIMIT 0,6   [ RunTime:0.0770s ]
+SQL: SELECT * FROM `course` WHERE `id` = 10 LIMIT 1   [ RunTime:0.0730s ]
+ERR: 不存在的图像文件
+
+[ 2016-02-16T15:55:14+08:00 ] ::1 /ThinkAdmin/grocery.php?m=Grocery&c=Course&a=index&m=Grocery&id=10&p=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0720s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `course` LIMIT 1   [ RunTime:0.0710s ]
+SQL: SELECT course.*,branch.braName,branch.area,branch.circle FROM `course` INNER JOIN branch on course.branchId=branch.id  WHERE ( branchid=1 ) ORDER BY course.id LIMIT 0,6   [ RunTime:0.0770s ]
+SQL: SELECT * FROM `course` WHERE `id` = 10 LIMIT 1   [ RunTime:0.0840s ]
+ERR: 不存在的图像文件
+
+[ 2016-02-16T15:55:30+08:00 ] ::1 /ThinkAdmin/grocery.php?m=Grocery&c=Course&a=index&m=Grocery&id=10&p=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0660s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `course` LIMIT 1   [ RunTime:0.0710s ]
+SQL: SELECT course.*,branch.braName,branch.area,branch.circle FROM `course` INNER JOIN branch on course.branchId=branch.id  WHERE ( branchid=1 ) ORDER BY course.id LIMIT 0,6   [ RunTime:0.0740s ]
+SQL: SELECT * FROM `course` WHERE `id` = 10 LIMIT 1   [ RunTime:0.0670s ]
+ERR: 不存在的图像文件
+
+[ 2016-02-16T15:56:19+08:00 ] ::1 /ThinkAdmin/grocery.php?m=Grocery&c=Course&a=index&m=Grocery&id=10&p=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0700s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `course` LIMIT 1   [ RunTime:0.0770s ]
+SQL: SELECT course.*,branch.braName,branch.area,branch.circle FROM `course` INNER JOIN branch on course.branchId=branch.id  WHERE ( branchid=1 ) ORDER BY course.id LIMIT 0,6   [ RunTime:0.0770s ]
+SQL: SELECT * FROM `course` WHERE `id` = 10 LIMIT 1   [ RunTime:0.0710s ]
+ERR: 水印图像不存在
+
+[ 2016-02-16T15:56:39+08:00 ] ::1 /ThinkAdmin/grocery.php?m=Grocery&c=Course&a=index&m=Grocery&id=10&p=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015600s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015600s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0720s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `course` LIMIT 1   [ RunTime:0.0680s ]
+SQL: SELECT course.*,branch.braName,branch.area,branch.circle FROM `course` INNER JOIN branch on course.branchId=branch.id  WHERE ( branchid=1 ) ORDER BY course.id LIMIT 0,6   [ RunTime:0.0740s ]
+SQL: SELECT * FROM `course` WHERE `id` = 10 LIMIT 1   [ RunTime:0.0720s ]
+ERR: 水印图像不存在
+
+[ 2016-02-16T15:57:04+08:00 ] ::1 /ThinkAdmin/grocery.php?m=Grocery&c=Course&a=index&m=Grocery&id=10&p=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0720s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `course` LIMIT 1   [ RunTime:0.0680s ]
+SQL: SELECT course.*,branch.braName,branch.area,branch.circle FROM `course` INNER JOIN branch on course.branchId=branch.id  WHERE ( branchid=1 ) ORDER BY course.id LIMIT 0,6   [ RunTime:0.0790s ]
+SQL: SELECT * FROM `course` WHERE `id` = 10 LIMIT 1   [ RunTime:0.0730s ]
+SQL: UPDATE `course` SET `extensionImg`='./Public/uploads/admin/course/20160216/56c2d33a4d4ea_stamp.png' WHERE `id` = 10 [ RunTime:0.0750s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-02-16T15:57:14+08:00 ] ::1 /ThinkAdmin/grocery.php?m=Grocery&c=Course&a=index&m=Grocery&id=10&p=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0660s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `course` LIMIT 1   [ RunTime:0.0730s ]
+SQL: SELECT course.*,branch.braName,branch.area,branch.circle FROM `course` INNER JOIN branch on course.branchId=branch.id  WHERE ( branchid=1 ) ORDER BY course.id LIMIT 0,6   [ RunTime:0.0800s ]
+SQL: SELECT * FROM `course` WHERE `id` = 10 LIMIT 1   [ RunTime:0.0700s ]
+SQL: UPDATE `course` SET `extensionImg`='./Public/uploads/admin/course/20160216/56c2d33a4d4ea_stamp.png' WHERE `id` = 10 [ RunTime:0.0750s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-02-16T15:57:18+08:00 ] ::1 /ThinkAdmin/grocery.php?m=Grocery&c=Course&a=index&m=Grocery&id=10&p=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015600s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0720s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `course` LIMIT 1   [ RunTime:0.0680s ]
+SQL: SELECT course.*,branch.braName,branch.area,branch.circle FROM `course` INNER JOIN branch on course.branchId=branch.id  WHERE ( branchid=1 ) ORDER BY course.id LIMIT 6,6   [ RunTime:0.0740s ]
+SQL: SELECT * FROM `course` WHERE `id` = 10 LIMIT 1   [ RunTime:0.0720s ]
+SQL: UPDATE `course` SET `extensionImg`='./Public/uploads/admin/course/20160216/56c2d33a4d4ea_stamp.png' WHERE `id` = 10 [ RunTime:0.0730s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: extensionImg E:\wamp\www\ThinkAdmin\Application\Runtime\Cache\Grocery\4e02a9e64e3eb41ea122789253844e71.php 第 84 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-02-16T15:59:24+08:00 ] ::1 /ThinkAdmin/grocery.php?m=Grocery&c=Course&a=index&m=Grocery&id=10&p=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0650s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `course` LIMIT 1   [ RunTime:0.0640s ]
+SQL: SELECT course.*,branch.braName,branch.area,branch.circle FROM `course` INNER JOIN branch on course.branchId=branch.id  WHERE ( branchid=1 ) ORDER BY course.id LIMIT 6,6   [ RunTime:0.0700s ]
+SQL: SELECT * FROM `course` WHERE `id` = 10 LIMIT 1   [ RunTime:0.0700s ]
+NOTIC: [2] imagepng(../Public/uploads/admin/course/20160216/56c2d33a4d4ea_stamp.png): failed to open stream: No such file or directory E:\wamp\www\ThinkAdmin\ThinkPHP\Library\Think\Image\Driver\Gd.class.php 第 99 行.
+SQL: UPDATE `course` SET `extensionImg`='./Public/uploads/admin/course/20160216/56c2d33a4d4ea_stamp.png' WHERE `id` = 10 [ RunTime:0.1000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: extensionImg E:\wamp\www\ThinkAdmin\Application\Runtime\Cache\Grocery\4e02a9e64e3eb41ea122789253844e71.php 第 84 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2016-02-16T16:01:22+08:00 ] ::1 /ThinkAdmin/grocery.php?m=Grocery&c=Course&a=index&m=Grocery&id=10&p=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0720s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `course` LIMIT 1   [ RunTime:0.0670s ]
+SQL: SELECT course.*,branch.braName,branch.area,branch.circle FROM `course` INNER JOIN branch on course.branchId=branch.id  WHERE ( branchid=1 ) ORDER BY course.id LIMIT 6,6   [ RunTime:0.0740s ]
+SQL: SELECT * FROM `course` WHERE `id` = 10 LIMIT 1   [ RunTime:0.0670s ]
+SQL: UPDATE `course` SET `extensionImg`='./Public/uploads/admin/course/20160216/56c2d33a4d4ea_stamp.png' WHERE `id` = 10 [ RunTime:0.0830s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: extensionImg E:\wamp\www\ThinkAdmin\Application\Runtime\Cache\Grocery\4e02a9e64e3eb41ea122789253844e71.php 第 84 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-02-16T16:35:06+08:00 ] ::1 /ThinkAdmin/grocery.php?m=Grocery&c=Course&a=index&m=Grocery&id=10&p=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0680s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `course` LIMIT 1   [ RunTime:0.0700s ]
+SQL: SELECT course.*,branch.braName,branch.area,branch.circle FROM `course` INNER JOIN branch on course.branchId=branch.id  WHERE ( branchid=1 ) ORDER BY course.id LIMIT 6,6   [ RunTime:0.0750s ]
+SQL: SELECT * FROM `course` WHERE `id` = 10 LIMIT 1   [ RunTime:0.0750s ]
+SQL: UPDATE `course` SET `extensionImg`='/Public/uploads/admin/course/20160216/56c2d33a4d4ea_stamp.png' WHERE `id` = 10 [ RunTime:0.0760s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-02-16T16:35:08+08:00 ] ::1 /ThinkAdmin/grocery.php?m=Grocery&c=Course&a=index&m=Grocery&id=10&p=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0660s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `course` LIMIT 1   [ RunTime:0.0680s ]
+SQL: SELECT course.*,branch.braName,branch.area,branch.circle FROM `course` INNER JOIN branch on course.branchId=branch.id  WHERE ( branchid=1 ) ORDER BY course.id LIMIT 6,6   [ RunTime:0.0750s ]
+SQL: SELECT * FROM `course` WHERE `id` = 10 LIMIT 1   [ RunTime:0.0670s ]
+SQL: UPDATE `course` SET `extensionImg`='/Public/uploads/admin/course/20160216/56c2d33a4d4ea_stamp.png' WHERE `id` = 10 [ RunTime:0.0780s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-02-16T16:35:11+08:00 ] ::1 /ThinkAdmin/grocery.php?m=Grocery&c=Course&a=index&m=Grocery&id=10&p=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0680s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `course` LIMIT 1   [ RunTime:0.1420s ]
+SQL: SELECT course.*,branch.braName,branch.area,branch.circle FROM `course` INNER JOIN branch on course.branchId=branch.id  WHERE ( branchid=1 ) ORDER BY course.id LIMIT 6,6   [ RunTime:0.0750s ]
+SQL: SELECT * FROM `course` WHERE `id` = 10 LIMIT 1   [ RunTime:0.0660s ]
+SQL: UPDATE `course` SET `extensionImg`='/Public/uploads/admin/course/20160216/56c2d33a4d4ea_stamp.png' WHERE `id` = 10 [ RunTime:0.0720s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-02-16T16:35:57+08:00 ] ::1 /ThinkAdmin/grocery.php?m=Grocery&c=course&a=update&id=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0680s ]
+SQL: SELECT course.*,category.* FROM `course` INNER JOIN category on category.id = course.cate2  WHERE course.id = '10' LIMIT 1   [ RunTime:0.0730s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0670s ]
+SQL: SELECT * FROM `category` WHERE ( pid=0 )  [ RunTime:0.0630s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: c E:\wamp\www\ThinkAdmin\Application\Runtime\Cache\Grocery\b7afa8eb5fa055c5868705bdbe15a90f.php 第 86 行.
+NOTIC: [8] Undefined variable: c E:\wamp\www\ThinkAdmin\Application\Runtime\Cache\Grocery\b7afa8eb5fa055c5868705bdbe15a90f.php 第 87 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-02-16T16:35:59+08:00 ] ::1 /ThinkAdmin/grocery.php?m=Grocery&c=course&a=update&id=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0690s ]
+SQL: SELECT course.*,category.* FROM `course` INNER JOIN category on category.id = course.cate2  WHERE course.id = '10' LIMIT 1   [ RunTime:0.0750s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0710s ]
+SQL: SELECT * FROM `category` WHERE ( pid=0 )  [ RunTime:0.0700s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: c E:\wamp\www\ThinkAdmin\Application\Runtime\Cache\Grocery\b7afa8eb5fa055c5868705bdbe15a90f.php 第 86 行.
+NOTIC: [8] Undefined variable: c E:\wamp\www\ThinkAdmin\Application\Runtime\Cache\Grocery\b7afa8eb5fa055c5868705bdbe15a90f.php 第 87 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-02-16T16:36:21+08:00 ] ::1 /ThinkAdmin/grocery.php?m=Grocery&c=course&a=update&id=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0730s ]
+SQL: SELECT course.*,category.* FROM `course` INNER JOIN category on category.id = course.cate2  WHERE course.id = '10' LIMIT 1   [ RunTime:0.0810s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0720s ]
+SQL: SELECT * FROM `category` WHERE ( pid=0 )  [ RunTime:0.0700s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: c E:\wamp\www\ThinkAdmin\Application\Runtime\Cache\Grocery\b7afa8eb5fa055c5868705bdbe15a90f.php 第 86 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-02-16T16:36:23+08:00 ] ::1 /ThinkAdmin/grocery.php?m=Grocery&c=course&a=update&id=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0700s ]
+SQL: SELECT course.*,category.* FROM `course` INNER JOIN category on category.id = course.cate2  WHERE course.id = '10' LIMIT 1   [ RunTime:0.0690s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0640s ]
+SQL: SELECT * FROM `category` WHERE ( pid=0 )  [ RunTime:0.0680s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: c E:\wamp\www\ThinkAdmin\Application\Runtime\Cache\Grocery\b7afa8eb5fa055c5868705bdbe15a90f.php 第 86 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2016-02-16T16:36:40+08:00 ] ::1 /ThinkAdmin/grocery.php?m=Grocery&c=course&a=update&id=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0660s ]
+SQL: SELECT course.*,category.* FROM `course` INNER JOIN category on category.id = course.cate2  WHERE course.id = '10' LIMIT 1   [ RunTime:0.0690s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0690s ]
+SQL: SELECT * FROM `category` WHERE ( pid=0 )  [ RunTime:0.0640s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-02-16T16:36:56+08:00 ] ::1 /ThinkAdmin/grocery.php?m=Grocery&c=Course&a=index&m=Grocery&p=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0680s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `course` LIMIT 1   [ RunTime:0.0670s ]
+SQL: SELECT course.*,branch.braName,branch.area,branch.circle FROM `course` INNER JOIN branch on course.branchId=branch.id  WHERE ( branchid=1 ) ORDER BY course.id LIMIT 6,6   [ RunTime:0.0740s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-02-16T16:36:57+08:00 ] ::1 /ThinkAdmin/grocery.php?m=Grocery&c=Course&a=index&m=Grocery&p=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0660s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `course` LIMIT 1   [ RunTime:0.0690s ]
+SQL: SELECT course.*,branch.braName,branch.area,branch.circle FROM `course` INNER JOIN branch on course.branchId=branch.id  WHERE ( branchid=1 ) ORDER BY course.id LIMIT 6,6   [ RunTime:0.0710s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-02-16T17:35:49+08:00 ] ::1 /ThinkAdmin/grocery.php?m=Grocery&c=Course&a=index&m=Grocery&p=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0690s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `course` LIMIT 1   [ RunTime:0.0640s ]
+NOTIC: [8] Undefined index: groceryId E:\wamp\www\ThinkAdmin\Application\Grocery\Controller\CourseController.class.php 第 26 行.
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') ORDER BY course.id LIMIT 6,6' at line 1
+
+[ 2016-02-16T17:37:02+08:00 ] ::1 /ThinkAdmin/grocery.php?m=Grocery&c=Course&a=index&m=Grocery&p=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0760s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `course` LIMIT 1   [ RunTime:0.0770s ]
+NOTIC: [8] Undefined index: groceryId E:\wamp\www\ThinkAdmin\Application\Grocery\Controller\CourseController.class.php 第 26 行.
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') ORDER BY course.id LIMIT 6,6' at line 1
+
+[ 2016-02-16T17:37:14+08:00 ] ::1 /ThinkAdmin/grocery.php?m=Grocery&c=Course&a=index&m=Grocery
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0680s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `course` LIMIT 1   [ RunTime:0.0690s ]
+NOTIC: [8] Undefined index: groceryId E:\wamp\www\ThinkAdmin\Application\Grocery\Controller\CourseController.class.php 第 26 行.
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') ORDER BY course.id LIMIT 0,6' at line 1
+
+[ 2016-02-16T17:39:38+08:00 ] ::1 /ThinkAdmin/grocery.php?m=Grocery&c=Course&a=index&m=Grocery
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0660s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `course` LIMIT 1   [ RunTime:0.0690s ]
+NOTIC: [8] Undefined index: groceryId E:\wamp\www\ThinkAdmin\Application\Grocery\Controller\CourseController.class.php 第 26 行.
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') ORDER BY course.id LIMIT 0,6' at line 1
+
+[ 2016-02-16T17:39:40+08:00 ] ::1 /ThinkAdmin/grocery.php?m=Grocery&c=Course&a=index&m=Grocery
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0730s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `course` LIMIT 1   [ RunTime:0.0680s ]
+NOTIC: [8] Undefined index: groceryId E:\wamp\www\ThinkAdmin\Application\Grocery\Controller\CourseController.class.php 第 26 行.
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') ORDER BY course.id LIMIT 0,6' at line 1
+
+[ 2016-02-16T17:40:11+08:00 ] ::1 /ThinkAdmin/grocery.php?m=Grocery&c=Course&a=index&m=Grocery
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0800s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `course` LIMIT 1   [ RunTime:0.0750s ]
+SQL: SELECT course.*,branch.braName,branch.area,branch.circle FROM `course` INNER JOIN branch on course.branchId=branch.id  WHERE ( branchid=1 ) ORDER BY course.id LIMIT 0,6   [ RunTime:0.0790s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-02-16T18:05:41+08:00 ] ::1 /ThinkAdmin/grocery.php?m=Grocery&c=Course&a=index&m=Grocery
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0800s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `course` LIMIT 1   [ RunTime:0.0750s ]
+SQL: SELECT course.*,branch.braName,branch.area,branch.circle FROM `course` INNER JOIN branch on course.branchId=branch.id  WHERE ( branchid=1 ) ORDER BY course.id LIMIT 0,6   [ RunTime:0.0850s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-02-16T18:08:01+08:00 ] ::1 /ThinkAdmin/grocery.php?m=Grocery&c=setup&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: model E:\wamp\www\ThinkAdmin\Application\Runtime\Cache\Grocery\001d9dd6e7f94a765fbf6fc792fc8d39.php 第 90 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+

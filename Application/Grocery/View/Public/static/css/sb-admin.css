@@ -162,3 +162,34 @@ table.tablesorter thead tr th:hover {
     color: #fff;
     background-color: #333;
 }
+.pblock{
+    width:200px;
+    height:70px;
+    background: #CCCCCC;
+    font-size: 30px;
+    text-align: center;
+    line-height: 70px;
+}
+.page{
+    margin-left: 95px;
+    margin-top: 20px;
+}
+.page a{
+    border: #0AB2EE 1px solid;
+    padding: 2px 5px;
+    color: #0AB2EE;
+    margin: 0 2px 0 0;
+    text-decoration: none;
+    font-size: 14px;
+}
+.page span.current{
+    border: #0AB2EE 1px solid;
+    padding: 2px 5px;
+    font-weight: bold;
+    color: #fff;
+    margin: 0 2px 0 0;
+    background-color: #0AB2EE;
+}
+
+
+

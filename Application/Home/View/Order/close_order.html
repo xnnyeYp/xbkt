@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta  content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" 
+name="viewport">
+<title>订单详情</title>
+<link href='/Public/home/css/all.css' type="text/css" rel='stylesheet' />
+<link href='/Public/home/css/orderDeta.css' type="text/css" rel='stylesheet' />
+<link href='/Public/home/css/classDetails.css' type="text/css" rel='stylesheet' />
+<script src="/Public/home/js/rem.js" type="text/javascript"></script>
+<script src="/Public/home/js/jquery.js" type="text/javascript"></script>
+</head>
+<body>
+	<div class="head">
+		<p class="title"><a href="{:U('me/order_list')}" class="titleLeft"></a><span>订单详情</span></p>
+	</div>
+	<div class="content">
+		<p class="downOrder"><a>下单时间: <span>{$order['create_time']|date='Y-m-d',###}</span></a><a>下单编号: <span>{$order['out_trade_no']}</span></a></p>
+		<dl class="detail1">
+			<dt><img src="{$course['image']}" ale="#" /></dt>
+			<dd>
+				<p class="text1">{$course['name']}</p>
+				<p class="text2">{$details_thum}</p>
+			</dd>
+		</dl>
+		<div class="position">
+			<p>{$course['numbering']} {$course['area']}/{$course['circle']}</p>
+			<p>{$course['address']}</p>
+		</div>
+		<div class="tiyanTime">体验时间：<span>{$order['experience_time']}</span></div>
+		<div class="tiyanReward">打赏：{$praise['point']}<span></span></div>
+		<div class="tiyanComment">评论：{$praise['comment']}<span></span></div>
+		<if condition="$course['price'] eq 0"><p class="price">总价:<span class="now">免费</span></p>
+			<else /><p class="price">总价:<span class="now">￥{$course['price']}</span></p>
+		</if>
+	</div>
+		<div class="closeBtn"><a class="close" href="{:U('me/order_list')}">关闭</a></div>
+	</div>
+</body>
+</html>

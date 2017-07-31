@@ -12,14 +12,14 @@ class PostController extends BaseController
      */
     public function index($key="")
     {
-        if($key == ""){
+        /*if($key == ""){
             $model = D('PostView'); 
         }else{
             $where['post.title'] = array('like',"%$key%");
             $where['member.username'] = array('like',"%$key%");
             $where['category.title'] = array('like',"%$key%");
             $where['_logic'] = 'or';
-            $model = D('PostView')->where($where); 
+            $model = D('PostView')->where($where)->select(); 
         } 
         
         $count  = $model->where($where)->count();// 查询满足要求的总记录数
@@ -27,7 +27,7 @@ class PostController extends BaseController
         $show = $Page->show();// 分页显示输出
         $post = $model->limit($Page->firstRow.','.$Page->listRows)->where($where)->order('post.id DESC')->select();
         $this->assign('model', $post);
-        $this->assign('page',$show);
+        $this->assign('page',$show);*/
         $this->display();     
     }
     /**

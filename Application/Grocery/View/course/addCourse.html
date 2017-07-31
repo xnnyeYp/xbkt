@@ -1,0 +1,102 @@
+<include file="Public/header" title="添加课程" css="__STATIC__/css/course.css"/>
+<section class="rt_wrap content mCustomScrollbar">
+    <div id="page-wrapper">
+        <form method="post" action="{:U('course/addCourse')}" enctype="multipart/form-data">
+            <div class="form-group">
+                <label for="aa">课程名称</label>
+                <input type="text" name="name" class="form-control" id="aa" placeholder="输入课程名称">
+            </div>
+            <div class="form-group">
+                <label>分校</label><br>
+                <select name="branchId" class="from-control">
+                    <foreach name="branchs" item="v">
+                        <option value="{$v['id']}">{$v['braname']}</option>
+                    </foreach>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="bb">课程图片</label>
+                <input type="file" name="image"  id="bb">
+            </div>
+            <div class="form-group">
+                <label for="cc">课程价格</label>
+                <input type="text" name="price" class="form-control" id="cc" placeholder="输入课程价格,小数点后最多保留两位">
+            </div>
+            <div class="form-group">
+                <label for="dd">课程类别</label>
+                <p class="select1">
+                    <select id="select_1" name="cate1" onchange="loadCate(this.value)">
+                        <option>未选择</option>
+                        <foreach name="cate1" item="c">
+                            <option value="{$c['id']}">{$c['title']}</option>
+                        </foreach>
+                    </select>
+                    <select id="select_2" name="cate2">
+                        <option>未选择</option>
+                    </select>
+                </p>
+            </div>
+            <!--<div class="form-group">-->
+                <!--<label for="ee">年龄</label><br>-->
+                <!--<select id="ee" name="age">-->
+                    <!--<option value="3 - 12">3 - 12</option>-->
+                    <!--<option value="12 - 18">12 - 18</option>-->
+                <!--</select>-->
+            <!--</div>-->
+            <div class="form-group">
+                <label for="dd">课程详情</label>
+                <textarea name="detail" id="dd" cols="30" rows="10" class="form-control" placeholder="请输入课程详情"></textarea>
+            </div>
+            <button type="submit" class="btn btn-default">添加</button>
+        </form>
+        <script>
+            function insertOption(x,text,value)
+            {
+                //console.log(x)
+                var y=document.createElement('option');
+                y.text= text;
+                y.value= value;
+                try
+                {
+                    x.add(y,null); // standards compliant
+                }
+                catch(ex)
+                {
+                    x.add(y); // IE only
+                }
+            }
+
+            function loadCate(pid) {
+                var obj = document.getElementById('select_2');
+
+                $.ajax({
+                    type:'post',
+                    traditional :true,
+                    url:"{:U('Course/get_next_cate')}",
+                    data:{'pid':pid},
+                    success:function(data){
+                        $(obj).children().each(function(i){
+                            if(this.value != -1){
+                                $(this).remove();
+                            }
+                        });
+                        for(var i=0; i<data.length; i++){
+                            insertOption(obj,data[i].title,data[i].id);
+                        }
+                    }
+                });
+            }
+
+            $(function () {
+                $('[name=detail]').blur(function(){
+                    if($(this).val().length > 60){
+                        alert('字数超过规定长度！');
+                        $(this).focus();
+                    }
+                });
+            })
+        </script>
+    </div>
+</section>
+
+<include file="Public/footer" />

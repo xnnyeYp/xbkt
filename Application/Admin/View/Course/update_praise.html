@@ -1,0 +1,29 @@
+<include file="Public/header" title="设置口碑" css="__STATIC__/css/course.css" />
+
+<section class="rt_wrap content mCustomScrollbar">
+    <form action="{:U('course/update_praise')}" method="post">
+        <input type="hidden" name="id" value="{$praise['id']}">
+        <input type="hidden" name="courseid" value="{$praise['courseid']}">
+        <div class="form-group">
+            <lable>用户名</lable>
+            <input type="text" class="form-control" value="{$praise['username']}" readonly>
+        </div>
+        <div class="form-group">
+            <lable>打赏</lable>
+            <input type="text" class="form-control" name="point" value="{$praise['point']}">
+        </div>
+        <div class="form-group">
+            <lable>日期</lable>
+            <input type="text" class="form-control" value="{$praise['createtime']}" readonly>
+        </div>
+        <div class="form-group">
+            <lable>课程评论</lable>
+            <textarea name="comment" class="form-control">{$praise['comment']}</textarea>
+        </div>
+        <button type="submit" class="btn btn-default">保存</button>&nbsp;
+        <button type="submit" class="btn btn-default" onclick="javascript:history.back(-1);">取消</button>
+    </form>
+
+</section>
+
+<include file="Public/footer" />

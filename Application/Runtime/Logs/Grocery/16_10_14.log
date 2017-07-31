@@ -1,0 +1,682 @@
+[ 2016-10-14T17:28:05+08:00 ] 180.125.229.157 /grocery.php?m=Grocery&c=setup&a=account
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000062s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002647s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002621s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002839s ]
+NOTIC: [8] Undefined variable: branch /var/www/virtual/xbkt/home/wwwroot/Application/Grocery/Controller/BaseController.class.php 第 17 行.
+NOTIC: [8] Undefined index: branchId /var/www/virtual/xbkt/home/wwwroot/Application/Grocery/Controller/BaseController.class.php 第 20 行.
+SQL: SHOW COLUMNS FROM `course_order` [ RunTime:0.0027s ]
+SQL: SELECT COUNT(*) AS tp_count FROM course_order o left join course c on c.id = o.course_id INNER JOIN member m on m.id = o.user_id INNER JOIN branch b on b.id = c.branchId  WHERE c.branchId = null AND o.status IN ('0','1','2') AND o.is_pay = 1 ORDER BY o.id LIMIT 1   [ RunTime:0.0016s ]
+
+[ 2016-10-14T17:28:06+08:00 ] 180.125.229.157 /grocery.php?m=Grocery&c=Login&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000055s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001899s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002414s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002566s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000103s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000234s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030832s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030964s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000774s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000863s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004533s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004716s ]
+
+[ 2016-10-14T17:28:06+08:00 ] 180.125.229.157 /grocery.php?m=Grocery&c=login&a=verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001229s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.008913s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.009019s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002354s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002493s ]
+
+[ 2016-10-14T17:28:14+08:00 ] 180.125.229.157 /grocery.php?m=Grocery&c=Login&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000053s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001641s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002493s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002653s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000143s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000293s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026231s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026356s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000803s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000917s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002272s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002545s ]
+
+[ 2016-10-14T17:28:15+08:00 ] 180.125.229.157 /grocery.php?m=Grocery&c=login&a=verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001096s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001518s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001608s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001669s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001783s ]
+
+[ 2016-10-14T17:28:24+08:00 ] 180.125.229.157 /grocery.php?m=Grocery&c=login&a=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001270s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001641s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001845s ]
+SQL: SHOW COLUMNS FROM `branch_account` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `branch_account` WHERE `username` = 'SSK' AND `password` = 'e10adc3949ba59abbe56e057f20f883e' LIMIT 1   [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `grocery` [ RunTime:0.0033s ]
+SQL: SELECT * FROM `grocery` WHERE ( id = 24 ) LIMIT 1   [ RunTime:0.0015s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000093s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000303s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019952s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020049s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000515s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000600s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002060s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002155s ]
+
+[ 2016-10-14T17:28:25+08:00 ] 180.125.229.157 /grocery.php?m=Grocery&c=Index&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000631s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000855s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000913s ]
+SQL: SHOW COLUMNS FROM `branch_account` [ RunTime:0.0024s ]
+SQL: SELECT `type` FROM `branch_account` WHERE ( id = 20 ) LIMIT 1   [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `course_order` [ RunTime:0.0023s ]
+SQL: SELECT COUNT(*) AS tp_count FROM course_order o left join course c on c.id = o.course_id INNER JOIN member m on m.id = o.user_id INNER JOIN branch b on b.id = c.branchId  WHERE `groId` = '24' AND o.status IN ('0','1','2') AND o.is_pay = 1 ORDER BY o.id LIMIT 1   [ RunTime:0.0017s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000084s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000140s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.032462s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032515s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000268s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000311s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000947s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000996s ]
+
+[ 2016-10-14T17:28:28+08:00 ] 180.125.229.157 /grocery.php?m=Grocery&c=setup&a=account
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001264s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001692s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001788s ]
+SQL: SHOW COLUMNS FROM `branch_account` [ RunTime:0.0027s ]
+SQL: SELECT `type` FROM `branch_account` WHERE ( id = 20 ) LIMIT 1   [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `course_order` [ RunTime:0.0028s ]
+SQL: SELECT COUNT(*) AS tp_count FROM course_order o left join course c on c.id = o.course_id INNER JOIN member m on m.id = o.user_id INNER JOIN branch b on b.id = c.branchId  WHERE `groId` = '24' AND o.status IN ('0','1','2') AND o.is_pay = 1 ORDER BY o.id LIMIT 1   [ RunTime:0.0015s ]
+SQL: SELECT a.*,b.braName FROM branch_account a left join branch b on b.id = a.branchId  WHERE a.groId = '24'  [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000164s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000269s ]
+NOTIC: [8] Undefined variable: page /var/www/virtual/xbkt/home/wwwroot/Application/Runtime/Cache/Grocery/4dd27d8175050a856366cde2f672f3d1.php 第 159 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030017s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030109s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000570s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000652s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001818s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001912s ]
+
+[ 2016-10-14T17:28:32+08:00 ] 180.125.229.157 /grocery.php?m=Grocery&c=setup&a=update_account&id=20
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001366s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001861s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001980s ]
+SQL: SHOW COLUMNS FROM `branch_account` [ RunTime:0.0035s ]
+SQL: SELECT `type` FROM `branch_account` WHERE ( id = 20 ) LIMIT 1   [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `course_order` [ RunTime:0.0022s ]
+SQL: SELECT COUNT(*) AS tp_count FROM course_order o left join course c on c.id = o.course_id INNER JOIN member m on m.id = o.user_id INNER JOIN branch b on b.id = c.branchId  WHERE `groId` = '24' AND o.status IN ('0','1','2') AND o.is_pay = 1 ORDER BY o.id LIMIT 1   [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `branch` [ RunTime:0.0022s ]
+SQL: SELECT `id`,`braName` FROM `branch` WHERE ( groId = 24 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `branch_account` WHERE ( id = 20 ) LIMIT 1   [ RunTime:0.0014s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000223s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000319s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.035314s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035522s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000384s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000450s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001326s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001396s ]
+
+[ 2016-10-14T17:28:59+08:00 ] 180.125.229.157 /grocery.php?m=Grocery&c=setup&a=account
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001278s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001712s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001910s ]
+SQL: SHOW COLUMNS FROM `branch_account` [ RunTime:0.0025s ]
+SQL: SELECT `type` FROM `branch_account` WHERE ( id = 20 ) LIMIT 1   [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `course_order` [ RunTime:0.0055s ]
+SQL: SELECT COUNT(*) AS tp_count FROM course_order o left join course c on c.id = o.course_id INNER JOIN member m on m.id = o.user_id INNER JOIN branch b on b.id = c.branchId  WHERE `groId` = '24' AND o.status IN ('0','1','2') AND o.is_pay = 1 ORDER BY o.id LIMIT 1   [ RunTime:0.0018s ]
+SQL: SELECT a.*,b.braName FROM branch_account a left join branch b on b.id = a.branchId  WHERE a.groId = '24'  [ RunTime:0.0015s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000145s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000239s ]
+NOTIC: [8] Undefined variable: page /var/www/virtual/xbkt/home/wwwroot/Application/Runtime/Cache/Grocery/4dd27d8175050a856366cde2f672f3d1.php 第 159 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025450s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025533s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000550s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000626s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001684s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001766s ]
+
+[ 2016-10-14T17:29:06+08:00 ] 180.125.229.157 /grocery.php?m=Grocery&c=setup&a=delete_account&id=21
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001099s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001556s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001645s ]
+SQL: SHOW COLUMNS FROM `branch_account` [ RunTime:0.0125s ]
+SQL: SELECT `type` FROM `branch_account` WHERE ( id = 20 ) LIMIT 1   [ RunTime:0.0228s ]
+SQL: SHOW COLUMNS FROM `course_order` [ RunTime:0.0037s ]
+SQL: SELECT COUNT(*) AS tp_count FROM course_order o left join course c on c.id = o.course_id INNER JOIN member m on m.id = o.user_id INNER JOIN branch b on b.id = c.branchId  WHERE `groId` = '24' AND o.status IN ('0','1','2') AND o.is_pay = 1 ORDER BY o.id LIMIT 1   [ RunTime:0.0045s ]
+SQL: DELETE FROM `branch_account` WHERE `id` = 21 [ RunTime:0.0021s ]
+
+[ 2016-10-14T17:29:06+08:00 ] 180.125.229.157 /grocery.php?m=Grocery&c=setup&a=account
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001253s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001721s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001826s ]
+SQL: SHOW COLUMNS FROM `branch_account` [ RunTime:0.0034s ]
+SQL: SELECT `type` FROM `branch_account` WHERE ( id = 20 ) LIMIT 1   [ RunTime:0.0022s ]
+SQL: SHOW COLUMNS FROM `course_order` [ RunTime:0.0044s ]
+SQL: SELECT COUNT(*) AS tp_count FROM course_order o left join course c on c.id = o.course_id INNER JOIN member m on m.id = o.user_id INNER JOIN branch b on b.id = c.branchId  WHERE `groId` = '24' AND o.status IN ('0','1','2') AND o.is_pay = 1 ORDER BY o.id LIMIT 1   [ RunTime:0.0015s ]
+SQL: SELECT a.*,b.braName FROM branch_account a left join branch b on b.id = a.branchId  WHERE a.groId = '24'  [ RunTime:0.0019s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000117s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000192s ]
+NOTIC: [8] Undefined variable: page /var/www/virtual/xbkt/home/wwwroot/Application/Runtime/Cache/Grocery/4dd27d8175050a856366cde2f672f3d1.php 第 159 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025632s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025700s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000411s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001802s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001308s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001379s ]
+
+[ 2016-10-14T17:30:42+08:00 ] 180.125.229.157 /grocery.php?m=Grocery&c=setup&a=branch_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000807s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001105s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001172s ]
+SQL: SHOW COLUMNS FROM `branch_account` [ RunTime:0.0025s ]
+SQL: SELECT `type` FROM `branch_account` WHERE ( id = 20 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `course_order` [ RunTime:0.0023s ]
+SQL: SELECT COUNT(*) AS tp_count FROM course_order o left join course c on c.id = o.course_id INNER JOIN member m on m.id = o.user_id INNER JOIN branch b on b.id = c.branchId  WHERE `groId` = '24' AND o.status IN ('0','1','2') AND o.is_pay = 1 ORDER BY o.id LIMIT 1   [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `branch` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `branch` WHERE `groId` = 24 AND `braName` <> '' AND `area` <> '' AND `circle` <> '' GROUP BY braName  [ RunTime:0.0028s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000166s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000238s ]
+NOTIC: [8] Undefined variable: page /var/www/virtual/xbkt/home/wwwroot/Application/Runtime/Cache/Grocery/7d0a71f3fe8f831768b36abeadbc60be.php 第 154 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027070s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027132s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000347s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000403s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001241s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001304s ]
+
+[ 2016-10-14T17:31:32+08:00 ] 180.125.229.157 /grocery.php?m=Grocery&c=setup&a=add_account&action=add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000059s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001412s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001710s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001897s ]
+SQL: SHOW COLUMNS FROM `branch_account` [ RunTime:0.0025s ]
+SQL: SELECT `type` FROM `branch_account` WHERE ( id = 20 ) LIMIT 1   [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `course_order` [ RunTime:0.0022s ]
+SQL: SELECT COUNT(*) AS tp_count FROM course_order o left join course c on c.id = o.course_id INNER JOIN member m on m.id = o.user_id INNER JOIN branch b on b.id = c.branchId  WHERE `groId` = '24' AND o.status IN ('0','1','2') AND o.is_pay = 1 ORDER BY o.id LIMIT 1   [ RunTime:0.0014s ]
+SQL: SELECT `type` FROM `branch_account` WHERE ( id = 20 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `branch` [ RunTime:0.0022s ]
+SQL: SELECT `id`,`braName` FROM `branch` WHERE ( groId = 24 )  [ RunTime:0.0012s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000454s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000620s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.056488s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.056635s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000830s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000932s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003268s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003387s ]
+
+[ 2016-10-14T17:31:42+08:00 ] 180.153.211.190 /grocery.php?m=Grocery&c=setup&a=update_account&id=20
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001304s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001802s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001907s ]
+NOTIC: [8] Undefined variable: branch /var/www/virtual/xbkt/home/wwwroot/Application/Grocery/Controller/BaseController.class.php 第 17 行.
+NOTIC: [8] Undefined index: branchId /var/www/virtual/xbkt/home/wwwroot/Application/Grocery/Controller/BaseController.class.php 第 20 行.
+SQL: SHOW COLUMNS FROM `course_order` [ RunTime:0.0027s ]
+SQL: SELECT COUNT(*) AS tp_count FROM course_order o left join course c on c.id = o.course_id INNER JOIN member m on m.id = o.user_id INNER JOIN branch b on b.id = c.branchId  WHERE c.branchId = null AND o.status IN ('0','1','2') AND o.is_pay = 1 ORDER BY o.id LIMIT 1   [ RunTime:0.0011s ]
+
+[ 2016-10-14T17:31:42+08:00 ] 180.153.211.190 /grocery.php?m=Grocery&c=Login&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001117s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001582s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001677s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000111s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000281s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017170s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017324s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000475s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000550s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001687s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001774s ]
+
+[ 2016-10-14T17:31:54+08:00 ] 180.125.229.157 /grocery.php?m=Grocery&c=setup&a=check_branch
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001385s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001774s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001924s ]
+SQL: SHOW COLUMNS FROM `branch_account` [ RunTime:0.0025s ]
+SQL: SELECT `type` FROM `branch_account` WHERE ( id = 20 ) LIMIT 1   [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `course_order` [ RunTime:0.0022s ]
+SQL: SELECT COUNT(*) AS tp_count FROM course_order o left join course c on c.id = o.course_id INNER JOIN member m on m.id = o.user_id INNER JOIN branch b on b.id = c.branchId  WHERE `groId` = '24' AND o.status IN ('0','1','2') AND o.is_pay = 1 ORDER BY o.id LIMIT 1   [ RunTime:0.0019s ]
+SQL: SELECT * FROM branch_account b left join branch_account a on a.branchId = b.id  WHERE a.branchId = '31' AND a.type = 3 LIMIT 1   [ RunTime:0.0026s ]
+
+[ 2016-10-14T17:31:54+08:00 ] 180.125.229.157 /grocery.php?m=Grocery&c=setup&a=add_account
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001362s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001886s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002025s ]
+SQL: SHOW COLUMNS FROM `branch_account` [ RunTime:0.0023s ]
+SQL: SELECT `type` FROM `branch_account` WHERE ( id = 20 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `course_order` [ RunTime:0.0024s ]
+SQL: SELECT COUNT(*) AS tp_count FROM course_order o left join course c on c.id = o.course_id INNER JOIN member m on m.id = o.user_id INNER JOIN branch b on b.id = c.branchId  WHERE `groId` = '24' AND o.status IN ('0','1','2') AND o.is_pay = 1 ORDER BY o.id LIMIT 1   [ RunTime:0.0014s ]
+SQL: SELECT `type` FROM `branch_account` WHERE ( id = 20 ) LIMIT 1   [ RunTime:0.0008s ]
+SQL: INSERT INTO `branch_account` (`username`,`branchId`,`wechat`,`mphone`,`password`,`type`,`groId`) VALUES ('SSLK','31','','12345612312','e10adc3949ba59abbe56e057f20f883e','3','24') [ RunTime:0.0030s ]
+NOTIC: [8] Undefined variable: module /var/www/virtual/xbkt/home/wwwroot/ThinkPHP/Common/functions.php 第 990 行.
+NOTIC: [8] Undefined variable: var /var/www/virtual/xbkt/home/wwwroot/ThinkPHP/Common/functions.php 第 990 行.
+NOTIC: [2] array_reverse() expects parameter 1 to be array, null given /var/www/virtual/xbkt/home/wwwroot/ThinkPHP/Common/functions.php 第 990 行.
+NOTIC: [2] http_build_query(): Parameter 1 expected to be Array or Object.  Incorrect value given /var/www/virtual/xbkt/home/wwwroot/ThinkPHP/Common/functions.php 第 990 行.
+
+[ 2016-10-14T17:31:54+08:00 ] 180.125.229.157 /grocery.php?m=&&m=Grocery&c=setup&a=account
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000058s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001510s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001708s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001811s ]
+SQL: SHOW COLUMNS FROM `branch_account` [ RunTime:0.0024s ]
+SQL: SELECT `type` FROM `branch_account` WHERE ( id = 20 ) LIMIT 1   [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `course_order` [ RunTime:0.0023s ]
+SQL: SELECT COUNT(*) AS tp_count FROM course_order o left join course c on c.id = o.course_id INNER JOIN member m on m.id = o.user_id INNER JOIN branch b on b.id = c.branchId  WHERE `groId` = '24' AND o.status IN ('0','1','2') AND o.is_pay = 1 ORDER BY o.id LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT a.*,b.braName FROM branch_account a left join branch b on b.id = a.branchId  WHERE a.groId = '24'  [ RunTime:0.0017s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000218s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000331s ]
+NOTIC: [8] Undefined variable: page /var/www/virtual/xbkt/home/wwwroot/Application/Runtime/Cache/Grocery/4dd27d8175050a856366cde2f672f3d1.php 第 159 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029154s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029248s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000647s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000733s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001874s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001992s ]
+
+[ 2016-10-14T17:32:03+08:00 ] 180.153.214.189 /grocery.php?m=Grocery&c=setup&a=add_account&action=add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000590s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000822s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000874s ]
+NOTIC: [8] Undefined variable: branch /var/www/virtual/xbkt/home/wwwroot/Application/Grocery/Controller/BaseController.class.php 第 17 行.
+NOTIC: [8] Undefined index: branchId /var/www/virtual/xbkt/home/wwwroot/Application/Grocery/Controller/BaseController.class.php 第 20 行.
+SQL: SHOW COLUMNS FROM `course_order` [ RunTime:0.0370s ]
+SQL: SELECT COUNT(*) AS tp_count FROM course_order o left join course c on c.id = o.course_id INNER JOIN member m on m.id = o.user_id INNER JOIN branch b on b.id = c.branchId  WHERE c.branchId = null AND o.status IN ('0','1','2') AND o.is_pay = 1 ORDER BY o.id LIMIT 1   [ RunTime:0.0024s ]
+
+[ 2016-10-14T17:32:04+08:00 ] 180.153.214.189 /grocery.php?m=Grocery&c=Login&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000654s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000822s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000874s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000060s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000114s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009040s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009093s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000266s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000310s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000932s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000977s ]
+
+[ 2016-10-14T17:32:19+08:00 ] 101.226.66.174 /grocery.php?m=Grocery&c=setup&a=delete_account&id=21
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001271s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001834s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001936s ]
+NOTIC: [8] Undefined variable: branch /var/www/virtual/xbkt/home/wwwroot/Application/Grocery/Controller/BaseController.class.php 第 17 行.
+NOTIC: [8] Undefined index: branchId /var/www/virtual/xbkt/home/wwwroot/Application/Grocery/Controller/BaseController.class.php 第 20 行.
+SQL: SHOW COLUMNS FROM `course_order` [ RunTime:0.0027s ]
+SQL: SELECT COUNT(*) AS tp_count FROM course_order o left join course c on c.id = o.course_id INNER JOIN member m on m.id = o.user_id INNER JOIN branch b on b.id = c.branchId  WHERE c.branchId = null AND o.status IN ('0','1','2') AND o.is_pay = 1 ORDER BY o.id LIMIT 1   [ RunTime:0.0018s ]
+
+[ 2016-10-14T17:32:19+08:00 ] 101.226.66.174 /grocery.php?m=Grocery&c=Login&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000064s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001970s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002914s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003072s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000123s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000281s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027758s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027882s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000550s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000691s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002259s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002367s ]
+
+[ 2016-10-14T17:32:50+08:00 ] 180.125.229.157 /grocery.php?m=Grocery&c=login&a=logout
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001381s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002171s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002279s ]
+
+[ 2016-10-14T17:32:51+08:00 ] 180.125.229.157 /grocery.php?m=Grocery&c=Login&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001334s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001964s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002070s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000163s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000318s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029648s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029898s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000817s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000956s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002964s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003106s ]
+
+[ 2016-10-14T17:32:51+08:00 ] 180.125.229.157 /grocery.php?m=Grocery&c=login&a=verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001284s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001800s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001902s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002075s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002310s ]
+
+[ 2016-10-14T17:33:01+08:00 ] 180.125.229.157 /grocery.php?m=Grocery&c=login&a=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001226s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001828s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001934s ]
+SQL: SHOW COLUMNS FROM `branch_account` [ RunTime:0.0028s ]
+SQL: SELECT * FROM `branch_account` WHERE `username` = 'WDK' AND `password` = 'e10adc3949ba59abbe56e057f20f883e' LIMIT 1   [ RunTime:0.0027s ]
+SQL: SHOW COLUMNS FROM `grocery` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `grocery` WHERE ( id = 38 ) LIMIT 1   [ RunTime:0.0014s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000104s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000396s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.032092s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032221s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001067s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003347s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003576s ]
+
+[ 2016-10-14T17:33:03+08:00 ] 180.125.229.157 /grocery.php?m=Grocery&c=Index&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000061s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001775s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002337s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002489s ]
+SQL: SHOW COLUMNS FROM `branch_account` [ RunTime:0.0023s ]
+SQL: SELECT `type` FROM `branch_account` WHERE ( id = 53 ) LIMIT 1   [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `course_order` [ RunTime:0.0024s ]
+SQL: SELECT COUNT(*) AS tp_count FROM course_order o left join course c on c.id = o.course_id INNER JOIN member m on m.id = o.user_id INNER JOIN branch b on b.id = c.branchId  WHERE `groId` = '38' AND o.status IN ('0','1','2') AND o.is_pay = 1 ORDER BY o.id LIMIT 1   [ RunTime:0.0019s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000185s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000312s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026983s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027105s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000595s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000705s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002052s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002147s ]
+
+[ 2016-10-14T17:33:06+08:00 ] 180.125.229.157 /grocery.php?m=Grocery&c=setup&a=add_account&action=add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000087s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001360s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001875s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001979s ]
+SQL: SHOW COLUMNS FROM `branch_account` [ RunTime:0.0026s ]
+SQL: SELECT `type` FROM `branch_account` WHERE ( id = 53 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `course_order` [ RunTime:0.0062s ]
+SQL: SELECT COUNT(*) AS tp_count FROM course_order o left join course c on c.id = o.course_id INNER JOIN member m on m.id = o.user_id INNER JOIN branch b on b.id = c.branchId  WHERE `groId` = '38' AND o.status IN ('0','1','2') AND o.is_pay = 1 ORDER BY o.id LIMIT 1   [ RunTime:0.0026s ]
+SQL: SELECT `type` FROM `branch_account` WHERE ( id = 53 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `branch` [ RunTime:0.0026s ]
+SQL: SELECT `id`,`braName` FROM `branch` WHERE ( groId = 38 )  [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000246s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000506s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.032021s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032123s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000642s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000740s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002206s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002316s ]
+
+[ 2016-10-14T17:33:20+08:00 ] 180.125.229.157 /grocery.php?m=Grocery&c=setup&a=check_branch
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001332s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001840s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001955s ]
+SQL: SHOW COLUMNS FROM `branch_account` [ RunTime:0.0030s ]
+SQL: SELECT `type` FROM `branch_account` WHERE ( id = 53 ) LIMIT 1   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `course_order` [ RunTime:0.0024s ]
+SQL: SELECT COUNT(*) AS tp_count FROM course_order o left join course c on c.id = o.course_id INNER JOIN member m on m.id = o.user_id INNER JOIN branch b on b.id = c.branchId  WHERE `groId` = '38' AND o.status IN ('0','1','2') AND o.is_pay = 1 ORDER BY o.id LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT * FROM branch_account b left join branch_account a on a.branchId = b.id  WHERE a.branchId = '60' AND a.type = 3 LIMIT 1   [ RunTime:0.0039s ]
+
+[ 2016-10-14T17:33:21+08:00 ] 180.125.229.157 /grocery.php?m=Grocery&c=setup&a=add_account
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000670s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000899s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000952s ]
+SQL: SHOW COLUMNS FROM `branch_account` [ RunTime:0.0023s ]
+SQL: SELECT `type` FROM `branch_account` WHERE ( id = 53 ) LIMIT 1   [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `course_order` [ RunTime:0.0022s ]
+SQL: SELECT COUNT(*) AS tp_count FROM course_order o left join course c on c.id = o.course_id INNER JOIN member m on m.id = o.user_id INNER JOIN branch b on b.id = c.branchId  WHERE `groId` = '38' AND o.status IN ('0','1','2') AND o.is_pay = 1 ORDER BY o.id LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT `type` FROM `branch_account` WHERE ( id = 53 ) LIMIT 1   [ RunTime:0.0011s ]
+SQL: INSERT INTO `branch_account` (`username`,`branchId`,`wechat`,`mphone`,`password`,`type`,`groId`) VALUES ('QWWQ','60','','12345612312','e10adc3949ba59abbe56e057f20f883e','3','38') [ RunTime:0.0029s ]
+NOTIC: [8] Undefined variable: module /var/www/virtual/xbkt/home/wwwroot/ThinkPHP/Common/functions.php 第 990 行.
+NOTIC: [8] Undefined variable: var /var/www/virtual/xbkt/home/wwwroot/ThinkPHP/Common/functions.php 第 990 行.
+NOTIC: [2] array_reverse() expects parameter 1 to be array, null given /var/www/virtual/xbkt/home/wwwroot/ThinkPHP/Common/functions.php 第 990 行.
+NOTIC: [2] http_build_query(): Parameter 1 expected to be Array or Object.  Incorrect value given /var/www/virtual/xbkt/home/wwwroot/ThinkPHP/Common/functions.php 第 990 行.
+
+[ 2016-10-14T17:33:21+08:00 ] 180.125.229.157 /grocery.php?m=&&m=Grocery&c=setup&a=account
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000632s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000828s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000909s ]
+SQL: SHOW COLUMNS FROM `branch_account` [ RunTime:0.0024s ]
+SQL: SELECT `type` FROM `branch_account` WHERE ( id = 53 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `course_order` [ RunTime:0.0035s ]
+SQL: SELECT COUNT(*) AS tp_count FROM course_order o left join course c on c.id = o.course_id INNER JOIN member m on m.id = o.user_id INNER JOIN branch b on b.id = c.branchId  WHERE `groId` = '38' AND o.status IN ('0','1','2') AND o.is_pay = 1 ORDER BY o.id LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT a.*,b.braName FROM branch_account a left join branch b on b.id = a.branchId  WHERE a.groId = '38'  [ RunTime:0.0015s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000085s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000136s ]
+NOTIC: [8] Undefined variable: page /var/www/virtual/xbkt/home/wwwroot/Application/Runtime/Cache/Grocery/4dd27d8175050a856366cde2f672f3d1.php 第 159 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015749s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015813s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000280s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000368s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000912s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000958s ]
+
+[ 2016-10-14T17:34:54+08:00 ] 101.226.51.228 /grocery.php?m=Grocery&c=setup&a=add_account&action=add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001269s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001700s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001803s ]
+NOTIC: [8] Undefined variable: branch /var/www/virtual/xbkt/home/wwwroot/Application/Grocery/Controller/BaseController.class.php 第 17 行.
+NOTIC: [8] Undefined index: branchId /var/www/virtual/xbkt/home/wwwroot/Application/Grocery/Controller/BaseController.class.php 第 20 行.
+SQL: SHOW COLUMNS FROM `course_order` [ RunTime:0.0035s ]
+SQL: SELECT COUNT(*) AS tp_count FROM course_order o left join course c on c.id = o.course_id INNER JOIN member m on m.id = o.user_id INNER JOIN branch b on b.id = c.branchId  WHERE c.branchId = null AND o.status IN ('0','1','2') AND o.is_pay = 1 ORDER BY o.id LIMIT 1   [ RunTime:0.0014s ]
+
+[ 2016-10-14T17:34:54+08:00 ] 101.226.51.226 /grocery.php?m=Grocery&c=setup&a=add_account&action=add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000048s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001335s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001737s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001828s ]
+NOTIC: [8] Undefined variable: branch /var/www/virtual/xbkt/home/wwwroot/Application/Grocery/Controller/BaseController.class.php 第 17 行.
+NOTIC: [8] Undefined index: branchId /var/www/virtual/xbkt/home/wwwroot/Application/Grocery/Controller/BaseController.class.php 第 20 行.
+SQL: SHOW COLUMNS FROM `course_order` [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM course_order o left join course c on c.id = o.course_id INNER JOIN member m on m.id = o.user_id INNER JOIN branch b on b.id = c.branchId  WHERE c.branchId = null AND o.status IN ('0','1','2') AND o.is_pay = 1 ORDER BY o.id LIMIT 1   [ RunTime:0.0014s ]
+
+[ 2016-10-14T17:34:55+08:00 ] 101.226.51.228 /grocery.php?m=Grocery&c=Login&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000943s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001260s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001338s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000078s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000156s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018317s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018389s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000509s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000574s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001610s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001681s ]
+
+[ 2016-10-14T17:34:55+08:00 ] 101.226.51.226 /grocery.php?m=Grocery&c=Login&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000111s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001403s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001817s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001950s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000121s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000240s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024549s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024678s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000522s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000632s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001978s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002108s ]
+

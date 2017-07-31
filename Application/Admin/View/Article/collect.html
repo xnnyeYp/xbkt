@@ -1,0 +1,27 @@
+<include file="Public/header" title="更新/查看课程" css="__STATIC__/css/article.css"/>
+<section class="rt_wrap content mCustomScrollbar">
+    <div id="page-wrapper">
+        <a class="btn btn-success">收藏  {$count}</a>
+        <table class="table table-hover table-striped">
+            <thead>
+                <tr>
+                    <th>用户名</th>
+                    <th>手机号</th>
+                    <th>用户详情</th>
+                </tr>
+            </thead>
+            <tbody>
+                <foreach name="userlist" item="u">
+                    <tr>
+                        <td>{$u['username']}</td>
+                        <td>{$u['mphone']}</td>
+                        <td><a href="{:U('member/update_member',array('id'=>$u['id']))}">查看</a></td>
+                    </tr>
+                </foreach>
+            </tbody>
+        </table>
+        {$page}
+    </div>
+</section>
+
+<include file="Public/footer" />

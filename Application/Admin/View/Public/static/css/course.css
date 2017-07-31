@@ -1,0 +1,83 @@
+.courselist{
+    margin-top: 50px;
+    margin-left: 16px;
+}
+.c_left{
+    height: 128px;
+    width: 700px;
+    float: left;
+    display: inline-block;
+}
+.c_middle {
+    margin-left: 10px;
+    width: 192px;
+    height: 128px;
+    display: inline-block;
+    float: left;
+}
+.c_middle img{
+    height: 128px;
+    width:192px;
+}
+.c_right{
+    height: 128px;
+    width:380px;
+    display: inline-block;
+}
+.c_left div,.c_right div{
+    background: greenyellow;
+    height:60px;
+    line-height: 60px;
+    font-size: 20px;
+    text-align:center;
+}
+.name{
+    width:550px;
+    float: left;
+}
+.order{
+    width: 138px;
+    float: right;
+}
+.grocery{
+    margin-top:10px;
+    width:400px;
+    float: left;
+}
+.branch{
+    margin-left: 10px;
+    width:140px;
+    margin-top:9px;
+    float: left;
+}
+.praise{
+    margin-left: 9px;
+    margin-top: 9px;
+    width:138px;
+    float: right;
+}
+.c_right div{
+    width: 176px;
+    height:59px;
+    float: left;
+    margin-left: 10px;
+}
+.commit,.cancle{
+    margin-top: 9px;
+    display: none;
+}
+.c_left input{
+    width:px;
+    height: 40px;
+    vertical-align:middle;
+    line-height: 40px;
+}
+.c_left .order input,.praise input{
+    width: 40px;
+}
+.branch input{
+    width:100px;
+}
+.select_1,.select_2{
+    display: none;
+}

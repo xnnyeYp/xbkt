@@ -1,0 +1,121 @@
+<include file="Public/header" title="添加分校管理员" />
+<section class="rt_wrap content mCustomScrollbar">
+    <div id="page-wrapper">
+        <form action="{:U('setup/add_account')}" method="post" enctype="multipart/form-data" id="form">
+
+            <div class="form-group">
+                <label>会员昵称</label>
+                <input type="text" class="form-control"  name="username">
+            </div>
+
+            <div class="form-group">
+                <label>会员分校</label>
+                <select name="branchId" class="form-control">
+                    <option>--未选择--</option>
+                    <foreach name="branch" item="v">
+                        <option value="{$v['id']}">{$v['braname']}</option>
+                    </foreach>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>微信号</label>
+                <input name="wechat"  class="form-control" type="text">
+            </div>
+            <div class="form-group">
+                <label>会员手机</label>
+                <input name="mphone"  class="form-control" type="text">
+
+            </div>
+            <div class="form-group">
+                <label>会员密码</label>
+                <input name="password" type="password" class="form-control">
+            </div>
+            <!--<div class="form-group">-->
+                <!--<label>会员角色(分校管理员可绑定微信，接收订单通知)</label><br>-->
+                <!--<input name="type" value="1" type="radio" >商户管理员-->
+                <!--&lt;!&ndash;<input name="type" value="2" type="radio" >普通&ndash;&gt;-->
+                <!--<input name="type" value="3" type="radio" >分校管理员-->
+            <!--</div>-->
+            <div class="form-group">
+                <button class="btn btn-success" id="submit" >保存</button>
+                <button class="btn btn-success" onclick="javascript:history.back(-1)" >取消</button>
+            </div>
+        </form>
+    </div>
+</section>
+
+
+<include file="Public/footer" />
+<script>
+    $(function(){
+        $('input[type=text]').each(function(){
+            $(this).change(function () {
+                $(this).css('border','1px solid #cccccc');
+            });
+        });
+
+        $('input').val('');
+
+        $('[name=type]').change(function(){
+            if($(this).val() == 3){
+                $.ajax({
+                    url:"{:U('setup/check_branch')}",
+                    type:'post',
+                    data:{
+                        'branchId':$('[name=branchId]').val(),
+                        'mphone':$('[name=mphone]').val()
+                    },
+                    success:function(data){
+                        if(data == 1){
+                            alert('该分校已有分校管理员！');
+                            $("input[name='type']").get(0).checked = true;
+                        }
+                    }
+                });
+            }
+
+        });
+
+        $('#form').submit(function(){
+            var i = true;
+            var url = "{:U('setup/check_mobile')}";
+            if($('[name=mphone]').val() == ''){
+                alert('请输入手机号！');
+                return false;
+            }else{
+               /* $.ajax({
+                    url:url,
+                    type:'post',
+                    data:{
+                        'mphone':$('[name=mphone]').val()
+                    },
+                    success: function (data) {
+                        if(data > 1 || data == 1){
+                            alert('该手机号已绑定帐号！请更换！');
+                            i = false;
+                        }
+                    },
+                    async:false
+                });*/
+            }
+
+            $.ajax({
+                url:"{:U('setup/check_branch')}",
+                type:'post',
+                data:{
+                    'branchId':$('[name=branchId]').val(),
+                    'mphone':$('[name=mphone]').val()
+                },
+                success:function(data){
+                    if(data == 1){
+                        alert('该分校已有分校管理员！');
+                        i = false;
+                    }
+                },
+                async:false
+            });
+
+            return i;
+        });
+    })
+</script>

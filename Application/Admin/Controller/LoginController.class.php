@@ -9,6 +9,8 @@ class LoginController extends Controller {
     }
     //登陆验证
     public function login(){
+
+
         if(!IS_POST)$this->error("非法请求");
         $member = M('member');
         $username =I('username');
@@ -53,8 +55,10 @@ class LoginController extends Controller {
     public function verify(){
         $Verify = new \Think\Verify();
         $Verify->codeSet = '0123456789';
-        $Verify->fontSize = 13;
+        $Verify->fontSize = 16;
         $Verify->length = 4;
+        $Verify->imageW = 135;
+        $Verify->imageH = 42;
         $Verify->entry();
     }
     protected function check_verify($code){

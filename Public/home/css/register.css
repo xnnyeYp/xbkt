@@ -1,0 +1,145 @@
+.head{
+	font-size:0.3rem;
+	color:#FFF;
+}
+html{
+	background:#FFF;
+}
+
+.title{
+	background:#98d261;
+	line-height: 0.75rem;
+	height:0.75rem;
+	width: 100%;
+	/*background: url(../img/home/headBg.gif) repeat-x;*/
+	background-size:0.75rem auto;
+	text-align: center;
+	letter-spacing: 5px;
+	position:relative;
+}
+.title>a{
+	background:url(../images/backIcon.gif) no-repeat center;
+	background-size:0.19rem;
+	height:100%;
+	width:0.75rem;
+	
+	position:absolute;
+	left:0;
+}
+.content{
+	width:100%;
+	background:#FFF;
+}
+.logo{
+	padding:1.16rem 0;
+	background:url(../images/logo.gif) no-repeat center;
+	background-size:4.5rem;
+}
+.logo>img{
+	width:4.5rem;
+	display:block;
+}
+::-webkit-input-placeholder { /* WebKit browsers */
+color: #999;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+color: #999;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+color: #999;
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+color: #999;
+} 
+.content form{
+	text-align:center;
+}
+.content input{
+	text-indent: 8px;
+	/*color:#ddd;*/
+}
+.content input,#getCode{
+	line-height:0.68rem;
+	border-radius:5px;
+}
+.telephone,.activeCode,.password,.registerCode,.passwordAgain{
+	border:2px solid #e5e5e5;
+}
+.telephone,.code,.password,.registerCode,.passwordAgain{
+	width:90%;
+	margin:0 5%;
+	height:0.68rem;
+	float:left;
+}
+.code{
+	margin:0 5% 4px;	
+}
+.activeCode{
+	width:50%;
+	float:left;
+}
+#getCode{
+	float:right;
+	font-size:0.2rem;
+	/*color:#c3c3c3;*/
+	color:#FFF;
+	width:40%;
+	margin-right:-4px;
+	text-align:center;
+	background:#98d261;
+	border:2px solid #98d261;
+}
+#is_register{
+	display: none;
+	line-height: 0.5rem;
+	float: left;
+	width: 90%;
+	margin: 0 5%;
+	font-size: 0.17rem;
+	color: #FFF;
+}
+.next,.button{
+	display:inline-block;
+	width:90%;
+	/*margin:0 auto;*/
+	line-height:0.74rem;
+	text-align:center;
+	border-radius:5px;
+	font-size:0.26rem;
+	color:#FFF;
+	background:#eee;
+	border:2px solid #eee;
+}
+/* .password,.passwordAgain{
+	margin-bottom:0.3rem;
+}*/
+.button{
+	letter-spacing: 20px;
+}
+.ps1,.ps2,.telPs,.telPs2{
+	float:left;
+	width:90%;
+	/*margin:0 auto;*/
+	font-size:0.17rem;
+	line-height:0.3rem;
+	color:#FFF;
+}
+.telPs,.telPs2{
+	line-height:0.5rem;
+}
+
+.radioUser{
+	line-height:30px;
+	width:100%;
+	clear:both;
+	text-align:center;
+}
+  #user1,#user2{
+	margin-right:5px;
+}  
+.content label{
+	font-size:14px;
+	height:30px;
+	float:left;
+ 	/*margin:0 auto;*/
+ }

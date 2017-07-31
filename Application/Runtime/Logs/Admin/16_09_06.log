@@ -1,0 +1,1655 @@
+[ 2016-09-06T19:57:03+08:00 ] 220.179.147.52 /admin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001321s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001966s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002090s ]
+
+[ 2016-09-06T19:57:03+08:00 ] 220.179.147.52 /admin.php?m=Admin&c=Login&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001432s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001776s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001878s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000111s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000367s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027243s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027367s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000648s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000735s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002234s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002326s ]
+
+[ 2016-09-06T19:57:03+08:00 ] 220.179.147.52 /admin.php?m=Admin&c=login&a=verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001328s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002609s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002716s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002126s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002246s ]
+
+[ 2016-09-06T19:57:19+08:00 ] 220.179.147.52 /admin.php?m=Admin&c=login&a=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001621s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001880s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002004s ]
+SQL: SHOW COLUMNS FROM `member` [ RunTime:0.0037s ]
+SQL: SELECT * FROM `member` WHERE `username` = 'admin' AND `password` = '21232f297a57a5a743894a0e4a801fc3' LIMIT 1   [ RunTime:0.0019s ]
+SQL: UPDATE `member` SET `update_at`='1473163039',`login_ip`='220.179.147.52' WHERE `id` = 1 [ RunTime:0.0021s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000091s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000191s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020950s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021045s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000537s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000745s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002126s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002217s ]
+
+[ 2016-09-06T19:57:20+08:00 ] 220.179.147.52 /admin.php?m=Admin&c=Index&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001241s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001727s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001831s ]
+SQL: SHOW COLUMNS FROM `course_order` [ RunTime:0.0028s ]
+SQL: SELECT count(*) as count,o.status FROM course_order o INNER JOIN course c on c.id = o.course_id INNER JOIN member m on m.id = o.user_id INNER JOIN branch b on b.id = c.branchId INNER JOIN grocery g on g.id = b.groId  GROUP BY o.status  [ RunTime:0.0038s ]
+NOTIC: [8] Undefined offset: 3 /var/www/virtual/xbkt/home/wwwroot/Application/Admin/Controller/IndexController.class.php 第 24 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000168s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000287s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.059258s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.059372s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000699s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000805s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002211s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003107s ]
+
+[ 2016-09-06T19:57:28+08:00 ] 220.179.147.52 /admin.php?m=Admin&c=member&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001610s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001729s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001835s ]
+SQL: SHOW COLUMNS FROM `member` [ RunTime:0.0042s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `member` WHERE `id` <> 1 AND `status` = 1 LIMIT 1   [ RunTime:0.0019s ]
+SQL: SELECT * FROM `member` WHERE `id` <> 1 AND `status` = 1 ORDER BY id DESC LIMIT 0,15   [ RunTime:0.0037s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000169s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000282s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.039234s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.039344s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000570s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000660s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002407s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002511s ]
+
+[ 2016-09-06T20:02:18+08:00 ] 220.179.147.52 /admin.php?m=Admin&c=member&a=update_member&id=18
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003855s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001741s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001847s ]
+NOTIC: [8] Undefined index: action /var/www/virtual/xbkt/home/wwwroot/Application/Admin/Controller/MemberController.class.php 第 69 行.
+SQL: SHOW COLUMNS FROM `member` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `member` WHERE `id` = 18 LIMIT 1   [ RunTime:0.0027s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000192s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000342s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.035634s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035756s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000572s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000660s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005281s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005444s ]
+
+[ 2016-09-06T20:02:30+08:00 ] 220.179.147.52 /admin.php?m=Admin&c=member&a=groceryMember
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001294s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001692s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001837s ]
+SQL: SHOW COLUMNS FROM `grocery` [ RunTime:0.0033s ]
+NOTIC: [8] Undefined index: status /var/www/virtual/xbkt/home/wwwroot/Application/Admin/Controller/MemberController.class.php 第 51 行.
+NOTIC: [8] Undefined variable: where /var/www/virtual/xbkt/home/wwwroot/Application/Admin/Controller/MemberController.class.php 第 54 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `grocery` LIMIT 1   [ RunTime:0.0015s ]
+NOTIC: [8] Undefined variable: where /var/www/virtual/xbkt/home/wwwroot/Application/Admin/Controller/MemberController.class.php 第 57 行.
+SQL: SELECT * FROM `grocery` ORDER BY id DESC LIMIT 0,5   [ RunTime:0.0016s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000181s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000314s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.041446s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.041547s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000683s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000769s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002153s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002247s ]
+
+[ 2016-09-06T20:02:38+08:00 ] 220.179.147.52 /admin.php?m=Admin&c=course&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001329s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001845s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001949s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0029s ]
+NOTIC: [8] Undefined variable: where /var/www/virtual/xbkt/home/wwwroot/Application/Admin/Controller/CourseController.class.php 第 25 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `course` INNER JOIN branch b on b.id=course.branchId INNER JOIN grocery g on g.id=b.groId  LIMIT 1   [ RunTime:0.0018s ]
+NOTIC: [8] Undefined variable: where /var/www/virtual/xbkt/home/wwwroot/Application/Admin/Controller/CourseController.class.php 第 40 行.
+SQL: SELECT course.*,g.name as gname,b.braName,b.id bid,(select count(*) from course_order o left join course c on c.id = o.course_id where o.course_id = course.id) as order_count,ca.title FROM `course` INNER JOIN branch b on b.id=course.branchId INNER JOIN grocery g on g.id=b.groId left join course_order o on o.course_id = course.id left join category ca on ca.id = course.cate1  GROUP BY course.id ORDER BY course.id DESC LIMIT 0,6   [ RunTime:0.0342s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000322s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000431s ]
+NOTIC: [2] Division by zero /var/www/virtual/xbkt/home/wwwroot/Application/Runtime/Cache/Admin/0a118b67613e888354da043b45de67d3.php 第 164 行.
+NOTIC: [2] Division by zero /var/www/virtual/xbkt/home/wwwroot/Application/Runtime/Cache/Admin/0a118b67613e888354da043b45de67d3.php 第 164 行.
+NOTIC: [2] Division by zero /var/www/virtual/xbkt/home/wwwroot/Application/Runtime/Cache/Admin/0a118b67613e888354da043b45de67d3.php 第 164 行.
+NOTIC: [2] Division by zero /var/www/virtual/xbkt/home/wwwroot/Application/Runtime/Cache/Admin/0a118b67613e888354da043b45de67d3.php 第 164 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.036469s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036572s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000530s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000620s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002410s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002627s ]
+
+[ 2016-09-06T20:02:44+08:00 ] 220.179.147.52 /admin.php?m=Admin&c=course&a=update&id=28
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000062s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001782s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002403s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002563s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0059s ]
+SQL: SELECT course.*,category.*,g.name as gname,b.braName,b.id bid FROM `course` INNER JOIN branch b on b.id=course.branchId INNER JOIN grocery g on g.id=b.groId left join category on category.id = course.cate2  WHERE course.id = '28' LIMIT 1   [ RunTime:0.0024s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `category` WHERE ( pid=0 and type=1 )  [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `grocery` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `grocery`  [ RunTime:0.0017s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000223s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000363s ]
+NOTIC: [2] Division by zero /var/www/virtual/xbkt/home/wwwroot/Application/Runtime/Cache/Admin/cb2f467cbaf8f35452290d8202b91cd1.php 第 141 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.057574s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.057674s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000638s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000747s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.006737s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006869s ]
+
+[ 2016-09-06T20:03:06+08:00 ] 220.179.147.52 /admin.php?m=Admin&c=course&a=update&id=27
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000060s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001606s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001852s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001961s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0027s ]
+SQL: SELECT course.*,category.*,g.name as gname,b.braName,b.id bid FROM `course` INNER JOIN branch b on b.id=course.branchId INNER JOIN grocery g on g.id=b.groId left join category on category.id = course.cate2  WHERE course.id = '27' LIMIT 1   [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `category` WHERE ( pid=0 and type=1 )  [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `grocery` [ RunTime:0.0035s ]
+SQL: SELECT * FROM `grocery`  [ RunTime:0.0018s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000214s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000345s ]
+NOTIC: [2] Division by zero /var/www/virtual/xbkt/home/wwwroot/Application/Runtime/Cache/Admin/cb2f467cbaf8f35452290d8202b91cd1.php 第 141 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.034388s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.034504s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000541s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000645s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002147s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002273s ]
+
+[ 2016-09-06T20:03:18+08:00 ] 220.179.147.52 /admin.php?m=Admin&c=course&a=update
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000052s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001402s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002110s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002275s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0033s ]
+SQL: SELECT course.*,category.*,g.name as gname,b.braName,b.id bid FROM `course` INNER JOIN branch b on b.id=course.branchId INNER JOIN grocery g on g.id=b.groId left join category on category.id = course.cate2  WHERE course.id = '27' LIMIT 1   [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `category` WHERE ( pid=0 and type=1 )  [ RunTime:0.0013s ]
+SQL: UPDATE `course` SET `name`='牛吃草问题',`extension`='1',`extensionImg`='/Public/uploads/admin/course/20160722/5792142ba071e_stamp.JPG',`price`='0',`cate1`='15',`cate2`='39',`age`='12 - 18',`detail`='&lt;h3 style=&quot;font-size:18px;color:#555555;font-family:Verdana, \'Microsoft YaHei\', 宋体;&quot;&gt;
+	课程简介
+&lt;/h3&gt;
+&lt;div class=&quot;txt&quot; style=&quot;padding:0px 20px 10px 30px;color:#555555;font-family:Verdana, \'Microsoft YaHei\', 宋体;&quot;&gt;
+	&lt;p&gt;
+		授课教师：柳滕菲
+	&lt;/p&gt;
+	&lt;p&gt;
+		&lt;br /&gt;
+	&lt;/p&gt;
+	&lt;p&gt;
+		本课程包含了竞赛数学完整的知识体系，目的是激发学生进一步思考数学问题的兴趣，让数学能力突出的学生接受系统化训练，符合大多数竞赛的要求。
+	&lt;/p&gt;
+	&lt;p&gt;
+		&lt;br /&gt;
+	&lt;/p&gt;
+	&lt;p&gt;
+		配套教材《高思学校 竞赛数学课本》
+	&lt;/p&gt;
+	&lt;p&gt;
+		请您将课程的课后习题和学习过程中遇到的问题反馈到主讲老师邮箱中：&lt;a href=&quot;mailto:zhangjunxin@gaosiedu.com&quot;&gt;liutengfei@gaosiedu.com&lt;/a&gt;，我们会尽快给您答复
+	&lt;/p&gt;
+	&lt;p&gt;
+		&lt;span style=&quot;color:#FF0000;&quot;&gt;注：购买全套课程，送相应课本&lt;/span&gt; 
+	&lt;/p&gt;
+	&lt;p&gt;
+		&lt;br /&gt;
+	&lt;/p&gt;
+	&lt;p&gt;
+		&lt;span style=&quot;color:#FF0000;&quot;&gt;全套课程预售包购买网址：&lt;a href=&quot;http://www.ablesky.com/courseInfoRedirect.do?action=courseInfo&amp;courseId=238103&quot;&gt;http://class.gaosiedu.com/courseInfoRedirect.do?action=courseInfo&amp;amp;courseId=238103&lt;/a&gt;&lt;/span&gt; 
+	&lt;/p&gt;
+&lt;/div&gt;' WHERE `id` = 27 [ RunTime:0.0037s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000091s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000347s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021831s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021963s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000534s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000622s ]
+
+[ 2016-09-06T20:03:20+08:00 ] 220.179.147.52 /admin.php?m=Admin&c=course&a=index&id=27
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001310s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002044s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002136s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0036s ]
+NOTIC: [8] Undefined variable: where /var/www/virtual/xbkt/home/wwwroot/Application/Admin/Controller/CourseController.class.php 第 25 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `course` INNER JOIN branch b on b.id=course.branchId INNER JOIN grocery g on g.id=b.groId  LIMIT 1   [ RunTime:0.0014s ]
+NOTIC: [8] Undefined variable: where /var/www/virtual/xbkt/home/wwwroot/Application/Admin/Controller/CourseController.class.php 第 40 行.
+SQL: SELECT course.*,g.name as gname,b.braName,b.id bid,(select count(*) from course_order o left join course c on c.id = o.course_id where o.course_id = course.id) as order_count,ca.title FROM `course` INNER JOIN branch b on b.id=course.branchId INNER JOIN grocery g on g.id=b.groId left join course_order o on o.course_id = course.id left join category ca on ca.id = course.cate1  GROUP BY course.id ORDER BY course.id DESC LIMIT 0,6   [ RunTime:0.0298s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000213s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000352s ]
+NOTIC: [2] Division by zero /var/www/virtual/xbkt/home/wwwroot/Application/Runtime/Cache/Admin/0a118b67613e888354da043b45de67d3.php 第 164 行.
+NOTIC: [2] Division by zero /var/www/virtual/xbkt/home/wwwroot/Application/Runtime/Cache/Admin/0a118b67613e888354da043b45de67d3.php 第 164 行.
+NOTIC: [2] Division by zero /var/www/virtual/xbkt/home/wwwroot/Application/Runtime/Cache/Admin/0a118b67613e888354da043b45de67d3.php 第 164 行.
+NOTIC: [2] Division by zero /var/www/virtual/xbkt/home/wwwroot/Application/Runtime/Cache/Admin/0a118b67613e888354da043b45de67d3.php 第 164 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033079s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033168s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000750s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000863s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002058s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002261s ]
+
+[ 2016-09-06T20:03:30+08:00 ] 220.179.147.52 /admin.php?m=Admin&c=course&a=delete&id=26
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000048s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001275s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001750s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001857s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0027s ]
+SQL: DELETE FROM `course` WHERE `id` = 26 [ RunTime:0.0009s ]
+NOTIC: [8] Undefined variable: module /var/www/virtual/xbkt/home/wwwroot/ThinkPHP/Common/functions.php 第 990 行.
+NOTIC: [8] Undefined variable: var /var/www/virtual/xbkt/home/wwwroot/ThinkPHP/Common/functions.php 第 990 行.
+NOTIC: [2] array_reverse() expects parameter 1 to be array, null given /var/www/virtual/xbkt/home/wwwroot/ThinkPHP/Common/functions.php 第 990 行.
+NOTIC: [2] http_build_query(): Parameter 1 expected to be Array or Object.  Incorrect value given /var/www/virtual/xbkt/home/wwwroot/ThinkPHP/Common/functions.php 第 990 行.
+
+[ 2016-09-06T20:03:31+08:00 ] 220.179.147.52 /admin.php?m=&&m=Admin&c=course&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001299s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001703s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001804s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0028s ]
+NOTIC: [8] Undefined variable: where /var/www/virtual/xbkt/home/wwwroot/Application/Admin/Controller/CourseController.class.php 第 25 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `course` INNER JOIN branch b on b.id=course.branchId INNER JOIN grocery g on g.id=b.groId  LIMIT 1   [ RunTime:0.0048s ]
+NOTIC: [8] Undefined variable: where /var/www/virtual/xbkt/home/wwwroot/Application/Admin/Controller/CourseController.class.php 第 40 行.
+SQL: SELECT course.*,g.name as gname,b.braName,b.id bid,(select count(*) from course_order o left join course c on c.id = o.course_id where o.course_id = course.id) as order_count,ca.title FROM `course` INNER JOIN branch b on b.id=course.branchId INNER JOIN grocery g on g.id=b.groId left join course_order o on o.course_id = course.id left join category ca on ca.id = course.cate1  GROUP BY course.id ORDER BY course.id DESC LIMIT 0,6   [ RunTime:0.0567s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000351s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000461s ]
+NOTIC: [2] Division by zero /var/www/virtual/xbkt/home/wwwroot/Application/Runtime/Cache/Admin/0a118b67613e888354da043b45de67d3.php 第 164 行.
+NOTIC: [2] Division by zero /var/www/virtual/xbkt/home/wwwroot/Application/Runtime/Cache/Admin/0a118b67613e888354da043b45de67d3.php 第 164 行.
+NOTIC: [2] Division by zero /var/www/virtual/xbkt/home/wwwroot/Application/Runtime/Cache/Admin/0a118b67613e888354da043b45de67d3.php 第 164 行.
+NOTIC: [2] Division by zero /var/www/virtual/xbkt/home/wwwroot/Application/Runtime/Cache/Admin/0a118b67613e888354da043b45de67d3.php 第 164 行.
+NOTIC: [2] Division by zero /var/www/virtual/xbkt/home/wwwroot/Application/Runtime/Cache/Admin/0a118b67613e888354da043b45de67d3.php 第 164 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.036761s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037015s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000697s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000785s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002406s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002510s ]
+
+[ 2016-09-06T20:03:34+08:00 ] 220.179.147.52 /admin.php?m=Admin&c=course&a=update&id=21
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001394s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001745s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001871s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0040s ]
+SQL: SELECT course.*,category.*,g.name as gname,b.braName,b.id bid FROM `course` INNER JOIN branch b on b.id=course.branchId INNER JOIN grocery g on g.id=b.groId left join category on category.id = course.cate2  WHERE course.id = '21' LIMIT 1   [ RunTime:0.0065s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `category` WHERE ( pid=0 and type=1 )  [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `grocery` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `grocery`  [ RunTime:0.0018s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000217s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000320s ]
+NOTIC: [2] Division by zero /var/www/virtual/xbkt/home/wwwroot/Application/Runtime/Cache/Admin/cb2f467cbaf8f35452290d8202b91cd1.php 第 141 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.036272s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036365s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000761s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000846s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002587s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002696s ]
+
+[ 2016-09-06T20:03:45+08:00 ] 220.179.147.52 /admin.php?m=Admin&c=course&a=update
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001413s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001876s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001984s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0028s ]
+SQL: SELECT course.*,category.*,g.name as gname,b.braName,b.id bid FROM `course` INNER JOIN branch b on b.id=course.branchId INNER JOIN grocery g on g.id=b.groId left join category on category.id = course.cate2  WHERE course.id = '21' LIMIT 1   [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `category` WHERE ( pid=0 and type=1 )  [ RunTime:0.0012s ]
+SQL: UPDATE `course` SET `name`='国际半日班',`extension`='0',`price`='0',`cate1`='15',`cate2`='25',`age`='12 - 18',`detail`='当男巫魔术遇上特效，会给人什么样的惊喜？本课程由邢帅教育影视后期讲师范家铭，用AE软件为你详细解析神奇魔术的制作过程
+当男巫魔术遇上特效，会给人什么样的惊喜？本课程由邢帅教育影视后期讲师范家铭，用AE软件为你详细解析神奇魔术的制作过程
+当男巫魔术遇上特效，会给人什么样的惊喜？本课程由邢帅教育影视后期讲师范家铭，用AE软件为你详细解析神奇魔术的制作过程
+当男巫魔术遇上特效，会给人什么样的惊喜？本课程由邢帅教育影视后期讲师范家铭，用AE软件为你详细解析神奇魔术的制作过程
+当男巫魔术遇上特效，会给人什么样的惊喜？本课程由邢帅教育影视后期讲师范家铭，用AE软件为你详细解析神奇魔术的制作过程
+当男巫魔术遇上特效，会给人什么样的惊喜？本课程由邢帅教育影视后期讲师范家铭，用AE软件为你详细解析神奇魔术的制作过程' WHERE `id` = 21 [ RunTime:0.0022s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000096s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000225s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026661s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026759s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000713s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000799s ]
+
+[ 2016-09-06T20:03:49+08:00 ] 220.179.147.52 /admin.php?m=Admin&c=course&a=index&id=21
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001302s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001671s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001777s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0029s ]
+NOTIC: [8] Undefined variable: where /var/www/virtual/xbkt/home/wwwroot/Application/Admin/Controller/CourseController.class.php 第 25 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `course` INNER JOIN branch b on b.id=course.branchId INNER JOIN grocery g on g.id=b.groId  LIMIT 1   [ RunTime:0.0043s ]
+NOTIC: [8] Undefined variable: where /var/www/virtual/xbkt/home/wwwroot/Application/Admin/Controller/CourseController.class.php 第 40 行.
+SQL: SELECT course.*,g.name as gname,b.braName,b.id bid,(select count(*) from course_order o left join course c on c.id = o.course_id where o.course_id = course.id) as order_count,ca.title FROM `course` INNER JOIN branch b on b.id=course.branchId INNER JOIN grocery g on g.id=b.groId left join course_order o on o.course_id = course.id left join category ca on ca.id = course.cate1  GROUP BY course.id ORDER BY course.id DESC LIMIT 0,6   [ RunTime:0.0263s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000311s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000447s ]
+NOTIC: [2] Division by zero /var/www/virtual/xbkt/home/wwwroot/Application/Runtime/Cache/Admin/0a118b67613e888354da043b45de67d3.php 第 164 行.
+NOTIC: [2] Division by zero /var/www/virtual/xbkt/home/wwwroot/Application/Runtime/Cache/Admin/0a118b67613e888354da043b45de67d3.php 第 164 行.
+NOTIC: [2] Division by zero /var/www/virtual/xbkt/home/wwwroot/Application/Runtime/Cache/Admin/0a118b67613e888354da043b45de67d3.php 第 164 行.
+NOTIC: [2] Division by zero /var/www/virtual/xbkt/home/wwwroot/Application/Runtime/Cache/Admin/0a118b67613e888354da043b45de67d3.php 第 164 行.
+NOTIC: [2] Division by zero /var/www/virtual/xbkt/home/wwwroot/Application/Runtime/Cache/Admin/0a118b67613e888354da043b45de67d3.php 第 164 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.042634s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.045695s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000535s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000762s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002162s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002270s ]
+
+[ 2016-09-06T20:04:00+08:00 ] 220.179.147.52 /admin.php?m=Admin&c=Course&a=index&m=Admin&id=21&p=3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000058s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001344s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001684s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001805s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0029s ]
+NOTIC: [8] Undefined variable: where /var/www/virtual/xbkt/home/wwwroot/Application/Admin/Controller/CourseController.class.php 第 25 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `course` INNER JOIN branch b on b.id=course.branchId INNER JOIN grocery g on g.id=b.groId  LIMIT 1   [ RunTime:0.0009s ]
+NOTIC: [8] Undefined variable: where /var/www/virtual/xbkt/home/wwwroot/Application/Admin/Controller/CourseController.class.php 第 40 行.
+SQL: SELECT course.*,g.name as gname,b.braName,b.id bid,(select count(*) from course_order o left join course c on c.id = o.course_id where o.course_id = course.id) as order_count,ca.title FROM `course` INNER JOIN branch b on b.id=course.branchId INNER JOIN grocery g on g.id=b.groId left join course_order o on o.course_id = course.id left join category ca on ca.id = course.cate1  GROUP BY course.id ORDER BY course.id DESC LIMIT 12,6   [ RunTime:0.0339s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000252s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000398s ]
+NOTIC: [2] Division by zero /var/www/virtual/xbkt/home/wwwroot/Application/Runtime/Cache/Admin/0a118b67613e888354da043b45de67d3.php 第 164 行.
+NOTIC: [2] Division by zero /var/www/virtual/xbkt/home/wwwroot/Application/Runtime/Cache/Admin/0a118b67613e888354da043b45de67d3.php 第 164 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.049190s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.049287s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000677s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000766s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002751s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002923s ]
+
+[ 2016-09-06T20:04:06+08:00 ] 220.179.147.52 /admin.php?m=Admin&c=course&a=update&id=5
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001305s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001847s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001953s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0029s ]
+SQL: SELECT course.*,category.*,g.name as gname,b.braName,b.id bid FROM `course` INNER JOIN branch b on b.id=course.branchId INNER JOIN grocery g on g.id=b.groId left join category on category.id = course.cate2  WHERE course.id = '5' LIMIT 1   [ RunTime:0.0043s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `category` WHERE ( pid=0 and type=1 )  [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `grocery` [ RunTime:0.0034s ]
+SQL: SELECT * FROM `grocery`  [ RunTime:0.0024s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000250s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000358s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.035782s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036047s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000553s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000640s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002198s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002460s ]
+
+[ 2016-09-06T20:04:18+08:00 ] 220.179.147.52 /admin.php?m=Admin&c=course&a=update&id=6
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001630s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001762s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001883s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0033s ]
+SQL: SELECT course.*,category.*,g.name as gname,b.braName,b.id bid FROM `course` INNER JOIN branch b on b.id=course.branchId INNER JOIN grocery g on g.id=b.groId left join category on category.id = course.cate2  WHERE course.id = '6' LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `category` WHERE ( pid=0 and type=1 )  [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `grocery` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `grocery`  [ RunTime:0.0014s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000228s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000357s ]
+NOTIC: [2] Division by zero /var/www/virtual/xbkt/home/wwwroot/Application/Runtime/Cache/Admin/cb2f467cbaf8f35452290d8202b91cd1.php 第 141 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.037146s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037254s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000694s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000796s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002298s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002397s ]
+
+[ 2016-09-06T20:04:26+08:00 ] 220.179.147.52 /admin.php?m=Admin&c=course&a=update
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001481s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001699s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001919s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0030s ]
+SQL: SELECT course.*,category.*,g.name as gname,b.braName,b.id bid FROM `course` INNER JOIN branch b on b.id=course.branchId INNER JOIN grocery g on g.id=b.groId left join category on category.id = course.cate2  WHERE course.id = '6' LIMIT 1   [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `category` WHERE ( pid=0 and type=1 )  [ RunTime:0.0038s ]
+SQL: UPDATE `course` SET `name`='大碗饭edddd啊啊啊啊啊啊啊',`extension`='0',`price`='0',`cate1`='15',`cate2`='17',`age`='3 - 12',`detail`='11111' WHERE `id` = 6 [ RunTime:0.0035s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000148s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000312s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028732s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028860s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000728s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000986s ]
+
+[ 2016-09-06T20:04:28+08:00 ] 220.179.147.52 /admin.php?m=Admin&c=course&a=index&id=6
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000052s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001646s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002293s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002422s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0045s ]
+NOTIC: [8] Undefined variable: where /var/www/virtual/xbkt/home/wwwroot/Application/Admin/Controller/CourseController.class.php 第 25 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `course` INNER JOIN branch b on b.id=course.branchId INNER JOIN grocery g on g.id=b.groId  LIMIT 1   [ RunTime:0.0014s ]
+NOTIC: [8] Undefined variable: where /var/www/virtual/xbkt/home/wwwroot/Application/Admin/Controller/CourseController.class.php 第 40 行.
+SQL: SELECT course.*,g.name as gname,b.braName,b.id bid,(select count(*) from course_order o left join course c on c.id = o.course_id where o.course_id = course.id) as order_count,ca.title FROM `course` INNER JOIN branch b on b.id=course.branchId INNER JOIN grocery g on g.id=b.groId left join course_order o on o.course_id = course.id left join category ca on ca.id = course.cate1  GROUP BY course.id ORDER BY course.id DESC LIMIT 0,6   [ RunTime:0.0261s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000181s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000281s ]
+NOTIC: [2] Division by zero /var/www/virtual/xbkt/home/wwwroot/Application/Runtime/Cache/Admin/0a118b67613e888354da043b45de67d3.php 第 164 行.
+NOTIC: [2] Division by zero /var/www/virtual/xbkt/home/wwwroot/Application/Runtime/Cache/Admin/0a118b67613e888354da043b45de67d3.php 第 164 行.
+NOTIC: [2] Division by zero /var/www/virtual/xbkt/home/wwwroot/Application/Runtime/Cache/Admin/0a118b67613e888354da043b45de67d3.php 第 164 行.
+NOTIC: [2] Division by zero /var/www/virtual/xbkt/home/wwwroot/Application/Runtime/Cache/Admin/0a118b67613e888354da043b45de67d3.php 第 164 行.
+NOTIC: [2] Division by zero /var/www/virtual/xbkt/home/wwwroot/Application/Runtime/Cache/Admin/0a118b67613e888354da043b45de67d3.php 第 164 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.034940s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035042s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000683s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000772s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002837s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002935s ]
+
+[ 2016-09-06T20:04:32+08:00 ] 220.179.147.52 /admin.php?m=Admin&c=Course&a=index&m=Admin&id=6&p=3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001220s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001527s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001640s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0028s ]
+NOTIC: [8] Undefined variable: where /var/www/virtual/xbkt/home/wwwroot/Application/Admin/Controller/CourseController.class.php 第 25 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `course` INNER JOIN branch b on b.id=course.branchId INNER JOIN grocery g on g.id=b.groId  LIMIT 1   [ RunTime:0.0009s ]
+NOTIC: [8] Undefined variable: where /var/www/virtual/xbkt/home/wwwroot/Application/Admin/Controller/CourseController.class.php 第 40 行.
+SQL: SELECT course.*,g.name as gname,b.braName,b.id bid,(select count(*) from course_order o left join course c on c.id = o.course_id where o.course_id = course.id) as order_count,ca.title FROM `course` INNER JOIN branch b on b.id=course.branchId INNER JOIN grocery g on g.id=b.groId left join course_order o on o.course_id = course.id left join category ca on ca.id = course.cate1  GROUP BY course.id ORDER BY course.id DESC LIMIT 12,6   [ RunTime:0.0266s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000174s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000280s ]
+NOTIC: [2] Division by zero /var/www/virtual/xbkt/home/wwwroot/Application/Runtime/Cache/Admin/0a118b67613e888354da043b45de67d3.php 第 164 行.
+NOTIC: [2] Division by zero /var/www/virtual/xbkt/home/wwwroot/Application/Runtime/Cache/Admin/0a118b67613e888354da043b45de67d3.php 第 164 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027874s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027969s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000490s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000585s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001784s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002033s ]
+
+[ 2016-09-06T20:04:38+08:00 ] 220.179.147.52 /admin.php?m=Admin&c=course&a=update&id=7
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000063s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001454s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001853s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001955s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0035s ]
+SQL: SELECT course.*,category.*,g.name as gname,b.braName,b.id bid FROM `course` INNER JOIN branch b on b.id=course.branchId INNER JOIN grocery g on g.id=b.groId left join category on category.id = course.cate2  WHERE course.id = '7' LIMIT 1   [ RunTime:0.0025s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `category` WHERE ( pid=0 and type=1 )  [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `grocery` [ RunTime:0.0023s ]
+SQL: SELECT * FROM `grocery`  [ RunTime:0.0013s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000214s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000327s ]
+NOTIC: [2] Division by zero /var/www/virtual/xbkt/home/wwwroot/Application/Runtime/Cache/Admin/cb2f467cbaf8f35452290d8202b91cd1.php 第 141 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.034263s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.034363s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000650s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000741s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002174s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002299s ]
+
+[ 2016-09-06T20:04:43+08:00 ] 220.179.147.52 /admin.php?m=Admin&c=Course&a=index&m=Admin&id=6&p=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001262s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001805s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001995s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0035s ]
+NOTIC: [8] Undefined variable: where /var/www/virtual/xbkt/home/wwwroot/Application/Admin/Controller/CourseController.class.php 第 25 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `course` INNER JOIN branch b on b.id=course.branchId INNER JOIN grocery g on g.id=b.groId  LIMIT 1   [ RunTime:0.0008s ]
+NOTIC: [8] Undefined variable: where /var/www/virtual/xbkt/home/wwwroot/Application/Admin/Controller/CourseController.class.php 第 40 行.
+SQL: SELECT course.*,g.name as gname,b.braName,b.id bid,(select count(*) from course_order o left join course c on c.id = o.course_id where o.course_id = course.id) as order_count,ca.title FROM `course` INNER JOIN branch b on b.id=course.branchId INNER JOIN grocery g on g.id=b.groId left join course_order o on o.course_id = course.id left join category ca on ca.id = course.cate1  GROUP BY course.id ORDER BY course.id DESC LIMIT 6,6   [ RunTime:0.0326s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000296s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000399s ]
+NOTIC: [2] Division by zero /var/www/virtual/xbkt/home/wwwroot/Application/Runtime/Cache/Admin/0a118b67613e888354da043b45de67d3.php 第 164 行.
+NOTIC: [2] Division by zero /var/www/virtual/xbkt/home/wwwroot/Application/Runtime/Cache/Admin/0a118b67613e888354da043b45de67d3.php 第 164 行.
+NOTIC: [2] Division by zero /var/www/virtual/xbkt/home/wwwroot/Application/Runtime/Cache/Admin/0a118b67613e888354da043b45de67d3.php 第 164 行.
+NOTIC: [2] Division by zero /var/www/virtual/xbkt/home/wwwroot/Application/Runtime/Cache/Admin/0a118b67613e888354da043b45de67d3.php 第 164 行.
+NOTIC: [2] Division by zero /var/www/virtual/xbkt/home/wwwroot/Application/Runtime/Cache/Admin/0a118b67613e888354da043b45de67d3.php 第 164 行.
+NOTIC: [2] Division by zero /var/www/virtual/xbkt/home/wwwroot/Application/Runtime/Cache/Admin/0a118b67613e888354da043b45de67d3.php 第 164 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.035069s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035165s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000534s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000620s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002116s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002212s ]
+
+[ 2016-09-06T20:04:53+08:00 ] 220.179.147.52 /admin.php?m=Admin&c=course&a=delete&id=8
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001368s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001823s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001928s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0029s ]
+SQL: DELETE FROM `course` WHERE `id` = 8 [ RunTime:0.0021s ]
+NOTIC: [8] Undefined variable: module /var/www/virtual/xbkt/home/wwwroot/ThinkPHP/Common/functions.php 第 990 行.
+NOTIC: [8] Undefined variable: var /var/www/virtual/xbkt/home/wwwroot/ThinkPHP/Common/functions.php 第 990 行.
+NOTIC: [2] array_reverse() expects parameter 1 to be array, null given /var/www/virtual/xbkt/home/wwwroot/ThinkPHP/Common/functions.php 第 990 行.
+NOTIC: [2] http_build_query(): Parameter 1 expected to be Array or Object.  Incorrect value given /var/www/virtual/xbkt/home/wwwroot/ThinkPHP/Common/functions.php 第 990 行.
+
+[ 2016-09-06T20:04:53+08:00 ] 220.179.147.52 /admin.php?m=&&m=Admin&c=course&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001287s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001828s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001946s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0025s ]
+NOTIC: [8] Undefined variable: where /var/www/virtual/xbkt/home/wwwroot/Application/Admin/Controller/CourseController.class.php 第 25 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `course` INNER JOIN branch b on b.id=course.branchId INNER JOIN grocery g on g.id=b.groId  LIMIT 1   [ RunTime:0.0014s ]
+NOTIC: [8] Undefined variable: where /var/www/virtual/xbkt/home/wwwroot/Application/Admin/Controller/CourseController.class.php 第 40 行.
+SQL: SELECT course.*,g.name as gname,b.braName,b.id bid,(select count(*) from course_order o left join course c on c.id = o.course_id where o.course_id = course.id) as order_count,ca.title FROM `course` INNER JOIN branch b on b.id=course.branchId INNER JOIN grocery g on g.id=b.groId left join course_order o on o.course_id = course.id left join category ca on ca.id = course.cate1  GROUP BY course.id ORDER BY course.id DESC LIMIT 0,6   [ RunTime:0.0306s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000311s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000417s ]
+NOTIC: [2] Division by zero /var/www/virtual/xbkt/home/wwwroot/Application/Runtime/Cache/Admin/0a118b67613e888354da043b45de67d3.php 第 164 行.
+NOTIC: [2] Division by zero /var/www/virtual/xbkt/home/wwwroot/Application/Runtime/Cache/Admin/0a118b67613e888354da043b45de67d3.php 第 164 行.
+NOTIC: [2] Division by zero /var/www/virtual/xbkt/home/wwwroot/Application/Runtime/Cache/Admin/0a118b67613e888354da043b45de67d3.php 第 164 行.
+NOTIC: [2] Division by zero /var/www/virtual/xbkt/home/wwwroot/Application/Runtime/Cache/Admin/0a118b67613e888354da043b45de67d3.php 第 164 行.
+NOTIC: [2] Division by zero /var/www/virtual/xbkt/home/wwwroot/Application/Runtime/Cache/Admin/0a118b67613e888354da043b45de67d3.php 第 164 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.034955s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035057s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000524s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000658s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002440s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002574s ]
+
+[ 2016-09-06T20:08:03+08:00 ] 220.179.147.52 /admin.php?m=Admin&c=Course&a=index&m=Admin&p=3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001352s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001859s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001961s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0040s ]
+NOTIC: [8] Undefined variable: where /var/www/virtual/xbkt/home/wwwroot/Application/Admin/Controller/CourseController.class.php 第 25 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `course` INNER JOIN branch b on b.id=course.branchId INNER JOIN grocery g on g.id=b.groId  LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: where /var/www/virtual/xbkt/home/wwwroot/Application/Admin/Controller/CourseController.class.php 第 40 行.
+SQL: SELECT course.*,g.name as gname,b.braName,b.id bid,(select count(*) from course_order o left join course c on c.id = o.course_id where o.course_id = course.id) as order_count,ca.title FROM `course` INNER JOIN branch b on b.id=course.branchId INNER JOIN grocery g on g.id=b.groId left join course_order o on o.course_id = course.id left join category ca on ca.id = course.cate1  GROUP BY course.id ORDER BY course.id DESC LIMIT 12,6   [ RunTime:0.0259s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000183s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000281s ]
+NOTIC: [2] Division by zero /var/www/virtual/xbkt/home/wwwroot/Application/Runtime/Cache/Admin/0a118b67613e888354da043b45de67d3.php 第 164 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033009s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033105s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000634s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000718s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002110s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002209s ]
+
+[ 2016-09-06T20:08:07+08:00 ] 220.179.147.52 /admin.php?m=Admin&c=course&a=update&id=5
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001232s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001758s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001860s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0029s ]
+SQL: SELECT course.*,category.*,g.name as gname,b.braName,b.id bid FROM `course` INNER JOIN branch b on b.id=course.branchId INNER JOIN grocery g on g.id=b.groId left join category on category.id = course.cate2  WHERE course.id = '5' LIMIT 1   [ RunTime:0.0026s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `category` WHERE ( pid=0 and type=1 )  [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `grocery` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `grocery`  [ RunTime:0.0013s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000233s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000361s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.038049s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.038149s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000799s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000903s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002330s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002427s ]
+
+[ 2016-09-06T20:12:43+08:00 ] 220.179.147.52 /admin.php?m=Admin&c=order&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001486s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001712s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001817s ]
+NOTIC: [8] Undefined index: type /var/www/virtual/xbkt/home/wwwroot/Application/Admin/Controller/OrderController.class.php 第 16 行.
+NOTIC: [8] Undefined index: type /var/www/virtual/xbkt/home/wwwroot/Application/Admin/Controller/OrderController.class.php 第 18 行.
+NOTIC: [8] Undefined index: type /var/www/virtual/xbkt/home/wwwroot/Application/Admin/Controller/OrderController.class.php 第 20 行.
+NOTIC: [8] Undefined index: key /var/www/virtual/xbkt/home/wwwroot/Application/Admin/Controller/OrderController.class.php 第 24 行.
+NOTIC: [8] Undefined index: start_time /var/www/virtual/xbkt/home/wwwroot/Application/Admin/Controller/OrderController.class.php 第 29 行.
+NOTIC: [8] Undefined index: end_time /var/www/virtual/xbkt/home/wwwroot/Application/Admin/Controller/OrderController.class.php 第 33 行.
+SQL: SHOW COLUMNS FROM `course_order` [ RunTime:0.0028s ]
+NOTIC: [8] Undefined variable: where /var/www/virtual/xbkt/home/wwwroot/Application/Admin/Controller/OrderController.class.php 第 44 行.
+SQL: SELECT COUNT(*) AS tp_count FROM course_order o INNER JOIN course c on c.id = o.course_id INNER JOIN member m on m.id = o.user_id INNER JOIN branch b on b.id = c.branchId INNER JOIN grocery g on g.id = b.groId left join course_praise p on p.order_id = o.id  ORDER BY o.id DESC LIMIT 1   [ RunTime:0.0051s ]
+NOTIC: [8] Undefined variable: where /var/www/virtual/xbkt/home/wwwroot/Application/Admin/Controller/OrderController.class.php 第 61 行.
+SQL: SELECT o.*,m.username,c.name,c.image,c.extension,c.extensionimg,c.price FROM course_order o INNER JOIN course c on c.id = o.course_id INNER JOIN member m on m.id = o.user_id INNER JOIN branch b on b.id = c.branchId INNER JOIN grocery g on g.id = b.groId left join course_praise p on p.order_id = o.id  ORDER BY o.id DESC LIMIT 0,6   [ RunTime:0.0105s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000189s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000295s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.043463s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.043570s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000699s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000788s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002355s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002451s ]
+
+[ 2016-09-06T20:12:58+08:00 ] 220.179.147.52 /admin.php?m=Admin&c=course&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001363s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001882s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001986s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0031s ]
+NOTIC: [8] Undefined variable: where /var/www/virtual/xbkt/home/wwwroot/Application/Admin/Controller/CourseController.class.php 第 25 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `course` INNER JOIN branch b on b.id=course.branchId INNER JOIN grocery g on g.id=b.groId  LIMIT 1   [ RunTime:0.0007s ]
+NOTIC: [8] Undefined variable: where /var/www/virtual/xbkt/home/wwwroot/Application/Admin/Controller/CourseController.class.php 第 40 行.
+SQL: SELECT course.*,g.name as gname,b.braName,b.id bid,(select count(*) from course_order o left join course c on c.id = o.course_id where o.course_id = course.id) as order_count,ca.title FROM `course` INNER JOIN branch b on b.id=course.branchId INNER JOIN grocery g on g.id=b.groId left join course_order o on o.course_id = course.id left join category ca on ca.id = course.cate1  GROUP BY course.id ORDER BY course.id DESC LIMIT 0,6   [ RunTime:0.0029s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000187s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000306s ]
+NOTIC: [2] Division by zero /var/www/virtual/xbkt/home/wwwroot/Application/Runtime/Cache/Admin/0a118b67613e888354da043b45de67d3.php 第 164 行.
+NOTIC: [2] Division by zero /var/www/virtual/xbkt/home/wwwroot/Application/Runtime/Cache/Admin/0a118b67613e888354da043b45de67d3.php 第 164 行.
+NOTIC: [2] Division by zero /var/www/virtual/xbkt/home/wwwroot/Application/Runtime/Cache/Admin/0a118b67613e888354da043b45de67d3.php 第 164 行.
+NOTIC: [2] Division by zero /var/www/virtual/xbkt/home/wwwroot/Application/Runtime/Cache/Admin/0a118b67613e888354da043b45de67d3.php 第 164 行.
+NOTIC: [2] Division by zero /var/www/virtual/xbkt/home/wwwroot/Application/Runtime/Cache/Admin/0a118b67613e888354da043b45de67d3.php 第 164 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.037014s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037125s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000724s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000813s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002310s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002442s ]
+
+[ 2016-09-06T20:13:11+08:00 ] 220.179.147.52 /admin.php?m=Admin&c=course&a=update&id=28
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001320s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001878s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001981s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0025s ]
+SQL: SELECT course.*,category.*,g.name as gname,b.braName,b.id bid FROM `course` INNER JOIN branch b on b.id=course.branchId INNER JOIN grocery g on g.id=b.groId left join category on category.id = course.cate2  WHERE course.id = '28' LIMIT 1   [ RunTime:0.0022s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `category` WHERE ( pid=0 and type=1 )  [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `grocery` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `grocery`  [ RunTime:0.0014s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000214s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000334s ]
+NOTIC: [2] Division by zero /var/www/virtual/xbkt/home/wwwroot/Application/Runtime/Cache/Admin/cb2f467cbaf8f35452290d8202b91cd1.php 第 141 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.034236s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.034335s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000722s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000810s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002055s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002231s ]
+
+[ 2016-09-06T20:13:20+08:00 ] 220.179.147.52 /admin.php?m=Admin&c=course&a=update&id=27
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000065s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002318s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003798s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003967s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0041s ]
+SQL: SELECT course.*,category.*,g.name as gname,b.braName,b.id bid FROM `course` INNER JOIN branch b on b.id=course.branchId INNER JOIN grocery g on g.id=b.groId left join category on category.id = course.cate2  WHERE course.id = '27' LIMIT 1   [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `category` WHERE ( pid=0 and type=1 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `grocery` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `grocery`  [ RunTime:0.0023s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000154s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000215s ]
+NOTIC: [2] Division by zero /var/www/virtual/xbkt/home/wwwroot/Application/Runtime/Cache/Admin/cb2f467cbaf8f35452290d8202b91cd1.php 第 141 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016103s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016152s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000294s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000338s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000959s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001007s ]
+
+[ 2016-09-06T20:13:26+08:00 ] 220.179.147.52 /admin.php?m=Admin&c=course&a=update&id=25
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000665s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000861s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000913s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0036s ]
+SQL: SELECT course.*,category.*,g.name as gname,b.braName,b.id bid FROM `course` INNER JOIN branch b on b.id=course.branchId INNER JOIN grocery g on g.id=b.groId left join category on category.id = course.cate2  WHERE course.id = '25' LIMIT 1   [ RunTime:0.0023s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `category` WHERE ( pid=0 and type=1 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `grocery` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `grocery`  [ RunTime:0.0011s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000109s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000165s ]
+NOTIC: [2] Division by zero /var/www/virtual/xbkt/home/wwwroot/Application/Runtime/Cache/Admin/cb2f467cbaf8f35452290d8202b91cd1.php 第 141 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016286s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016336s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000325s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000369s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000984s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001031s ]
+
+[ 2016-09-06T20:13:34+08:00 ] 220.179.147.52 /admin.php?m=Admin&c=course&a=update
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001642s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001807s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001914s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0024s ]
+SQL: SELECT course.*,category.*,g.name as gname,b.braName,b.id bid FROM `course` INNER JOIN branch b on b.id=course.branchId INNER JOIN grocery g on g.id=b.groId left join category on category.id = course.cate2  WHERE course.id = '25' LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `category` WHERE ( pid=0 and type=1 )  [ RunTime:0.0012s ]
+SQL: UPDATE `course` SET `name`='语文',`extension`='1',`extensionImg`='/Public/uploads/admin/course/20160703/5778fddebc979_stamp.jpg',`price`='0',`cate1`='15',`cate2`='38',`age`='3 - 12',`detail`='&lt;p&gt;
+	&lt;br /&gt;
+&lt;/p&gt;
+&lt;p style=&quot;text-align:left;&quot;&gt;
+	&lt;span style=&quot;color:#444444;font-family:微软雅黑;font-size:14px;line-height:23px;background-color:#FFFFFF;&quot;&gt;语言是思维的物质外壳——马克思&lt;/span&gt;&lt;span style=&quot;line-height:1.5;&quot;&gt; &lt;/span&gt; 
+&lt;/p&gt;
+&lt;p style=&quot;text-align:left;&quot;&gt;
+	&lt;span style=&quot;line-height:1.5;&quot;&gt; &lt;/span&gt;&lt;span style=&quot;color:#444444;font-family:微软雅黑;font-size:14px;line-height:23px;background-color:#FFFFFF;&quot;&gt;关于本课程的几点说明：&lt;/span&gt; 
+&lt;/p&gt;
+&lt;div style=&quot;text-align:center;&quot;&gt;
+	&lt;span style=&quot;color:#444444;font-family:微软雅黑;font-size:14px;line-height:23px;background-color:#FFFFFF;&quot;&gt;&lt;/span&gt; 
+&lt;/div&gt;
+&lt;span style=&quot;color:#444444;font-family:微软雅黑;font-size:14px;line-height:23px;background-color:#FFFFFF;&quot;&gt;1、《逻辑表达力》课程主要训练的是表达的思路性，对表达的文采性和口齿性不做训练，大家也听到了袁老师自身的口齿性就比较差，总是嗯、啊口病不断。这是不同的训练范畴，大家可根据实际问题选择不同的课程来优化自己的表达力。&lt;/span&gt;&lt;br /&gt;
+&lt;span style=&quot;color:#444444;font-family:微软雅黑;font-size:14px;line-height:23px;background-color:#FFFFFF;&quot;&gt;2、表达思路的优劣决定了一个人说出的话是否逻辑严谨、条理有序。一个人在平时交流幽默风趣，口齿无碍，但面临大场面，在台上说话的时候，思路往往会卡壳，思绪混乱不知道该说什么、怎样说，这就是逻辑表达力课程要解决的痛点问题。&lt;/span&gt;&lt;br /&gt;
+&lt;span style=&quot;color:#444444;font-family:微软雅黑;font-size:14px;line-height:23px;background-color:#FFFFFF;&quot;&gt;3、逻辑表达力的重要性越是在高层次，公众场合越突出。在日常交流中它的作用更多体现为借助规范的表达格式来训练优化自己的逻辑思维素质。一般人说话时常犯啰嗦无序，言不及义，不知所云的毛病，实际就是逻辑思维已经养成的错误习惯、低级模式的外在表现。&lt;/span&gt;&lt;br /&gt;
+&lt;br /&gt;
+&lt;span style=&quot;color:#444444;font-family:微软雅黑;font-size:14px;line-height:23px;background-color:#FFFFFF;&quot;&gt;袁老师在网易云课堂已开播课程：&lt;/span&gt;&lt;br /&gt;
+&lt;span style=&quot;color:#444444;font-family:微软雅黑;font-size:14px;line-height:23px;background-color:#FFFFFF;&quot;&gt;1、《逻辑思维7级训练》&lt;/span&gt;&lt;br /&gt;
+&lt;span style=&quot;color:#444444;font-family:微软雅黑;font-size:14px;line-height:23px;background-color:#FFFFFF;&quot;&gt;2、《逻辑表达力》（初级班）&lt;/span&gt;&lt;br /&gt;
+&lt;span style=&quot;color:#444444;font-family:微软雅黑;font-size:14px;line-height:23px;background-color:#FFFFFF;&quot;&gt; 3、《逻辑理解力》（初级班）&lt;/span&gt;&lt;br /&gt;
+&lt;span style=&quot;color:#444444;font-family:微软雅黑;font-size:14px;line-height:23px;background-color:#FFFFFF;&quot;&gt; 4、《创意师头脑修炼》&lt;/span&gt;&lt;br /&gt;
+&lt;span style=&quot;color:#444444;font-family:微软雅黑;font-size:14px;line-height:23px;background-color:#FFFFFF;&quot;&gt;5、《高级逻辑表达力》&lt;/span&gt;&lt;br /&gt;
+&lt;span style=&quot;color:#444444;font-family:微软雅黑;font-size:14px;line-height:23px;background-color:#FFFFFF;&quot;&gt;6、《逻辑头脑力》&lt;/span&gt;&lt;br /&gt;
+&lt;span style=&quot;color:#444444;font-family:微软雅黑;font-size:14px;line-height:23px;background-color:#FFFFFF;&quot;&gt;7、《辩证思维方法论》&lt;/span&gt; 
+&lt;p&gt;
+	&lt;br /&gt;
+&lt;/p&gt;' WHERE `id` = 25 [ RunTime:0.0156s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000090s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000234s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022681s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022786s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000521s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000614s ]
+
+[ 2016-09-06T20:13:35+08:00 ] 220.179.147.52 /admin.php?m=Admin&c=course&a=index&id=25
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001291s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001821s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001926s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0027s ]
+NOTIC: [8] Undefined variable: where /var/www/virtual/xbkt/home/wwwroot/Application/Admin/Controller/CourseController.class.php 第 25 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `course` INNER JOIN branch b on b.id=course.branchId INNER JOIN grocery g on g.id=b.groId  LIMIT 1   [ RunTime:0.0015s ]
+NOTIC: [8] Undefined variable: where /var/www/virtual/xbkt/home/wwwroot/Application/Admin/Controller/CourseController.class.php 第 40 行.
+SQL: SELECT course.*,g.name as gname,b.braName,b.id bid,(select count(*) from course_order o left join course c on c.id = o.course_id where o.course_id = course.id) as order_count,ca.title FROM `course` INNER JOIN branch b on b.id=course.branchId INNER JOIN grocery g on g.id=b.groId left join course_order o on o.course_id = course.id left join category ca on ca.id = course.cate1  GROUP BY course.id ORDER BY course.id DESC LIMIT 0,6   [ RunTime:0.0277s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000241s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000388s ]
+NOTIC: [2] Division by zero /var/www/virtual/xbkt/home/wwwroot/Application/Runtime/Cache/Admin/0a118b67613e888354da043b45de67d3.php 第 164 行.
+NOTIC: [2] Division by zero /var/www/virtual/xbkt/home/wwwroot/Application/Runtime/Cache/Admin/0a118b67613e888354da043b45de67d3.php 第 164 行.
+NOTIC: [2] Division by zero /var/www/virtual/xbkt/home/wwwroot/Application/Runtime/Cache/Admin/0a118b67613e888354da043b45de67d3.php 第 164 行.
+NOTIC: [2] Division by zero /var/www/virtual/xbkt/home/wwwroot/Application/Runtime/Cache/Admin/0a118b67613e888354da043b45de67d3.php 第 164 行.
+NOTIC: [2] Division by zero /var/www/virtual/xbkt/home/wwwroot/Application/Runtime/Cache/Admin/0a118b67613e888354da043b45de67d3.php 第 164 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.046809s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046927s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000865s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000996s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002910s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003065s ]
+
+[ 2016-09-06T20:13:44+08:00 ] 220.179.147.52 /admin.php?m=Admin&c=course&a=update&id=24
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001457s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001856s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001978s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0028s ]
+SQL: SELECT course.*,category.*,g.name as gname,b.braName,b.id bid FROM `course` INNER JOIN branch b on b.id=course.branchId INNER JOIN grocery g on g.id=b.groId left join category on category.id = course.cate2  WHERE course.id = '24' LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `category` WHERE ( pid=0 and type=1 )  [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `grocery` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `grocery`  [ RunTime:0.0013s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000216s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000788s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.045288s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.045434s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000799s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000889s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001954s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002052s ]
+
+[ 2016-09-06T20:13:51+08:00 ] 220.179.147.52 /admin.php?m=Admin&c=course&a=update
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001301s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001765s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001871s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0029s ]
+SQL: SELECT course.*,category.*,g.name as gname,b.braName,b.id bid FROM `course` INNER JOIN branch b on b.id=course.branchId INNER JOIN grocery g on g.id=b.groId left join category on category.id = course.cate2  WHERE course.id = '24' LIMIT 1   [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `category` WHERE ( pid=0 and type=1 )  [ RunTime:0.0012s ]
+SQL: UPDATE `course` SET `name`='测试课程0630',`extension`='1',`extensionImg`='/Public/uploads/admin/course/20160630/5774a6dd7311b_stamp.jpg',`price`='0',`cate1`='15',`cate2`='17',`age`='12 - 18',`detail`='&lt;p&gt;
+	&lt;img src=&quot;/Public/article/image/20160630/20160630125746_20977.jpg&quot; alt=&quot;&quot; /&gt; 
+&lt;/p&gt;
+&lt;p&gt;
+	&lt;span style=&quot;color:#333333;font-family:&quot; font-size:14px;font-weight:bold;line-height:14px;background-color:#ffffff;&quot;=&quot;&quot;&gt;课程详情(请输入课程详情，包括标点符号不超过500个字)&lt;/span&gt; 
+&lt;/p&gt;' WHERE `id` = 24 [ RunTime:0.0019s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000110s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000214s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023594s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023694s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000568s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000660s ]
+
+[ 2016-09-06T20:13:52+08:00 ] 220.179.147.52 /admin.php?m=Admin&c=course&a=index&id=24
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001651s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002404s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002537s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0027s ]
+NOTIC: [8] Undefined variable: where /var/www/virtual/xbkt/home/wwwroot/Application/Admin/Controller/CourseController.class.php 第 25 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `course` INNER JOIN branch b on b.id=course.branchId INNER JOIN grocery g on g.id=b.groId  LIMIT 1   [ RunTime:0.0014s ]
+NOTIC: [8] Undefined variable: where /var/www/virtual/xbkt/home/wwwroot/Application/Admin/Controller/CourseController.class.php 第 40 行.
+SQL: SELECT course.*,g.name as gname,b.braName,b.id bid,(select count(*) from course_order o left join course c on c.id = o.course_id where o.course_id = course.id) as order_count,ca.title FROM `course` INNER JOIN branch b on b.id=course.branchId INNER JOIN grocery g on g.id=b.groId left join course_order o on o.course_id = course.id left join category ca on ca.id = course.cate1  GROUP BY course.id ORDER BY course.id DESC LIMIT 0,6   [ RunTime:0.0278s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000200s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000307s ]
+NOTIC: [2] Division by zero /var/www/virtual/xbkt/home/wwwroot/Application/Runtime/Cache/Admin/0a118b67613e888354da043b45de67d3.php 第 164 行.
+NOTIC: [2] Division by zero /var/www/virtual/xbkt/home/wwwroot/Application/Runtime/Cache/Admin/0a118b67613e888354da043b45de67d3.php 第 164 行.
+NOTIC: [2] Division by zero /var/www/virtual/xbkt/home/wwwroot/Application/Runtime/Cache/Admin/0a118b67613e888354da043b45de67d3.php 第 164 行.
+NOTIC: [2] Division by zero /var/www/virtual/xbkt/home/wwwroot/Application/Runtime/Cache/Admin/0a118b67613e888354da043b45de67d3.php 第 164 行.
+NOTIC: [2] Division by zero /var/www/virtual/xbkt/home/wwwroot/Application/Runtime/Cache/Admin/0a118b67613e888354da043b45de67d3.php 第 164 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.047685s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.047798s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000679s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000768s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002211s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002308s ]
+
+[ 2016-09-06T20:13:57+08:00 ] 220.179.147.52 /admin.php?m=Admin&c=course&a=update&id=22
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001271s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001744s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001845s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0027s ]
+SQL: SELECT course.*,category.*,g.name as gname,b.braName,b.id bid FROM `course` INNER JOIN branch b on b.id=course.branchId INNER JOIN grocery g on g.id=b.groId left join category on category.id = course.cate2  WHERE course.id = '22' LIMIT 1   [ RunTime:0.0032s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0028s ]
+SQL: SELECT * FROM `category` WHERE ( pid=0 and type=1 )  [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `grocery` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `grocery`  [ RunTime:0.0030s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000207s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000306s ]
+NOTIC: [2] Division by zero /var/www/virtual/xbkt/home/wwwroot/Application/Runtime/Cache/Admin/cb2f467cbaf8f35452290d8202b91cd1.php 第 141 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030764s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030861s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000534s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000621s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001878s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001973s ]
+
+[ 2016-09-06T20:14:02+08:00 ] 220.179.147.52 /admin.php?m=Admin&c=course&a=update&id=21
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001493s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001800s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001905s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0040s ]
+SQL: SELECT course.*,category.*,g.name as gname,b.braName,b.id bid FROM `course` INNER JOIN branch b on b.id=course.branchId INNER JOIN grocery g on g.id=b.groId left join category on category.id = course.cate2  WHERE course.id = '21' LIMIT 1   [ RunTime:0.0023s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `category` WHERE ( pid=0 and type=1 )  [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `grocery` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `grocery`  [ RunTime:0.0019s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000367s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000547s ]
+NOTIC: [2] Division by zero /var/www/virtual/xbkt/home/wwwroot/Application/Runtime/Cache/Admin/cb2f467cbaf8f35452290d8202b91cd1.php 第 141 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.052681s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.052843s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000914s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001054s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003073s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003243s ]
+
+[ 2016-09-06T20:14:08+08:00 ] 220.179.147.52 /admin.php?m=Admin&c=Course&a=index&m=Admin&id=24&p=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000058s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001467s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002569s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002692s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0031s ]
+NOTIC: [8] Undefined variable: where /var/www/virtual/xbkt/home/wwwroot/Application/Admin/Controller/CourseController.class.php 第 25 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `course` INNER JOIN branch b on b.id=course.branchId INNER JOIN grocery g on g.id=b.groId  LIMIT 1   [ RunTime:0.0009s ]
+NOTIC: [8] Undefined variable: where /var/www/virtual/xbkt/home/wwwroot/Application/Admin/Controller/CourseController.class.php 第 40 行.
+SQL: SELECT course.*,g.name as gname,b.braName,b.id bid,(select count(*) from course_order o left join course c on c.id = o.course_id where o.course_id = course.id) as order_count,ca.title FROM `course` INNER JOIN branch b on b.id=course.branchId INNER JOIN grocery g on g.id=b.groId left join course_order o on o.course_id = course.id left join category ca on ca.id = course.cate1  GROUP BY course.id ORDER BY course.id DESC LIMIT 6,6   [ RunTime:0.0372s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000192s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000482s ]
+NOTIC: [2] Division by zero /var/www/virtual/xbkt/home/wwwroot/Application/Runtime/Cache/Admin/0a118b67613e888354da043b45de67d3.php 第 164 行.
+NOTIC: [2] Division by zero /var/www/virtual/xbkt/home/wwwroot/Application/Runtime/Cache/Admin/0a118b67613e888354da043b45de67d3.php 第 164 行.
+NOTIC: [2] Division by zero /var/www/virtual/xbkt/home/wwwroot/Application/Runtime/Cache/Admin/0a118b67613e888354da043b45de67d3.php 第 164 行.
+NOTIC: [2] Division by zero /var/www/virtual/xbkt/home/wwwroot/Application/Runtime/Cache/Admin/0a118b67613e888354da043b45de67d3.php 第 164 行.
+NOTIC: [2] Division by zero /var/www/virtual/xbkt/home/wwwroot/Application/Runtime/Cache/Admin/0a118b67613e888354da043b45de67d3.php 第 164 行.
+NOTIC: [2] Division by zero /var/www/virtual/xbkt/home/wwwroot/Application/Runtime/Cache/Admin/0a118b67613e888354da043b45de67d3.php 第 164 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.044095s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.044213s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000526s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000604s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001802s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001887s ]
+
+[ 2016-09-06T20:14:18+08:00 ] 220.179.147.52 /admin.php?m=Admin&c=course&a=update&id=7
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000688s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000848s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000900s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0025s ]
+SQL: SELECT course.*,category.*,g.name as gname,b.braName,b.id bid FROM `course` INNER JOIN branch b on b.id=course.branchId INNER JOIN grocery g on g.id=b.groId left join category on category.id = course.cate2  WHERE course.id = '7' LIMIT 1   [ RunTime:0.0022s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0051s ]
+SQL: SELECT * FROM `category` WHERE ( pid=0 and type=1 )  [ RunTime:0.0138s ]
+SQL: SHOW COLUMNS FROM `grocery` [ RunTime:0.0184s ]
+SQL: SELECT * FROM `grocery`  [ RunTime:0.0018s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000124s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000196s ]
+NOTIC: [2] Division by zero /var/www/virtual/xbkt/home/wwwroot/Application/Runtime/Cache/Admin/cb2f467cbaf8f35452290d8202b91cd1.php 第 141 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027231s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027284s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000674s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000726s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001440s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001496s ]
+
+[ 2016-09-06T20:14:22+08:00 ] 220.179.147.52 /admin.php?m=Admin&c=course&a=update&id=9
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000049s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001376s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001909s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002013s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0028s ]
+SQL: SELECT course.*,category.*,g.name as gname,b.braName,b.id bid FROM `course` INNER JOIN branch b on b.id=course.branchId INNER JOIN grocery g on g.id=b.groId left join category on category.id = course.cate2  WHERE course.id = '9' LIMIT 1   [ RunTime:0.0026s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0028s ]
+SQL: SELECT * FROM `category` WHERE ( pid=0 and type=1 )  [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `grocery` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `grocery`  [ RunTime:0.0012s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000220s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000319s ]
+NOTIC: [2] Division by zero /var/www/virtual/xbkt/home/wwwroot/Application/Runtime/Cache/Admin/cb2f467cbaf8f35452290d8202b91cd1.php 第 141 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.035481s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035578s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000678s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000770s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002103s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002400s ]
+
+[ 2016-09-06T20:14:30+08:00 ] 220.179.147.52 /admin.php?m=Admin&c=course&a=update
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001347s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001877s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002002s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0025s ]
+SQL: SELECT course.*,category.*,g.name as gname,b.braName,b.id bid FROM `course` INNER JOIN branch b on b.id=course.branchId INNER JOIN grocery g on g.id=b.groId left join category on category.id = course.cate2  WHERE course.id = '9' LIMIT 1   [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `category` WHERE ( pid=0 and type=1 )  [ RunTime:0.0012s ]
+SQL: UPDATE `course` SET `name`='php从入门到精通',`extension`='0',`price`='0',`cate1`='18',`cate2`='20',`age`='3 - 12',`detail`='16537979713' WHERE `id` = 9 [ RunTime:0.0023s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000090s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000186s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020396s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020493s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000630s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000715s ]
+
+[ 2016-09-06T20:14:31+08:00 ] 220.179.147.52 /admin.php?m=Admin&c=course&a=index&id=9
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001309s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001824s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001951s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0029s ]
+NOTIC: [8] Undefined variable: where /var/www/virtual/xbkt/home/wwwroot/Application/Admin/Controller/CourseController.class.php 第 25 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `course` INNER JOIN branch b on b.id=course.branchId INNER JOIN grocery g on g.id=b.groId  LIMIT 1   [ RunTime:0.0014s ]
+NOTIC: [8] Undefined variable: where /var/www/virtual/xbkt/home/wwwroot/Application/Admin/Controller/CourseController.class.php 第 40 行.
+SQL: SELECT course.*,g.name as gname,b.braName,b.id bid,(select count(*) from course_order o left join course c on c.id = o.course_id where o.course_id = course.id) as order_count,ca.title FROM `course` INNER JOIN branch b on b.id=course.branchId INNER JOIN grocery g on g.id=b.groId left join course_order o on o.course_id = course.id left join category ca on ca.id = course.cate1  GROUP BY course.id ORDER BY course.id DESC LIMIT 0,6   [ RunTime:0.0307s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000382s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000505s ]
+NOTIC: [2] Division by zero /var/www/virtual/xbkt/home/wwwroot/Application/Runtime/Cache/Admin/0a118b67613e888354da043b45de67d3.php 第 164 行.
+NOTIC: [2] Division by zero /var/www/virtual/xbkt/home/wwwroot/Application/Runtime/Cache/Admin/0a118b67613e888354da043b45de67d3.php 第 164 行.
+NOTIC: [2] Division by zero /var/www/virtual/xbkt/home/wwwroot/Application/Runtime/Cache/Admin/0a118b67613e888354da043b45de67d3.php 第 164 行.
+NOTIC: [2] Division by zero /var/www/virtual/xbkt/home/wwwroot/Application/Runtime/Cache/Admin/0a118b67613e888354da043b45de67d3.php 第 164 行.
+NOTIC: [2] Division by zero /var/www/virtual/xbkt/home/wwwroot/Application/Runtime/Cache/Admin/0a118b67613e888354da043b45de67d3.php 第 164 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.042300s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.042428s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000573s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000838s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003119s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003218s ]
+
+[ 2016-09-06T20:14:45+08:00 ] 220.179.147.52 /admin.php?m=Admin&c=course&a=update&id=20
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000071s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001407s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001784s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001888s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0028s ]
+SQL: SELECT course.*,category.*,g.name as gname,b.braName,b.id bid FROM `course` INNER JOIN branch b on b.id=course.branchId INNER JOIN grocery g on g.id=b.groId left join category on category.id = course.cate2  WHERE course.id = '20' LIMIT 1   [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `category` WHERE ( pid=0 and type=1 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `grocery` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `grocery`  [ RunTime:0.0163s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000254s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000367s ]
+NOTIC: [2] Division by zero /var/www/virtual/xbkt/home/wwwroot/Application/Runtime/Cache/Admin/cb2f467cbaf8f35452290d8202b91cd1.php 第 141 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.035406s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035509s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000761s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000868s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002150s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002249s ]
+
+[ 2016-09-06T20:14:51+08:00 ] 220.179.147.52 /admin.php?m=Admin&c=course&a=update
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001297s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001943s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002132s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0027s ]
+SQL: SELECT course.*,category.*,g.name as gname,b.braName,b.id bid FROM `course` INNER JOIN branch b on b.id=course.branchId INNER JOIN grocery g on g.id=b.groId left join category on category.id = course.cate2  WHERE course.id = '20' LIMIT 1   [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `category` WHERE ( pid=0 and type=1 )  [ RunTime:0.0013s ]
+SQL: UPDATE `course` SET `name`='动物世界',`extension`='0',`price`='0',`cate1`='15',`cate2`='17',`age`='3 - 12',`detail`='' WHERE `id` = 20 [ RunTime:0.0017s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000092s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000202s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021167s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021267s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000515s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000598s ]
+
+[ 2016-09-06T20:14:53+08:00 ] 220.179.147.52 /admin.php?m=Admin&c=course&a=index&id=20
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001079s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001412s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001502s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0028s ]
+NOTIC: [8] Undefined variable: where /var/www/virtual/xbkt/home/wwwroot/Application/Admin/Controller/CourseController.class.php 第 25 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `course` INNER JOIN branch b on b.id=course.branchId INNER JOIN grocery g on g.id=b.groId  LIMIT 1   [ RunTime:0.0021s ]
+NOTIC: [8] Undefined variable: where /var/www/virtual/xbkt/home/wwwroot/Application/Admin/Controller/CourseController.class.php 第 40 行.
+SQL: SELECT course.*,g.name as gname,b.braName,b.id bid,(select count(*) from course_order o left join course c on c.id = o.course_id where o.course_id = course.id) as order_count,ca.title FROM `course` INNER JOIN branch b on b.id=course.branchId INNER JOIN grocery g on g.id=b.groId left join course_order o on o.course_id = course.id left join category ca on ca.id = course.cate1  GROUP BY course.id ORDER BY course.id DESC LIMIT 0,6   [ RunTime:0.0294s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000251s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000404s ]
+NOTIC: [2] Division by zero /var/www/virtual/xbkt/home/wwwroot/Application/Runtime/Cache/Admin/0a118b67613e888354da043b45de67d3.php 第 164 行.
+NOTIC: [2] Division by zero /var/www/virtual/xbkt/home/wwwroot/Application/Runtime/Cache/Admin/0a118b67613e888354da043b45de67d3.php 第 164 行.
+NOTIC: [2] Division by zero /var/www/virtual/xbkt/home/wwwroot/Application/Runtime/Cache/Admin/0a118b67613e888354da043b45de67d3.php 第 164 行.
+NOTIC: [2] Division by zero /var/www/virtual/xbkt/home/wwwroot/Application/Runtime/Cache/Admin/0a118b67613e888354da043b45de67d3.php 第 164 行.
+NOTIC: [2] Division by zero /var/www/virtual/xbkt/home/wwwroot/Application/Runtime/Cache/Admin/0a118b67613e888354da043b45de67d3.php 第 164 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.034508s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.034612s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000518s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000593s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001720s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001819s ]
+
+[ 2016-09-06T20:14:59+08:00 ] 220.179.147.52 /admin.php?m=Admin&c=Course&a=index&m=Admin&id=20&p=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000049s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001585s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001944s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002078s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0041s ]
+NOTIC: [8] Undefined variable: where /var/www/virtual/xbkt/home/wwwroot/Application/Admin/Controller/CourseController.class.php 第 25 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `course` INNER JOIN branch b on b.id=course.branchId INNER JOIN grocery g on g.id=b.groId  LIMIT 1   [ RunTime:0.0008s ]
+NOTIC: [8] Undefined variable: where /var/www/virtual/xbkt/home/wwwroot/Application/Admin/Controller/CourseController.class.php 第 40 行.
+SQL: SELECT course.*,g.name as gname,b.braName,b.id bid,(select count(*) from course_order o left join course c on c.id = o.course_id where o.course_id = course.id) as order_count,ca.title FROM `course` INNER JOIN branch b on b.id=course.branchId INNER JOIN grocery g on g.id=b.groId left join course_order o on o.course_id = course.id left join category ca on ca.id = course.cate1  GROUP BY course.id ORDER BY course.id DESC LIMIT 6,6   [ RunTime:0.0253s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000187s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000291s ]
+NOTIC: [2] Division by zero /var/www/virtual/xbkt/home/wwwroot/Application/Runtime/Cache/Admin/0a118b67613e888354da043b45de67d3.php 第 164 行.
+NOTIC: [2] Division by zero /var/www/virtual/xbkt/home/wwwroot/Application/Runtime/Cache/Admin/0a118b67613e888354da043b45de67d3.php 第 164 行.
+NOTIC: [2] Division by zero /var/www/virtual/xbkt/home/wwwroot/Application/Runtime/Cache/Admin/0a118b67613e888354da043b45de67d3.php 第 164 行.
+NOTIC: [2] Division by zero /var/www/virtual/xbkt/home/wwwroot/Application/Runtime/Cache/Admin/0a118b67613e888354da043b45de67d3.php 第 164 行.
+NOTIC: [2] Division by zero /var/www/virtual/xbkt/home/wwwroot/Application/Runtime/Cache/Admin/0a118b67613e888354da043b45de67d3.php 第 164 行.
+NOTIC: [2] Division by zero /var/www/virtual/xbkt/home/wwwroot/Application/Runtime/Cache/Admin/0a118b67613e888354da043b45de67d3.php 第 164 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.044893s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.044986s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000671s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000757s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002160s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002258s ]
+
+[ 2016-09-06T20:15:02+08:00 ] 220.179.147.52 /admin.php?m=Admin&c=course&a=update&id=20
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000101s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001303s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001858s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001959s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0028s ]
+SQL: SELECT course.*,category.*,g.name as gname,b.braName,b.id bid FROM `course` INNER JOIN branch b on b.id=course.branchId INNER JOIN grocery g on g.id=b.groId left join category on category.id = course.cate2  WHERE course.id = '20' LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `category` WHERE ( pid=0 and type=1 )  [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `grocery` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `grocery`  [ RunTime:0.0015s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000366s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000468s ]
+NOTIC: [2] Division by zero /var/www/virtual/xbkt/home/wwwroot/Application/Runtime/Cache/Admin/cb2f467cbaf8f35452290d8202b91cd1.php 第 141 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.035888s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035984s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000574s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000797s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002145s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002247s ]
+
+[ 2016-09-06T20:15:07+08:00 ] 220.179.147.52 /admin.php?m=Admin&c=course&a=update&id=16
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001255s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001799s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001901s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0072s ]
+SQL: SELECT course.*,category.*,g.name as gname,b.braName,b.id bid FROM `course` INNER JOIN branch b on b.id=course.branchId INNER JOIN grocery g on g.id=b.groId left join category on category.id = course.cate2  WHERE course.id = '16' LIMIT 1   [ RunTime:0.0073s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0069s ]
+SQL: SELECT * FROM `category` WHERE ( pid=0 and type=1 )  [ RunTime:0.0052s ]
+SQL: SHOW COLUMNS FROM `grocery` [ RunTime:0.0065s ]
+SQL: SELECT * FROM `grocery`  [ RunTime:0.0055s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000336s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000450s ]
+NOTIC: [2] Division by zero /var/www/virtual/xbkt/home/wwwroot/Application/Runtime/Cache/Admin/cb2f467cbaf8f35452290d8202b91cd1.php 第 141 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.034893s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.034991s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000691s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000782s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002266s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002369s ]
+
+[ 2016-09-06T20:15:14+08:00 ] 220.179.147.52 /admin.php?m=Admin&c=course&a=update&id=14
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000055s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001172s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001542s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001705s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0029s ]
+SQL: SELECT course.*,category.*,g.name as gname,b.braName,b.id bid FROM `course` INNER JOIN branch b on b.id=course.branchId INNER JOIN grocery g on g.id=b.groId left join category on category.id = course.cate2  WHERE course.id = '14' LIMIT 1   [ RunTime:0.0031s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0023s ]
+SQL: SELECT * FROM `category` WHERE ( pid=0 and type=1 )  [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `grocery` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `grocery`  [ RunTime:0.0014s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000214s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000458s ]
+NOTIC: [2] Division by zero /var/www/virtual/xbkt/home/wwwroot/Application/Runtime/Cache/Admin/cb2f467cbaf8f35452290d8202b91cd1.php 第 141 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033241s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033332s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000643s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000722s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002067s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002275s ]
+
+[ 2016-09-06T20:15:19+08:00 ] 220.179.147.52 /admin.php?m=Admin&c=course&a=update&id=9
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001385s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002009s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002199s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0101s ]
+SQL: SELECT course.*,category.*,g.name as gname,b.braName,b.id bid FROM `course` INNER JOIN branch b on b.id=course.branchId INNER JOIN grocery g on g.id=b.groId left join category on category.id = course.cate2  WHERE course.id = '9' LIMIT 1   [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `category` WHERE ( pid=0 and type=1 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `grocery` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `grocery`  [ RunTime:0.0017s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000339s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000711s ]
+NOTIC: [2] Division by zero /var/www/virtual/xbkt/home/wwwroot/Application/Runtime/Cache/Admin/cb2f467cbaf8f35452290d8202b91cd1.php 第 141 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.044319s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.044636s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000772s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000900s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002998s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003136s ]
+
+[ 2016-09-06T20:15:23+08:00 ] 220.179.147.52 /admin.php?m=Admin&c=course&a=update&id=7
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001459s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001859s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001963s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0032s ]
+SQL: SELECT course.*,category.*,g.name as gname,b.braName,b.id bid FROM `course` INNER JOIN branch b on b.id=course.branchId INNER JOIN grocery g on g.id=b.groId left join category on category.id = course.cate2  WHERE course.id = '7' LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0023s ]
+SQL: SELECT * FROM `category` WHERE ( pid=0 and type=1 )  [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `grocery` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `grocery`  [ RunTime:0.0012s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000351s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000469s ]
+NOTIC: [2] Division by zero /var/www/virtual/xbkt/home/wwwroot/Application/Runtime/Cache/Admin/cb2f467cbaf8f35452290d8202b91cd1.php 第 141 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.041583s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.041719s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000737s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000837s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002116s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002281s ]
+
+[ 2016-09-06T20:15:28+08:00 ] 220.179.147.52 /admin.php?m=Admin&c=order&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000162s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001374s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001788s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001890s ]
+NOTIC: [8] Undefined index: type /var/www/virtual/xbkt/home/wwwroot/Application/Admin/Controller/OrderController.class.php 第 16 行.
+NOTIC: [8] Undefined index: type /var/www/virtual/xbkt/home/wwwroot/Application/Admin/Controller/OrderController.class.php 第 18 行.
+NOTIC: [8] Undefined index: type /var/www/virtual/xbkt/home/wwwroot/Application/Admin/Controller/OrderController.class.php 第 20 行.
+NOTIC: [8] Undefined index: key /var/www/virtual/xbkt/home/wwwroot/Application/Admin/Controller/OrderController.class.php 第 24 行.
+NOTIC: [8] Undefined index: start_time /var/www/virtual/xbkt/home/wwwroot/Application/Admin/Controller/OrderController.class.php 第 29 行.
+NOTIC: [8] Undefined index: end_time /var/www/virtual/xbkt/home/wwwroot/Application/Admin/Controller/OrderController.class.php 第 33 行.
+SQL: SHOW COLUMNS FROM `course_order` [ RunTime:0.0038s ]
+NOTIC: [8] Undefined variable: where /var/www/virtual/xbkt/home/wwwroot/Application/Admin/Controller/OrderController.class.php 第 44 行.
+SQL: SELECT COUNT(*) AS tp_count FROM course_order o INNER JOIN course c on c.id = o.course_id INNER JOIN member m on m.id = o.user_id INNER JOIN branch b on b.id = c.branchId INNER JOIN grocery g on g.id = b.groId left join course_praise p on p.order_id = o.id  ORDER BY o.id DESC LIMIT 1   [ RunTime:0.0052s ]
+NOTIC: [8] Undefined variable: where /var/www/virtual/xbkt/home/wwwroot/Application/Admin/Controller/OrderController.class.php 第 61 行.
+SQL: SELECT o.*,m.username,c.name,c.image,c.extension,c.extensionimg,c.price FROM course_order o INNER JOIN course c on c.id = o.course_id INNER JOIN member m on m.id = o.user_id INNER JOIN branch b on b.id = c.branchId INNER JOIN grocery g on g.id = b.groId left join course_praise p on p.order_id = o.id  ORDER BY o.id DESC LIMIT 0,6   [ RunTime:0.0094s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000193s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000310s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.038974s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.039086s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000700s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000791s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002273s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002388s ]
+
+[ 2016-09-06T20:15:35+08:00 ] 220.179.147.52 /admin.php?m=Admin&c=order&a=update&id=208
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001368s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001969s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002072s ]
+SQL: SHOW COLUMNS FROM `course_order` [ RunTime:0.0043s ]
+SQL: SELECT o.*,m.username as m_username,c.name,c.image,c.extension,c.extensionimg,c.price,p.point,p.comment,b.username,p.createtime FROM course_order o INNER JOIN course c on c.id = o.course_id INNER JOIN member m on m.id = o.user_id left join course_praise p on p.order_id = o.id left join branch_account b on b.id = o.receptionist  WHERE o.id = '208' LIMIT 1   [ RunTime:0.0022s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000232s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000342s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.037782s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037904s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000625s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000715s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002082s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002216s ]
+
+[ 2016-09-06T20:16:09+08:00 ] 220.179.147.52 /admin.php?m=Admin&c=Order&a=index&type=3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000054s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001363s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001844s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001949s ]
+NOTIC: [8] Undefined index: key /var/www/virtual/xbkt/home/wwwroot/Application/Admin/Controller/OrderController.class.php 第 24 行.
+NOTIC: [8] Undefined index: start_time /var/www/virtual/xbkt/home/wwwroot/Application/Admin/Controller/OrderController.class.php 第 29 行.
+NOTIC: [8] Undefined index: end_time /var/www/virtual/xbkt/home/wwwroot/Application/Admin/Controller/OrderController.class.php 第 33 行.
+SQL: SHOW COLUMNS FROM `course_order` [ RunTime:0.0029s ]
+SQL: SELECT COUNT(*) AS tp_count FROM course_order o INNER JOIN course c on c.id = o.course_id INNER JOIN member m on m.id = o.user_id INNER JOIN branch b on b.id = c.branchId INNER JOIN grocery g on g.id = b.groId left join course_praise p on p.order_id = o.id  WHERE o.status IN ('-1','0') ORDER BY o.id DESC LIMIT 1   [ RunTime:0.0026s ]
+SQL: SELECT o.*,m.username,c.name,c.image,c.extension,c.extensionimg,c.price FROM course_order o INNER JOIN course c on c.id = o.course_id INNER JOIN member m on m.id = o.user_id INNER JOIN branch b on b.id = c.branchId INNER JOIN grocery g on g.id = b.groId left join course_praise p on p.order_id = o.id  WHERE o.status IN ('-1','0') ORDER BY o.id DESC LIMIT 0,6   [ RunTime:0.0038s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000250s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000364s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.034712s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.034814s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000651s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000741s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001970s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002068s ]
+
+[ 2016-09-06T20:16:16+08:00 ] 220.179.147.52 /admin.php?m=Admin&c=links&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001293s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001742s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001860s ]
+SQL: SHOW COLUMNS FROM `links` [ RunTime:0.0029s ]
+NOTIC: [8] Undefined variable: where /var/www/virtual/xbkt/home/wwwroot/Application/Admin/Controller/LinksController.class.php 第 24 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `links` LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: where /var/www/virtual/xbkt/home/wwwroot/Application/Admin/Controller/LinksController.class.php 第 27 行.
+SQL: SELECT * FROM `links` LIMIT 0,15   [ RunTime:0.0013s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000296s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000441s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.037462s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037613s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000667s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000760s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002808s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002931s ]
+
+[ 2016-09-06T20:16:23+08:00 ] 220.179.147.52 /admin.php?m=Admin&c=member&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000063s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001301s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001761s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001875s ]
+SQL: SHOW COLUMNS FROM `member` [ RunTime:0.0029s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `member` WHERE `id` <> 1 AND `status` = 1 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT * FROM `member` WHERE `id` <> 1 AND `status` = 1 ORDER BY id DESC LIMIT 0,15   [ RunTime:0.0019s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000167s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000283s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.042351s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.042457s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000653s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000753s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002134s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002252s ]
+
+[ 2016-09-06T20:16:24+08:00 ] 220.179.147.52 /admin.php?m=Admin&c=member&a=groceryMember
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001361s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001825s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001928s ]
+SQL: SHOW COLUMNS FROM `grocery` [ RunTime:0.0023s ]
+NOTIC: [8] Undefined index: status /var/www/virtual/xbkt/home/wwwroot/Application/Admin/Controller/MemberController.class.php 第 51 行.
+NOTIC: [8] Undefined variable: where /var/www/virtual/xbkt/home/wwwroot/Application/Admin/Controller/MemberController.class.php 第 54 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `grocery` LIMIT 1   [ RunTime:0.0009s ]
+NOTIC: [8] Undefined variable: where /var/www/virtual/xbkt/home/wwwroot/Application/Admin/Controller/MemberController.class.php 第 57 行.
+SQL: SELECT * FROM `grocery` ORDER BY id DESC LIMIT 0,5   [ RunTime:0.0011s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000430s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000597s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033283s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033530s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000550s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000639s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002183s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002282s ]
+

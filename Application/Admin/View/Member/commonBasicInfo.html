@@ -1,0 +1,31 @@
+<include file="Public/header" title="普通会员基本信息" css="__STATIC__/css/member.css"/>
+<div id="page-wrapper">
+	<div class="row">
+		<div class="col-md-2 block">普通会员基本信息</div>
+	</div>
+	<div class="row">
+		<div class="col-md-2 block">会员头像</div><div class="col-md-2"><img src="{$member_info.headprotrait}" alt="" /></div>
+	</div>
+	<div class="row">
+		<div class="col-md-2 block">会员编号&会员类型</div><div class="col-md-2 block">{$member_info.numbering}</div><div class="col-md-2 block">普通会员</div>
+	</div>
+	<div class="row">
+		<div class="col-md-2 block">会员昵称</div>
+		<div class="col-md-2 block">{$member_info.username}</div>
+		<div class="col-md-2 block"><if condition="$member_info.sex eq 1">男<else />女</if></div>
+	</div>
+	<div class="row">
+		<div class="col-md-2 block">会员角色</div>
+		<div class="col-md-2 block"><switch name="member_info.type"><case value="1">学生</case><case value="2">家长</case><case value="3">管理员</case></switch></div>
+	</div>
+	<div class="row">
+		<div class="col-md-2 block">正在学习</div>
+		<div class="col-md-2 block">{$member_info.school}</div>
+	</div>
+	<div class="row">
+		<div class="col-md-2 block">邀请码</div>
+		<div class="col-md-2"><img src="{$member_info.qrcode}" alt="" style="width:100%;"/></div>
+		<div class="col-md-2 block">General Customer{$member_info.invitecode}</div>
+	</div>
+</div>
+<include file="Public/footer" />

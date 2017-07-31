@@ -1,0 +1,27 @@
+.block{
+	background:#98d261;
+	height:40px;
+	line-height:40px;
+	text-align:center;
+	margin:0 10px 0 0;
+}
+.row{
+	margin:0 0 10px 0;
+}
+/*.row input[type="text"]{
+	width:100%;
+	
+}*/
+#list{
+	border-collapse:separate;
+  	border-spacing:10px 10px;
+	margin-left:-10px;
+	
+}
+#list td,#list th{
+	background:#98d261;
+	height:40px;
+	line-height:40px;
+	text-align:center;
+	padding:10px 30px;
+}

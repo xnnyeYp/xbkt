@@ -1,0 +1,143 @@
+body,div,a,ul,li,p,dl,dt,dd,input{
+	margin: 0;
+	padding: 0;
+}
+a{
+	text-decoration: none;
+}
+
+body{
+	font-family: '微软雅黑';
+	font-size:0.2rem;
+	letter-spacing:1px;
+}
+ul{
+	list-style-type:none;
+}
+#pay_for_head{
+	height:0.75rem;
+	width:100%;
+	line-height:0.75rem;
+	text-align:center;
+	color:#fff;
+	font-size:0.25rem;
+	background:#98d261;
+}
+#pay_for_head img{
+	display:block;
+	height:0.39rem;
+	width:0.30rem;
+	margin:0.18rem 0 0 0.18rem;
+	float:left;
+}
+#pay_for_main{
+	height:10.6rem;
+	width:100%;
+}
+#pay_for_main dl{
+	height:5.4rem;
+	width:100%;
+}
+#pay_for_main dl dt{
+	height:0.77rem;
+	line-height:0.77rem;
+	/*text-indent:5%;*/
+	width:100%;
+}
+#pay_for_main dl .order_date,#pay_for_main dl .order_number{
+	height:0.77rem;
+	line-height:0.77rem;
+	/**/
+	width:50%;
+	font-size:0.18rem;
+	float:left;
+}
+#pay_for_main .order_date,.order_number{
+	text-align:center;
+}
+#pay_for_main dl .order_title{
+	color:#494949;
+	font-weight:bold;
+	font-size:0.25rem;
+	text-indent:5%;
+	letter-spacing:1px;
+}
+#pay_for_main dl .order_detail{
+	text-indent:0px;
+	height:0.35rem;
+	line-height:0.35rem;
+	width:90%;
+	letter-spacing:1px;
+	margin-left:5%;
+	color:#aaa;
+}
+#pay_for_main dl dd img{
+	height:3.67rem;
+	width:100%;
+}
+#pay_for_main ul{
+	border-top:1px solid #e6e6e6;
+}
+#pay_for_main ul li{
+	height:0.77rem;
+	line-height:0.77rem;
+	text-indent:5%;
+	color:#6a6a6a;
+}
+#pay_for_main .order_place{
+	padding:0.17rem 0;
+}
+#pay_for_main .order_place li{
+	height:0.45rem;
+	line-height:0.45rem;
+}
+
+
+#pay_for_main textarea{
+	height:1.45rem;
+	width:100%;
+	border:none;
+	font-size:0.2rem;
+	text-indent:0.34rem;
+	padding-top:0.17rem;
+	color:#cfcfcf;
+	border-top:1px solid #e6e6e6;
+	border-bottom:1px solid #e6e6e6;
+	margin-top:0.17rem;
+}
+#pay_for_main .price{
+	height:0.51rem;
+	line-height:0.51rem;
+	text-align:right;
+	margin-right:0.34rem;
+	color:#6a6a6a;
+	letter-spacing:0px;
+}
+#pay_for_main .price .now{
+	font-size:0.25rem;
+	color:#f3570c;
+}
+#pay_for_main .price .past{
+	color:#cdd4dc;
+	margin-left:0.17rem;
+	text-decoration:line-through;
+}
+#pay_for_main .remind{
+	height:0.5rem;
+	margin:0.68rem 0 0.17rem 0.34rem;
+}
+#pay_for_main .submit{
+	height:0.51rem;
+	width:90%;
+	background:#98d261;
+	border:none;
+	border-radius:5px;
+	margin-left:5%;
+	color:#fff;
+	letter-spacing:4px;
+}
+#appointment_time{
+	width: 90px;
+	border: 1px solid ;
+	border-color: rgb(169, 169, 169);
+}

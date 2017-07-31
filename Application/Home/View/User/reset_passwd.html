@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta  content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" name="viewport">
+<title>重置密码</title>
+<link href='/Public/home/css/reset_pass.css' type="text/css" rel='stylesheet' />
+
+<script src="/Public/home/js/jquery.js" type="text/javascript"></script>
+<script src="/Public/home/js/rem.js" type="text/javascript">
+	
+</script>
+<script type="text/javascript" src="/Public/home/js/reset_pass.js"></script>
+</head>
+<body>
+	<div id="reset_pass_head"><a href="javascript:history.back(-1)"><img src="/Public/home/images/return.jpg"/></a>重置密码</div>
+	<div id="reset_pass_main">
+		<form action="{:U('user/do_reset')}" method="post">
+			<input type="text" class="telephone"  placeholder="手机号" value="" />
+			<p class="telPs">请输入有效的手机号</p>
+			<div class="code"><input type="text" class="activeCode"  placeholder="动态码" /><a href="#" id='getCode'>获取动态码</a></div>
+			<p class="telPs1">动态码有误</p>
+			<input type="password" name="password" class="new_pass" placeholder="新密码"/>
+			<p class="telPs2">位数为6位以上且为数字、字母、或下划线</p>
+			<input type="password" class="re_pass" placeholder="确认密码"/>
+			<p class="telPs3">两次密码输入不符</p>
+			<input type="submit" class="submit" value="重置" disabled/>
+		</form>	
+	</div>
+</body>
+</html>

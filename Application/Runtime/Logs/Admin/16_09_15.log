@@ -1,0 +1,758 @@
+[ 2016-09-15T08:28:41+08:00 ] 111.193.217.47 /admin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001388s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002732s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002884s ]
+
+[ 2016-09-15T08:28:41+08:00 ] 111.193.217.47 /admin.php?m=Admin&c=Login&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000058s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001284s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001817s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001939s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000110s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000311s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031370s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031482s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000622s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000726s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001819s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001910s ]
+
+[ 2016-09-15T08:28:41+08:00 ] 111.193.217.47 /admin.php?m=Admin&c=login&a=verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001664s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002015s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002135s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002466s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002595s ]
+
+[ 2016-09-15T08:28:59+08:00 ] 111.193.217.47 /admin.php?m=Admin&c=login&a=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000060s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001252s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001718s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001823s ]
+SQL: SHOW COLUMNS FROM `member` [ RunTime:0.0034s ]
+SQL: SELECT * FROM `member` WHERE `username` = 'admin' AND `password` = '21232f297a57a5a743894a0e4a801fc3' LIMIT 1   [ RunTime:0.0017s ]
+SQL: UPDATE `member` SET `update_at`='1473899339',`login_ip`='111.193.217.47' WHERE `id` = 1 [ RunTime:0.0016s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000128s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000241s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031585s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031687s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000808s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000895s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002246s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002335s ]
+
+[ 2016-09-15T08:29:00+08:00 ] 111.193.217.47 /admin.php?m=Admin&c=Index&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001238s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001523s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001612s ]
+SQL: SHOW COLUMNS FROM `course_order` [ RunTime:0.0030s ]
+SQL: SELECT count(*) as count,o.status FROM course_order o INNER JOIN course c on c.id = o.course_id INNER JOIN member m on m.id = o.user_id INNER JOIN branch b on b.id = c.branchId INNER JOIN grocery g on g.id = b.groId  GROUP BY o.status  [ RunTime:0.0018s ]
+NOTIC: [8] Undefined offset: 3 /var/www/virtual/xbkt/home/wwwroot/Application/Admin/Controller/IndexController.class.php 第 24 行.
+NOTIC: [8] Undefined offset: 5 /var/www/virtual/xbkt/home/wwwroot/Application/Admin/Controller/IndexController.class.php 第 24 行.
+NOTIC: [8] Undefined offset: -1 /var/www/virtual/xbkt/home/wwwroot/Application/Admin/Controller/IndexController.class.php 第 29 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000145s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000249s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.044758s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.044869s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000480s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000559s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001689s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001784s ]
+
+[ 2016-09-15T08:29:19+08:00 ] 111.193.217.47 /admin.php?m=Admin&c=course&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000071s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001176s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001498s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001587s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0028s ]
+NOTIC: [8] Undefined variable: where /var/www/virtual/xbkt/home/wwwroot/Application/Admin/Controller/CourseController.class.php 第 25 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `course` INNER JOIN branch b on b.id=course.branchId INNER JOIN grocery g on g.id=b.groId  LIMIT 1   [ RunTime:0.0016s ]
+NOTIC: [8] Undefined variable: where /var/www/virtual/xbkt/home/wwwroot/Application/Admin/Controller/CourseController.class.php 第 40 行.
+SQL: SELECT course.*,g.name as gname,b.braName,b.id bid,(select count(*) from course_order o left join course c on c.id = o.course_id where o.course_id = course.id) as order_count,ca.title FROM `course` INNER JOIN branch b on b.id=course.branchId INNER JOIN grocery g on g.id=b.groId left join course_order o on o.course_id = course.id left join category ca on ca.id = course.cate1  GROUP BY course.id ORDER BY course.id DESC LIMIT 0,6   [ RunTime:0.2109s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000254s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000418s ]
+NOTIC: [2] Division by zero /var/www/virtual/xbkt/home/wwwroot/Application/Runtime/Cache/Admin/0a118b67613e888354da043b45de67d3.php 第 164 行.
+NOTIC: [2] Division by zero /var/www/virtual/xbkt/home/wwwroot/Application/Runtime/Cache/Admin/0a118b67613e888354da043b45de67d3.php 第 164 行.
+NOTIC: [2] Division by zero /var/www/virtual/xbkt/home/wwwroot/Application/Runtime/Cache/Admin/0a118b67613e888354da043b45de67d3.php 第 164 行.
+NOTIC: [2] Division by zero /var/www/virtual/xbkt/home/wwwroot/Application/Runtime/Cache/Admin/0a118b67613e888354da043b45de67d3.php 第 164 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.050530s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.050637s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000620s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000707s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002079s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002203s ]
+
+[ 2016-09-15T08:29:20+08:00 ] 111.193.217.47 /admin.php?m=Admin&c=course&a=add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000053s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001359s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001806s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001910s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `category` WHERE ( pid=0 and type=1 )  [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `grocery` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `grocery`  [ RunTime:0.0016s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000240s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000389s ]
+NOTIC: [8] Undefined variable: course /var/www/virtual/xbkt/home/wwwroot/Application/Runtime/Cache/Admin/0dea500d8016f3030ea0e396ac2d3a59.php 第 166 行.
+NOTIC: [8] Undefined variable: course /var/www/virtual/xbkt/home/wwwroot/Application/Runtime/Cache/Admin/0dea500d8016f3030ea0e396ac2d3a59.php 第 167 行.
+NOTIC: [8] Undefined variable: course /var/www/virtual/xbkt/home/wwwroot/Application/Runtime/Cache/Admin/0dea500d8016f3030ea0e396ac2d3a59.php 第 176 行.
+NOTIC: [8] Undefined variable: course /var/www/virtual/xbkt/home/wwwroot/Application/Runtime/Cache/Admin/0dea500d8016f3030ea0e396ac2d3a59.php 第 177 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.044555s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.044888s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000708s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000821s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002352s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002475s ]
+
+[ 2016-09-15T08:30:06+08:00 ] 111.193.217.47 /admin.php?m=Admin&c=order&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001348s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001783s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001886s ]
+NOTIC: [8] Undefined index: type /var/www/virtual/xbkt/home/wwwroot/Application/Admin/Controller/OrderController.class.php 第 16 行.
+NOTIC: [8] Undefined index: type /var/www/virtual/xbkt/home/wwwroot/Application/Admin/Controller/OrderController.class.php 第 18 行.
+NOTIC: [8] Undefined index: type /var/www/virtual/xbkt/home/wwwroot/Application/Admin/Controller/OrderController.class.php 第 20 行.
+NOTIC: [8] Undefined index: key /var/www/virtual/xbkt/home/wwwroot/Application/Admin/Controller/OrderController.class.php 第 24 行.
+NOTIC: [8] Undefined index: start_time /var/www/virtual/xbkt/home/wwwroot/Application/Admin/Controller/OrderController.class.php 第 29 行.
+NOTIC: [8] Undefined index: end_time /var/www/virtual/xbkt/home/wwwroot/Application/Admin/Controller/OrderController.class.php 第 33 行.
+SQL: SHOW COLUMNS FROM `course_order` [ RunTime:0.0032s ]
+NOTIC: [8] Undefined variable: where /var/www/virtual/xbkt/home/wwwroot/Application/Admin/Controller/OrderController.class.php 第 44 行.
+SQL: SELECT COUNT(*) AS tp_count FROM course_order o INNER JOIN course c on c.id = o.course_id INNER JOIN member m on m.id = o.user_id INNER JOIN branch b on b.id = c.branchId INNER JOIN grocery g on g.id = b.groId left join course_praise p on p.order_id = o.id  ORDER BY o.id DESC LIMIT 1   [ RunTime:0.0179s ]
+NOTIC: [8] Undefined variable: where /var/www/virtual/xbkt/home/wwwroot/Application/Admin/Controller/OrderController.class.php 第 61 行.
+SQL: SELECT o.*,m.username,c.name,c.image,c.extension,c.extensionimg,c.price FROM course_order o INNER JOIN course c on c.id = o.course_id INNER JOIN member m on m.id = o.user_id INNER JOIN branch b on b.id = c.branchId INNER JOIN grocery g on g.id = b.groId left join course_praise p on p.order_id = o.id  ORDER BY o.id DESC LIMIT 0,6   [ RunTime:0.0032s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000207s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000341s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.068686s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.069039s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000883s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001025s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002912s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003059s ]
+
+[ 2016-09-15T08:30:15+08:00 ] 111.193.217.47 /admin.php?m=Admin&c=Order&a=index&type=3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001386s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001764s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001869s ]
+NOTIC: [8] Undefined index: key /var/www/virtual/xbkt/home/wwwroot/Application/Admin/Controller/OrderController.class.php 第 24 行.
+NOTIC: [8] Undefined index: start_time /var/www/virtual/xbkt/home/wwwroot/Application/Admin/Controller/OrderController.class.php 第 29 行.
+NOTIC: [8] Undefined index: end_time /var/www/virtual/xbkt/home/wwwroot/Application/Admin/Controller/OrderController.class.php 第 33 行.
+SQL: SHOW COLUMNS FROM `course_order` [ RunTime:0.0028s ]
+SQL: SELECT COUNT(*) AS tp_count FROM course_order o INNER JOIN course c on c.id = o.course_id INNER JOIN member m on m.id = o.user_id INNER JOIN branch b on b.id = c.branchId INNER JOIN grocery g on g.id = b.groId left join course_praise p on p.order_id = o.id  WHERE o.status IN ('-1','0') ORDER BY o.id DESC LIMIT 1   [ RunTime:0.0022s ]
+SQL: SELECT o.*,m.username,c.name,c.image,c.extension,c.extensionimg,c.price FROM course_order o INNER JOIN course c on c.id = o.course_id INNER JOIN member m on m.id = o.user_id INNER JOIN branch b on b.id = c.branchId INNER JOIN grocery g on g.id = b.groId left join course_praise p on p.order_id = o.id  WHERE o.status IN ('-1','0') ORDER BY o.id DESC LIMIT 0,6   [ RunTime:0.0049s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000203s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000326s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.038614s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.038720s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000718s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000821s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002110s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002230s ]
+
+[ 2016-09-15T08:31:57+08:00 ] 111.193.217.47 /admin.php?m=Admin&c=Order&a=index&type=3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001249s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001686s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001789s ]
+NOTIC: [8] Undefined index: key /var/www/virtual/xbkt/home/wwwroot/Application/Admin/Controller/OrderController.class.php 第 24 行.
+NOTIC: [8] Undefined index: start_time /var/www/virtual/xbkt/home/wwwroot/Application/Admin/Controller/OrderController.class.php 第 29 行.
+NOTIC: [8] Undefined index: end_time /var/www/virtual/xbkt/home/wwwroot/Application/Admin/Controller/OrderController.class.php 第 33 行.
+SQL: SHOW COLUMNS FROM `course_order` [ RunTime:0.0027s ]
+SQL: SELECT COUNT(*) AS tp_count FROM course_order o INNER JOIN course c on c.id = o.course_id INNER JOIN member m on m.id = o.user_id INNER JOIN branch b on b.id = c.branchId INNER JOIN grocery g on g.id = b.groId left join course_praise p on p.order_id = o.id  WHERE o.status IN ('-1','0') ORDER BY o.id DESC LIMIT 1   [ RunTime:0.0018s ]
+SQL: SELECT o.*,m.username,c.name,c.image,c.extension,c.extensionimg,c.price FROM course_order o INNER JOIN course c on c.id = o.course_id INNER JOIN member m on m.id = o.user_id INNER JOIN branch b on b.id = c.branchId INNER JOIN grocery g on g.id = b.groId left join course_praise p on p.order_id = o.id  WHERE o.status IN ('-1','0') ORDER BY o.id DESC LIMIT 0,6   [ RunTime:0.0037s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000190s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000432s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.038639s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.038740s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000780s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000866s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002477s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002573s ]
+
+[ 2016-09-15T08:31:59+08:00 ] 111.193.217.47 /admin.php?m=Admin&c=Order&a=index&type=3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001264s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001839s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001941s ]
+NOTIC: [8] Undefined index: key /var/www/virtual/xbkt/home/wwwroot/Application/Admin/Controller/OrderController.class.php 第 24 行.
+NOTIC: [8] Undefined index: start_time /var/www/virtual/xbkt/home/wwwroot/Application/Admin/Controller/OrderController.class.php 第 29 行.
+NOTIC: [8] Undefined index: end_time /var/www/virtual/xbkt/home/wwwroot/Application/Admin/Controller/OrderController.class.php 第 33 行.
+SQL: SHOW COLUMNS FROM `course_order` [ RunTime:0.0028s ]
+SQL: SELECT COUNT(*) AS tp_count FROM course_order o INNER JOIN course c on c.id = o.course_id INNER JOIN member m on m.id = o.user_id INNER JOIN branch b on b.id = c.branchId INNER JOIN grocery g on g.id = b.groId left join course_praise p on p.order_id = o.id  WHERE o.status IN ('-1','0') ORDER BY o.id DESC LIMIT 1   [ RunTime:0.0013s ]
+SQL: SELECT o.*,m.username,c.name,c.image,c.extension,c.extensionimg,c.price FROM course_order o INNER JOIN course c on c.id = o.course_id INNER JOIN member m on m.id = o.user_id INNER JOIN branch b on b.id = c.branchId INNER JOIN grocery g on g.id = b.groId left join course_praise p on p.order_id = o.id  WHERE o.status IN ('-1','0') ORDER BY o.id DESC LIMIT 0,6   [ RunTime:0.0015s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000335s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000532s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.045648s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.045760s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000677s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000766s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002124s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002220s ]
+
+[ 2016-09-15T08:32:01+08:00 ] 111.193.217.47 /admin.php?m=Admin&c=order&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001471s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002195s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002318s ]
+NOTIC: [8] Undefined index: type /var/www/virtual/xbkt/home/wwwroot/Application/Admin/Controller/OrderController.class.php 第 16 行.
+NOTIC: [8] Undefined index: type /var/www/virtual/xbkt/home/wwwroot/Application/Admin/Controller/OrderController.class.php 第 18 行.
+NOTIC: [8] Undefined index: type /var/www/virtual/xbkt/home/wwwroot/Application/Admin/Controller/OrderController.class.php 第 20 行.
+NOTIC: [8] Undefined index: key /var/www/virtual/xbkt/home/wwwroot/Application/Admin/Controller/OrderController.class.php 第 24 行.
+NOTIC: [8] Undefined index: start_time /var/www/virtual/xbkt/home/wwwroot/Application/Admin/Controller/OrderController.class.php 第 29 行.
+NOTIC: [8] Undefined index: end_time /var/www/virtual/xbkt/home/wwwroot/Application/Admin/Controller/OrderController.class.php 第 33 行.
+SQL: SHOW COLUMNS FROM `course_order` [ RunTime:0.0033s ]
+NOTIC: [8] Undefined variable: where /var/www/virtual/xbkt/home/wwwroot/Application/Admin/Controller/OrderController.class.php 第 44 行.
+SQL: SELECT COUNT(*) AS tp_count FROM course_order o INNER JOIN course c on c.id = o.course_id INNER JOIN member m on m.id = o.user_id INNER JOIN branch b on b.id = c.branchId INNER JOIN grocery g on g.id = b.groId left join course_praise p on p.order_id = o.id  ORDER BY o.id DESC LIMIT 1   [ RunTime:0.0025s ]
+NOTIC: [8] Undefined variable: where /var/www/virtual/xbkt/home/wwwroot/Application/Admin/Controller/OrderController.class.php 第 61 行.
+SQL: SELECT o.*,m.username,c.name,c.image,c.extension,c.extensionimg,c.price FROM course_order o INNER JOIN course c on c.id = o.course_id INNER JOIN member m on m.id = o.user_id INNER JOIN branch b on b.id = c.branchId INNER JOIN grocery g on g.id = b.groId left join course_praise p on p.order_id = o.id  ORDER BY o.id DESC LIMIT 0,6   [ RunTime:0.0033s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000447s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000634s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.069655s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.069981s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001068s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001283s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003274s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003463s ]
+
+[ 2016-09-15T08:32:29+08:00 ] 111.193.217.47 /admin.php?m=Admin&c=order&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001347s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001725s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001894s ]
+NOTIC: [8] Undefined index: type /var/www/virtual/xbkt/home/wwwroot/Application/Admin/Controller/OrderController.class.php 第 16 行.
+NOTIC: [8] Undefined index: type /var/www/virtual/xbkt/home/wwwroot/Application/Admin/Controller/OrderController.class.php 第 18 行.
+NOTIC: [8] Undefined index: type /var/www/virtual/xbkt/home/wwwroot/Application/Admin/Controller/OrderController.class.php 第 20 行.
+NOTIC: [8] Undefined index: key /var/www/virtual/xbkt/home/wwwroot/Application/Admin/Controller/OrderController.class.php 第 24 行.
+NOTIC: [8] Undefined index: start_time /var/www/virtual/xbkt/home/wwwroot/Application/Admin/Controller/OrderController.class.php 第 29 行.
+NOTIC: [8] Undefined index: end_time /var/www/virtual/xbkt/home/wwwroot/Application/Admin/Controller/OrderController.class.php 第 33 行.
+SQL: SHOW COLUMNS FROM `course_order` [ RunTime:0.0027s ]
+NOTIC: [8] Undefined variable: where /var/www/virtual/xbkt/home/wwwroot/Application/Admin/Controller/OrderController.class.php 第 44 行.
+SQL: SELECT COUNT(*) AS tp_count FROM course_order o INNER JOIN course c on c.id = o.course_id INNER JOIN member m on m.id = o.user_id INNER JOIN branch b on b.id = c.branchId INNER JOIN grocery g on g.id = b.groId left join course_praise p on p.order_id = o.id  ORDER BY o.id DESC LIMIT 1   [ RunTime:0.0019s ]
+NOTIC: [8] Undefined variable: where /var/www/virtual/xbkt/home/wwwroot/Application/Admin/Controller/OrderController.class.php 第 61 行.
+SQL: SELECT o.*,m.username,c.name,c.image,c.extension,c.extensionimg,c.price FROM course_order o INNER JOIN course c on c.id = o.course_id INNER JOIN member m on m.id = o.user_id INNER JOIN branch b on b.id = c.branchId INNER JOIN grocery g on g.id = b.groId left join course_praise p on p.order_id = o.id  ORDER BY o.id DESC LIMIT 0,6   [ RunTime:0.0043s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000207s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000513s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.053220s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.053329s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000838s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000929s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002610s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002895s ]
+
+[ 2016-09-15T08:32:34+08:00 ] 111.193.217.47 /admin.php?m=Admin&c=Order&a=index&type=3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001291s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001804s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001907s ]
+NOTIC: [8] Undefined index: key /var/www/virtual/xbkt/home/wwwroot/Application/Admin/Controller/OrderController.class.php 第 24 行.
+NOTIC: [8] Undefined index: start_time /var/www/virtual/xbkt/home/wwwroot/Application/Admin/Controller/OrderController.class.php 第 29 行.
+NOTIC: [8] Undefined index: end_time /var/www/virtual/xbkt/home/wwwroot/Application/Admin/Controller/OrderController.class.php 第 33 行.
+SQL: SHOW COLUMNS FROM `course_order` [ RunTime:0.0026s ]
+SQL: SELECT COUNT(*) AS tp_count FROM course_order o INNER JOIN course c on c.id = o.course_id INNER JOIN member m on m.id = o.user_id INNER JOIN branch b on b.id = c.branchId INNER JOIN grocery g on g.id = b.groId left join course_praise p on p.order_id = o.id  WHERE o.status IN ('-1','0') ORDER BY o.id DESC LIMIT 1   [ RunTime:0.0018s ]
+SQL: SELECT o.*,m.username,c.name,c.image,c.extension,c.extensionimg,c.price FROM course_order o INNER JOIN course c on c.id = o.course_id INNER JOIN member m on m.id = o.user_id INNER JOIN branch b on b.id = c.branchId INNER JOIN grocery g on g.id = b.groId left join course_praise p on p.order_id = o.id  WHERE o.status IN ('-1','0') ORDER BY o.id DESC LIMIT 0,6   [ RunTime:0.0039s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000287s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000422s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.037183s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037287s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000767s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000855s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002067s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002173s ]
+
+[ 2016-09-15T08:35:00+08:00 ] 111.193.217.47 /admin.php?m=Admin&c=Order&a=index&type=3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001281s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001729s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001901s ]
+SQL: SHOW COLUMNS FROM `course_order` [ RunTime:0.0028s ]
+SQL: SELECT count(*) as count,o.status FROM course_order o INNER JOIN course c on c.id = o.course_id INNER JOIN member m on m.id = o.user_id INNER JOIN branch b on b.id = c.branchId INNER JOIN grocery g on g.id = b.groId  GROUP BY o.status  [ RunTime:0.0021s ]
+NOTIC: [8] Undefined offset: 3 /var/www/virtual/xbkt/home/wwwroot/Application/Admin/Controller/BaseController.class.php 第 28 行.
+NOTIC: [8] Undefined offset: 5 /var/www/virtual/xbkt/home/wwwroot/Application/Admin/Controller/BaseController.class.php 第 28 行.
+NOTIC: [8] Undefined offset: -1 /var/www/virtual/xbkt/home/wwwroot/Application/Admin/Controller/BaseController.class.php 第 33 行.
+NOTIC: [8] Undefined index: key /var/www/virtual/xbkt/home/wwwroot/Application/Admin/Controller/OrderController.class.php 第 24 行.
+NOTIC: [8] Undefined index: start_time /var/www/virtual/xbkt/home/wwwroot/Application/Admin/Controller/OrderController.class.php 第 29 行.
+NOTIC: [8] Undefined index: end_time /var/www/virtual/xbkt/home/wwwroot/Application/Admin/Controller/OrderController.class.php 第 33 行.
+SQL: SELECT COUNT(*) AS tp_count FROM course_order o INNER JOIN course c on c.id = o.course_id INNER JOIN member m on m.id = o.user_id INNER JOIN branch b on b.id = c.branchId INNER JOIN grocery g on g.id = b.groId left join course_praise p on p.order_id = o.id  WHERE o.status IN ('-1','0') ORDER BY o.id DESC LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT o.*,m.username,c.name,c.image,c.extension,c.extensionimg,c.price FROM course_order o INNER JOIN course c on c.id = o.course_id INNER JOIN member m on m.id = o.user_id INNER JOIN branch b on b.id = c.branchId INNER JOIN grocery g on g.id = b.groId left join course_praise p on p.order_id = o.id  WHERE o.status IN ('-1','0') ORDER BY o.id DESC LIMIT 0,6   [ RunTime:0.0019s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000193s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000307s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.034239s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.034341s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000617s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000707s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001947s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002044s ]
+
+[ 2016-09-15T08:35:01+08:00 ] 111.193.217.47 /admin.php?m=Admin&c=Order&a=index&type=3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001323s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001893s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001995s ]
+SQL: SHOW COLUMNS FROM `course_order` [ RunTime:0.0028s ]
+SQL: SELECT count(*) as count,o.status FROM course_order o INNER JOIN course c on c.id = o.course_id INNER JOIN member m on m.id = o.user_id INNER JOIN branch b on b.id = c.branchId INNER JOIN grocery g on g.id = b.groId  GROUP BY o.status  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 3 /var/www/virtual/xbkt/home/wwwroot/Application/Admin/Controller/BaseController.class.php 第 28 行.
+NOTIC: [8] Undefined offset: 5 /var/www/virtual/xbkt/home/wwwroot/Application/Admin/Controller/BaseController.class.php 第 28 行.
+NOTIC: [8] Undefined offset: -1 /var/www/virtual/xbkt/home/wwwroot/Application/Admin/Controller/BaseController.class.php 第 33 行.
+NOTIC: [8] Undefined index: key /var/www/virtual/xbkt/home/wwwroot/Application/Admin/Controller/OrderController.class.php 第 24 行.
+NOTIC: [8] Undefined index: start_time /var/www/virtual/xbkt/home/wwwroot/Application/Admin/Controller/OrderController.class.php 第 29 行.
+NOTIC: [8] Undefined index: end_time /var/www/virtual/xbkt/home/wwwroot/Application/Admin/Controller/OrderController.class.php 第 33 行.
+SQL: SELECT COUNT(*) AS tp_count FROM course_order o INNER JOIN course c on c.id = o.course_id INNER JOIN member m on m.id = o.user_id INNER JOIN branch b on b.id = c.branchId INNER JOIN grocery g on g.id = b.groId left join course_praise p on p.order_id = o.id  WHERE o.status IN ('-1','0') ORDER BY o.id DESC LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT o.*,m.username,c.name,c.image,c.extension,c.extensionimg,c.price FROM course_order o INNER JOIN course c on c.id = o.course_id INNER JOIN member m on m.id = o.user_id INNER JOIN branch b on b.id = c.branchId INNER JOIN grocery g on g.id = b.groId left join course_praise p on p.order_id = o.id  WHERE o.status IN ('-1','0') ORDER BY o.id DESC LIMIT 0,6   [ RunTime:0.0016s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000334s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000450s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.038554s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.038786s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000551s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000641s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002091s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002188s ]
+
+[ 2016-09-15T08:35:05+08:00 ] 111.193.217.47 /admin.php?m=Admin&c=member&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000055s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001538s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002353s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002521s ]
+SQL: SHOW COLUMNS FROM `course_order` [ RunTime:0.0029s ]
+SQL: SELECT count(*) as count,o.status FROM course_order o INNER JOIN course c on c.id = o.course_id INNER JOIN member m on m.id = o.user_id INNER JOIN branch b on b.id = c.branchId INNER JOIN grocery g on g.id = b.groId  GROUP BY o.status  [ RunTime:0.0012s ]
+NOTIC: [8] Undefined offset: 3 /var/www/virtual/xbkt/home/wwwroot/Application/Admin/Controller/BaseController.class.php 第 28 行.
+NOTIC: [8] Undefined offset: 5 /var/www/virtual/xbkt/home/wwwroot/Application/Admin/Controller/BaseController.class.php 第 28 行.
+NOTIC: [8] Undefined offset: -1 /var/www/virtual/xbkt/home/wwwroot/Application/Admin/Controller/BaseController.class.php 第 33 行.
+SQL: SHOW COLUMNS FROM `member` [ RunTime:0.0026s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `member` WHERE `id` <> 1 AND `status` = 1 LIMIT 1   [ RunTime:0.0012s ]
+SQL: SELECT * FROM `member` WHERE `id` <> 1 AND `status` = 1 ORDER BY id DESC LIMIT 0,15   [ RunTime:0.0021s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000165s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000268s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.035849s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035957s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000646s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000731s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002552s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002670s ]
+
+[ 2016-09-15T08:35:06+08:00 ] 111.193.217.47 /admin.php?m=Admin&c=index&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001370s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001689s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001794s ]
+SQL: SHOW COLUMNS FROM `course_order` [ RunTime:0.0036s ]
+SQL: SELECT count(*) as count,o.status FROM course_order o INNER JOIN course c on c.id = o.course_id INNER JOIN member m on m.id = o.user_id INNER JOIN branch b on b.id = c.branchId INNER JOIN grocery g on g.id = b.groId  GROUP BY o.status  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 3 /var/www/virtual/xbkt/home/wwwroot/Application/Admin/Controller/BaseController.class.php 第 28 行.
+NOTIC: [8] Undefined offset: 5 /var/www/virtual/xbkt/home/wwwroot/Application/Admin/Controller/BaseController.class.php 第 28 行.
+NOTIC: [8] Undefined offset: -1 /var/www/virtual/xbkt/home/wwwroot/Application/Admin/Controller/BaseController.class.php 第 33 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000260s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000381s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027150s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027271s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000577s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000666s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001937s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002036s ]
+
+[ 2016-09-15T08:36:49+08:00 ] 111.193.217.47 /admin.php?m=Admin&c=member&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000634s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000823s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000873s ]
+SQL: SHOW COLUMNS FROM `course_order` [ RunTime:0.0028s ]
+SQL: SELECT count(*) as count,o.status FROM course_order o INNER JOIN course c on c.id = o.course_id INNER JOIN member m on m.id = o.user_id INNER JOIN branch b on b.id = c.branchId INNER JOIN grocery g on g.id = b.groId  GROUP BY o.status  [ RunTime:0.0009s ]
+NOTIC: [8] Undefined offset: 3 /var/www/virtual/xbkt/home/wwwroot/Application/Admin/Controller/BaseController.class.php 第 28 行.
+NOTIC: [8] Undefined offset: 5 /var/www/virtual/xbkt/home/wwwroot/Application/Admin/Controller/BaseController.class.php 第 28 行.
+NOTIC: [8] Undefined offset: -1 /var/www/virtual/xbkt/home/wwwroot/Application/Admin/Controller/BaseController.class.php 第 33 行.
+SQL: SHOW COLUMNS FROM `member` [ RunTime:0.0025s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `member` WHERE `id` <> 1 AND `status` = 1 LIMIT 1   [ RunTime:0.0018s ]
+SQL: SELECT * FROM `member` WHERE `id` <> 1 AND `status` = 1 ORDER BY id DESC LIMIT 0,15   [ RunTime:0.0014s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000087s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000147s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023246s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023327s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000290s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000333s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000980s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001043s ]
+
+[ 2016-09-15T08:37:46+08:00 ] 111.193.217.47 /admin.php?m=Admin&c=member&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001469s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001862s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001964s ]
+SQL: SHOW COLUMNS FROM `course_order` [ RunTime:0.0030s ]
+SQL: SELECT count(*) as count,o.status FROM course_order o INNER JOIN course c on c.id = o.course_id INNER JOIN member m on m.id = o.user_id INNER JOIN branch b on b.id = c.branchId INNER JOIN grocery g on g.id = b.groId  GROUP BY o.status  [ RunTime:0.0007s ]
+NOTIC: [8] Undefined offset: 3 /var/www/virtual/xbkt/home/wwwroot/Application/Admin/Controller/BaseController.class.php 第 28 行.
+NOTIC: [8] Undefined offset: 5 /var/www/virtual/xbkt/home/wwwroot/Application/Admin/Controller/BaseController.class.php 第 28 行.
+NOTIC: [8] Undefined offset: -1 /var/www/virtual/xbkt/home/wwwroot/Application/Admin/Controller/BaseController.class.php 第 33 行.
+SQL: SHOW COLUMNS FROM `member` [ RunTime:0.0026s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `member` WHERE `id` <> 1 AND `status` = 1 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT * FROM `member` WHERE `id` <> 1 AND `status` = 1 ORDER BY id DESC LIMIT 0,15   [ RunTime:0.0014s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000179s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000295s ]
+NOTIC: [8] Undefined index: PHONE /var/www/virtual/xbkt/home/wwwroot/Application/Runtime/Cache/Admin/cd4483014f2e11fff8848d4b0b1995b7.php 第 162 行.
+NOTIC: [8] Undefined index: PHONE /var/www/virtual/xbkt/home/wwwroot/Application/Runtime/Cache/Admin/cd4483014f2e11fff8848d4b0b1995b7.php 第 162 行.
+NOTIC: [8] Undefined index: PHONE /var/www/virtual/xbkt/home/wwwroot/Application/Runtime/Cache/Admin/cd4483014f2e11fff8848d4b0b1995b7.php 第 162 行.
+NOTIC: [8] Undefined index: PHONE /var/www/virtual/xbkt/home/wwwroot/Application/Runtime/Cache/Admin/cd4483014f2e11fff8848d4b0b1995b7.php 第 162 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.032756s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032851s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000622s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000716s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002241s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002473s ]
+
+[ 2016-09-15T08:38:20+08:00 ] 111.193.217.47 /admin.php?m=Admin&c=member&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001428s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001882s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002054s ]
+SQL: SHOW COLUMNS FROM `course_order` [ RunTime:0.0029s ]
+SQL: SELECT count(*) as count,o.status FROM course_order o INNER JOIN course c on c.id = o.course_id INNER JOIN member m on m.id = o.user_id INNER JOIN branch b on b.id = c.branchId INNER JOIN grocery g on g.id = b.groId  GROUP BY o.status  [ RunTime:0.0012s ]
+NOTIC: [8] Undefined offset: 3 /var/www/virtual/xbkt/home/wwwroot/Application/Admin/Controller/BaseController.class.php 第 28 行.
+NOTIC: [8] Undefined offset: 5 /var/www/virtual/xbkt/home/wwwroot/Application/Admin/Controller/BaseController.class.php 第 28 行.
+NOTIC: [8] Undefined offset: -1 /var/www/virtual/xbkt/home/wwwroot/Application/Admin/Controller/BaseController.class.php 第 33 行.
+SQL: SHOW COLUMNS FROM `member` [ RunTime:0.0027s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `member` WHERE `id` <> 1 AND `status` = 1 LIMIT 1   [ RunTime:0.0013s ]
+SQL: SELECT * FROM `member` WHERE `id` <> 1 AND `status` = 1 ORDER BY id DESC LIMIT 0,15   [ RunTime:0.0013s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000132s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000283s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029241s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029332s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000491s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000591s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001513s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001588s ]
+
+[ 2016-09-15T08:43:31+08:00 ] 111.193.217.47 /admin.php?m=Admin&c=Login&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000063s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001383s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002268s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002416s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000108s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000222s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022723s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022851s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000549s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000673s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001970s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002102s ]
+
+[ 2016-09-15T08:43:31+08:00 ] 111.193.217.47 /admin.php?m=Admin&c=Index&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001615s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001941s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002048s ]
+
+[ 2016-09-15T08:43:32+08:00 ] 111.193.217.47 /admin.php?m=Admin&c=Login&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000055s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001576s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002112s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002342s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000110s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000226s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021930s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022045s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000737s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000822s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002226s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002455s ]
+
+[ 2016-09-15T08:43:32+08:00 ] 111.193.217.47 /admin.php?m=Admin&c=course&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000059s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001817s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002511s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002668s ]
+
+[ 2016-09-15T08:43:35+08:00 ] 111.193.217.47 /admin.php?m=Admin&c=Login&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000859s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000993s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001067s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000065s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000129s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011113s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011168s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000345s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000397s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001108s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001172s ]
+
+[ 2016-09-15T08:43:35+08:00 ] 111.193.217.47 /admin.php?m=Admin&c=course&a=add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000751s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001037s ]
+
+[ 2016-09-15T08:43:36+08:00 ] 111.193.217.47 /admin.php?m=Admin&c=Login&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001441s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002279s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002438s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000167s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000321s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025224s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025357s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000951s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001126s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002729s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002877s ]
+
+[ 2016-09-15T08:43:39+08:00 ] 111.193.217.47 /admin.php?m=Admin&c=order&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001290s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.010336s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.010438s ]
+
+[ 2016-09-15T08:43:39+08:00 ] 111.193.217.47 /admin.php?m=Admin&c=Login&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001293s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001805s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001909s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000202s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000339s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019299s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019447s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000530s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000627s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001963s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002133s ]
+
+[ 2016-09-15T08:43:39+08:00 ] 111.193.217.47 /admin.php?m=Admin&c=Order&a=index&type=3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000063s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001908s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002735s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002888s ]
+
+[ 2016-09-15T08:43:40+08:00 ] 111.193.217.47 /admin.php?m=Admin&c=Login&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000061s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002036s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005098s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005260s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000110s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000227s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022454s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022581s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000576s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000662s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002010s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002119s ]
+
+[ 2016-09-15T08:43:40+08:00 ] 111.193.217.47 /admin.php?m=Admin&c=index&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001379s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001943s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002083s ]
+
+[ 2016-09-15T08:43:40+08:00 ] 111.193.217.47 /admin.php?m=Admin&c=Login&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001034s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001397s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001485s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000092s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000185s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015514s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015596s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000450s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000523s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001640s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001735s ]
+
+[ 2016-09-15T08:43:41+08:00 ] 111.193.217.47 /admin.php?m=Admin&c=member&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001515s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001883s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002015s ]
+
+[ 2016-09-15T08:43:41+08:00 ] 111.193.217.47 /admin.php?m=Admin&c=Login&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000062s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001786s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002426s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002590s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000173s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000374s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027899s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028019s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000588s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000677s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001927s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002020s ]
+

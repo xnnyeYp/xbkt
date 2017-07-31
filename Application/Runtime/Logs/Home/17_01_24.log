@@ -1,0 +1,17 @@
+[ 2017-01-24T15:39:44+08:00 ]  
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.030002s ]
+NOTIC: [8] Undefined index: SERVER_NAME E:\wamp\www\ThinkAdmin\Application\Common\Conf\wechat.php 第 8 行.
+NOTIC: [8] Undefined index: SERVER_NAME E:\wamp\www\ThinkAdmin\Application\Common\Conf\alipay.php 第 38 行.
+NOTIC: [8] Undefined index: SERVER_NAME E:\wamp\www\ThinkAdmin\Application\Common\Conf\alipay.php 第 39 行.
+NOTIC: [8] Undefined index: SERVER_NAME E:\wamp\www\ThinkAdmin\Application\Common\Conf\alipay.php 第 49 行.
+NOTIC: [8] Undefined index: SERVER_NAME E:\wamp\www\ThinkAdmin\Application\Common\Conf\alipay.php 第 53 行.
+NOTIC: [8] Undefined index: SERVER_NAME E:\wamp\www\ThinkAdmin\Application\Common\Conf\alipay.php 第 66 行.
+NOTIC: [8] Undefined index: REQUEST_METHOD E:\wamp\www\ThinkAdmin\ThinkPHP\Library\Think\App.class.php 第 31 行.
+NOTIC: [8] Undefined index: REQUEST_URI E:\wamp\www\ThinkAdmin\ThinkPHP\Library\Think\Dispatcher.class.php 第 137 行.
+NOTIC: [8] Use of undefined constant _PHP_FILE_ - assumed '_PHP_FILE_' E:\wamp\www\ThinkAdmin\ThinkPHP\Library\Think\Dispatcher.class.php 第 184 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.016001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.016001s ]
+

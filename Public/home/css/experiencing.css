@@ -1,0 +1,121 @@
+body,div,a,ul,li,p,dl,dt,dd,input{
+	margin: 0;
+	padding: 0;
+}
+a{
+	text-decoration: none;
+}
+
+body{
+	font-family: '微软雅黑';
+	font-size:0.2rem;
+	letter-spacing:2px;
+}
+ul{
+	list-style-type:none;
+}
+#experiencing_head{
+	height:0.75rem;
+	width:100%;
+	line-height:0.75rem;
+	text-align:center;
+	color:#fff;
+	font-size:0.25rem;
+	background:#98d261;
+}
+#experiencing_head img{
+	display:block;
+	height:0.39rem;
+	width:0.30rem;
+	margin:0.18rem 0 0 0.18rem;
+	float:left;
+}
+#experiencing_main{
+	height:11.8rem;
+	width:100%;
+}
+#experiencing_main dl{
+	height:5.2rem;
+	width:100%;
+}
+#experiencing_main dl dt{
+	height:0.77rem;
+	line-height:0.77rem;
+	text-indent:5%;
+	width:100%;
+}
+#experiencing_main dl .order_date,#experiencing_main dl .order_number{
+	height:0.77rem;
+	line-height:0.77rem;
+	text-indent:5%;
+	width:50%;
+	font-size:0.18rem;
+	letter-spacing:1px;
+	float:left;
+}
+#experiencing_main dl .order_title{
+	color:#494949;
+	font-weight:bold;
+	font-size:0.25rem;
+	letter-spacing:1px;
+}
+#experiencing_main dl .order_detail{
+	text-indent:0px;
+	height:0.35rem;
+	line-height:0.35rem;
+	width:90%;
+	letter-spacing:1px;
+	margin-left:5%;
+	color:#aaa;
+}
+#experiencing_main dl dd img{
+	height:3.67rem;
+	width:100%;
+}
+#experiencing_main ul{
+	border-top:1px solid #e6e6e6;
+}
+#experiencing_main ul li{
+	height:0.77rem;
+	line-height:0.77rem;
+	text-indent:5%;
+	color:#6a6a6a;
+}
+#experiencing_main .experience_number{
+	border:none;
+}
+#experiencing_main .order_place{
+	padding:0.17rem 0;
+}
+#experiencing_main .order_place li{
+	height:0.45rem;
+	line-height:0.45rem;
+}
+#experiencing_main .price{
+	height:0.51rem;
+	line-height:0.51rem;
+	text-align:right;
+	margin-right:0.34rem;
+	color:#6a6a6a;
+	letter-spacing:0px;
+}
+#experiencing_main .price .now{
+	font-size:0.25rem;
+	color:#f3570c;
+}
+#experiencing_main .price .past{
+	color:#cdd4dc;
+	margin-left:0.17rem;
+	text-decoration:line-through;
+}
+#experiencing_main .submit{
+	height:0.51rem;
+	width:90%;
+	background:#98d261;
+	border:none;
+	border-radius:5px;
+	margin-left:5%;
+	color:#fff;
+	letter-spacing:4px;
+	margin-top:0.68rem;
+}

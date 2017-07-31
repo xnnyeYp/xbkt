@@ -1,0 +1,56 @@
+<include file="Public/header" title="安全设置" css="__STATIC__/css/member.css"/>
+<div id="page-wrapper">
+	<div class="row">
+		<div class="col-md-2 block">安全设置</div>
+	</div>
+	<table id="list">
+		<tr>
+			<th>序号</th>
+			<th>用户名</th>
+			<th>分校</th>
+			<th>角色</th>
+			<th>操作</th>
+		</tr>
+		<foreach name="branch_info" item="vo">
+		<tr>
+			<td>{$key+1}</td>
+			<td>{$vo.username}</td>
+			<td><if condition="$vo.type eq 1">总部<else/>分校</if></td>
+			<td><if condition="$vo.type eq 1">管理员<else/>普通</if></td>
+			<td><a href="{:U('branch/detail')}&id={$vo.id}">查看</a> <a href="{:U('branch/delete')}&id={$vo.id}" onclick="confirm('是否真的要删除？')">删除</a></td>
+		</tr>
+		</foreach>
+	</table>
+	<div class="row">
+		<div class="col-md-2 block"><a href="{:U('branch/add')}&groId={$vo.id}">创建</a></div>
+	</div>
+	<!--<div class="row">
+		<div class="col-md-2 block">编辑</div>
+		<div class="col-md-2 block">保存</div>
+	</div>
+	<div class="row">
+		<div class="col-md-2 block">会员昵称</div>
+		<div class="col-md-2 block">李建华</div>
+	</div>
+	<div class="row">
+		<div class="col-md-2 block">会员分校</div>
+		<div class="col-md-2 block"><span class="type_show">总部</span><div class="type_hidden"><input type="text" name=""/></div></div>
+	</div>
+	<div class="row">
+		<div class="col-md-2 block">微信号</div>
+		<div class="col-md-2 block">2132</div>
+	</div>
+	<div class="row">
+		<div class="col-md-2 block">会员手机</div>
+		<div class="col-md-2 block">18774682936</div>
+	</div>
+	<div class="row">
+		<div class="col-md-2 block">会员密码</div>
+		<div class="col-md-2 block">2132</div>
+	</div>
+	<div class="row">
+		<div class="col-md-2 block">会员角色</div>
+		<div class="col-md-2 block">2132</div>
+	</div>-->
+</div>
+<include file="Public/footer" />

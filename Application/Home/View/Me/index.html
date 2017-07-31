@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta  content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" name="viewport">
+<title>关于我</title>
+<link href='/Public/home/css/my_all.css' type="text/css" rel='stylesheet' />
+<script src="/Public/home/js/rem.js" type="text/javascript">
+	
+</script>
+</head>
+<body>
+	<div class="head">
+		<p class="title"><img src="/Public/home/images/title.gif" alt="title"></p>
+		<div id="my_infor">
+				<div class="my_all_bg"><img src="/Public/home/images/bj.jpg"></div>
+			<dl>
+				<dd class="my_header"><a href="#"><img src="{$user['headprotrait']}"></a></dd>
+				<dt class="name">{$user['username']}</dt>
+				<dt class="grade">积分：<span>{$user['point']}</span></dt>
+				<dt class="adit"><a href="{:U('me/edit',array('id'=>$user['id']))}">编辑资料</a></dt>
+			</dl>
+		</div>
+	</div>
+	<div id="my_all_main">
+		<a href="{:U('me/order_list')}"><p class="order"><img src="/Public/home/images/order.jpg"/><span>我的订单<font>({$order_count})</font></span><img src="/Public/home/images/spread.jpg" class="spread"/></p></a>
+		<a href="{:U('me/collect',array('id'=>$user['id']))}"><p class="colletion"><img src="/Public/home/images/colletion.jpg"/><span>我的收藏</span><img src="/Public/home/images/spread.jpg" class="spread"/></p></a>
+		<!--<a href="{:U('me/invitation',array('id'=>$user['id']))}"><p class="invitation"><img src="/Public/home/images/invitation.jpg"/><span>邀请二维码</span><img src="/Public/home/images/spread.jpg" class="spread"/></p></a>-->
+		<a href="{:U('user/reset_passwd')}"><p class="set"><img src="/Public/home/images/set.jpg"/><span>重置密码</span><img src="/Public/home/images/spread.jpg" class="spread"/></p></a>
+		<div style="text-align:center;margin-top:50px;"><div class="exit"><a href="{:U('user/logout')}">退出当前账号</a></div></div>
+	</div>
+	<div class="foot">
+		<ul>
+			<li><a href="{:U('choice/index')}"><img src="/Public/home/images/nav1.jpg" alt="#" /><p>精选</p></a></li>
+			<li><a href="{:U('course/index')}"><img src="/Public/home/images/nav2.jpg" alt="#" /><p>课程</p></a></li>
+			<li><a href="{:U('article/index')}"><img src="/Public/home/images/nav3.jpg" alt="#" /><p>文章</p></a></li>
+			<li><a href="#"><img src="/Public/home/images/nav4_2.jpg" alt="#" style="color:#98d261" /><p>我</p></a></li>
+		</ul>
+	</div>
+	
+</body>
+</html>

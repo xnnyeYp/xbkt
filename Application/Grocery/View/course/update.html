@@ -1,0 +1,111 @@
+<include file="Public/header" title="添加课程" css="__STATIC__/css/course.css" />
+<section class="rt_wrap content mCustomScrollbar">
+    <div id="page-wrapper">
+        <form method="post" action="{:U('course/update')}" enctype="multipart/form-data">
+            <input type="hidden" value="{$id}" name="id">
+            <div class="form-group">
+                <label for="aa">课程名称</label>
+                <input type="text" name="name" class="form-control" id="aa" placeholder="输入课程名称" value="{$course['name']}" readonly>
+            </div>
+            <div class="form-group">
+                <label>分校</label><br>
+                <select name="branchId" class="form-control" disabled >
+                    <foreach name="branchs" item="v">
+                        <option value="{$v['id']}">{$v['braname']}</option>
+                    </foreach>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>区域</label>
+                <input type="text" class="form-control" value="{$course['area']}" readonly>
+            </div>
+            <div class="form-group">
+                <label>商圈</label>
+                <input type="text" class="form-control" value="{$course['circle']}" readonly>
+            </div>
+            <div class="form-group">
+                <label for="bb">课程图片</label>
+                <div class="img">
+                    <if condition="$course['extension'] eq 1"><img src=".{$course['extensionimg']}">
+                        <else /><img src=".{$course['image']}" />
+                    </if>
+                </div>
+
+            </div>
+            <div class="form-group">
+                <label for="cc">课程价格</label>
+                <input type="text" name="price" class="form-control" id="cc" placeholder="输入课程价格,小数点后最多保留两位" value="{$course['price']}" readonly>
+            </div>
+            <div class="form-group">
+                <label for="dd">课程类别</label>
+                <p class="select1">
+                    <select id="select_1" name="cate1" onchange="loadCate(this.value)" disabled>
+                        <option>未选择</option>
+                        <foreach name="cate1" item="c">
+                            <option value="{$c['id']}" <?php if($c['id'] == $course['cate1']) {echo 'selected';} ?> >{$c['title']}</option>
+                        </foreach>
+                    </select>
+                    <select id="select_2" name="cate2" disabled readonly>
+                        <option value="{$course['cate2']}">{$course['title']}</option>
+                    </select>
+                    </php>
+            </div>
+          <!--  <div class="form-group">
+                <label for="ee">年龄</label><br>
+                <select id="ee" name="age" >
+                    <option value="3 - 12" <?php if($course['age'] == '3 - 12'){echo 'selected';}?> >3 - 12</option>
+                    <option value="12 - 18" <?php if($course['age'] == '12 - 18'){echo 'selected';}?> >12 - 18</option>
+                </select>
+            </div>-->
+            <div class="form-group">
+                <label for="dd">课程详情</label>
+                <div class="details" >{$course['detail']|htmlspecialchars_decode}</div>
+            </div>
+           <!-- <button type="submit" class="btn btn-default">保存</button>
+            <button type="button" class="btn btn-default" onclick="javascript:history.back(-1)">取消</button>-->
+        </form>
+
+    </div>
+</section>
+
+<include file="Public/footer" />
+<script>
+    function insertOption(x,text,value)
+    {
+        //console.log(x)
+        var y=document.createElement('option');
+        y.text= text;
+        y.value= value;
+        try
+        {
+            x.add(y,null); // standards compliant
+        }
+        catch(ex)
+        {
+            x.add(y); // IE only
+        }
+    }
+
+    function loadCate(pid) {
+        var obj = document.getElementById('select_2');
+
+        $.ajax({
+            type:'post',
+            traditional :true,
+            url:"{:U('Course/get_next_cate')}",
+            data:{'pid':pid},
+            success:function(data){
+                $(obj).children().each(function(i){
+                    if(this.value != -1){
+                        $(this).remove();
+                    }
+                });
+                for(var i=0; i<data.length; i++){
+                    insertOption(obj,data[i].title,data[i].id);
+                }
+            }
+        });
+    }
+
+
+</script>

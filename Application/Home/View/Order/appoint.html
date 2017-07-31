@@ -1,0 +1,47 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta  content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" 
+name="viewport">
+<title>下单成功</title>
+<link href='/Public/home/css/all.css' type="text/css" rel='stylesheet' />
+<link href='/Public/home/css/classDetails.css' type="text/css" rel='stylesheet' />
+<link href='/Public/home/css/orderDeta.css' type="text/css" rel='stylesheet' />
+<script src="/Public/home/js/rem.js" type="text/javascript"></script>
+<script src="/Public/home/js/jquery.js" type="text/javascript"></script>
+</head>
+<body>
+	<div class="head">
+		<p class="title"><a href="{:U('course/coursedeta',array('id'=>$course['id']))}" class="titleLeft"></a><span>下单成功</span></p>
+	</div>
+	<div class="content">
+		<p class="downOrder"><a>下单时间: {$order['create_time']|date="Y-m-d",###}<span></span></a><a>下单编号: <span>{$order['out_trade_no']}</span></a></p>
+		<dl class="detail1">
+			<dt><img src="{$course['image']}" ale="#" /></dt>
+			<dd>
+				<p class="text1">{$course['name']}</p>
+				<p class="text2">{$details_thum}...</p>
+			</dd>
+		</dl>
+		<div class="detail2 borderBottom">
+			<div class="left">
+				<div><font class="praise"><span>{$course['praise']}%</span>口碑</font><font class="rewardNum">打赏次数：<span>{$praise_count}</span></font></div>
+				<p class="numb">{$course['numbering']}</p>
+			</div>
+			<div class="right">
+				<if condition="$course['price'] eq 0"><p class="money"><span class="now">免费</span></p>
+					<else /><font><p class="money"><span class="now">￥{$course['price']}</span></p>
+				</if>
+
+				<p>{$course['area']}/{$course['circle']}</p>
+			</div>
+		</div>
+		<div class="yuyue">
+			<p>等待体验时间...</p>
+			<div>恭喜你已经下单成功，进入订单第二阶段。课程预约阶段，请等待教育机构安排课程体验时间，我们会用微信消息通知你，谢谢！</div>
+			<a class="cancelOrder" href="{:U('order/cancel',array('out_trade_no'=>$order['out_trade_no']))}">取消订单</a>
+		</div>
+	</div>
+</body>
+</html>

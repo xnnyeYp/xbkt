@@ -1,0 +1,193 @@
+.cate{
+    width:800px;
+    height:40px;
+    margin-left: 95px;
+}
+.cate p{
+    background: yellowgreen;
+    width:170px;
+    height:40px;
+    margin-left: 20px;
+    display: inline-block;
+    line-height: 40px;
+    text-align: center;
+    font-size: 20px;
+}
+.article{
+    text-align: center;
+    font-size: 18px;
+    line-height: 50px;
+    width:1120px;
+    height: 110px;
+    margin-left: 5px;
+    margin-top: 10px;
+}
+.left{
+    width: 390px;
+    height: 110px;
+    float: left;
+}
+.gro{
+    background: yellowgreen;
+    width: 190px;
+    height: 110px;
+    float: left;
+    line-height: 60px;
+}
+.middle{
+    width: 400px;
+    height: 110px;
+    display: inline-block;
+    margin-left: 10px;
+}
+.right{
+    width:310px;
+    height:110px;
+    margin-left: 10px;
+    float: right;
+}
+.right img{
+    width:190px;
+    height:110px;
+}
+.left1,.left2{
+    background: yellowgreen;
+    width: 190px;
+    height:50px;
+    float: right;
+}
+.left2{
+    margin-top: 10px;
+}
+.mid1{
+    background: yellowgreen;
+}
+.mid1,.mid5{
+    width: 400px;
+    height:50px;
+    display: block;
+}
+.mid5{
+    margin-top:10px;
+}
+.mid2,.mid3,.mid4{
+    background: yellowgreen;
+    width: 127px;
+    height:50px;
+}
+.mid2{
+    float: left;
+}
+.mid3{
+    display: inline-block;
+    margin-left: 10px;
+}
+.mid4{
+    float: right;
+}
+.option{
+    width:110px;
+    height: 110px;
+    margin-left: 10px;
+    float: right;
+}
+.update,.delete{
+    background: yellowgreen;
+    width:110px;
+    height:50px;
+}
+.delete{
+    margin-top: 10px;
+}
+.aimg{
+    width:190px;
+    height:110px;
+}
+.count{
+    background: yellowgreen;
+    font-size: 20px;
+    font-weight: bold;
+    width: 100px;
+    height:50px;
+    text-align: center;
+    line-height: 50px;
+    margin-left: 10px;
+}
+.c-user{
+    width: 100px;
+    height:135px;
+    margin-left: 10px;
+    margin-top: 10px;
+    display: inline-block;
+}
+.c-user img{
+    width: 100px;
+    height:100px;
+}
+.c-user p{
+    width: 100px;
+    height: 25px;
+    text-align: center;
+    font-size: 20px;
+    line-height: 25px;
+    margin-top: 10px;
+    background: yellowgreen;
+}
+.user-list{
+    width: 1700px;
+}
+.praise{
+    width: 800px;
+    height: 50px;
+    font-size: 18px;
+    line-height: 50px;
+}
+.head{
+    display: inline-block;
+    float: left;
+    background: yellowgreen;
+    width:150px;
+    height:50px;
+    font-size: 18px;
+    line-height: 50px;
+    text-align: center;
+}
+.p1{
+    background: yellowgreen;
+    display: inline-block;
+    width: 130px;
+    height: 50px;
+    margin-left: 10px;
+    text-align: center;
+}
+.p-list{
+   width: 800px;
+    margin-top: 10px;
+}
+.list{
+
+    width:650px;
+    float: right;
+}
+.list1{
+    width:600px;
+    height:50px;
+
+}
+.p2{
+    width:180px;
+    height:50px;
+    margin-left: 10px;
+    background: yellowgreen;
+    display: inline-block;
+    font-size: 18px;
+    line-height: 50px;
+    text-align: center;
+}
+.blank{
+    width:650px;
+    height:10px;
+}
+.page{
+    margin-left: 20px;
+}

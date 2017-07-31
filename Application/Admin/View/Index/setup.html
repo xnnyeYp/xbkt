@@ -1,0 +1,76 @@
+<include file="Public/header" title="帐号设置" />
+<section class="rt_wrap content mCustomScrollbar">
+    <div id="page-wrapper">
+        <form action="{:U('index/setup')}" method="post" id="form1">
+            <label for="a">原密码:</label><span class="errorTips old_password" style="display: none">原密码错误!</span>
+            <div class="input-group" >
+                <input type="password" class="form-control" id="a" name="old_password">
+                <div class="input-group-addon"> <span class="glyphicon glyphicon-eye-close " style="font-size: 19px;" ></span></div>
+
+            </div>
+
+            <label for="b">新密码:</label>
+            <div class="input-group" >
+                <input type="password" class="form-control" id="b" name="password">
+                <div class="input-group-addon"> <span class="glyphicon glyphicon-eye-close " style="font-size: 19px;" ></span></div>
+            </div>
+            <label for="c">确认密码:</label><span class="errorTips confirm_password" style="display: none">两次密码输入不一致！</span>
+            <div class="input-group" >
+                <input type="password" class="form-control" id="c" name="confirm_password">
+                <div class="input-group-addon"> <span class="glyphicon glyphicon-eye-close " style="font-size: 19px;" ></span></div>
+            </div>
+            <div class="form-group">
+                <button type="submit" class="btn btn-default" id="tijiao">提交</button>
+            </div>
+        </form>
+
+    </div>
+</section>
+<include file="Public/footer" />
+<script>
+    $(function () {
+
+        $('.glyphicon').click(function(){
+            if($(this).hasClass('glyphicon-eye-open')){
+                $(this).removeClass('glyphicon-eye-open');
+                $(this).addClass('glyphicon-eye-close');
+                $(this).parent().prev('input').attr('type','password');
+            }else{
+                $(this).removeClass('glyphicon-eye-close');
+                $(this).addClass('glyphicon-eye-open');
+                $(this).parent().prev('input').attr('type','text');
+            }
+        });
+
+        var on = 0;
+
+        $('[name=old_password]').blur(function () {
+            $.ajax({
+                url:"{:U('index/check_old_password')}",
+                type:'post',
+                data:{'old_password':$('[name=old_password]').val()},
+                success: function (data) {
+                    if(data == 1){
+                        on++;
+                    }else{
+                        $('.old_password').show();
+                    }
+                },
+                async:false
+            });
+        });
+
+        $('#form1').submit(function () {
+            if($('[name=password]').val() != $('[name=confirm_password]').val()){
+                $('.confirm_password').show();
+                $('[name=password]').val('');
+                $('[name=confirm_password]').val('');
+                $('[name=password]').focus();
+                return false;
+            }else if(on == 0){
+                return false;
+            }
+        });
+
+    });
+</script>

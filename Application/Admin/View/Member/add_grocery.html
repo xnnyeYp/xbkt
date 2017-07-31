@@ -1,0 +1,134 @@
+<include file="Public/header" title="编辑普通会员" />
+<section class="rt_wrap content mCustomScrollbar _mCS_2">
+    <div id="page-wrapper">
+
+        <form method="post" action="{:U('member/add_grocery',array('action'=>'do_add'))}" enctype="multipart/form-data" id="g_form">
+            <div class="form-group">
+                <label for="aa">商户名</label>
+                <input type="text" name="name" class="form-control" >
+            </div>
+            <div class="form-group">
+                <label>商户logo</label>
+                <input type="file" name="logo">
+            </div>
+            <div class="form-group">
+                <label for="aa">商户状态</label><br>
+                正常<input type="radio" name="status" value="1" checked>
+                冻结<input type="radio" name="status" value="0" >
+            </div>
+            <div class="form-group">
+                <h1>商户总部管理员信息</h1>
+            </div>
+            <div class="form-group">
+                <label for="aa">用户名</label>
+                <input type="text" name="username" class="form-control" id="aa" >
+            </div>
+
+            <div class="form-group">
+                <label>手机号码</label>
+                <input name="mphone" class="form-control" type="text">
+            </div>
+
+            <div class="form-group">
+                <label>密码</label>
+                <input name="password" class="form-control" type="password">
+            </div>
+            <div class="form-group">
+                <label>确认密码</label>
+                <input name="confirm_password" class="form-control" type="password">
+            </div>
+            <div class="form-group">
+                <input type="hidden" name="id" value="{$model.id}">
+                <button type="submit" class="btn btn-default" id="submit">保存</button>
+                <button type="button" onclick="javascript:history.back(-1)" class="btn btn-default">取消</button>
+            </div>
+        </form>
+    </div>
+</section>
+
+<include file="Public/footer" />
+<script>
+    $(function(){
+
+        $('#g_form').submit(function () {
+            var i = true;
+            $('input[type=text]').each(function(){
+                if(!check_input($(this)) && $(this).attr('name') != 'mphone'){
+                    console.debug($(this).attr('name'));
+                    i = false;
+                    return false;
+                }
+            });
+
+            if(i == false){
+                return false;
+            }
+
+            if($('[name=password]').val() == ''){
+                alert('请输入密码！');
+                $('[name=password]').focus();
+                return false;
+            }
+
+            if($('[name=password]').val() != $('[name=confirm_password]').val()){
+                alert('两次密码输入不一致！');
+                $('[name=password]').focus();
+                return false;
+            }
+            var url1 = "{:U('member/check_mobile')}";
+            $.ajax({
+                url:url1,
+                type:'post',
+                data:{
+                    'mphone':$('[name=mphone]').val()
+                },
+                success: function (data) {
+                    if(data > 1 || data == 1){
+                        alert('该手机号已绑定帐号！请更换！');
+                        i = false;
+                    }
+                },
+                async:false
+            });
+
+            var url2 = "{:U('member/check_groname')}";
+            $.ajax({
+                url:url2,
+                type:'post',
+                data:{
+                    'name':$('[name=name]').val()
+                },
+                success: function (data) {
+                    if(data > 1 || data == 1){
+                        alert('该商户名已存在！请更换！');
+                        i = false;
+                    }
+                },
+                async:false
+            });
+
+            var url3 = "{:U('member/check_username')}";
+            $.ajax({
+                url:url3,
+                type:'post',
+                data:{
+                    'username':$('[name=username]').val()
+                },
+                success: function (data) {
+                    if(data > 1 || data == 1){
+                        alert('该用户名已存在！请更换！');
+                        i = false;
+                    }
+                },
+                async:false
+            });
+
+            return i;
+        });
+        $('input[type=text]').each(function(){
+            $(this).change(function () {
+                $(this).css('border','1px solid #cccccc');
+            });
+        });
+    });
+</script>

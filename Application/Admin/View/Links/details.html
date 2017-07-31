@@ -1,0 +1,41 @@
+<include file="Public/header" title="链接详情" />
+<section class="rt_wrap content mCustomScrollbar">
+    <div id="page-wrapper">
+
+        <div class="row">
+            <div class="col-md-6">
+
+                <a href="{:U('links/adddeta',array('linkid'=>$linkid))}" class="btn btn-success">添加</a>
+            </div>
+            <div class="col-md-6">
+
+            </div>
+        </div>
+        <table class="table table-hover table-striped">
+            <thead>
+            <tr>
+                <th>编号</th>
+                <th>图片备注</th>
+                <!--<th>排序号</th>-->
+                <th>操作</th>
+            </tr>
+            </thead>
+            <tbody>
+            <?php $i = 0; ?>
+            <foreach name="deta" item="d">
+                <?php $i++; ?>
+                <tr>
+                    <td><?php echo $i; ?></td>
+                    <td>{$d.remarks}</td>
+                    <!--<td>{$d.sortnu}</td>-->
+                    <td><a href="{:U('links/updatedeta',array('id'=>$d['id'],'linkid'=>$d['linkid']))}{$v.id}">编辑</a> | <a href="{:U('links/deletedeta',array('id'=>$d['id'],'linkid'=>$d['linkid']))}" style="color:red;" onclick="javascript:return del('您真的确定要删除吗？\n\n删除后将不能恢复!');">删除</a></td>
+                </tr>
+            </foreach>
+            </tbody>
+        </table>
+        {$page}
+    </div>
+</section>
+
+
+<include file="Public/footer" />

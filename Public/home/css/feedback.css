@@ -1,0 +1,155 @@
+body,div,a,ul,li,p,dl,dt,dd,input{
+	margin: 0;
+	padding: 0;
+}
+a{
+	text-decoration: none;
+}
+
+body{
+	font-family: '微软雅黑';
+	font-size:0.2rem;
+	letter-spacing:2px;
+}
+ul{
+	list-style-type:none;
+}
+#feedback_head{
+	height:0.75rem;
+	width:100%;
+	line-height:0.75rem;
+	text-align:center;
+	color:#fff;
+	font-size:0.25rem;
+	background:#98d261;
+}
+#feedback_head img{
+	display:block;
+	height:0.39rem;
+	width:0.30rem;
+	margin:0.18rem 0 0 0.18rem;
+	float:left;
+}
+#feedback_main{
+	height:14.4rem;
+	width:100%;
+}
+#feedback_main dl{
+	height:6.2rem;
+	width:100%;
+}
+#feedback_main dl dt{
+	height:0.77rem;
+	line-height:0.77rem;
+	text-indent:5%;
+	width:100%;
+}
+#feedback_main dl .order_date,#feedback_main dl .order_number{
+	height:0.77rem;
+	line-height:0.77rem;
+	text-indent:5%;
+	width:50%;
+	font-size:0.18rem;
+	letter-spacing:1px;
+	float:left;
+}
+#feedback_main dl .order_title{
+	color:#494949;
+	font-weight:bold;
+	font-size:0.25rem;
+	letter-spacing:1px;
+}
+#feedback_main dl .order_detail{
+	text-indent:0px;
+	height:0.35rem;
+	line-height:0.35rem;
+	width:90%;
+	letter-spacing:1px;
+	margin-left:5%;
+	color:#aaa;
+}
+#feedback_main dl dd img{
+	height:3.67rem;
+	width:100%;
+}
+#feedback_main ul{
+	border-top:1px solid #e6e6e6;
+}
+#feedback_main ul li{
+	height:0.77rem;
+	line-height:0.77rem;
+	text-indent:5%;
+	color:#6a6a6a;
+}
+#feedback_main .order_place{
+	padding:0.17rem 0;
+}
+#feedback_main .order_place li{
+	height:0.45rem;
+	line-height:0.45rem;
+}
+#feedback_main ul li span{
+	color:#fb9d51;
+	letter-spacing:0px;
+}
+#feedback_main .money{
+	height:0.64rem;
+	line-height:0.64rem;
+	background:#f5f5f5;
+	width:90%;
+	margin-left:5%;
+	border-radius: 5px;
+	color:#6a6a6a;
+	border-left:1px solid #cdcdcd;
+	border-bottom:1px solid #cdcdcd;
+	text-indent:0.17rem;
+}
+#feedback_main .money input{
+ border:0px;
+ height:0.34rem;
+ background:#f5f5f5;
+ line-height:0.34rem;
+ float:right;
+ text-align:right;
+ margin-top:0.15rem;
+ color:#aaa;
+}
+#feedback_main textarea{
+	height:1.45rem;
+	width:100%;
+	border:none;
+	font-size:0.2rem;
+	text-indent:0.34rem;
+	padding-top:0.17rem;
+	color:#cfcfcf;
+	border-top:1px solid #e6e6e6;
+	margin-top:0.17rem;
+}
+#feedback_main .price{
+	height:0.51rem;
+	line-height:0.51rem;
+	text-align:right;
+	margin-right:0.34rem;
+	color:#6a6a6a;
+	letter-spacing:0px;
+}
+#feedback_main .price .now{
+	font-size:0.25rem;
+	color:#f3570c;
+}
+#feedback_main .price .past{
+	color:#cdd4dc;
+	margin-left:0.17rem;
+	text-decoration:line-through;
+}
+#feedback_main .submit{
+	height:0.51rem;
+	width:90%;
+	background:#98d261;
+	border:none;
+	border-radius:5px;
+	margin-left:5%;
+	color:#fff;
+	letter-spacing:4px;
+	margin-top:0.68rem;
+}

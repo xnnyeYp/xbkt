@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta  content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" name="viewport">
+<title>支付成功</title>
+<link href='/Public/home/css/pay_success.css' type="text/css" rel='stylesheet' />
+<script src="/Public/home/js/rem.js" type="text/javascript">
+	
+</script>
+</head>
+<body>
+	<div id="pay_suc_head"><a href="{:U('order/details',array('out_trade_no'=>$out_trade_no))}"><img src="/Public/home/images/return.jpg" class="return" /></a><img src="/Public/home/images/bcb2.jpg" class="bcb" /></div>
+	<div id="pay_suc_main">
+		<dl>
+			<dt>支付成功!</dt>
+			<dd><img src="/Public/home/images/success.jpg"/></dd>
+			<p>想了解具体辅导标准</p>
+			<p>请<a href="{:U('order/details',array('out_trade_no'=>$out_trade_no))}">预约体验>></a></p>
+		</dl>
+	</div>
+	<script>
+		var hwd;
+		var intSec = 3;//这里定义时间：秒
+		function reHandle()
+		{
+			if(intSec==0)
+				window.location.href = "{:U('order/details',array('out_trade_no'=>$out_trade_no))}";
+			else
+			{
+				intSec--;
+			}
+			hwd = setTimeout(reHandle,1000);
+		}
+		reHandle();
+	</script>
+</body>
+</html>

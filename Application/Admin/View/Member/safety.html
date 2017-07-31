@@ -1,0 +1,42 @@
+<include file="Public/header" title="商户安全设置" />
+<section class="rt_wrap content mCustomScrollbar">
+	<p class="btn btn-success">{$gro_name}</p>
+	<table class="table table-hover table-striped">
+		<thead>
+		<tr>
+			<th>序号</th>
+			<th>用户名</th>
+			<th>分校</th>
+			<th>角色</th>
+			<th>操作</th>
+		</tr>
+		</thead>
+		<tbody>
+			<?php $i = 0;?>
+			<foreach name="account" item="v">
+				<?php $i++;?>
+				<tr>
+					<td><?php echo $i;?></td>
+					<td>{$v['username']}</td>
+					<td>
+						<if condition="$v['type'] eq 1">总部
+							<else />{$v['braname']}
+						</if>
+					</td>
+					<td>
+						<if condition="$v['type'] eq 1">商户管理员
+						<elseif condition="$v['type'] eq 2" />普通
+						<else />分校管理员
+						</if>
+					</td>
+					<td>
+						<a href="{:U('member/update_account',array('id'=>$v['id'],'groId'=>$groId))}">查看</a>
+					</td>
+				</tr>
+			</foreach>
+		</tbody>
+	</table>
+</section>
+
+
+<include file="Public/footer" />

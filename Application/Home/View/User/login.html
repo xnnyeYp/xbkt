@@ -1,0 +1,73 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta  content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" name="viewport">
+<title>登录</title>
+<link href='/Public/home/css/login.css' type="text/css" rel='stylesheet' />
+<script src="/Public/home/js/rem.js" language="javascript" type="text/javascript"></script>
+<script src="/Public/home/js/jquery.js" language="javascript" type="text/javascript"></script>
+<script type="text/javascript">
+
+   $(function(){
+      $('input').eq(0).click(function(){
+            $(this).css('color','#111');
+            $('input').eq(1).css('borderColor','#e5e5e5');
+            $(this).css('borderColor','#44b336');
+      });
+       $('[name=password]').focus(function(){
+            $('input').eq(0).css('borderColor','#e5e5e5');
+            $(this).css('borderColor','#44b336');
+            $(this).css('color','#111');
+            $('input').eq(1).attr('type','password');
+      });	
+
+	   var error = {$error};
+	   if(error == 1){
+		   $('#pass_error_1').css('display','block');
+		   $('#screen').css('display','block');
+	   }else if(error == 2){
+		   $('#pass_error_2').css('display','block');
+		   $('#screen').css('display','block');
+	   }
+	   $('.confirm').click(function(){
+		   $('#pass_error_1').css('display','none');
+		   $('#pass_error_2').css('display','none');
+		   $('#screen').css('display','none');
+	   });
+
+   	});
+</script>
+</head>
+<body>
+<div id="screen"></div>
+	<div id="register">
+	<!--头部-->
+	<form action="{:U('user/login')}" method="post">
+		<p><span>登录</span><a href="{:U('user/registerf')}">注册 ></a></p>
+	<!--账号-->
+		<div style="text-align: center">
+		<input class="text" type="text" name="account" placeholder="手机号/用户名" value="{$mphone}" />
+	<!--密码-->
+		<input class="pass" type="text" name="password" placeholder="密码" />
+	<!--登录键-->
+		<input class="submit" type="submit" value="登录" />
+		</div>
+	</form>
+	<a href="{:U('user/reset_passwd')}" class="forget_pass">忘记密码？</a>
+	</div>
+
+	<div id="pass_error_1" class="pass_error">
+	<ul>
+			<li class="li1 ">用户名或密码不正确</li>
+			<li><a href="#" class="confirm">确认</a><a href="{:U('user/reset_passwd')}" class="find_pass">找回密码</a></li>
+	</ul>
+	</div>
+	<div id="pass_error_2" class="pass_error">
+		<ul>
+			<li class="li1">账户被冻结</li>
+			<li><a href="#" class="confirm" >确认</a></li>
+		</ul>
+	</div>
+</body>
+</html>

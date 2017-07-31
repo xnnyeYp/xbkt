@@ -1,25 +1,29 @@
 <include file="Public/header" title="更新用户" />
 <div id="page-wrapper">
 <form action="{:U('member/update')}" method="post">
+	<div class="from-group">
+		<label>用户头像</label>
+		<p><img src="{$model.mphone}"></p>
+	</div>
 	<div class="form-group">
 		<label>用户名</label>
 		<input class="form-control" type="text" name="username" value="{$model.username}">
 	</div>
 	<div class="form-group">
-		<label>邮箱</label>
-		<input class="form-control" type="text" name="email" value="{$model.email}">
+		<label>手机号</label>
+		<input class="form-control" type="text" name="mphone" value="{$model.mphone}">
 	</div>
 	<div class="form-group">
 		<label>新密码</label>
 		<input class="form-control" type="password" name="password" placeholder="不填写则不更改">
 	</div>
 	<div class="form-group">
-        <label>用户类型</label>
+        <label>用户角色</label>
         <label class="radio-inline">
-          <input type="radio" name="type" id="type" value="1" <if condition="$model.type eq 1">checked="checked"</if>>前台用户
+          <input type="radio" name="type" id="type" value="1" <if condition="$model.type eq 1">checked="checked"</if>>学生
         </label>
         <label class="radio-inline">
-          <input type="radio" name="type" id="type" value="2" <if condition="$model.type eq 2">checked="checked"</if>>管理员
+          <input type="radio" name="type" id="type" value="2" <if condition="$model.type eq 2">checked="checked"</if>>家长
         </label>
     </div>
 	<div class="form-group">

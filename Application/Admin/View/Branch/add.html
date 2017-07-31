@@ -1,0 +1,40 @@
+<include file="Public/header" title="安全设置" css="__STATIC__/css/member.css"/>
+<div id="page-wrapper">
+	<form action="{:U('branch/add')}" method="post">
+	<input type="hidden" name="groId" value="{$groId}"/>
+	<div class="row">
+		<div class="col-md-2 block">会员昵称</div>
+		<input class="col-md-2 block" name="username" type="text"/>
+	</div>
+	<div class="row">
+		<div class="col-md-2 block">会员分校</div>
+		<select class="col-md-2 block" name="type">
+			<option value="1">总部</option>
+			<option value="2">分校</option>
+		</select>
+	</div>
+	<div class="row">
+		<div class="col-md-2 block">微信号</div>
+		<input class="col-md-2 block" name="wechat" type="text"/>
+	</div>
+	<div class="row">
+		<div class="col-md-2 block">会员手机</div>
+		<input class="col-md-2 block" name="mphone" type="text"/>
+	</div>
+	<div class="row">
+		<div class="col-md-2 block">会员密码</div>
+		<input class="col-md-2 block" name="password" type="text"/>
+	</div>
+	<div class="row">
+		<div class="col-md-2 block">会员角色</div>
+		<select class="col-md-2 block" name="type">
+			<option value="1">管理员</option>
+			<option value="2">普通</option>
+		</select>
+	</div>
+	<div class="row">
+		<input class="col-md-2 block" type="submit" value="创建">
+	</div>
+	</form>
+</div>
+<include file="Public/footer" />

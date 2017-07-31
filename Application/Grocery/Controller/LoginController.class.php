@@ -10,7 +10,7 @@ class LoginController extends Controller {
     //登陆验证
     public function login(){
         if(!IS_POST)$this->error("非法请求");
-        $member = M('member');
+        $member = M('branch_account');
         $username =I('username');
         $password =I('password','','md5');
         $code = I('verify','','strtolower');
@@ -26,37 +26,37 @@ class LoginController extends Controller {
         }
         //验证账户是否被禁用
         if($user['status'] == 0){
-            $this->error('账号被禁用，请联系超级管理员 :(') ;
+            $this->error('账号被禁用，请联系商户管理员 :(') ;
         }
-        if($user['type'] == 1){
-            $this->error('您没权限登陆后台 :(') ;
+
+        //验证商户是否被冻结
+        $grocery = M('grocery')->where('id = '.$user['groid'])->find();
+        if($grocery['status'] == 0){
+            $this->error('商户被禁用，请联系超级管理员 :(') ;
         }
-        //验证是否为管理员
+
         //更新登陆信息
-        $data =array(
-            'id' => $user['id'],
-            'update_at' => time(),
-            'login_ip' => get_client_ip(),
-        );
-        
-        //如果数据更新成功  跳转到后台主页
-        if($member->save($data)){
-            session('adminId',$user['id']);
-            session('username',$user['username']);
-            $this->success("登陆成功",U('Index/index'));
-        }
+
+        session('branchId',$user['branchid']);
+        session('account_id',$user['id']);
+        session('branchname',$user['username']);
+        session('groid',$user['groid']);
+        session('account_type',$user['type']);
+
+       $this->success("登陆成功",U('Index/index'));
+
         //定向之后台主页
-        
+
 
     }
     //验证码
     public function verify(){
         $Verify = new \Think\Verify();
         $Verify->codeSet = '0123456789';
-        $Verify->fontSize = 15;
+        $Verify->fontSize = 16;
         $Verify->length = 4;
-        $Verify->imageW = 110;
-        $Verify->imageH = 40;
+        $Verify->imageW = 140;
+        $Verify->imageH = 42;
         $Verify->entry();
     }
     protected function check_verify($code){
@@ -65,8 +65,8 @@ class LoginController extends Controller {
     }
 
     public function logout(){
-        session('adminId',null);
-        session('username',null);
+        session('branchId',null);
+        session('branchname',null);
         redirect(U('Login/index'));
     }
 }

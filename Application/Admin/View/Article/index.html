@@ -1,0 +1,66 @@
+<include file="Public/header" title="文章列表" css="__STATIC__/css/article.css" />
+<section class="rt_wrap content mCustomScrollbar">
+    <div id="page-wrapper">
+
+        <div class="row">
+            <div class="col-md-6">
+                <a href="{:U('article/index')}" class="btn-success btn">全部 {$count0}</a>
+                <foreach name="cate" item="v">
+                    &nbsp;<a href="{:U('article/index',array('cate'=>$v['cate']))}" class="btn-success btn">{$v['cate']} {$v['count']}</a>
+                </foreach>
+            </div>
+
+
+            <div class="col-md-6">
+                <form action="__SELF__" method="post">
+                    <div class="form-group input-group">
+                        <input type="text" class="form-control" name="key" placeholder="输入文章标题或关键词搜索">
+                    <span class="input-group-btn">
+                      <button class="btn btn-default"><i class="fa fa-search"></i></button>
+                    </span>
+                    </div>
+                </form>
+            </div>
+            <table class="table table-hover table-striped" style="margin-left: 10px;">
+                <thead>
+                <tr>
+                    <th>商户名</th>
+                    <th>文章标题</th>
+                    <th>文章分类</th>
+                    <th>文章图片</th>
+                    <th>发表时间</th>
+                    <th>收藏</th>
+                    <!--<th>口碑</th>-->
+                    <!--<th>打赏次数</th>-->
+                    <th>操作</th>
+                </tr>
+                </thead>
+                <tbody>
+                <foreach name="article" item="v">
+                    <tr>
+                        <td>{$v['name']}</td>
+                        <td>{$v['title']}</td>
+                        <td>{$v['cate']}</td>
+                        <td><img src="{$v['image']}" style="width: 190px;height: 110px;"></td>
+                        <td>{$v['createtime']|date="Y-m-d H:i:s",###}</td>
+                        <td><a href="{:U('article/collect',array('id'=>$v['id']))}" target="_blank">{$v['cnum']}</a></td>
+                        <!--<td><a href="{:U('article/praise',array('id'=>$v['id']))}" target="_blank">{$v['point']/$v['praisenum']*10|round}%</a></td>-->
+                        <!--<td>{$v['praisenum']}</td>-->
+                        <td>
+                            <a href="<?php echo '/article/details/id/'.$v['id'];?>" target="_blank">预览</a> |
+                            <a href="{:U('article/update',array('id'=>$v['id']))}" target="_blank">编辑</a> |
+                            <a href="{:U('article/delete',array('id'=>$v['id']))}" onclick="return del('删除后将不能恢复，确认删除吗？')" style="color: red">删除</a>
+                        </td>
+                    </tr>
+                </foreach>
+                </tbody>
+            </table>
+            {$page}
+        </div><!-- /.row -->
+
+
+    </div>
+</section>
+
+
+<include file="Public/footer" />

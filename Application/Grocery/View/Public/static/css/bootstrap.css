@@ -1649,6 +1649,7 @@ th {
 .table > thead > tr > th {
   vertical-align: bottom;
   border-bottom: 2px solid #dddddd;
+  text-align: center;
 }
 
 .table > caption + thead > tr:first-child > th,
@@ -1657,7 +1658,7 @@ th {
 .table > caption + thead > tr:first-child > td,
 .table > colgroup + thead > tr:first-child > td,
 .table > thead:first-child > tr:first-child > td {
-  border-top: 0;
+
 }
 
 .table > tbody + tbody {
@@ -1923,7 +1924,7 @@ output {
 
 .form-control {
   display: block;
-  width: 100%;
+  width: 300px;
   height: 34px;
   padding: 6px 12px;
   font-size: 14px;

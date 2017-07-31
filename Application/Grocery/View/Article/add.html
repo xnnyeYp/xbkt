@@ -1,0 +1,55 @@
+<include file="Public/header" title="添加课程" css="__STATIC__/css/course.css"/>
+<script>
+    KindEditor.ready(function(K) {
+        var editor1 = K.create('textarea[name="content"]', {
+            cssPath : '__PUBLIC__/kindeditor/plugins/code/prettify.css',
+            uploadJson : '__PUBLIC__/kindeditor/php/upload_json.php',
+            fileManagerJson : '__PUBLIC__/kindeditor/php/file_manager_json.php',
+            allowFileManager : true,
+            afterCreate : function() {
+                var self = this;
+                K.ctrl(document, 13, function() {
+                    self.sync();
+                    K('form[name=article]')[0].submit();
+                });
+                K.ctrl(self.edit.doc, 13, function() {
+                    self.sync();
+                    K('form[name=article]')[0].submit();
+                });
+            }
+        });
+        prettyPrint();
+    });
+</script>
+<section class="rt_wrap content mCustomScrollbar">
+    <div id="page-wrapper">
+        <form method="post" name="article" action="{:U('article/add')}" enctype="multipart/form-data">
+            <div class="form-group">
+                <label for="aa">文章标题</label>
+                <input type="text" name="title" class="form-control" id="aa" placeholder="输入课程名称">
+            </div>
+            <div class="form-group">
+                <label for="bb">文章图片</label>(请上传尺寸为233*146，小于2M的图片)
+                <input type="file" name="image"  id="bb">
+            </div>
+            <div class="form-group">
+                <label for="dd">文章类别</label>
+                <p class="select1">
+                    <select id="select_1" name="cate">
+                        <foreach name="cate" item="v">
+                            <option value="{$v['title']}">{$v['title']}</option>
+                        </foreach>
+                    </select>
+                </p>
+            </div>
+            <div class="form-group">
+                <label for="dd">文章内容</label>
+                <textarea name="content" style="width:700px;height:200px;visibility:hidden;"></textarea>
+            </div>
+            <button type="submit" class="btn btn-default">添加</button>
+            <button type="button" class="btn btn-default" onclick="javascript:history.back(-1)">取消</button>
+        </form>
+    </div>
+</section>
+
+<include file="Public/footer" />

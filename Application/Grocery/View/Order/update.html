@@ -1,0 +1,139 @@
+<include file="Public/header" title="更新订单" />
+<section class="rt_wrap content mCustomScrollbar">
+	<div id="page-wrapper">
+		<form action="{:U('order/update')}" method="post" id="order">
+			<div class="form-group">
+				<label>订单编号</label>
+				<input class="form-control" type="text" name="out_trade_no" value="{$order['out_trade_no']}" readonly>
+			</div>
+			<div class="form-group">
+				<label>订单状态</label>
+				<select class="form-control" name="status" >
+					<option value="null" disabled>未支付</option>
+					<option value="1" disabled>支付成功</option>
+					<option value="2" disabled>预约成功</option>
+					<option value="3" >体验中</option>
+					<option value="4">体验结束</option>
+					<option value="5" disabled>订单完成</option>
+					<option value="0" disabled>已取消</option>
+					<option value="-1" disabled>已还款</option>
+				</select>
+			</div>
+			<div class="form-group">
+				<label>下单时间</label>
+				<input class="form-control" type="input" name="create_time" value="{$order['create_time']|date='Y-m-d H:i:s',###}" readonly>
+			</div>
+			<div class="form-group">
+				<label>用户名</label>
+				<input class="form-control" type="input" name="username" value="{$order['username']}" readonly>
+			</div>
+			<div class="form-group">
+				<label>课程名</label>
+				<input class="form-control" type="input"  value="{$order['name']}" readonly>
+			</div>
+			<div class="form-group">
+				<label>价格</label>
+				<input class="form-control" type="input"  value="{$order['price']}" readonly>
+			</div>
+			<div class="form-group">
+				<label>课程图片</label><br>
+				<if condition="$order['extension'] eq 0"><img src="{$order['image']}" style="height: 128px;">
+					<else /><img src="{$order['extensionimg']}" style="height: 128px;">
+				</if>
+			</div>
+			<div class="form-group">
+				<label>预约时间</label>
+				<input class="form-control" type="input"  value="{$order['appointment_time']}" readonly>
+			</div>
+			<!--<div class="form-group">-->
+				<!--<label>用户留言</label>-->
+				<!--<textarea class="form-control"readonly>{$order['message']}</textarea>-->
+			<!--</div>-->
+			<div class="form-group">
+				<label>体验时间</label>
+				<input class="form-control" type="input"  value="{$order['experience_time']}" name="experience_time" placeholder="请输入体验时间" onclick="laydate({istime: true, format: 'YYYY-MM-DD'})" <if condition="$order['status'] neq 2">readonly</if> >
+				<if condition="$order['status'] lt 3">
+				<select class='dayTime' name="experience_time_2">
+					<option value="09:00-12:00">09:00-12:00</option>
+					<option value="13:00-17:00">13:00-17:00</option>
+					<option value="18:00-20:00">18:00-20:00</option>
+				</select>
+				</if>
+			</div>
+			<if condition="$order['status'] eq 3">
+				<div class="form-group">
+					<label>验证体验码</label>
+					<input type="hidden" name="code" value="{$order['experience_code']}">
+					<input class="form-control" type="text"  value="" name="experience_code" placeholder="请出入体验码">
+				</div>
+			</if>
+
+			<div class="form-group">
+				<lable>接待人</lable>
+				<if condition="$order['status'] gt 2"><input type="text" class="form-control" value="{$order['receptionist']}" name="receptionist" placeholder="请输入接待人" readonly  />
+					<else /><input type="text" class="form-control" value="{$order['receptionist']}" name="receptionist" placeholder="请输入接待人"  />
+				</if>
+
+			</div>
+			<if condition="time() gt $order['experience_time'] && !empty($order['experience_time']) && $order['status'] gt 0 ">
+				<div class="form-group">
+					<label>取消订单</label>
+					<p><a class="btn btn-danger" href="{:U('order/delete_order',array('id'=>$order['id']))}" onclick="return delete_order()">取消订单</a></p>
+				</div>
+			</if>
+			<div class="form-group">
+				<input type="hidden" name="id" value="{$order.id}">
+				<button class="btn btn-success" type="submit" >保存</button>
+				<button class="btn btn-success" onclick="javascript:history.back(-1)" >取消</button>
+			</div>
+
+
+		</form>
+	</div>
+</section>
+
+
+<include file="Public/footer" />
+<script src="/Public/laydate/laydate.js"></script>
+<script>
+	$('#order').submit(function () {
+		if($('[name=experience_code]').val() != $('[name=code]').val()){
+			alert('体验码不正确!');
+			return false;
+		}
+	});
+	var status = {$order['status']};
+	var is_pay = {$order['is_pay']};
+	if(is_pay == 0){
+		$('[name=status]').val('null');
+	}else{
+		$('[name=status]').val(status);
+	}
+	if(status == 4 || status == 5 || status == 0 || is_pay == 0){
+		$('[name=status]').mousedown(function(){
+			return false;
+		});
+	}
+	if(status != 2){
+		$('[name=experience_time]').attr('onclick','');
+	}
+	;!function(){
+		laydate.skin('huanglv');
+	}();
+
+	function delete_order(){
+		var now_time = Date.parse(new Date());
+		var experience_time = Date.parse(new Date($('[name=experience_time]').val()));
+
+		if(!confirm('订单取消后将不能恢复，确认取消吗?')){
+			return false;
+		}
+
+		if(experience_time > 0 && now_time > experience_time){
+			return true;
+		}else{
+			alert('当前时间小于体验时间或尚未进入体验阶段，不可取消订单');
+			return false;
+		}
+	}
+</script>

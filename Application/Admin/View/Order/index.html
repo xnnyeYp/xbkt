@@ -1,0 +1,96 @@
+<include file="Public/header" title="订单列表" />
+<script src="/Public/laydate/laydate.js"></script>
+<script>
+    ;!function(){
+
+        laydate.skin('huanglv');
+
+    }();
+</script>
+<section class="rt_wrap content mCustomScrollbar">
+    <div id="page-wrapper">
+
+        <div class="row">
+            <div class="col-md-5">
+                <a href="{:U('Order/index',array('type'=>1))}" class="btn btn-success">订单待处理(<span style="color: red">{$_SESSION['order']['count1']}</span>)</a>
+                <a href="{:U('Order/index',array('type'=>2))}" class="btn btn-success">订单结束({$_SESSION['order']['count2']})</a>
+                <a href="{:U('Order/index',array('type'=>3))}" class="btn btn-success">取消订单({$_SESSION['order']['count3']})</a>
+            </div>
+            <div class="col-md-7">
+                <section style="float: right;">
+                    <form action="{:U('order/index')}" method="post">
+                        <input type="text" name="key" class="textbox textbox_150" placeholder="请输入商户名称或课程名称搜索"/>
+                        <input type="text" name="start_time" onclick="laydate({istime: true, format: 'YYYY-MM-DD hh:mm:ss'})" class="textbox " placeholder="下单开始时间"/>
+                        <input type="text" name="end_time" onclick="laydate({istime: true, format: 'YYYY-MM-DD hh:mm:ss'})" class="textbox " placeholder="订单结束时间"/>
+                        <input type="submit" value="搜索" class="group_btn"/>
+                    </form>
+                </section>
+            </div>
+
+        </div>
+        <table class="table table-hover table-striped">
+            <thead>
+            <tr>
+                <th>订单编号</th>
+                <th>订单状态</th>
+                <th>下单时间</th>
+                <th>用户</th>
+                <th>课程名</th>
+                <th>价格</th>
+                <th>图片</th>
+                <th>预约时间</th>
+                <th>操作</th>
+            </tr>
+            </thead>
+            <tbody>
+            <foreach name="order" item="v">
+                <tr>
+                    <td><span>{$v.out_trade_no}</span></td>
+                    <td><span>
+                    <if condition="$v['status'] eq 1 && $v['is_pay'] eq 0">未支付
+                        <elseif condition="$v['status'] eq 1" />支付成功
+                        <elseif condition="$v['status'] eq 2" />预约成功
+                        <elseif condition="$v['status'] eq 3" />体验中
+                        <elseif condition="$v['status'] eq 4" />体验结束
+                        <elseif condition="$v['status'] eq 5" />订单完成
+                        <elseif condition="$v['status'] eq 0" />已取消
+                        <elseif condition="$v['status'] eq -1" />退款成功
+                    </if>
+                    </span>
+                    </td>
+                    <td><span>{$v['create_time']|date='Y-m-d H:i:s',###}</span></td>
+                    <td><span>{$v['username']}</span></td>
+                    <td><span>{$v['name']}</span></td>
+                    <td><span>￥{$v['price']}</span></td>
+                    <td>
+                        <if condition="$v['extension'] eq 0"><img src="{$v['image']}" style="width: 192px;height: 128px;">
+                            <else /><img src="{$v['extensionimg']}" style="width: 192px;height: 128px;">
+                        </if>
+                    </td>
+                    <td><span>
+                    <if condition="$v['appointment_time'] neq null">{$v['appointment_time']}
+                        <else />未预约
+                    </if>
+                </span></td>
+                    <td>
+                        <span>
+                            <if condition="$v['status'] eq 0 && $v['price'] neq 0">
+                                <a href="/tuikuan/alipay/id/{$v['id']}" target="_blank">退款</a> |
+                            </if>
+                            <a href="{:U('order/update',array('id'=>$v['id']))}" target="_blank">查看</a>
+                        </span>
+                    </td>
+
+                </tr>
+            </foreach>
+            </tbody>
+        </table>
+        {$page}
+    </div>
+</section>
+
+
+
+
+
+<include file="Public/footer" />

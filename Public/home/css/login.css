@@ -1,0 +1,108 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	font-family: '微软雅黑';
+}
+a{
+	text-decoration:none;
+}
+#register{
+	height:9.5rem;
+	width:100%;
+}
+#register p{
+	height:0.82rem;
+	line-height:0.82rem;
+	width:100%;
+	background:#f7f7f7;
+	font-size:0.25rem;
+	border:1px solid #cdcdcd;
+}
+#register p span{
+	color:#3f3f3f;
+	letter-spacing:2px;
+	margin-left:45%;
+	}
+#register p a{
+	float:right;
+	margin-right:0.30rem;
+	color:#44b336;
+	font-size:0.20rem;
+	}
+#register input{
+	height:0.68rem;
+	line-height:0.68rem;
+	text-indent:5px;
+	width:90%;
+	font-size: 0.2rem;
+	color:#ddd;
+	margin:0 5%;
+	border:1px solid #e5e5e5;
+	border-radius:5px;
+}
+#register .submit{
+	background:#44b336;
+	color:#fff;
+	letter-spacing:8px;
+}
+#register .forget_pass{
+	display:block;
+	width:100%;
+	margin-top:30px;
+	font-size:0.20rem;
+	color:#4d4d4d;
+	text-align:center;
+}
+.pass_error{
+	position:absolute;
+	height:100%;
+	width:100%;
+	display:none;
+	top:0px;
+}
+#screen{
+	position:absolute;
+	height:9.5rem;
+	width:100%;
+    background:#000;
+	opacity:0.4;
+	filter:alpha(opacity=0.4);
+	z-index:1;
+	display: none;
+}
+.pass_error ul{
+	list-style-type:none;
+	position:absolute;
+	height:1.2rem;
+	width:80%;
+	left:10%;
+	top:3.15rem;
+	background:#fff;
+	font-size:0.2rem;
+	z-index:2;
+}
+.pass_error ul li{
+	height:0.6rem;
+	line-height:0.6rem;
+}
+.pass_error ul .li1{
+	text-align: center;
+	text-indent:0.17rem;
+	font-size:0.25rem;
+}
+.pass_error ul li a{
+	display:block;
+	width:49.8%;
+	text-align:center;
+	color:#000;
+	float:left;
+	border-top:1px solid #ddd;
+}
+.pass_error ul li .confirm{
+	border-right:1px solid #ddd;
+}
+#pass_error_2 ul li a{
+	width: 100%;
+}

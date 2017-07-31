@@ -1,0 +1,98 @@
+body,div,a,p,dl,dt,dd,img{
+	margin: 0;
+	padding: 0;
+}
+a{
+	text-decoration: none;
+}
+
+body{
+	background-color: #f0f0f0;
+	font-family: '微软雅黑';
+	font-size:0.2rem;
+	letter-spacing:2px;
+}
+#order_list_head{
+	height:0.75rem;
+	width:100%;
+	line-height:0.75rem;
+	text-align:center;
+	color:#fff;
+	font-size:0.25rem;
+	background:#98d261;
+}
+#order_list_head img{
+	display:block;
+	height:0.39rem;
+	width:0.30rem;
+	margin:0.18rem 0 0 0.18rem;
+	float:left;
+}
+#order_list_main{
+	height:8.72rem;
+	background:#f0f0f0;
+}
+#order_list_main .div1{
+	height:2.82rem;
+	margin-bottom: 0.34rem;
+	background:#fff;
+}
+#order_list_main .div1 .h1{	
+	height:0.684rem;
+	line-height:0.684rem;
+	color:#cacaca;
+	text-indent:0.34rem;
+	font-size:0.22rem;
+}
+#order_list_main .div1 .h1 span{
+	color:#98d261;
+	margin-right:0.17rem;
+	float:right;
+}
+#order_list_main .div1 dl{
+	height:1.57rem;
+	width:90%;
+	border-top:1px dashed #c9c9c9;
+	border-bottom:1px dashed #c9c9c9;
+	margin-left:5%;
+}
+#order_list_main .div1 dl dd{
+	height:1.28rem;
+	width:1.28rem;
+	margin:0.145rem 0.17rem 0.145rem 0;
+	float:left;
+}
+#order_list_main .div1 dl dd img{
+	display:block;
+	height:1.28rem;
+	width:1.28rem;
+}
+#order_list_main .div1 dl .order_list_title{
+	height:0.34rem;
+	line-height:0.34rem;
+	width:63%;
+	margin-top:0.17rem;
+	letter-spacing:3px;
+	color:#aba9a9;
+	float:left;
+}
+#order_list_main .div1 dl .order_list_condi{
+	height:0.3rem;
+	line-height:0.3rem;
+	width:70%;
+	color:#000;
+	letter-spacing:0px;
+	font-size:0.2rem;
+	float:left;
+}
+#order_list_main .div1 .order_bottom{
+	height:0.51rem;
+	line-height:0.51rem;
+	text-indent:0.34rem;
+	color:#c9c9c9;
+	clear:both;
+}
+#order_list_main .div1 .order_bottom .order_list_time{
+	margin-right:0.34rem;
+	float:right;
+}

@@ -1,0 +1,508 @@
+[ 2016-06-08T08:24:44+08:00 ] ::1 /admin.php?m=Admin&c=category&a=update&id=21
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0310s ]
+SQL: SELECT * FROM `category` WHERE `id` = 21 LIMIT 1   [ RunTime:0.0300s ]
+SQL: SELECT * FROM `category`  [ RunTime:0.0300s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-06-08T08:25:53+08:00 ] ::1 /admin.php?m=Admin&c=category&a=update&id=21
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0310s ]
+SQL: SELECT * FROM `category` WHERE `id` = 21 LIMIT 1   [ RunTime:0.0300s ]
+SQL: SELECT * FROM `category`  [ RunTime:0.0300s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-06-08T08:25:59+08:00 ] ::1 /admin.php?m=Admin&c=category&a=update&id=18
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0300s ]
+SQL: SELECT * FROM `category` WHERE `id` = 18 LIMIT 1   [ RunTime:0.0300s ]
+SQL: SELECT * FROM `category`  [ RunTime:0.0300s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-06-08T08:26:08+08:00 ] ::1 /admin.php?m=Admin&c=category&a=update&id=23
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0300s ]
+SQL: SELECT * FROM `category` WHERE `id` = 23 LIMIT 1   [ RunTime:0.0290s ]
+SQL: SELECT * FROM `category`  [ RunTime:0.0300s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-06-08T08:30:58+08:00 ] ::1 /admin.php?m=Admin&c=category&a=add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-06-08T08:31:11+08:00 ] ::1 /admin.php?m=Admin&c=category&a=add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0300s ]
+SQL: SELECT * FROM `category`  [ RunTime:0.0300s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-06-08T08:41:37+08:00 ] ::1 /admin.php?m=Admin&c=category&a=add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given E:\wamp\www\ThinkAdmin\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0300s ]
+SQL: INSERT INTO `category` (`title`,`pid`,`status`,`keywords`,`description`,`icon`) VALUES ('中小学','0','1','中小学','','/Public/uploads/admin/category/20160608/575769c0edf07.gif') [ RunTime:0.0860s ]
+NOTIC: [8] Undefined variable: model E:\wamp\www\ThinkAdmin\Application\Admin\Controller\CategoryController.class.php 第 60 行.
+
+[ 2016-06-08T08:42:29+08:00 ] ::1 /admin.php?m=Admin&c=category&a=add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given E:\wamp\www\ThinkAdmin\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0300s ]
+SQL: INSERT INTO `category` (`title`,`pid`,`status`,`keywords`,`description`,`icon`) VALUES ('中小学','0','1','中小学','','/Public/uploads/admin/category/20160608/575769f513eab.gif') [ RunTime:0.0360s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-06-08T08:42:31+08:00 ] ::1 /admin.php?m=Admin&c=category&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0310s ]
+NOTIC: [8] Undefined variable: Page E:\wamp\www\ThinkAdmin\Application\Admin\Controller\CategoryController.class.php 第 24 行.
+NOTIC: [8] Trying to get property of non-object E:\wamp\www\ThinkAdmin\Application\Admin\Controller\CategoryController.class.php 第 24 行.
+NOTIC: [8] Undefined variable: Page E:\wamp\www\ThinkAdmin\Application\Admin\Controller\CategoryController.class.php 第 24 行.
+NOTIC: [8] Trying to get property of non-object E:\wamp\www\ThinkAdmin\Application\Admin\Controller\CategoryController.class.php 第 24 行.
+NOTIC: [8] Undefined variable: where E:\wamp\www\ThinkAdmin\Application\Admin\Controller\CategoryController.class.php 第 24 行.
+SQL: SELECT * FROM `category` ORDER BY type  [ RunTime:0.0310s ]
+SQL: SELECT * FROM `category` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0300s ]
+SQL: SELECT * FROM `category` WHERE `id` = 21 LIMIT 1   [ RunTime:0.0300s ]
+SQL: SELECT * FROM `category` WHERE `id` = 21 LIMIT 1   [ RunTime:0.0300s ]
+SQL: SELECT * FROM `category` WHERE `id` = 21 LIMIT 1   [ RunTime:0.0300s ]
+SQL: SELECT * FROM `category` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0300s ]
+SQL: SELECT * FROM `category` WHERE `id` = 24 LIMIT 1   [ RunTime:0.0300s ]
+SQL: SELECT * FROM `category` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0300s ]
+SQL: SELECT * FROM `category` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0300s ]
+SQL: SELECT * FROM `category` WHERE `id` = 18 LIMIT 1   [ RunTime:0.0300s ]
+SQL: SELECT * FROM `category` WHERE `id` = 16 LIMIT 1   [ RunTime:0.0300s ]
+SQL: SELECT * FROM `category` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0300s ]
+SQL: SELECT * FROM `category` WHERE `id` = 22 LIMIT 1   [ RunTime:0.0300s ]
+SQL: SELECT * FROM `category` WHERE `id` = 18 LIMIT 1   [ RunTime:0.0300s ]
+SQL: SELECT * FROM `category` WHERE `id` = 21 LIMIT 1   [ RunTime:0.0300s ]
+SQL: SELECT * FROM `category` WHERE `id` = 22 LIMIT 1   [ RunTime:0.0300s ]
+SQL: SELECT * FROM `category` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0300s ]
+SQL: SELECT * FROM `category` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0300s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: page E:\wamp\www\ThinkAdmin\Application\Runtime\Cache\Admin\9bfef0f9f473c596f668b6c9a32bfd5c.php 第 141 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-06-08T08:42:43+08:00 ] ::1 /admin.php?m=Admin&c=category&a=update&id=30
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0300s ]
+SQL: SELECT * FROM `category` WHERE `id` = 30 LIMIT 1   [ RunTime:0.0300s ]
+SQL: SELECT * FROM `category`  [ RunTime:0.0300s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-06-08T08:42:46+08:00 ] ::1 /admin.php?m=Admin&c=category&a=update&id=31
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0300s ]
+SQL: SELECT * FROM `category` WHERE `id` = 31 LIMIT 1   [ RunTime:0.0300s ]
+SQL: SELECT * FROM `category`  [ RunTime:0.0300s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-06-08T08:42:50+08:00 ] ::1 /admin.php?m=Admin&c=category&a=delete&id=31
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0300s ]
+SQL: SHOW COLUMNS FROM `post` [ RunTime:0.0310s ]
+SQL: SELECT * FROM `post` WHERE ( cate_id=31 )  [ RunTime:0.0300s ]
+SQL: SELECT * FROM `category` WHERE ( pid=31 )  [ RunTime:0.0300s ]
+SQL: DELETE FROM `category` WHERE `id` = 31 [ RunTime:0.0640s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-06-08T08:42:52+08:00 ] ::1 /admin.php?m=Admin&c=category&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0310s ]
+NOTIC: [8] Undefined variable: Page E:\wamp\www\ThinkAdmin\Application\Admin\Controller\CategoryController.class.php 第 24 行.
+NOTIC: [8] Trying to get property of non-object E:\wamp\www\ThinkAdmin\Application\Admin\Controller\CategoryController.class.php 第 24 行.
+NOTIC: [8] Undefined variable: Page E:\wamp\www\ThinkAdmin\Application\Admin\Controller\CategoryController.class.php 第 24 行.
+NOTIC: [8] Trying to get property of non-object E:\wamp\www\ThinkAdmin\Application\Admin\Controller\CategoryController.class.php 第 24 行.
+NOTIC: [8] Undefined variable: where E:\wamp\www\ThinkAdmin\Application\Admin\Controller\CategoryController.class.php 第 24 行.
+SQL: SELECT * FROM `category` ORDER BY type  [ RunTime:0.0290s ]
+SQL: SELECT * FROM `category` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0290s ]
+SQL: SELECT * FROM `category` WHERE `id` = 21 LIMIT 1   [ RunTime:0.0300s ]
+SQL: SELECT * FROM `category` WHERE `id` = 21 LIMIT 1   [ RunTime:0.0300s ]
+SQL: SELECT * FROM `category` WHERE `id` = 21 LIMIT 1   [ RunTime:0.0300s ]
+SQL: SELECT * FROM `category` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0300s ]
+SQL: SELECT * FROM `category` WHERE `id` = 24 LIMIT 1   [ RunTime:0.0290s ]
+SQL: SELECT * FROM `category` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0300s ]
+SQL: SELECT * FROM `category` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0300s ]
+SQL: SELECT * FROM `category` WHERE `id` = 18 LIMIT 1   [ RunTime:0.0300s ]
+SQL: SELECT * FROM `category` WHERE `id` = 16 LIMIT 1   [ RunTime:0.0300s ]
+SQL: SELECT * FROM `category` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0290s ]
+SQL: SELECT * FROM `category` WHERE `id` = 22 LIMIT 1   [ RunTime:0.0290s ]
+SQL: SELECT * FROM `category` WHERE `id` = 18 LIMIT 1   [ RunTime:0.0300s ]
+SQL: SELECT * FROM `category` WHERE `id` = 21 LIMIT 1   [ RunTime:0.0300s ]
+SQL: SELECT * FROM `category` WHERE `id` = 22 LIMIT 1   [ RunTime:0.0290s ]
+SQL: SELECT * FROM `category` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0300s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: page E:\wamp\www\ThinkAdmin\Application\Runtime\Cache\Admin\9bfef0f9f473c596f668b6c9a32bfd5c.php 第 141 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-06-08T08:45:40+08:00 ] ::1 /admin.php?m=Admin&c=category&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0310s ]
+NOTIC: [8] Undefined variable: Page E:\wamp\www\ThinkAdmin\Application\Admin\Controller\CategoryController.class.php 第 24 行.
+NOTIC: [8] Trying to get property of non-object E:\wamp\www\ThinkAdmin\Application\Admin\Controller\CategoryController.class.php 第 24 行.
+NOTIC: [8] Undefined variable: Page E:\wamp\www\ThinkAdmin\Application\Admin\Controller\CategoryController.class.php 第 24 行.
+NOTIC: [8] Trying to get property of non-object E:\wamp\www\ThinkAdmin\Application\Admin\Controller\CategoryController.class.php 第 24 行.
+NOTIC: [8] Undefined variable: where E:\wamp\www\ThinkAdmin\Application\Admin\Controller\CategoryController.class.php 第 24 行.
+SQL: SELECT * FROM `category` ORDER BY type  [ RunTime:0.0300s ]
+SQL: SELECT * FROM `category` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0290s ]
+SQL: SELECT * FROM `category` WHERE `id` = 21 LIMIT 1   [ RunTime:0.0300s ]
+SQL: SELECT * FROM `category` WHERE `id` = 21 LIMIT 1   [ RunTime:0.0300s ]
+SQL: SELECT * FROM `category` WHERE `id` = 21 LIMIT 1   [ RunTime:0.0290s ]
+SQL: SELECT * FROM `category` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0300s ]
+SQL: SELECT * FROM `category` WHERE `id` = 24 LIMIT 1   [ RunTime:0.0290s ]
+SQL: SELECT * FROM `category` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0300s ]
+SQL: SELECT * FROM `category` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0300s ]
+SQL: SELECT * FROM `category` WHERE `id` = 18 LIMIT 1   [ RunTime:0.0300s ]
+SQL: SELECT * FROM `category` WHERE `id` = 16 LIMIT 1   [ RunTime:0.0300s ]
+SQL: SELECT * FROM `category` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0300s ]
+SQL: SELECT * FROM `category` WHERE `id` = 22 LIMIT 1   [ RunTime:0.0300s ]
+SQL: SELECT * FROM `category` WHERE `id` = 18 LIMIT 1   [ RunTime:0.0310s ]
+SQL: SELECT * FROM `category` WHERE `id` = 21 LIMIT 1   [ RunTime:0.0300s ]
+SQL: SELECT * FROM `category` WHERE `id` = 22 LIMIT 1   [ RunTime:0.0300s ]
+SQL: SELECT * FROM `category` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0300s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: page E:\wamp\www\ThinkAdmin\Application\Runtime\Cache\Admin\9bfef0f9f473c596f668b6c9a32bfd5c.php 第 141 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-06-08T08:45:45+08:00 ] ::1 /admin.php?m=Admin&c=category&a=update&id=18
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0310s ]
+SQL: SELECT * FROM `category` WHERE `id` = 18 LIMIT 1   [ RunTime:0.0290s ]
+SQL: SELECT * FROM `category`  [ RunTime:0.0300s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-06-08T08:46:05+08:00 ] ::1 /admin.php?m=Admin&c=category&a=update
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given E:\wamp\www\ThinkAdmin\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.2590s ]
+SQL: UPDATE `category` SET `title`='文艺生活',`pid`='0',`status`='1',`keywords`='文艺生活',`description`='',`icon`='/Public/uploads/admin/category/20160608/57576acd5f727.gif' WHERE ( id = 18 ) [ RunTime:0.0400s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-06-08T08:46:07+08:00 ] ::1 /admin.php?m=Admin&c=category&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0300s ]
+NOTIC: [8] Undefined variable: Page E:\wamp\www\ThinkAdmin\Application\Admin\Controller\CategoryController.class.php 第 24 行.
+NOTIC: [8] Trying to get property of non-object E:\wamp\www\ThinkAdmin\Application\Admin\Controller\CategoryController.class.php 第 24 行.
+NOTIC: [8] Undefined variable: Page E:\wamp\www\ThinkAdmin\Application\Admin\Controller\CategoryController.class.php 第 24 行.
+NOTIC: [8] Trying to get property of non-object E:\wamp\www\ThinkAdmin\Application\Admin\Controller\CategoryController.class.php 第 24 行.
+NOTIC: [8] Undefined variable: where E:\wamp\www\ThinkAdmin\Application\Admin\Controller\CategoryController.class.php 第 24 行.
+SQL: SELECT * FROM `category` ORDER BY type  [ RunTime:0.0300s ]
+SQL: SELECT * FROM `category` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0300s ]
+SQL: SELECT * FROM `category` WHERE `id` = 21 LIMIT 1   [ RunTime:0.0300s ]
+SQL: SELECT * FROM `category` WHERE `id` = 21 LIMIT 1   [ RunTime:0.0300s ]
+SQL: SELECT * FROM `category` WHERE `id` = 21 LIMIT 1   [ RunTime:0.0290s ]
+SQL: SELECT * FROM `category` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0300s ]
+SQL: SELECT * FROM `category` WHERE `id` = 24 LIMIT 1   [ RunTime:0.0300s ]
+SQL: SELECT * FROM `category` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0300s ]
+SQL: SELECT * FROM `category` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0300s ]
+SQL: SELECT * FROM `category` WHERE `id` = 18 LIMIT 1   [ RunTime:0.0300s ]
+SQL: SELECT * FROM `category` WHERE `id` = 16 LIMIT 1   [ RunTime:0.0290s ]
+SQL: SELECT * FROM `category` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0300s ]
+SQL: SELECT * FROM `category` WHERE `id` = 22 LIMIT 1   [ RunTime:0.0300s ]
+SQL: SELECT * FROM `category` WHERE `id` = 18 LIMIT 1   [ RunTime:0.0290s ]
+SQL: SELECT * FROM `category` WHERE `id` = 21 LIMIT 1   [ RunTime:0.0300s ]
+SQL: SELECT * FROM `category` WHERE `id` = 22 LIMIT 1   [ RunTime:0.0290s ]
+SQL: SELECT * FROM `category` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0290s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001001s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001001s ]
+NOTIC: [8] Undefined variable: page E:\wamp\www\ThinkAdmin\Application\Runtime\Cache\Admin\9bfef0f9f473c596f668b6c9a32bfd5c.php 第 141 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-06-08T08:46:21+08:00 ] ::1 /admin.php?m=Admin&c=category&a=update&id=18
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0300s ]
+SQL: SELECT * FROM `category` WHERE `id` = 18 LIMIT 1   [ RunTime:0.0300s ]
+SQL: SELECT * FROM `category`  [ RunTime:0.0300s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-06-08T08:55:19+08:00 ] ::1 /admin.php?m=Admin&c=category&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0310s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `category` LIMIT 1   [ RunTime:0.0300s ]
+NOTIC: [8] Undefined variable: where E:\wamp\www\ThinkAdmin\Application\Admin\Controller\CategoryController.class.php 第 27 行.
+SQL: SELECT * FROM `category` ORDER BY type LIMIT 0,10   [ RunTime:0.0300s ]
+SQL: SELECT * FROM `category` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0310s ]
+SQL: SELECT * FROM `category` WHERE `id` = 21 LIMIT 1   [ RunTime:0.0310s ]
+SQL: SELECT * FROM `category` WHERE `id` = 21 LIMIT 1   [ RunTime:0.0300s ]
+SQL: SELECT * FROM `category` WHERE `id` = 21 LIMIT 1   [ RunTime:0.0300s ]
+SQL: SELECT * FROM `category` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0300s ]
+SQL: SELECT * FROM `category` WHERE `id` = 24 LIMIT 1   [ RunTime:0.0300s ]
+SQL: SELECT * FROM `category` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0300s ]
+SQL: SELECT * FROM `category` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0300s ]
+SQL: SELECT * FROM `category` WHERE `id` = 18 LIMIT 1   [ RunTime:0.0310s ]
+SQL: SELECT * FROM `category` WHERE `id` = 16 LIMIT 1   [ RunTime:0.0300s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+

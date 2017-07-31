@@ -1,0 +1,43 @@
+[ 2016-11-02T12:59:04+08:00 ] 111.206.36.17 /grocery.php?m=grocery&c=setup&a=update_account&id=18
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001304s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001653s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001769s ]
+NOTIC: [8] Undefined variable: branch /var/www/virtual/xbkt/home/wwwroot/Application/Grocery/Controller/BaseController.class.php 第 17 行.
+NOTIC: [8] Undefined index: branchId /var/www/virtual/xbkt/home/wwwroot/Application/Grocery/Controller/BaseController.class.php 第 20 行.
+SQL: SHOW COLUMNS FROM `course_order` [ RunTime:0.0031s ]
+SQL: SELECT COUNT(*) AS tp_count FROM course_order o left join course c on c.id = o.course_id INNER JOIN member m on m.id = o.user_id INNER JOIN branch b on b.id = c.branchId  WHERE c.branchId = null AND o.status IN ('0','1','2') AND o.is_pay = 1 ORDER BY o.id LIMIT 1   [ RunTime:0.0023s ]
+
+[ 2016-11-02T12:59:04+08:00 ] 111.206.36.16 /grocery.php?m=Grocery&c=Login&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001138s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001417s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001511s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000085s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000178s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025683s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025781s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000622s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000692s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002115s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002258s ]
+
+[ 2016-11-02T12:59:05+08:00 ] 111.206.36.15 /grocery.php?m=Grocery&c=login&a=verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001318s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001713s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001814s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002158s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002275s ]
+

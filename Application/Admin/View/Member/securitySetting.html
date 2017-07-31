@@ -1,0 +1,28 @@
+<include file="Public/header" title="安全设置" css="__STATIC__/css/member.css"/>
+<div id="page-wrapper">
+	<div class="row">
+		<div class="col-md-2 block">安全设置</div>
+	</div>
+	<div class="row">
+		<div class="col-md-2 block edict_security" style="cursor:pointer;">编辑</div>
+		<div class="col-md-2 block"><a class="save_security" href="###" url="{:U('member/updateSecuritySetting')}" type="0">保存</a></div>
+	</div>
+	<div class="row">
+		<div class="col-md-2 block">会员昵称</div>
+		<div class="col-md-2 block">{$member_info.username}</div>
+	</div>
+	<div class="row">
+		<div class="col-md-2 block">会员编号</div>
+		<div class="col-md-2 block">{$member_info.numbering}</div>
+	</div>
+	<div class="row">
+		<input type="hidden" name="id" value="{$member_info.id}" />
+		<div class="col-md-2 block">微信号</div>
+		<div class="col-md-2 block"><span class="wechat_show">{$member_info.wechat}</span><div class="wechat_hidden" style="display:none;"><input type="text" value="{$member_info.wechat}" name="wechat" placeholder="微信号"/></div></div>
+	</div>
+	<div class="row">
+		<div class="col-md-2 block">会员手机</div>
+		<div class="col-md-2 block"><span class="mphone_show">{$member_info.mphone}</span><div class="mphone_hidden" style="display:none;"><input type="text" value="{$member_info.mphone}" name="mphone" placeholder="会员手机"/></div></div>
+	</div>
+</div>
+<include file="Public/footer" />

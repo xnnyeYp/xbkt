@@ -1,0 +1,86 @@
+<include file="Public/header" title="添加分类" />
+<section class="rt_wrap content mCustomScrollbar">
+    <div id="page-wrapper">
+        <form method="post" action="{:U('category/add_circle_area')}" enctype="multipart/form-data" id="cate">
+            <input type="hidden" name="type" value="{$type}">
+            <if condition="$type eq 1">
+            <div class="form-group">
+                <label for="aa">商圈</label>
+                <input type="text" name="name" class="form-control" id="aa" placeholder="输入商圈">
+            </div>
+            <else />
+                <div class="form-group">
+                    <label for="area">区域</label>
+                    <input type="text" name="name" class="form-control" id="area" placeholder="输入区域">
+                </div>
+                <div class="form-group">
+                    <label for="aa">父区域</label>
+                    <select class="form-control" name="pid">
+                        <option value="0"> 父区域 </option>
+                        <foreach name="area" item="v">
+                            <option value="{$v['id']}">{$v['name']}</option>
+                        </foreach>
+                    </select>
+                </div>
+            </if>
+
+            <button type="submit" class="btn btn-default">添加</button>
+        </form>
+    </div>
+</section>
+
+<include file="Public/footer" />
+<script>
+    $(function(){
+        $('[name=pid]').change(function(){
+            if($(this).val() == 0){
+                $('[name=icon]').parent().show();
+            }else{
+                $('[name=icon]').parent().hide();
+            }
+        });
+
+        $('[name=type]').change(function () {
+            if($(this).val() == 1){
+                $('[name=icon]').parent().show();
+            }else{
+                $('[name=icon]').parent().hide();
+            }
+        });
+
+        $('#cate').submit(function (){
+            var is_submit = 1;
+            $('input[type=text]').each(function () {
+                if($(this).val() == ''){
+                    $(this).focus();
+                    $(this).css('border','1px solid red');
+                    is_submit = 0;
+                }
+            });
+
+            var url = "{:U('category/check_area')}";
+
+            $.ajax({
+                url:url,
+                type:'post',
+                data:{
+                    'name':$('#area').val()
+                },
+                success: function (data) {
+                    if(data == 1){
+                        alert('区域名不能重复！');
+                        is_submit = 0;
+                    }
+                },
+                async:false
+            });
+
+            if(is_submit == 0){
+                return false;
+            }
+            
+        });
+
+
+    });
+</script>

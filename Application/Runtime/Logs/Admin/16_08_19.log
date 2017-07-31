@@ -1,0 +1,31 @@
+[ 2016-08-19T17:21:41+08:00 ] 180.123.52.244 /admin.php?m=Admin&c=order&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000066s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001879s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002517s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002679s ]
+NOTIC: [8] Undefined index: type /var/www/virtual/xbkt/home/wwwroot/Application/Admin/Controller/OrderController.class.php 第 16 行.
+NOTIC: [8] Undefined index: type /var/www/virtual/xbkt/home/wwwroot/Application/Admin/Controller/OrderController.class.php 第 18 行.
+NOTIC: [8] Undefined index: type /var/www/virtual/xbkt/home/wwwroot/Application/Admin/Controller/OrderController.class.php 第 20 行.
+NOTIC: [8] Undefined index: key /var/www/virtual/xbkt/home/wwwroot/Application/Admin/Controller/OrderController.class.php 第 24 行.
+NOTIC: [8] Undefined index: start_time /var/www/virtual/xbkt/home/wwwroot/Application/Admin/Controller/OrderController.class.php 第 29 行.
+NOTIC: [8] Undefined index: end_time /var/www/virtual/xbkt/home/wwwroot/Application/Admin/Controller/OrderController.class.php 第 33 行.
+SQL: SHOW COLUMNS FROM `course_order` [ RunTime:0.0034s ]
+NOTIC: [8] Undefined variable: where /var/www/virtual/xbkt/home/wwwroot/Application/Admin/Controller/OrderController.class.php 第 44 行.
+SQL: SELECT COUNT(*) AS tp_count FROM course_order o INNER JOIN course c on c.id = o.course_id INNER JOIN member m on m.id = o.user_id INNER JOIN branch b on b.id = c.branchId INNER JOIN grocery g on g.id = b.groId left join course_praise p on p.order_id = o.id  ORDER BY o.id DESC LIMIT 1   [ RunTime:0.0075s ]
+NOTIC: [8] Undefined variable: where /var/www/virtual/xbkt/home/wwwroot/Application/Admin/Controller/OrderController.class.php 第 61 行.
+SQL: SELECT o.*,m.username,c.name,c.image,c.extension,c.extensionimg,c.price FROM course_order o INNER JOIN course c on c.id = o.course_id INNER JOIN member m on m.id = o.user_id INNER JOIN branch b on b.id = c.branchId INNER JOIN grocery g on g.id = b.groId left join course_praise p on p.order_id = o.id  ORDER BY o.id DESC LIMIT 0,6   [ RunTime:0.0091s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000309s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000495s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.067673s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.067846s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001046s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001210s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003024s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003326s ]
+

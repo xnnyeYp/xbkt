@@ -1,0 +1,17 @@
+th{
+    text-align: center;
+}
+td{
+    text-align: center;
+    line-height: 100px;
+    vertical-align: middle;
+
+}
+td img{
+    height: 100px;
+    vertical-align:middle;
+}
+td span{
+    text-align: center;
+    line-height: 100px;
+}

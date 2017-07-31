@@ -1,0 +1,50 @@
+body{
+	background:#FFF;
+}
+.title{
+	line-height:0.75rem;
+}
+.content{
+	padding:0.32rem 0.31rem;
+	font-size:0.21rem;
+	text-align:center;
+}
+a{
+	color:#98d261;
+	text-decoration:underline;
+}
+.content>form{
+	font-size:0;
+	text-align:right;
+}
+.content>form>input{
+	border-radius:0.08rem;
+}
+.content>form>input[type="text"]{
+	border:0.017rem solid #ededed;
+	float:left;
+	width:3rem;
+	line-height:0.6rem;
+	height:0.6rem;
+}
+.content>form>input[type="submit"]{
+	border:0.017rem solid #98d261;
+	background:#98d261;
+	width:1.77rem;
+	display:inline-block;
+	color:#FFF;
+	font-size:0.29rem;
+	height:0.634rem;
+	line-height:0.56rem;
+}
+.rewardPs{
+	clear:both;
+	height:0.91rem;
+	padding:0.2rem 0.3rem;
+	margin:0.4rem 0 0.5rem ;
+	background:#d7d7d7;
+	border:1px solid #d7d7d7;
+	border-radius:0.06rem;
+	color:#8f8f8f;
+	text-align:left;
+}

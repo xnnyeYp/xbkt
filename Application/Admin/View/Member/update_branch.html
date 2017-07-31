@@ -1,0 +1,97 @@
+<include file="Public/header" title="编辑分校" />
+<section class="rt_wrap content mCustomScrollbar _mCS_2">
+    <p class="btn btn-success" style="margin-bottom: 5px;margin-top: 5px;">{$branch['name']}</p>
+    <form action="{:U('member/update_branch')}" method="post" id="branch">
+        <input type="hidden" name="groId" value="{$groId}">
+        <input type="hidden" name="id" value="{$branch['id']}">
+        <div class="form-group">
+            <label>分校名</label>
+            <input class="form-control" name="braname" type="text" value="{$branch['braname']}">
+        </div>
+        <div class="form-group">
+            <label>区域</label>
+            <P style="margin-top: 5px;">
+                <select name="area">
+                    <option>--未选择--</option>
+                    <foreach name="area" item="v">
+                        <option value="{$v['name']}">{$v['name']}</option>
+                    </foreach>
+                </select>
+                <select name="son_area">
+                    <option value="{$branch['son_area']}">{$branch['son_area']}</option>
+                    <foreach name="son_area" item="v">
+                        <option value="{$v['name']}">{$v['name']}</option>
+                    </foreach>
+                </select>
+            </P>
+        </div>
+        <div class="form-group">
+            <label>商圈</label>
+            <select class="form-control" name="circle">
+                <foreach name="circle" item="v">
+                    <option value="{$v['name']}">{$v['name']}</option>
+                </foreach>
+            </select>
+        </div>
+        <div class="form-group">
+            <label>业务电话</label>
+            <input class="form-control" name="telephone" type="text" value="{$branch['telephone']}">
+        </div>
+        <div class="form-group">
+            <label>地址</label>
+            <input class="form-control" name="address" type="text" value="{$branch['address']}">
+        </div>
+        <div class="form-group">
+            <button type="submit" class="btn btn-default" id="submit">保存</button>
+            <button type="button" onclick="javascript:history.back(-1)" class="btn btn-default">取消</button>
+        </div>
+    </form>
+
+</section>
+
+<include file="Public/footer" />
+<script>
+    $(function () {
+        $('[name=area]').val("{$branch['area']}");
+        $('[name=circle]').val("{$branch['circle']}");
+        $('[name=area]').change(function(){
+            var pname = $(this).val();
+            $.ajax({
+                'url':'{:U("member/get_son_area")}',
+                'type':'post',
+                'data':{'pname':pname},
+                'success': function (data) {
+                    var html = '<option>--未选择--</option>';
+                    for(var i = 0;i < data.length;i ++){
+                        html += '<option value="' + data[i]['name'] + '">' + data[i]['name'] + '</option>';
+                    }
+                    $('[name=son_area]').html('');
+                    $('[name=son_area]').append(html);
+                }
+            });
+        });
+
+        $('#branch').submit(function () {
+            var i = true;
+            var url = "{:U('member/check_braname')}";
+            $.ajax({
+                url:url,
+                type:'post',
+                data:{
+                    'braname':$('[name=braname]').val(),
+                    'id':$('[name=id]').val(),
+                    'groId':$('[name=groId]').val()
+                },
+                success: function (data) {
+                    if(data > 1 || data == 1){
+                        alert('该分校名已存在！请更换！');
+                        i = false;
+                    }
+                },
+                async:false
+            });
+
+            return i;
+        });
+    });
+</script>

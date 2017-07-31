@@ -1,0 +1,114 @@
+<include file="Public/header" title="商户基本信息" />
+<script>
+	$(document).ready(function(){
+		//tab
+		$(".admin_tab li a").click(function(){
+			var liindex = $(".admin_tab li a").index(this);
+			$(this).addClass("active").parent().siblings().find("a").removeClass("active");
+			$(".admin_tab_cont").eq(liindex).fadeIn(150).siblings(".admin_tab_cont").hide();
+		});
+	});
+</script>
+<section class="rt_wrap content mCustomScrollbar _mCS_2">
+
+	<section>
+		<ul class="admin_tab">
+			<li><a class="active">基本信息</a></li>
+			<li><a>商户分校</a></li>
+		</ul>
+		<div class="admin_tab_cont" style="display:block;">
+
+			<form method="post" action="{:U('member/update_grocery_info')}" enctype="multipart/form-data" id="grocery">
+				<input type="hidden" name="id" value="{$grocery['id']}">
+				<div class="form-group">
+					<label for="aa">商户logo</label>
+					<p style="margin-top: 10px;margin-bottom: 15px;"><img src="{$grocery['logo']}" style="height: 100px;"></p>
+					<p><input type="file" name="logo"></p>
+				</div>
+				<div class="form-group">
+					<label for="aa">商户编号</label>
+					<input type="text" class="form-control"  value="{$grocery['numbering']}" readonly>
+				</div>
+
+				<div class="form-group">
+					<label for="aa">商户名</label>
+					<input type="text" name="name" class="form-control"  value="{$grocery['name']}" >
+				</div>
+				<div class="form-group">
+					<label for="aa">商户状态</label><br>
+					正常<input type="radio" name="status" value="1" >
+					冻结<input type="radio" name="status" value="0" >
+				</div>
+				<div class="form-group">
+					<button type="submit" class="btn btn-default" id="submit">保存</button>
+					<!--<button type="button" onclick="javascript:history.back(-1)" class="btn btn-default">取消</button>-->
+				</div>
+			</form>
+		</div>
+		<div class="admin_tab_cont">
+			<div class="row">
+				<div class="col-md-1">
+					<a class="btn btn-success" href="{:U('member/add_branch',array('groId'=>$grocery['id']))}">
+						添加分校
+					</a>
+				</div>
+			</div>
+			<table class="table table-hover table-striped">
+				<thead>
+					<tr>
+						<th>分校名</th>
+						<th>区域</th>
+						<th>商圈</th>
+						<th>业务电话</th>
+						<th>地址</th>
+						<th>操作</th>
+					</tr>
+				</thead>
+				<tbody>
+					<foreach name="branch" item="v">
+						<tr>
+							<td>{$v['braname']}</td>
+							<td>{$v['area']}</td>
+							<td>{$v['circle']}</td>
+							<td>{$v['telephone']}</td>
+							<td>{$v['address']}</td>
+							<td>
+								<a href="{:U('member/update_branch',array('id'=>$v['id'],'groId'=>$grocery['id']))}">编辑 </a> |
+								<a href="{:U('member/delete_branch',array('id'=>$v['id']))}" style="color: red" onclick="return del('删除后将不能恢复，确认删除？')">删除</a>
+							</td>
+						</tr>
+					</foreach>
+
+				</tbody>
+			</table>
+		</div>
+	</section>
+</section>
+<include file="Public/footer" />
+<script>
+	$(function () {
+		$('input[name=status][value={$grocery['status']}]').attr('checked',true);
+
+		$('#grocery').submit(function () {
+			var i = true;
+			var url = "{:U('member/check_groname')}";
+			$.ajax({
+				url:url,
+				type:'post',
+				data:{
+					'name':$('[name=name]').val(),
+					'id':$('[name=id]').val()
+				},
+				success: function (data) {
+					if(data > 1 || data == 1){
+						alert('该商户名已存在！请更换！');
+						i = false;
+					}
+				},
+				async:false
+			});
+
+			return i;
+		});
+	});
+</script>

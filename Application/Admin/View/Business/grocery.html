@@ -1,0 +1,137 @@
+<if condition="$type eq 1"><include file="Public/header" title="商户会员订单列表" css="/Public/admin/business/have_img.css" />
+<elseif condition="$type eq 2" /><include file="Public/header" title="商户会员课程列表" css="/Public/admin/business/have_img.css" />
+<elseif condition="$type eq 3" /><include file="Public/header" title="商户会员文章列表" css="/Public/admin/business/have_img.css" />
+</if>
+<section class="rt_wrap content mCustomScrollbar">
+    <p class="btn btn-success" style="margin-bottom: 5px;margin-top: 5px;">{$gro_name}</p>
+
+    <div id="page-wrapper">
+
+        <div class="row">
+            <div class="col-md-6" style="width: 10%">
+                <a href="{:U('business/grocery',array('id'=>$id,'type'=>1))}" class="btn btn-success">业务订单({$order_count})</a>
+            </div>
+            <div class="col-md-6" style="width: 10%">
+                <a href="{:U('business/grocery',array('id'=>$id,'type'=>2))}" class="btn btn-success">课程({$course_count})</a>
+            </div>
+            <div class="col-md-6" style="width: 10%">
+                <a href="{:U('business/grocery',array('id'=>$id,'type'=>3))}" class="btn btn-success">文章({$article_count})</a>
+            </div>
+
+        </div>
+        <if condition="$type eq 3">
+            <div class="row" style="margin-top: 10px;">
+                <div class="col-md-6" >
+                    <a href="{:U('business/grocery',array('id'=>$id,'type'=>3))}" class="btn btn-success">全部({$article_count})</a>
+                    <foreach name="article_cate" item="v">
+                        <a href="{:U('business/grocery',array('id'=>$id,'type'=>3,'cate'=>$v['cate']))}" class="btn btn-success">{$v['cate']}({$v['count']})</a>
+                    </foreach>
+                </div>
+            </div>
+        </if>
+        <table class="table table-hover table-striped">
+            <if condition="$type eq 1"><thead>
+            <tr>
+                <th>订单编号</th>
+                <th>课程名</th>
+                <th>价格</th>
+                <th>课程图片</th>
+                <th>订单状态</th>
+                <th>商户名</th>
+                <th>分校名</th>
+                <th>地址</th>
+                <th>操作</th>
+            </tr>
+            </thead>
+                <tbody>
+                <foreach name="order" item="v">
+                    <tr>
+                        <td><span>{$v.out_trade_no}</span></td>
+                        <td><span>{$v['cname']}</span></td>
+                        <td><span>￥{$v['price']}</span></td>
+                        <td>
+                            <if condition="$v['extension'] eq 0"><img src="{$v['image']}">
+                                <else /><img src="{$v['extensionimg']}">
+                            </if>
+                        </td>
+                        <td><span>
+                    <if condition="$v['status'] eq 1 && $v['is_pay'] eq 0">未支付
+                        <elseif condition="$v['status'] eq 1" />支付成功
+                        <elseif condition="$v['status'] eq 2" />预约成功
+                        <elseif condition="$v['status'] eq 3" />体验中
+                        <elseif condition="$v['status'] eq 4" />体验结束
+                        <elseif condition="$v['status'] eq 5" />订单完成
+                        <elseif condition="$v['status'] eq 0" />已取消
+                    </if>
+                    </span>
+                        </td>
+                        <td><span>{$v['gname']}</span></td>
+                        <td><span>{$v['braname']}</span></td>
+                        <td><span>{$v['address']}</span></td>
+                        <td><span><a href="{:U('order/update',array('id'=>$v['id']))}" target="_blank">查看</a></span></td>
+                    </tr>
+                </foreach>
+                </tbody>
+                <elseif condition="$type eq 2" />
+                <thead>
+                <tr>
+                    <th>课程图片</th>
+                    <th>课程名</th>
+                    <th>课程价格</th>
+                    <th>打赏积分</th>
+                    <th>打赏次数</th>
+                    <th>销售积分</th>
+                    <th>查看</th>
+                </tr>
+                </thead>
+                <tbody>
+                <foreach name="course" item="v">
+                    <tr>
+                        <td>
+                            <if condition="$v['extension'] eq 1"><img src="{$v['extensionimg']}">
+                                <else /><img src="{$v['image']}">
+                            </if>
+                        </td>
+                        <td><span>{$v['name']}</span></td>
+                        <td><span>￥{$v['price']}</span></td>
+                        <td><span>{$v['praisepoint']}</span></td>
+                        <td><span>{$v['praisenum']|}</span></td>
+                        <td><span>{$v['salepoint']}</span></td>
+                        <td><span><a href="{:U('course/update',array('id'=>$v['id']))}" target="_blank">查看</a></span></td>
+                    </tr>
+                </foreach>
+                </tbody>
+                <elseif condition="$type eq 3" />
+                <thead>
+                <tr>
+                    <th>文章标题</th>
+                    <th>文章图片</th>
+                    <th>发表时间</th>
+                    <th>分类</th>
+                    <th>收藏</th>
+                    <th>口碑</th>
+                    <th>查看</th>
+                </tr>
+                </thead>
+                <tbody>
+                <foreach name="article" item="v">
+                    <tr>
+                        <td><span>{$v['title']}</span></td>
+                        <td><img src="{$v['image']}"></td>
+                        <td><span>{$v['createtime']|date="Y-m-d H:i:s",###}</span></td>
+                        <td><span>{$v['cate']}</span></td>
+                        <td><span>{$v['collect_count']}</span></td>
+                        <td><span>{$v['point']/$v['praisenum']*10|round}%</span></td>
+                        <td><span><a href="{:U('article/update',array('id'=>$v['id']))}" target="_blank">查看</a></span></td>
+                    </tr>
+                </foreach>
+                </tbody>
+            </if>
+        </table>
+        {$page}
+    </div>
+</section>
+
+
+
+<include file="Public/footer" />

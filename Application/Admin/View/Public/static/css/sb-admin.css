@@ -107,7 +107,7 @@ table.tablesorter thead tr th:hover {
 	height: 100%;
 	border-radius: 0;
 	border: none;
-	background-color: #222222;
+	background-color: #98d261;
 	overflow-y: auto;
   }
 
@@ -139,8 +139,11 @@ table.tablesorter thead tr th:hover {
 
   .side-nav>li>a {
 	width: 225px;
+	
   }
-
+  .navbar-inverse .navbar-nav>li>a{
+	 color:#0C597F;
+  }
   .navbar-inverse .navbar-nav>li>a:hover,
   .navbar-inverse .navbar-nav>li>a:focus {
 	background-color: #080808;
@@ -161,4 +164,23 @@ table.tablesorter thead tr th:hover {
 .sidebar-active{
     color: #fff;
     background-color: #333;
+}
+.page{
+    margin-top: 20px;
+}
+.page a{
+    border: #0AB2EE 1px solid;
+    padding: 2px 5px;
+    color: #0AB2EE;
+    margin: 0 2px 0 0;
+    text-decoration: none;
+    font-size: 14px;
+}
+.page span.current{
+    border: #0AB2EE 1px solid;
+    padding: 2px 5px;
+    font-weight: bold;
+    color: #fff;
+    margin: 0 2px 0 0;
+    background-color: #0AB2EE;
 }

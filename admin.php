@@ -22,6 +22,8 @@ define('APP_DEBUG',True);
 
 // 定义应用目录
 define('APP_PATH','./Application/');
+define('PROTRAIT_PATH','./Public/home/images/head/');//头像路径
+define("GRO_UPLOADS",'./Public/uploads/grocery/');
 
 // 引入ThinkPHP入口文件
 require './ThinkPHP/ThinkPHP.php';

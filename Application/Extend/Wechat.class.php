@@ -292,6 +292,7 @@ class Wechat
                 else
                     return false;
             } else {
+                ob_clean();
                 if ($this->checkSignature())
                     die($echoStr);
                 else
@@ -2264,7 +2265,7 @@ class Wechat
             if (!$json || !empty($json['errcode'])) {
                 $this->errCode = $json['errcode'];
                 $this->errMsg = $json['errmsg'];
-                return false;
+                return var_dump($json);
             }
             return $json;
         }
@@ -2276,7 +2277,8 @@ class Wechat
      * @param string $callback 回调URI
      * @return string
      */
-    public function getOauthRedirect($callback,$state='',$scope='snsapi_userinfo'){
+    public function
+    getOauthRedirect($callback,$state='',$scope='snsapi_userinfo'){
         return self::OAUTH_PREFIX.self::OAUTH_AUTHORIZE_URL.'appid='.$this->appid.'&redirect_uri='.urlencode($callback).'&response_type=code&scope='.$scope.'&state='.$state.'#wechat_redirect';
     }
 
@@ -2443,12 +2445,13 @@ class Wechat
     public function sendTemplateMessage($data){
         if (!$this->access_token && !$this->checkAuth()) return false;
         $result = $this->http_post(self::API_URL_PREFIX.self::TEMPLATE_SEND_URL.'access_token='.$this->access_token,self::json_encode($data));
+
         if($result){
             $json = json_decode($result,true);
             if (!$json || !empty($json['errcode'])) {
                 $this->errCode = $json['errcode'];
                 $this->errMsg = $json['errmsg'];
-                return false;
+                return $json;
             }
             return $json;
         }

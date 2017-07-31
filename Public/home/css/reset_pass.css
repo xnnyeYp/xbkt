@@ -1,0 +1,95 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+a{
+	text-decoration: none;
+}
+
+body{
+	font-family: '微软雅黑';
+	font-size:0.2rem;
+	letter-spacing:2px;
+}
+#reset_pass_head{
+	height:0.75rem;
+	width:100%;
+	line-height:0.75rem;
+	text-align:center;
+	color:#fff;
+	font-size:0.25rem;
+	background:#98d261;
+}
+#reset_pass_head img{
+	display:block;
+	height:0.39rem;
+	width:0.30rem;
+	margin:0.18rem 0 0 0.18rem;
+	float:left;
+}
+#reset_pass_main{
+	height:8.08rem;
+	width:100%;
+	background:#fff;
+	padding-top:0.21rem;
+}
+/*#reset_pass_main input{
+	height:0.68rem;
+	margin:0.21rem 5% 0 5%;
+	border:1px solid #fff;
+	border-radius:5px;
+	text-indent:0.08rem;
+}*/
+
+#reset_pass_main .submit{
+	border:none;
+	background:#ddd;
+	color:#313131;
+	letter-spacing:10px;
+	margin-top:0.41rem;
+}
+#getCode{
+	line-height:0.68rem;
+	border-radius:5px;
+}
+.telephone,.activeCode{
+	border:2px solid #e5e5e5;
+}
+.telephone,.activeCode,.new_pass,.re_pass,.submit{
+	width:90%;
+	margin:0 5%;
+	height:0.68rem;
+	border:1px solid #e5e5e5;
+	border-radius:5px;
+	text-indent:8px;
+	float:left;
+}
+.code{
+	margin:0 5% 4px;	
+}
+.activeCode{
+	width:50%;
+	float:left;
+	margin-left:0px;
+}
+#getCode{
+	float:right;
+	font-size:0.2rem;
+	/*color:#c3c3c3;*/
+	color:#f7f7f7;
+	width:40%;
+	margin-right:-4px;
+	text-align:center;
+	background:#98d261;
+	border:2px solid #98d261;
+
+}
+
+.telPs,.telPs1,.telPs2,.telPs3{
+	float:left;
+	width:90%;
+	margin:0 5%;
+	font-size:0.17rem;
+	color:#fff;
+	line-height:0.5rem;
+}

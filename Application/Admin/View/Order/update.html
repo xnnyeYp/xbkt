@@ -1,0 +1,112 @@
+<include file="Public/header" title="查看订单" />
+<section class="rt_wrap content mCustomScrollbar _mCS_2">
+	<div id="page-wrapper">
+		<form action="{:U('order/update')}" method="post">
+			<div class="form-group">
+				<label>订单编号</label>
+				<input class="form-control" type="text" name="out_trade_no" value="{$order['out_trade_no']}" readonly>
+			</div>
+			<div class="form-group">
+				<label>订单状态</label>
+				<select class="form-control" name="status" disabled>
+					<option value="null">未支付</option>
+					<option value="1">支付成功</option>
+					<option value="2">预约成功</option>
+					<option value="3">体验中</option>
+					<option value="4">体验结束</option>
+					<option value="5">订单完成</option>
+					<option value="0">已取消</option>
+					<option value="-1">已退款</option>
+				</select>
+			</div>
+			<if condition="$order['status'] eq -1 || $order['status'] eq 0 ">
+				<div class="form-group">
+					<label>取消理由</label>
+					<textarea class="form-control" readonly>{$order['cancel_reason']}</textarea>
+				</div>
+			</if>
+			<div class="form-group">
+				<label>下单时间</label>
+				<input class="form-control" type="input" name="create_time" value="{$order['create_time']|date='Y-m-d H:i:s',###}" readonly>
+			</div>
+			<div class="form-group">
+				<label>用户名</label>
+				<input class="form-control" type="input" name="username" value="{$order['m_username']}" readonly>
+			</div>
+			<div class="form-group">
+				<label>课程名</label>
+				<input class="form-control" type="input"  value="{$order['name']}" readonly>
+			</div>
+			<div class="form-group">
+				<label>价格</label>
+				<input class="form-control" type="input"  value="{$order['price']}" readonly>
+			</div>
+			<div class="form-group">
+				<label>课程图片</label>
+				<if condition="$order['extension'] eq 0"><img src="{$order['image']}" style="width: 192px;height: 128px;">
+					<else /><img src="{$order['extensionimg']}">
+				</if>
+			</div>
+			<div class="form-group">
+				<label>预约时间</label>
+				<input class="form-control" type="input"  value="{$order['appointment_time']}" readonly>
+			</div>
+
+			<div class="form-group">
+				<label>预约留言</label>
+				<textarea class="form-control"readonly>{$order['message']}</textarea>
+			</div>
+			<div class="form-group">
+				<label>体验时间</label>
+				<input class="form-control" type="input"  value="{$order['experience_time']}" name="experience_time" placeholder="请输入体验时间" onclick="laydate({istime: true, format: 'YYYY-MM-DD hh:mm:ss'})" <if condition="$order['status'] neq 2">readonly</if> >
+			</div>
+			<div class="form-group">
+				<label>体验码</label>
+				<input class="form-control" type="input"  value="{$order['experience_code']}" name="experience_code" placeholder="如果没有输入，将自动生成" <if condition="$order['status'] neq 2">readonly</if>>
+			</div>
+			<div class="form-group">
+				<label>接待者</label>
+				<input class="form-control" type="input"  value="{$order['username']}" readonly>
+			</div>
+			<div class="form-group">
+				<label>结束时间</label>
+				<input class="form-control" type="input"  value="{$order['createtime']|date='Y-m-d H:i:s',###}" readonly>
+			</div>
+			<div class="form-group">
+				<label>打赏积分</label>
+				<input class="form-control" type="input"  value="{$order['point']}" readonly>
+			</div>
+			<div class="form-group">
+				<label>课程评论</label>
+				<textarea class="form-control" readonly>{$order['comment']}</textarea>
+			</div>
+
+
+
+		</form>
+	</div>
+</section>
+
+
+<include file="Public/footer" />
+<script src="/Public/laydate/laydate.js"></script>
+<script>
+	var status = {$order['status']};
+	var is_pay = {$order['is_pay']};
+	if(is_pay == 0){
+		$('[name=status]').val('null');
+	}else{
+		$('[name=status]').val(status);
+	}
+	if(status == 4 || status == 5 || status == 0 || is_pay == 0){
+		$('[name=status]').mousedown(function(){
+			return false;
+		});
+	}
+	if(status != 2){
+		$('[name=experience_time]').attr('onclick','');
+	}
+	;!function(){
+		laydate.skin('huanglv');
+	}();
+</script>

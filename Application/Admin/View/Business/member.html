@@ -1,0 +1,113 @@
+<if condition="$type eq 1"><include file="Public/header" title="普通会员订单列表" css="/Public/admin/business/have_img.css" />
+    <elseif condition="$type eq 2" /><include file="Public/header" title="普通会员收藏列表" css="/Public/admin/business/have_img.css" />
+    <elseif condition="$type eq 3" /><include file="Public/header" title="普通会员财富列表" css="/Public/admin/business/have_img.css" />
+</if>
+
+<section class="rt_wrap content mCustomScrollbar">
+    <div id="page-wrapper">
+
+        <div class="row">
+            <div class="col-md-6" style="width: 10%">
+                <a href="{:U('business/member',array('id'=>$id,'type'=>1))}" class="btn btn-success">业务订单({$order_count})</a>
+            </div>
+            <div class="col-md-6" style="width: 10%">
+                <a href="{:U('business/member',array('id'=>$id,'type'=>2))}" class="btn btn-success">收藏({$collect_count})</a>
+            </div>
+
+        </div>
+        <table class="table table-hover table-striped">
+            <if condition="$type eq 1"> <thead>
+            <tr>
+                <th>订单编号</th>
+                <th>下单时间</th>
+                <th>课程名</th>
+                <th>价格</th>
+                <th>课程图片</th>
+                <th>订单状态</th>
+                <th>商户名</th>
+                <th>分校名</th>
+                <th>地址</th>
+            </tr>
+            </thead>
+                <tbody>
+                <foreach name="order" item="v">
+                    <tr>
+                        <td><span>{$v.out_trade_no}</span></td>
+                        <td><span>{$v['create_time']|date='Y-m-d H:i:s',###}</span></td>
+                        <td><span>{$v['cname']}</span></td>
+                        <td><span>￥{$v['price']}</span></td>
+                        <td>
+                            <if condition="$v['extension'] eq 0"><img src="{$v['image']}">
+                                <else /><img src="{$v['extensionimg']}">
+                            </if>
+                        </td>
+                        <td><span>
+                    <if condition="$v['status'] eq 1 && $v['is_pay'] eq 0">未支付
+                        <elseif condition="$v['status'] eq 1" />支付成功
+                        <elseif condition="$v['status'] eq 2" />预约成功
+                        <elseif condition="$v['status'] eq 3" />体验中
+                        <elseif condition="$v['status'] eq 4" />体验结束
+                        <elseif condition="$v['status'] eq 5" />订单完成
+                        <elseif condition="$v['status'] eq 0" />已取消
+                    </if>
+                    </span>
+                        </td>
+                        <td><span>{$v['gname']}</span></td>
+                        <td><span>{$v['braname']}</span></td>
+                        <td><span>{$v['address']}</span></td>
+                    </tr>
+                </foreach>
+                </tbody>
+                <elseif condition="$type eq 2" />
+                <thead>
+                <tr>
+                    <th>文章标题</th>
+                    <th>文章图片</th>
+                    <th>收藏时间</th>
+                    <th>文章分类</th>
+                    <th>商户名</th>
+                </tr>
+                </thead>
+                <tbody>
+                <foreach name="collect" item="v">
+                    <tr>
+                        <td><span>{$v['title']}</span></td>
+                        <td><img src="{$v['image']}"></td>
+                        <td><span>{$v['createtime']|date="Y-m-d H:i:s",###}</span></td>
+                        <td><span>{$v['cate']}</span></td>
+                        <td><span>{$v['name']}</span></td>
+                    </tr>
+                </foreach>
+                </tbody>
+                <elseif condition="$type eq 3" />
+                <thead>
+                <tr>
+                    <th>用户名</th>
+                    <th>积分日志内容</th>
+                    <th>奖励/贡献积分</th>
+                    <th>日志时间</th>
+                </tr>
+                </thead>
+                <tbody>
+                <foreach name="point_log" item="v">
+                    <tr>
+                        <td>{$v['username']}</td>
+                        <td>{$v['message']}</td>
+                        <td>
+                            <if condition="$v['type'] eq 1">奖励积分：{$v['point']}
+                                <else />贡献积分：{$v['point']}
+                            </if>
+                        </td>
+                        <td>{$v['create_time']|date="Y-m-d H:s:i",###}</td>
+                    </tr>
+                </foreach>
+                </tbody>
+            </if>
+        </table>
+        {$page}
+    </div>
+</section>
+
+
+
+<include file="Public/footer" />

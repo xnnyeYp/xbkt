@@ -1,0 +1,287 @@
+[ 2016-04-16T14:20:33+08:00 ] ::1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.143009s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-16T14:20:37+08:00 ] ::1 /choice/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0460s ]
+SQL: SELECT course.*,g.numbering,b.braName,b.area,b.circle,(SELECT count(*) from course_praise cp WHERE cp.courseid=course.id) AS count FROM `course` INNER JOIN branch b on b.id=course.branchId INNER JOIN grocery g on g.id=b.groId LEFT JOIN course_praise cp on cp.courseid=course.id  WHERE ( extension = 1 )  [ RunTime:0.0480s ]
+SQL: SHOW COLUMNS FROM `linkdeta` [ RunTime:0.0460s ]
+SQL: SELECT * FROM `linkdeta` WHERE ( linkid = 1 ) ORDER BY sortnu  [ RunTime:0.0450s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] Division by zero E:\wamp\www\ThinkAdmin\Application\Runtime\Cache\Home\1b07914afbea34ff8790ac18f6c6e89c.php 第 161 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:1.059060s ]
+INFO: [ view_parse ] --END-- [ RunTime:1.059060s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.107006s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.107006s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.269016s ]
+INFO: [ app_end ] --END-- [ RunTime:0.270016s ]
+
+[ 2016-04-16T14:20:39+08:00 ] ::1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-16T14:20:44+08:00 ] ::1 /course/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0430s ]
+NOTIC: [8] Undefined variable: where E:\wamp\www\ThinkAdmin\Application\Home\Controller\CourseController.class.php 第 28 行.
+SQL: SELECT course.*,g.numbering,b.braName,b.area,b.circle,(SELECT count(*) from course_praise cp WHERE cp.courseid=course.id) AS count FROM `course` INNER JOIN branch b on b.id=course.branchId INNER JOIN grocery g on g.id=b.groId LEFT JOIN course_praise cp on cp.courseid=course.id   [ RunTime:0.0420s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] Division by zero E:\wamp\www\ThinkAdmin\Application\Runtime\Cache\Home\5fd5f4d6eb6ceaf4d8869415689e1250.php 第 70 行.
+NOTIC: [2] Division by zero E:\wamp\www\ThinkAdmin\Application\Runtime\Cache\Home\5fd5f4d6eb6ceaf4d8869415689e1250.php 第 70 行.
+NOTIC: [2] Division by zero E:\wamp\www\ThinkAdmin\Application\Runtime\Cache\Home\5fd5f4d6eb6ceaf4d8869415689e1250.php 第 70 行.
+NOTIC: [2] Division by zero E:\wamp\www\ThinkAdmin\Application\Runtime\Cache\Home\5fd5f4d6eb6ceaf4d8869415689e1250.php 第 70 行.
+NOTIC: [2] Division by zero E:\wamp\www\ThinkAdmin\Application\Runtime\Cache\Home\5fd5f4d6eb6ceaf4d8869415689e1250.php 第 70 行.
+NOTIC: [2] Division by zero E:\wamp\www\ThinkAdmin\Application\Runtime\Cache\Home\5fd5f4d6eb6ceaf4d8869415689e1250.php 第 70 行.
+NOTIC: [2] Division by zero E:\wamp\www\ThinkAdmin\Application\Runtime\Cache\Home\5fd5f4d6eb6ceaf4d8869415689e1250.php 第 70 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.749043s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.749043s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003001s ]
+
+[ 2016-04-16T14:20:49+08:00 ] ::1 /Public/home/images/nav21.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-16T14:20:49+08:00 ] ::1 /Public/home/images/nav11.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-04-16T14:20:49+08:00 ] ::1 /Public/home/images/classIcon.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-04-16T14:21:10+08:00 ] ::1 /course/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0500s ]
+NOTIC: [8] Undefined variable: where E:\wamp\www\ThinkAdmin\Application\Home\Controller\CourseController.class.php 第 28 行.
+SQL: SELECT course.*,g.numbering,b.braName,b.area,b.circle,(SELECT count(*) from course_praise cp WHERE cp.courseid=course.id) AS count FROM `course` INNER JOIN branch b on b.id=course.branchId INNER JOIN grocery g on g.id=b.groId LEFT JOIN course_praise cp on cp.courseid=course.id   [ RunTime:0.0480s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] Division by zero E:\wamp\www\ThinkAdmin\Application\Runtime\Cache\Home\5fd5f4d6eb6ceaf4d8869415689e1250.php 第 70 行.
+NOTIC: [2] Division by zero E:\wamp\www\ThinkAdmin\Application\Runtime\Cache\Home\5fd5f4d6eb6ceaf4d8869415689e1250.php 第 70 行.
+NOTIC: [2] Division by zero E:\wamp\www\ThinkAdmin\Application\Runtime\Cache\Home\5fd5f4d6eb6ceaf4d8869415689e1250.php 第 70 行.
+NOTIC: [2] Division by zero E:\wamp\www\ThinkAdmin\Application\Runtime\Cache\Home\5fd5f4d6eb6ceaf4d8869415689e1250.php 第 70 行.
+NOTIC: [2] Division by zero E:\wamp\www\ThinkAdmin\Application\Runtime\Cache\Home\5fd5f4d6eb6ceaf4d8869415689e1250.php 第 70 行.
+NOTIC: [2] Division by zero E:\wamp\www\ThinkAdmin\Application\Runtime\Cache\Home\5fd5f4d6eb6ceaf4d8869415689e1250.php 第 70 行.
+NOTIC: [2] Division by zero E:\wamp\www\ThinkAdmin\Application\Runtime\Cache\Home\5fd5f4d6eb6ceaf4d8869415689e1250.php 第 70 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-16T14:21:10+08:00 ] ::1 /Public/home/images/nav11.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-04-16T14:21:10+08:00 ] ::1 /Public/home/images/nav21.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-16T14:21:51+08:00 ] ::1 /course/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0380s ]
+NOTIC: [8] Undefined variable: where E:\wamp\www\ThinkAdmin\Application\Home\Controller\CourseController.class.php 第 28 行.
+SQL: SELECT course.*,g.numbering,b.braName,b.area,b.circle,(SELECT count(*) from course_praise cp WHERE cp.courseid=course.id) AS count FROM `course` INNER JOIN branch b on b.id=course.branchId INNER JOIN grocery g on g.id=b.groId LEFT JOIN course_praise cp on cp.courseid=course.id   [ RunTime:0.0390s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] Division by zero E:\wamp\www\ThinkAdmin\Application\Runtime\Cache\Home\5fd5f4d6eb6ceaf4d8869415689e1250.php 第 70 行.
+NOTIC: [2] Division by zero E:\wamp\www\ThinkAdmin\Application\Runtime\Cache\Home\5fd5f4d6eb6ceaf4d8869415689e1250.php 第 70 行.
+NOTIC: [2] Division by zero E:\wamp\www\ThinkAdmin\Application\Runtime\Cache\Home\5fd5f4d6eb6ceaf4d8869415689e1250.php 第 70 行.
+NOTIC: [2] Division by zero E:\wamp\www\ThinkAdmin\Application\Runtime\Cache\Home\5fd5f4d6eb6ceaf4d8869415689e1250.php 第 70 行.
+NOTIC: [2] Division by zero E:\wamp\www\ThinkAdmin\Application\Runtime\Cache\Home\5fd5f4d6eb6ceaf4d8869415689e1250.php 第 70 行.
+NOTIC: [2] Division by zero E:\wamp\www\ThinkAdmin\Application\Runtime\Cache\Home\5fd5f4d6eb6ceaf4d8869415689e1250.php 第 70 行.
+NOTIC: [2] Division by zero E:\wamp\www\ThinkAdmin\Application\Runtime\Cache\Home\5fd5f4d6eb6ceaf4d8869415689e1250.php 第 70 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-16T14:21:51+08:00 ] ::1 /Public/home/images/nav21.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-04-16T14:21:51+08:00 ] ::1 /Public/home/images/nav11.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-16T14:21:55+08:00 ] ::1 /course/coursedeta/id/3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0620s ]
+SQL: SELECT course.*,g.numbering,b.area,b.circle FROM `course` INNER JOIN branch b on b.id=course.branchId INNER JOIN grocery g on g.id=b.groId  WHERE course.id = '3' LIMIT 1   [ RunTime:0.0630s ]
+SQL: SHOW COLUMNS FROM `course_praise` [ RunTime:0.0610s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `course_praise` WHERE ( courseid=3 ) LIMIT 1   [ RunTime:0.0620s ]
+SQL: SELECT course_praise.*,m.username,m.headProtrait FROM `course_praise` INNER JOIN member m on m.id=course_praise.userid  WHERE ( courseid=3 )  [ RunTime:0.0500s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: praise E:\wamp\www\ThinkAdmin\Application\Runtime\Cache\Home\11dd8fc8516aa2d78f6cbca9e59928db.php 第 15 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.057004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.058004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-16T14:21:56+08:00 ] ::1 /Public/home/images/titleRight.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-16T14:56:42+08:00 ] ::1 /course/coursedeta/id/3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0550s ]
+SQL: SELECT course.*,g.numbering,b.area,b.circle FROM `course` INNER JOIN branch b on b.id=course.branchId INNER JOIN grocery g on g.id=b.groId  WHERE course.id = '3' LIMIT 1   [ RunTime:0.3440s ]
+SQL: SHOW COLUMNS FROM `course_praise` [ RunTime:0.0530s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `course_praise` WHERE ( courseid=3 ) LIMIT 1   [ RunTime:0.0530s ]
+SQL: SELECT course_praise.*,m.username,m.headProtrait FROM `course_praise` INNER JOIN member m on m.id=course_praise.userid  WHERE ( courseid=3 )  [ RunTime:0.0580s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: praise E:\wamp\www\ThinkAdmin\Application\Runtime\Cache\Home\11dd8fc8516aa2d78f6cbca9e59928db.php 第 15 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-16T14:56:43+08:00 ] ::1 /Public/home/images/titleRight.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-16T14:56:54+08:00 ] ::1 /course/coursedeta/id/3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0420s ]
+SQL: SELECT course.*,g.numbering,b.area,b.circle FROM `course` INNER JOIN branch b on b.id=course.branchId INNER JOIN grocery g on g.id=b.groId  WHERE course.id = '3' LIMIT 1   [ RunTime:0.0370s ]
+SQL: SHOW COLUMNS FROM `course_praise` [ RunTime:0.0360s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `course_praise` WHERE ( courseid=3 ) LIMIT 1   [ RunTime:0.0380s ]
+SQL: SELECT course_praise.*,m.username,m.headProtrait FROM `course_praise` INNER JOIN member m on m.id=course_praise.userid  WHERE ( courseid=3 )  [ RunTime:0.0360s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: praise E:\wamp\www\ThinkAdmin\Application\Runtime\Cache\Home\11dd8fc8516aa2d78f6cbca9e59928db.php 第 15 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-16T14:56:54+08:00 ] ::1 /Public/home/images/titleRight.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-16T14:58:56+08:00 ] ::1 /course/coursedeta/id/3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0450s ]
+SQL: SELECT course.*,g.numbering,b.area,b.circle FROM `course` INNER JOIN branch b on b.id=course.branchId INNER JOIN grocery g on g.id=b.groId  WHERE course.id = '3' LIMIT 1   [ RunTime:0.0460s ]
+SQL: SHOW COLUMNS FROM `course_praise` [ RunTime:0.0440s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `course_praise` WHERE ( courseid=3 ) LIMIT 1   [ RunTime:0.0430s ]
+SQL: SELECT course_praise.*,m.username,m.headProtrait FROM `course_praise` INNER JOIN member m on m.id=course_praise.userid  WHERE ( courseid=3 )  [ RunTime:0.0440s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: praise E:\wamp\www\ThinkAdmin\Application\Runtime\Cache\Home\11dd8fc8516aa2d78f6cbca9e59928db.php 第 15 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-04-16T14:58:56+08:00 ] ::1 /Public/home/images/titleRight.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+

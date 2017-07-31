@@ -1,0 +1,19 @@
+<include file="Public/header" title="编辑积分" />
+<section class="rt_wrap content mCustomScrollbar">
+    <div id="page-wrapper">
+        <form method="post" action="{:U('point/update',array('action'=>'do'))}">
+            <div class="form-group">
+                <label for="aa">积分事件</label>
+                <input type="text" name="title" class="form-control" readonly id="aa" value="{$point.event}" >
+            </div>
+            <div class="form-group">
+                <label for="bb">父分类</label>
+                <input id="bb" name="point" class="form-control" type="text"  value="{$point['point']}"/>
+            </div>
+            <input type="hidden" name="id" value="{$point.id}">
+            <button type="submit" class="btn btn-default">更新</button>
+        </form>
+    </div>
+</section>
+
+<include file="Public/footer" />

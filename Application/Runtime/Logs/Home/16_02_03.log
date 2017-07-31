@@ -1,0 +1,41 @@
+[ 2016-02-03T15:39:49+08:00 ] ::1 /thinkadmin/user/sendmsg/to/13.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-02-03T15:48:01+08:00 ] ::1 /thinkadmin/user/sendmsg/to/137.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-02-03T15:48:18+08:00 ] ::1 /thinkadmin/user/sendmsg/to/156.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.017600s ]
+
+[ 2016-02-03T16:00:59+08:00 ] ::1 /thinkadmin/user/sendmsg/to/13786923552.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.016601s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.016601s ]
+
+[ 2016-02-03T17:20:44+08:00 ] ::1 /thinkadmin/course
+ERR: 模板不存在:./Application/Home/View/Course/index.html
+
+[ 2016-02-03T20:19:48+08:00 ] ::1 /thinkadmin/user/sendmsg/to/14527596744.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-02-03T20:21:54+08:00 ] ::1 /thinkadmin/user/sendmsg/to/13786923552.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-02-03T20:25:55+08:00 ] ::1 /thinkadmin/user/sendmsg/to/13786923552.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-02-03T20:42:21+08:00 ] ::1 /thinkadmin/user/registers.html
+ERR: SQLSTATE[22001]: String data, right truncated: 1406 Data too long for column 'qrcode' at row 1
+

@@ -1,0 +1,19 @@
+<include file="Public/header" title="商户设置" css="__STATIC__/css/createAccount.css"/>
+<div class="createAccount" >
+	<h2>创建分校</h2>
+	<form action="{:U('Branch/createAccount')}" method="post">
+	<ul class="createAccount_list">
+		<li>分校名称:<input type="text" name="braName"/></li>
+		<li>商圈:<input type="text" name="circle"/></li>
+		<li>负责人:<input type="text" name="username"/></li>
+		<li>密码:<input type="password" name="password"/></li>
+		<li>密码确认:<input type="password" name="repassword"/></li>
+		<li>业务电话:<input type="text" name="telephone"/></li>
+		<li>手机:<input type="text" name="mphone"/></li>
+		<li>地址:<input type="text" name="address"/></li>
+		<li>区域:<input type="text" name="area"/></li>
+		<li><input type="submit" value="提交"/></li>
+	</ul>
+	</form>
+</div>
+<include file="Public/footer" />

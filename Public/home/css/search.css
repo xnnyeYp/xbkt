@@ -1,0 +1,45 @@
+body,div,a,input,img{
+	margin: 0;
+	padding: 0;
+}
+a{
+	text-decoration: none;
+}
+
+body{
+	background-color: #f0f0f0;
+	font-family: '微软雅黑';
+	font-size:0.2rem;
+	letter-spacing:2px;
+}
+#search_main{
+	height:0.75rem;
+	width:100%;
+	line-height:0.75rem;
+	text-align:center;
+	color:#fff;
+	font-size:0.25rem;
+	background:#98d261;
+}
+#search_main img{
+	display:block;
+	height:0.39rem;
+	width:0.30rem;
+	margin:0.18rem 0 0 0.18rem;
+	float:left;
+}
+#search_main input{
+	height:0.53rem;
+	width:70%;
+	border:0px;
+	text-indent:0.17rem;
+	color:#bbb;
+	border-radius:5px;
+	margin:0.11rem 0 0 0.18rem;
+	float:left;
+}
+#search_main .search{
+	height:0.599rem;
+	width:0.56rem;
+	margin:0.0596rem 0 0 -0.2rem;
+}

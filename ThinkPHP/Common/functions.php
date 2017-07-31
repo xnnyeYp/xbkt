@@ -21,6 +21,7 @@
  * @return mixed
  */
 function C($name=null, $value=null,$default=null) {
+
     static $_config = array();
     // 无参数时获取所有
     if (empty($name)) {
@@ -30,6 +31,7 @@ function C($name=null, $value=null,$default=null) {
     if (is_string($name)) {
         if (!strpos($name, '.')) {
             $name = strtoupper($name);
+
             if (is_null($value))
                 return isset($_config[$name]) ? $_config[$name] : $default;
             $_config[$name] = $value;

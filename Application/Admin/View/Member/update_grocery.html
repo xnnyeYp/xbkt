@@ -1,0 +1,104 @@
+<include file="Public/header" title="编辑普通会员" />
+<section class="rt_wrap content mCustomScrollbar _mCS_2">
+    <div id="page-wrapper">
+        <div class="row" style="margin-bottom: 10px">
+            <div class="col-md-1"><a class="btn btn-success">商户会员</a></div>
+        </div>
+        <form method="post" action="{:U('member/update_grocery',array('action'=>'do_update'))}">
+            <input type="hidden" name="gid" value="{$grocery['gid']}">
+            <input type="hidden" name="bid" value="{$grocery['id']}">
+            <div class="form-group">
+                <label for="aa">商户编号</label>
+                <input type="text" class="form-control"  value="{$grocery['numbering']}" readonly>
+            </div>
+            <div class="form-group">
+                <label for="aa">商户logo</label>
+                <p><img src="{$grocery['logo']}"></p>
+            </div>
+            <div class="form-group">
+                <label for="aa">商户名</label>
+                <input type="text" name="name" class="form-control"  value="{$grocery['name']}" >
+            </div>
+            <div class="form-group">
+                <label for="aa">商户状态</label><br>
+                正常<input type="radio" name="status" value="1" >
+                冻结<input type="radio" name="status" value="0" >
+            </div>
+            <div class="form-group">
+                <h3>商户总部管理员信息</h3>
+            </div>
+            <div class="form-group">
+                <label for="aa">用户名</label>
+                <input type="text" name="username" class="form-control" id="aa" value="{$grocery['username']}" >
+            </div>
+            <div class="form-group">
+                <label for="bb">分校名</label>
+                <input type="text" name="braName"  class="form-control" id="bb" value="{$grocery['braname']}" >
+            </div>
+            <div class="form-group">
+                <label>电话号码</label>
+                <input name="telephone" value="{$grocery['telephone']}" class="form-control" type="text">
+            </div>
+            <div class="form-group">
+                <label>手机号码</label>
+                <input name="mphone" value="{$grocery['mphone']}" class="form-control" type="text">
+            </div>
+            <div class="form-group">
+                <label>区域</label>
+                <input name="area" value="{$grocery['area']}" class="form-control" type="text">
+            </div>
+            <div class="form-group">
+                <label>商圈</label>
+                <input name="circle" value="{$grocery['circle']}" class="form-control" type="text">
+            </div>
+            <div class="form-group">
+                <label>地址</label>
+                <input name="address" value="{$grocery['address']}" class="form-control" type="text">
+            </div>
+
+            <div class="form-group">
+                <label>密码(编辑时不填写即不修改)</label>
+                <input name="password" class="form-control" type="password">
+            </div>
+            <div class="form-group">
+                <label>确认密码</label>
+                <input name="confirm_password" class="form-control" type="password">
+            </div>
+            <div class="form-group">
+                <input type="hidden" name="id" value="{$model.id}">
+                <button type="submit" class="btn btn-default" id="submit">保存</button>
+                <button type="button" onclick="javascript:history.back(-1)" class="btn btn-default">取消</button>
+            </div>
+        </form>
+    </div>
+</section>
+
+<include file="Public/footer" />
+<script>
+    $(function(){
+        $('input[name=status][value={$grocery["gstatus"]}]').attr('checked',true);
+
+        $('#submit').click(function () {
+            var i = true;
+            $('input[type=text]').each(function(){
+                if(!check_input($(this))){
+                    i = false;
+                    return false;
+                }
+            });
+
+            if($('[name=password]').val() != $('[name=confirm_password]').val()){
+                alert('两次密码输入不一致！');
+                $('[name=password]').focus();
+                return false;
+            }
+
+            return i;
+        });
+        $('input[type=text]').each(function(){
+            $(this).change(function () {
+                $(this).css('border','1px solid #cccccc');
+            });
+        });
+    });
+</script>

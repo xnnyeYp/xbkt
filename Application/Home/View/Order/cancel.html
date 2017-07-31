@@ -1,0 +1,47 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta  content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" 
+name="viewport">
+<title>取消订单</title>
+<link href='/Public/home/css/all.css' type="text/css" rel='stylesheet' />
+<link href='/Public/home/css/classDetails.css' type="text/css" rel='stylesheet' />
+<link href='/Public/home/css/orderDeta.css' type="text/css" rel='stylesheet' />
+<script src="/Public/home/js/rem.js" type="text/javascript"></script>
+<script src="/Public/home/js/jquery.js" type="text/javascript"></script>
+<script>
+	$(document).ready(function(){
+		$('.reason').focus(function(){
+			if($(this).val()=='请描述取消订单的原因...')
+				$(this).val('');
+		});
+		$('.reason').blur(function(){
+			if($(this).val()=='')
+				$(this).val('请描述取消订单的原因...')
+		});
+
+		$('.cancelBtn').click(function(){
+			if({$order['price']} > 0){
+				alert('您好，您的订单已取消，退款会在3个工作日内返款到您的账户！');
+			}else{
+				alert('您好，您的订单已取消！');
+			}
+
+		});
+	});
+</script>
+</head>
+<body>
+	<div class="head">
+		<p class="title"><a onclick="javascript:history.back(-1);" class="titleLeft"></a><span>取消订单</span></p>
+	</div>
+	<div class="cancelContent">
+		<form action="{:U('order/cancel',array('action'=>'cancel'))}" method="">
+			<input type="hidden" name="id" value="{$order['id']}">
+			<textarea type="text" class="reason" name="cancel_reason">请描述取消订单的原因...</textarea>
+			<input type="submit" value="残忍的取消" class="cancelBtn" />
+		</form>
+	</div>
+</body>
+</html>

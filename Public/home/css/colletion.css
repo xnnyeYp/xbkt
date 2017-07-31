@@ -1,0 +1,64 @@
+body,div,a,p,dl,dt,dd{
+	margin: 0;
+	padding: 0;
+}
+a{
+	text-decoration: none;
+}
+
+body{
+	background-color: #f0f0f0;
+	font-family: '微软雅黑';
+	font-size:0.2rem;
+	letter-spacing:2px;
+}
+#colletion_head{
+	height:0.75rem;
+	width:100%;
+	line-height:0.75rem;
+	text-align:center;
+	color:#fff;
+	font-size:0.25rem;
+	background:#98d261;
+}
+#colletion_head img{
+	display:block;
+	height:0.39rem;
+	width:0.30rem;
+	margin:0.18rem 0 0 0.18rem;
+	float:left;
+}
+#colletion_main{
+	height:8.72rem;
+	width:100%;
+	background:#f0f0f0;
+}
+#colletion_main dl{
+	height:1.95rem;
+	width:100%;
+	border-bottom:1px solid #d6d6d6;
+	background:#fff;
+}
+#colletion_main dl dd img{
+	height:1.62rem;
+	width:30%;
+	margin:0.165rem;
+	float:left;
+}
+#colletion_main dl dt{
+	float:left;
+	margin-top:0.165rem;
+}
+#colletion_main dl .colletion_title{
+	width:63%;
+}
+#colletion_main dl .colletion_theme{
+	color:#bababa;
+	width:63%;
+	
+}
+#colletion_main dl .colletion_data,#colletion_main dl .colletion_no{
+	width:31%;
+	color:#bababa;
+	letter-spacing:1px;
+	}

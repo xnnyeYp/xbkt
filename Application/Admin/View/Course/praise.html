@@ -1,0 +1,33 @@
+<include file="Public/header" title="后台主页" css="__STATIC__/css/course.css" />
+<section class="rt_wrap content mCustomScrollbar">
+    <div id="page-wrapper">
+            <table class="table table-hover table-striped">
+                <thead>
+                <tr>
+                    <th>用户名</th>
+                    <th>打赏</th>
+                    <th>日期</th>
+                    <th>课程评价</th>
+                    <th>操作</th>
+                </tr>
+                </thead>
+                <tbody>
+                <foreach name="praise" item="v">
+                    <tr>
+                       <td>{$v['username']}</td>
+                       <td>{$v['point']}</td>
+                       <td>{$v['createtime']|date="Y-m-d H:i:s",###}</td>
+                        <td>{$v['comment']}</td>
+                        <td>
+                            <a href="{:U('course/update_praise',array('id'=>$v['id']))}" target="_blank">编辑</a>
+                        </td>
+                    </tr>
+                </foreach>
+                </tbody>
+            </table>
+            {$page}
+    </div>
+</section>
+
+
+<include file="Public/footer" />

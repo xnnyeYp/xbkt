@@ -1,0 +1,55 @@
+<include file="Public/header" title="用户列表" />
+<section class="rt_wrap content mCustomScrollbar">
+	<div id="page-wrapper">
+		<div class="row">
+			<div class="col-md-2 block"><a class="btn btn-success" href="{:U('member/groceryMember')}">商户会员列表</a></div>
+			<div class="col-md-7"><a class="btn btn-success" href="{:U('member/add_grocery')}">创建商户</a></div>
+			<div class="col-md-3">
+				<form action="__SELF__" method="post">
+					<div class="form-group input-group">
+						<input type="text" class="form-control" name="key" placeholder="输入商户名称关键字搜索">
+                    <span class="input-group-btn">
+                      <button class="btn btn-default" type="button"><i class="fa fa-search"></i></button>
+                    </span>
+					</div>
+				</form>
+			</div>
+			<div class="col-md-2 block"><a href="{:U('member/groceryMember',array('status'=>1))}" class="btn btn-success">账户正常</a></div>
+			<div class="col-md-4 block"><a href="{:U('member/groceryMember',array('status'=>0))}" class="btn btn-success">账户冻结</a></div>
+		</div>
+		<table class="table table-hover table-striped">
+			<thead>
+			<tr>
+				<th>商户编号</th>
+				<th>商户名称</th>
+				<th>状态</th>
+				<th>基本信息</th>
+				<th>会员业务</th>
+				<th>安全设置</th>
+
+			</tr>
+			</thead>
+			<tbody>
+			<foreach name="grocery" item="v">
+				<tr>
+					<td>{$v['numbering']}</td>
+					<td>{$v['name']}</td>
+					<td>
+						<if condition="$v['status'] eq 1">正常
+							<else />冻结
+						</if>
+					</td>
+					<td><a href="{:U('member/grocery_set',array('id'=>$v['id'],'type'=>1))}" target="_blank">设置</a></td>
+
+					<td><a href="{:U('business/grocery',array('id'=>$v['id'],'type'=>1))}" target="_blank">查看</a></td>
+
+					<td><a href="{:U('member/safety',array('id'=>$v['id'],'type'=>1))}" target="_blank">设置</a></td>
+
+				</tr>
+			</foreach>
+			</tbody>
+		</table>
+		{$page}
+	</div>
+</section>
+<include file="Public/footer" />

@@ -1,0 +1,108 @@
+<include file="Public/header" title="编辑普通会员" />
+<section class="rt_wrap content mCustomScrollbar _mCS_2">
+    <div id="page-wrapper">
+        <form method="post" action="{:U('member/update_account',array('action'=>'do_update'))}" id="form">
+            <input type="hidden" name="id" value="{$account['id']}">
+            <input type="hidden" name="groId" value="{$groId}">
+            <div class="form-group">
+                <label for="aa">会员昵称</label>
+                <input type="text" class="form-control" name="username" value="{$account['username']}" >
+            </div>
+
+            <div class="form-group">
+                <label for="aa">会员分校</label>
+                <if condition="$account['type'] eq 1">
+                    <select name="branchId" class="form-control" disabled>
+                        <option value="">总部</option>
+                    </select>
+                    <else />
+                    <select name="branchId" class="form-control">
+                        <foreach name="branch" item="v">
+                            <option value="{$v['id']}">{$v['braname']}</option>
+                        </foreach>
+                    </select>
+                </if>
+
+            </div>
+            <div class="form-group">
+                <label for="aa">微信号</label><br>
+                <input name="wechat" type="text" value="{$account['wechat']}" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="aa">会员手机</label><br>
+                <input name="mphone" type="text" value="{$account['mphone']}" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="aa">会员密码</label><br>
+                <input name="password" type="text" class="form-control" placeholder="不修改则不填">
+            </div>
+           <!-- <div class="form-group">
+                <label for="aa">会员角色</label><br>
+                <if condition="$account['type'] eq 1">
+                    <input type="radio" value="1" name="type" disabled>商户管理员
+                    &lt;!&ndash;<input type="radio" value="2" name="type">普通&ndash;&gt;
+                    <input type="radio" value="3" name="type" disabled>分校管理员
+                    <else />
+                    <input type="radio" value="1" name="type">商户管理员
+                    &lt;!&ndash;<input type="radio" value="2" name="type">普通&ndash;&gt;
+                    <input type="radio" value="3" name="type">分校管理员
+                </if>
+
+            </div>-->
+
+                <div class="form-group">
+                    <button type="submit" class="btn btn-default" id="submit">保存</button>
+                    <button type="button" onclick="javascript:history.back(-1)" class="btn btn-default">取消</button>
+                </div>
+
+
+        </form>
+    </div>
+</section>
+
+<include file="Public/footer" />
+<script>
+    $(function(){
+        $('[name=branchId]').val("{$account['branchid']}");
+        $('[name=type][value={$account["type"]}]').attr('checked',true);
+
+        $('#form').submit(function(){
+            var i = true;
+            var url = "{:U('member/check_mobile')}";
+            $.ajax({
+                url:url,
+                type:'post',
+                data:{
+                    'mphone':$('[name=mphone]').val(),
+                    'id':$('[name=id]').val()
+                },
+                success: function (data) {
+                    if(data > 1 || data == 1){
+                        alert('该手机号已绑定帐号！请更换！');
+                        i = false;
+                    }
+                },
+                async:false
+            });
+
+            var url3 = "{:U('member/check_username')}";
+            $.ajax({
+                url:url3,
+                type:'post',
+                data:{
+                    'username':$('[name=username]').val(),
+                    'id':$('[name=id]').val()
+                },
+                success: function (data) {
+                    if(data > 1 || data == 1){
+                        alert('该用户名已存在！请更换！');
+                        i = false;
+                    }
+                },
+                async:false
+            });
+
+            return i;
+        });
+    });
+</script>

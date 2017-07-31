@@ -1,32 +1,67 @@
 <include file="Public/header" title="添加分类" />
-<div id="page-wrapper">
-    <form method="post" action="{:U('category/add')}">
-        <div class="form-group">
-            <label for="aa">分类标题</label>
-            <input type="text" name="title" class="form-control" id="aa" placeholder="输入分类标题">
-        </div>
-        <div class="form-group">
-            <label for="bb">父分类</label>
-            <select name="pid" id="bb" class="form-control">
-                <option value="">顶级分类</option>
-                <foreach name="cate" item="v">
-                    <option value="{$v.id}">{$v.html} {$v.title}</option>
-                </foreach>
-            </select>
-        </div>
-        <div class="form-group">
-            <label for="cc">分类别名</label>
-            <input type="text" name="name" class="form-control" id="cc" placeholder="输入分类别名,不能和其他分类别名重复">
-        </div>
-        <div class="form-group">
-            <label for="dd">关键词</label>
-            <input type="text" name="keywords" class="form-control" id="dd" placeholder="请输入SEO关键词(选填)">
-        </div>
-        <div class="form-group">
-            <label for="dd">描述信息</label>
-            <textarea name="description" id="dd" cols="30" rows="10" class="form-control" placeholder="请输入分类描述(选填)"></textarea>
-        </div>
-        <button type="submit" class="btn btn-default">添加</button>
-    </form>
-</div>
+<section class="rt_wrap content mCustomScrollbar">
+    <div id="page-wrapper">
+        <form method="post" action="{:U('category/add')}" enctype="multipart/form-data" id="cate">
+            <input name="type" type="hidden" value="<?php echo $_GET['cate_type'];?>">
+            <div class="form-group">
+                <label for="aa">分类标题</label>
+                <input type="text" name="title" class="form-control" id="aa" placeholder="输入分类标题">
+            </div>
+            <div class="form-group">
+                <label for="bb">父分类</label>
+                <select name="pid" id="bb" class="form-control">
+                    <option value="0">父分类</option>
+                    <foreach name="cate" item="v">
+                        <option value="{$v.id}">{$v.html} {$v.title}</option>
+                    </foreach>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="bb">分类图标(上传请选择78*78px的gif或者png图片)</label>
+                <input type="file" name="icon" >
+            </div>
+            <div class="form-group">
+                <label for="cc">分类状态</label><br>
+                <input type="radio" value="1" name="status" checked>正常
+                <input type="radio" value="0" name="status" >冻结
+            </div>
+
+            <button type="submit" class="btn btn-default">添加</button>
+        </form>
+    </div>
+</section>
+
 <include file="Public/footer" />
+<script>
+    $(function(){
+        $('[name=pid]').change(function(){
+            if($(this).val() == 0){
+                $('[name=icon]').parent().show();
+            }else{
+                $('[name=icon]').parent().hide();
+            }
+        });
+
+        $('[name=type]').change(function () {
+            if($(this).val() == 1){
+                $('[name=icon]').parent().show();
+            }else{
+                $('[name=icon]').parent().hide();
+            }
+        });
+
+        $('#cate').submit(function (){
+            var is_submit = 1;
+            $('input[type=text]').each(function () {
+                if($(this).val() == ''){
+                    $(this).focus();
+                    $(this).css('border','1px solid red');
+                    is_submit = 0;
+                }
+            });
+            if(is_submit == 0){
+                return false;
+            }
+        });
+    });
+</script>

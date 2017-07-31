@@ -5,7 +5,21 @@ function del(msg) {
         }else{ 
             return false; 
     } 
-} 
+}
+
+/**
+ * 检查input框是否为空
+ * @param obj
+ * @returns {boolean}
+ */
+function check_input(obj){
+    if(obj.val() == ''){
+        obj.focus();
+        obj.css('border','red 1px solid')
+        return false;
+    }
+    return true;
+}
 
 jQuery(document).ready(function () {
     //高亮当前选中的导航

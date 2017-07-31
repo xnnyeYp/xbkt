@@ -1,0 +1,40 @@
+<include file="Public/header" title="更新分类" />
+<section class="rt_wrap content mCustomScrollbar">
+    <div id="page-wrapper">
+        <form method="post" action="{:U('category/update_circle_area')}" enctype="multipart/form-data">
+            <input type="hidden" name="type" value="{$type}">
+            <input type="hidden" name="id" value="{$id}">
+            <if condition="$type eq 1">
+            <div class="form-group">
+                <label for="aa">商圈</label>
+                <input type="text" name="name" class="form-control" id="aa" placeholder="输入商圈" value="{$circle['name']}">
+            </div>
+            <else />
+                <div class="form-group">
+                    <label for="area">区域</label>
+                    <input type="text"  name="name" class="form-control" id="area" placeholder="输入区域" value="{$area['name']}">
+                 </div>
+                <div class="form-group">
+                    <label for="aa">父区域</label>
+                    <select class="form-control" name="pid">
+                        <option value="0"> 父区域 </option>
+                        <foreach name="areas" item="v">
+                            <option value="{$v['id']}">{$v['name']}</option>
+                        </foreach>
+                    </select>
+                </div>
+            </if>
+
+            <button type="submit" class="btn btn-default">添加</button>
+        </form>
+    </div>
+</section>
+
+<include file="Public/footer" />
+<script>
+    $(function(){
+        $('[name=pid]').val({$area['pid']});
+        
+        
+    });
+</script>

@@ -1,0 +1,67 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta  content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" 
+name="viewport">
+<title>绑定帐号</title>
+<link href="/Public/home/css/register.css" rel="stylesheet" type="text/css" />
+<link href='/Public/home/css/all.css' type="text/css" rel='stylesheet' />
+<script src="/Public/home/js/rem.js" type="text/javascript"></script>
+<script src="/Public/home/js/jquery.js" type="text/javascript"></script>
+<script type="text/javascript" src="/Public/home/js/register.js"></script>
+</head>
+<body>
+	<div class="head">
+		<p class="title"><a href="javascript:history.back(-1)"></a><span>注 册</span></p>
+	</div>
+	<div class="content">
+		<div class="logo"><!-- <img src="img/register/logo.gif" alt="logo" /> --></div>
+		<form action="{:U('user/registers')}" method="post" id="registerf">
+			<input type="text" class="telephone"  placeholder="手机号" value="" />
+			<p class="telPs">请输入有效的手机号</p>
+			<div class="code"><input type="text" class="activeCode"  placeholder="动态码" value="{$inviteCode}" /><a href="#" id='getCode'>获取动态码</a></div>
+			<p class="telPs2">动态码有误</p>
+			<a href="#" class="next">立即绑定</a>
+		</form>
+	</div>
+	<script>
+
+		var url = "{:U('user/register_code',array('to'=>mob))}";
+		var tel=/^1[3|4|5|7|8]\d{9}$/;
+		$('#getCode').click(function(){
+			var getcode_text = $(this).text();
+
+			if(getcode_text == '获取动态码'){
+				var to = $('.telephone').val();
+				url = url.replace('mob',to);
+				if(tel.test(to)) {
+					$.get(url, function (data) {
+						var yes = 0;
+						$(".activeCode").bind("input propertychange", function () {
+							if ($(this).val().length == 6)
+								yes++;
+							if (yes) {
+								$('.next').css({'background-color': '#98d261', 'color': '#FFF', 'border-color': '#98d261'});
+								if ($('.activeCode').val() == data) {
+									$('.next').click(function () {
+										$('#registerf').submit();
+									});
+									$('.telPs2').css({'color': '#FFF'});
+								}
+								else if ($('.activeCode').val())
+									$('.telPs2').css({'color': 'red'});
+								else {
+									$('.telPs2').css({'color': '#FFF'});
+									yes = 0;
+								}
+							}
+						});
+					});
+				}
+			}
+
+		});
+	</script>
+</body>
+</html>

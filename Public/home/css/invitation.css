@@ -1,0 +1,58 @@
+body,div,a,p,dl,dt,span,dd{
+	margin: 0;
+	padding: 0;
+}
+a{
+	text-decoration: none;
+}
+
+body{
+	font-family: '微软雅黑';
+	font-size:0.2rem;
+	letter-spacing:2px;
+}
+#invitation_head{
+	height:0.75rem;
+	width:100%;
+	line-height:0.75rem;
+	text-align:center;
+	color:#fff;
+	font-size:0.25rem;
+	background:#98d261;
+}
+#invitation_head img{
+	display:block;
+	height:0.39rem;
+	width:0.30rem;
+	margin:0.18rem 0 0 0.18rem;
+	float:left;
+}
+#invitation_head span{
+	font-size:0.2rem;
+	color:#fff;
+	margin-right:0.18rem;
+	float:right;
+}
+#invitation_main dl{
+	height:5.51rem;
+	width:80%;
+	margin:0 10%;
+	border-bottom:1px solid #ededed;
+}
+#invitation_main dl img{
+	display:block;
+	height:3.89rem;
+	width:3.89rem;
+	padding:0.43rem 0;
+	margin:0 auto;
+}
+#invitation_main dl dt{
+	height:0.30rem;
+	width:100%;
+	text-align:center;
+}
+#invitation_main p{
+	text-align:center;
+	margin-top:1.14rem;
+	color:#010101;
+}

@@ -157,6 +157,7 @@ class Think {
           }else{
               // 检测自定义命名空间 否则就以模块为命名空间
               $namespace  =   C('AUTOLOAD_NAMESPACE');
+
               $path       =   isset($namespace[$name])? dirname($namespace[$name]).'/' : APP_PATH;
           }
           $filename       =   $path . str_replace('\\', '/', $class) . EXT;

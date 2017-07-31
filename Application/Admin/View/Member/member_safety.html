@@ -1,0 +1,64 @@
+<include file="Public/header" title="普通会员安全设置" />
+<section class="rt_wrap content mCustomScrollbar _mCS_2">
+    <div id="page-wrapper">
+        <div class="row" style="margin-bottom: 10px">
+            <div class="col-md-1"><a class="btn btn-success">普通会员</a></div>
+        </div>
+        <form method="post" action="{:U('member/member_safety')}">
+            <input type="hidden" name="id" value="{$user['id']}">
+            <div class="form-group">
+                <label for="aa">会员昵称</label>
+                <input type="text" name="username" class="form-control" id="aa" value="{$user['username']}" >
+            </div>
+            <div class="form-group">
+                <label for="bb">会员编号</label>
+                <input type="text"  class="form-control" id="bb" value="{$user['numbering']}" readonly>
+            </div>
+            <div class="form-group">
+                <label for="bb">微信号</label>
+                <input type="text"  class="form-control" id="bb" name="wechat" value="{$user['wechat']}" >
+            </div>
+            <div class="form-group">
+                <label for="bb">手机号</label>
+                <input type="text"  class="form-control" id="bb" name="mphone" value="{$user['mphone']}" >
+            </div>
+
+            <div class="form-group">
+                <button type="submit" class="btn btn-default" id="submit">更新</button>
+                <button type="button" onclick="javascript:history.back(-1)" class="btn btn-default">取消</button>
+            </div>
+        </form>
+    </div>
+</section>
+
+<include file="Public/footer" />
+<script>
+    $(function(){
+        $('input[name=status][value={$user["status"]}]').attr('checked',true);
+        $('input[name=type][value={$user["type"]}]').attr('checked',true);
+        $('input[name=sex][value={$user["sex"]}]').attr('checked',true);
+        $('#submit').click(function () {
+            var i = true;
+            $('input[type=text]').each(function(){
+                if(!check_input($(this))){
+                    i = false;
+                    return false;
+                }
+            });
+
+            if($('[name=password]').val() != $('[name=confirm_password]').val()){
+                alert('两次密码输入不一致！');
+                $('[name=password]').focus();
+                return false;
+            }
+
+            return i;
+        });
+
+        $('input[type=text]').each(function(){
+            $(this).change(function () {
+                $(this).css('border','1px solid #cccccc');
+            });
+        });
+    });
+</script>

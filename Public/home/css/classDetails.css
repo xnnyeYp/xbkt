@@ -1,0 +1,220 @@
+body{
+	background:#FFF;
+}
+.title{
+	line-height:0.75rem;
+}
+/* .title>a{
+	background:url(../img/register/backIcon.gif) no-repeat center;
+	height:0.75rem;
+	width:0.75rem;
+	position:absolute;
+}
+.titleLeft{
+	background:url(../img/register/backIcon.gif) no-repeat center;
+	left:0;
+	background-size:0.19rem;
+}
+.titleRight{
+	background:url(../img/classDetails/titleRight.gif) no-repeat center;
+	right:0;
+	background-size:0.376rem;
+} */
+.detail1>dt>img{
+	display:block;
+}
+.detail1>dt,.detail1>dd,.detail1>dt>img{
+	width:100%;
+}
+.detail1>dd{
+	height:1.13rem;
+	padding:0.3rem 0;
+}
+.detail1>dd>p{
+	width:90%;
+	margin:0 5%;
+	line-height:0.37rem;
+}
+.text1{
+	font-size:0.25rem;
+	color:#494949;
+}
+.text2{
+	font-size:0.18rem;
+	color:#ababab;
+	letter-spacing: 1px;
+}
+.detail2{
+	/* height:2rem; */
+	width:100%;
+	overflow: hidden;
+	padding:0.45rem 0;
+}
+.detail2>div{
+	width:50%;
+	height:100%;
+	float:left;
+	text-align:center;
+}
+.right,.numb{
+	font-size:0.205rem;
+}
+.right,.numb{
+	color:#686868;
+}
+.right>p{
+	line-height:1.45rem;
+	padding-left:0.8rem;
+	text-align:left;
+}
+.numb{
+	margin:10px 0;
+}
+.left{
+	font-size:0;
+}
+.left>div{
+	font-size:0;
+}
+.left>div,.price,.numb,.pos,.exp{
+	/* height:1.3rem; */
+	width:100%;
+	text-align:left;
+	padding-left:0.3rem;
+}
+.left font{
+	display:inline-block;
+	padding:0.05rem 0.04rem;
+	color:#FFF;
+	font-size:0.17rem;
+}
+.price{
+	font-size:0.34rem;
+	color:#ffab40;
+	text-indent: -0.05rem;
+}
+.praise{
+	background:#ffab40;
+	margin-right:0.15rem;
+}
+.rewardNum{
+	background:#5bceb7;
+}
+.chose,.detail2,.detail1>dd{
+	border-bottom:2px solid #e5e5e5;
+}
+.DetailandTalk .chose{
+	line-height:0.87rem;
+	font-size:0.26rem;
+	position:relative;
+}
+.border{
+	border-right:1px solid #eee;
+}
+.DetailandTalk .chose>span{
+	display:inline-block;
+	width:49%;
+	height:100%;
+	text-align:center;
+}
+.DetailandTalk .chose>img{
+	position:absolute;
+	bottom:0;
+	left:0;
+	width:49.5%;
+}
+.detail,.talk{
+	width:100%;
+}
+.detail{
+	font-size:0.2rem;
+	padding-bottom: 100px;
+}
+.talk{
+	text-align:center;
+	display: none;
+	margin-bottom:1rem;
+	font-size:0;
+}
+.talk>dl{
+  	height:1.15rem;
+  	font-size:0.34rem;
+  	padding:0.26rem 0 0 0.26rem;
+ } 
+.talk dt/* ,.talk dd */{
+	float:left;
+	margin-top:0.1rem;
+
+}
+.talk dd{
+	height:1.15rem;
+	padding-left:0.2rem;
+	font-size:0.21rem;
+	display:block;
+	margin-left:0.68rem;
+	text-align: left;
+}
+.talk dd>span{
+	float:left;
+}
+.talk dt>img{
+	width:0.68rem;
+	display:block;
+}
+.time{
+	font-size:0.12rem;
+	letter-spacing: 0.02rem
+}
+.border1{
+	border-bottom:1px solid #eee;
+}
+.btn{
+	width:90%;
+	margin-top:0.3rem;
+	display:inline-block;
+	background:#b2b2b2;
+	line-height:0.59rem;
+	color:#FFF;
+	font-size: 0.21rem;
+	text-align:center;
+	border:1px solid #b2b2b2;
+	border-radius:0.08rem;
+}
+.footer{
+	height:0.97rem;
+	width:100%;
+	position:fixed;
+	bottom:0;
+	left:0;
+	background:#FFF;
+	border-top:1px solid #dfdfdf;
+}
+.footer form{
+	height:100%;
+	padding:0 0.17rem;
+	text-align:left;
+}
+.footer input{
+	float:right;
+	margin-top:0.1rem;
+	line-height:0.7rem;
+	width:2.43rem;
+	background:#65b928;
+	color:#FFF;
+	border:1px solid #65b928;
+	border-radius:0.08rem;
+}
+.footer font{
+	float:left;
+	color:#65b928;
+	font-size:0.31rem;
+	line-height:0.97rem;
+	width: 40%;
+}
+.detail{
+	
+}
+.detail img{
+	width: 90%;
+	display: inline-block;
+}

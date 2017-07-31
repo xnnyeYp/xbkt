@@ -1,0 +1,610 @@
+[ 2016-02-16T13:47:15+08:00 ] ::1 /ThinkAdmin/admin.php?m=Admin&c=member&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `member` [ RunTime:0.0670s ]
+NOTIC: [8] Undefined variable: where E:\wamp\www\ThinkAdmin\Application\Admin\Controller\MemberController.class.php 第 24 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `member` LIMIT 1   [ RunTime:0.0660s ]
+NOTIC: [8] Undefined variable: where E:\wamp\www\ThinkAdmin\Application\Admin\Controller\MemberController.class.php 第 27 行.
+SQL: SELECT * FROM `member` ORDER BY id DESC LIMIT 0,15   [ RunTime:0.0700s ]
+SQL: select * from member,grocery [ RunTime:0.0730s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.062004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.062004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-02-16T13:48:14+08:00 ] ::1 /ThinkAdmin/admin.php?m=Admin&c=member&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `member` [ RunTime:0.0720s ]
+NOTIC: [8] Undefined variable: where E:\wamp\www\ThinkAdmin\Application\Admin\Controller\MemberController.class.php 第 24 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `member` LIMIT 1   [ RunTime:0.0690s ]
+NOTIC: [8] Undefined variable: where E:\wamp\www\ThinkAdmin\Application\Admin\Controller\MemberController.class.php 第 27 行.
+SQL: SELECT * FROM `member` ORDER BY id DESC LIMIT 0,15   [ RunTime:0.0770s ]
+SQL: select * from member,grocery [ RunTime:0.0730s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-02-16T13:50:13+08:00 ] ::1 /ThinkAdmin/admin.php?m=Admin&c=member&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `member` [ RunTime:0.0710s ]
+NOTIC: [8] Undefined variable: where E:\wamp\www\ThinkAdmin\Application\Admin\Controller\MemberController.class.php 第 24 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `member` LIMIT 1   [ RunTime:0.0680s ]
+NOTIC: [8] Undefined variable: where E:\wamp\www\ThinkAdmin\Application\Admin\Controller\MemberController.class.php 第 27 行.
+SQL: SELECT * FROM `member` ORDER BY id DESC LIMIT 0,15   [ RunTime:0.0710s ]
+SQL: select member.*,grocery.* from member,grocery [ RunTime:0.0750s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-02-16T13:51:24+08:00 ] ::1 /ThinkAdmin/admin.php?m=Admin&c=member&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `member` [ RunTime:0.0730s ]
+NOTIC: [8] Undefined variable: where E:\wamp\www\ThinkAdmin\Application\Admin\Controller\MemberController.class.php 第 24 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `member` LIMIT 1   [ RunTime:0.0690s ]
+NOTIC: [8] Undefined variable: where E:\wamp\www\ThinkAdmin\Application\Admin\Controller\MemberController.class.php 第 27 行.
+SQL: SELECT * FROM `member` ORDER BY id DESC LIMIT 0,15   [ RunTime:0.0750s ]
+SQL: select member.*,grocery.* from member,grocery [ RunTime:0.0710s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-02-16T13:54:36+08:00 ] ::1 /ThinkAdmin/admin.php?m=Admin&c=member&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `member` [ RunTime:0.0720s ]
+NOTIC: [8] Undefined variable: where E:\wamp\www\ThinkAdmin\Application\Admin\Controller\MemberController.class.php 第 24 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `member` LIMIT 1   [ RunTime:0.0680s ]
+NOTIC: [8] Undefined variable: where E:\wamp\www\ThinkAdmin\Application\Admin\Controller\MemberController.class.php 第 27 行.
+SQL: SELECT * FROM `member` ORDER BY id DESC LIMIT 0,15   [ RunTime:0.0700s ]
+SQL: SHOW COLUMNS FROM `grocery` [ RunTime:0.0730s ]
+NOTIC: [8] Undefined variable: where E:\wamp\www\ThinkAdmin\Application\Admin\Controller\MemberController.class.php 第 28 行.
+SQL: SELECT * FROM `grocery` ORDER BY id DESC LIMIT 0,15   [ RunTime:0.0710s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: username E:\wamp\www\ThinkAdmin\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 112 行.
+NOTIC: [8] Undefined index: mphone E:\wamp\www\ThinkAdmin\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 113 行.
+NOTIC: [8] Undefined index: create_at E:\wamp\www\ThinkAdmin\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 114 行.
+NOTIC: [8] Undefined index: update_at E:\wamp\www\ThinkAdmin\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 115 行.
+NOTIC: [8] Undefined index: login_ip E:\wamp\www\ThinkAdmin\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 116 行.
+NOTIC: [8] Undefined index: type E:\wamp\www\ThinkAdmin\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 118 行.
+NOTIC: [8] Undefined index: type E:\wamp\www\ThinkAdmin\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 119 行.
+NOTIC: [8] Undefined index: type E:\wamp\www\ThinkAdmin\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 120 行.
+NOTIC: [8] Undefined index: status E:\wamp\www\ThinkAdmin\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 122 行.
+NOTIC: [8] Undefined index: status E:\wamp\www\ThinkAdmin\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 123 行.
+NOTIC: [8] Undefined index: username E:\wamp\www\ThinkAdmin\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 112 行.
+NOTIC: [8] Undefined index: mphone E:\wamp\www\ThinkAdmin\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 113 行.
+NOTIC: [8] Undefined index: create_at E:\wamp\www\ThinkAdmin\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 114 行.
+NOTIC: [8] Undefined index: update_at E:\wamp\www\ThinkAdmin\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 115 行.
+NOTIC: [8] Undefined index: login_ip E:\wamp\www\ThinkAdmin\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 116 行.
+NOTIC: [8] Undefined index: type E:\wamp\www\ThinkAdmin\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 118 行.
+NOTIC: [8] Undefined index: type E:\wamp\www\ThinkAdmin\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 119 行.
+NOTIC: [8] Undefined index: type E:\wamp\www\ThinkAdmin\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 120 行.
+NOTIC: [8] Undefined index: status E:\wamp\www\ThinkAdmin\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 122 行.
+NOTIC: [8] Undefined index: status E:\wamp\www\ThinkAdmin\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 123 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-02-16T13:59:33+08:00 ] ::1 /ThinkAdmin/admin.php?m=Admin&c=member&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `member` [ RunTime:0.0730s ]
+NOTIC: [8] Undefined variable: where E:\wamp\www\ThinkAdmin\Application\Admin\Controller\MemberController.class.php 第 24 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `member` LIMIT 1   [ RunTime:0.0720s ]
+NOTIC: [8] Undefined variable: where E:\wamp\www\ThinkAdmin\Application\Admin\Controller\MemberController.class.php 第 27 行.
+SQL: SELECT * FROM `member` ORDER BY id DESC LIMIT 0,2   [ RunTime:0.0690s ]
+SQL: SHOW COLUMNS FROM `grocery` [ RunTime:0.0690s ]
+NOTIC: [8] Undefined variable: where E:\wamp\www\ThinkAdmin\Application\Admin\Controller\MemberController.class.php 第 28 行.
+SQL: SELECT * FROM `grocery` ORDER BY id DESC LIMIT 0,2   [ RunTime:0.0680s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: username E:\wamp\www\ThinkAdmin\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 112 行.
+NOTIC: [8] Undefined index: mphone E:\wamp\www\ThinkAdmin\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 113 行.
+NOTIC: [8] Undefined index: create_at E:\wamp\www\ThinkAdmin\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 114 行.
+NOTIC: [8] Undefined index: update_at E:\wamp\www\ThinkAdmin\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 115 行.
+NOTIC: [8] Undefined index: login_ip E:\wamp\www\ThinkAdmin\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 116 行.
+NOTIC: [8] Undefined index: type E:\wamp\www\ThinkAdmin\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 118 行.
+NOTIC: [8] Undefined index: type E:\wamp\www\ThinkAdmin\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 119 行.
+NOTIC: [8] Undefined index: type E:\wamp\www\ThinkAdmin\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 120 行.
+NOTIC: [8] Undefined index: status E:\wamp\www\ThinkAdmin\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 122 行.
+NOTIC: [8] Undefined index: status E:\wamp\www\ThinkAdmin\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 123 行.
+NOTIC: [8] Undefined index: username E:\wamp\www\ThinkAdmin\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 112 行.
+NOTIC: [8] Undefined index: mphone E:\wamp\www\ThinkAdmin\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 113 行.
+NOTIC: [8] Undefined index: create_at E:\wamp\www\ThinkAdmin\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 114 行.
+NOTIC: [8] Undefined index: update_at E:\wamp\www\ThinkAdmin\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 115 行.
+NOTIC: [8] Undefined index: login_ip E:\wamp\www\ThinkAdmin\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 116 行.
+NOTIC: [8] Undefined index: type E:\wamp\www\ThinkAdmin\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 118 行.
+NOTIC: [8] Undefined index: type E:\wamp\www\ThinkAdmin\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 119 行.
+NOTIC: [8] Undefined index: type E:\wamp\www\ThinkAdmin\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 120 行.
+NOTIC: [8] Undefined index: status E:\wamp\www\ThinkAdmin\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 122 行.
+NOTIC: [8] Undefined index: status E:\wamp\www\ThinkAdmin\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 123 行.
+NOTIC: [8] Undefined variable: show E:\wamp\www\ThinkAdmin\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 129 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-02-16T13:59:53+08:00 ] ::1 /ThinkAdmin/admin.php?m=Admin&c=member&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `member` [ RunTime:0.0720s ]
+NOTIC: [8] Undefined variable: where E:\wamp\www\ThinkAdmin\Application\Admin\Controller\MemberController.class.php 第 24 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `member` LIMIT 1   [ RunTime:0.0670s ]
+NOTIC: [8] Undefined variable: where E:\wamp\www\ThinkAdmin\Application\Admin\Controller\MemberController.class.php 第 27 行.
+SQL: SELECT * FROM `member` ORDER BY id DESC LIMIT 0,2   [ RunTime:0.0690s ]
+SQL: SHOW COLUMNS FROM `grocery` [ RunTime:0.0700s ]
+NOTIC: [8] Undefined variable: where E:\wamp\www\ThinkAdmin\Application\Admin\Controller\MemberController.class.php 第 28 行.
+SQL: SELECT * FROM `grocery` ORDER BY id DESC LIMIT 0,2   [ RunTime:0.0680s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: username E:\wamp\www\ThinkAdmin\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 112 行.
+NOTIC: [8] Undefined index: mphone E:\wamp\www\ThinkAdmin\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 113 行.
+NOTIC: [8] Undefined index: create_at E:\wamp\www\ThinkAdmin\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 114 行.
+NOTIC: [8] Undefined index: update_at E:\wamp\www\ThinkAdmin\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 115 行.
+NOTIC: [8] Undefined index: login_ip E:\wamp\www\ThinkAdmin\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 116 行.
+NOTIC: [8] Undefined index: type E:\wamp\www\ThinkAdmin\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 118 行.
+NOTIC: [8] Undefined index: type E:\wamp\www\ThinkAdmin\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 119 行.
+NOTIC: [8] Undefined index: type E:\wamp\www\ThinkAdmin\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 120 行.
+NOTIC: [8] Undefined index: status E:\wamp\www\ThinkAdmin\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 122 行.
+NOTIC: [8] Undefined index: status E:\wamp\www\ThinkAdmin\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 123 行.
+NOTIC: [8] Undefined index: username E:\wamp\www\ThinkAdmin\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 112 行.
+NOTIC: [8] Undefined index: mphone E:\wamp\www\ThinkAdmin\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 113 行.
+NOTIC: [8] Undefined index: create_at E:\wamp\www\ThinkAdmin\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 114 行.
+NOTIC: [8] Undefined index: update_at E:\wamp\www\ThinkAdmin\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 115 行.
+NOTIC: [8] Undefined index: login_ip E:\wamp\www\ThinkAdmin\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 116 行.
+NOTIC: [8] Undefined index: type E:\wamp\www\ThinkAdmin\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 118 行.
+NOTIC: [8] Undefined index: type E:\wamp\www\ThinkAdmin\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 119 行.
+NOTIC: [8] Undefined index: type E:\wamp\www\ThinkAdmin\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 120 行.
+NOTIC: [8] Undefined index: status E:\wamp\www\ThinkAdmin\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 122 行.
+NOTIC: [8] Undefined index: status E:\wamp\www\ThinkAdmin\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 123 行.
+NOTIC: [8] Undefined variable: show E:\wamp\www\ThinkAdmin\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 129 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-02-16T14:00:20+08:00 ] ::1 /ThinkAdmin/admin.php?m=Admin&c=member&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `member` [ RunTime:0.0740s ]
+NOTIC: [8] Undefined variable: where E:\wamp\www\ThinkAdmin\Application\Admin\Controller\MemberController.class.php 第 24 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `member` LIMIT 1   [ RunTime:0.0690s ]
+NOTIC: [8] Undefined variable: where E:\wamp\www\ThinkAdmin\Application\Admin\Controller\MemberController.class.php 第 27 行.
+SQL: SELECT * FROM `member` ORDER BY id DESC LIMIT 0,2   [ RunTime:0.0730s ]
+SQL: SHOW COLUMNS FROM `grocery` [ RunTime:0.0710s ]
+NOTIC: [8] Undefined variable: where E:\wamp\www\ThinkAdmin\Application\Admin\Controller\MemberController.class.php 第 28 行.
+SQL: SELECT * FROM `grocery` ORDER BY id DESC LIMIT 0,2   [ RunTime:0.0700s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: username E:\wamp\www\ThinkAdmin\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 112 行.
+NOTIC: [8] Undefined index: mphone E:\wamp\www\ThinkAdmin\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 113 行.
+NOTIC: [8] Undefined index: create_at E:\wamp\www\ThinkAdmin\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 114 行.
+NOTIC: [8] Undefined index: update_at E:\wamp\www\ThinkAdmin\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 115 行.
+NOTIC: [8] Undefined index: login_ip E:\wamp\www\ThinkAdmin\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 116 行.
+NOTIC: [8] Undefined index: type E:\wamp\www\ThinkAdmin\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 118 行.
+NOTIC: [8] Undefined index: type E:\wamp\www\ThinkAdmin\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 119 行.
+NOTIC: [8] Undefined index: type E:\wamp\www\ThinkAdmin\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 120 行.
+NOTIC: [8] Undefined index: status E:\wamp\www\ThinkAdmin\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 122 行.
+NOTIC: [8] Undefined index: status E:\wamp\www\ThinkAdmin\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 123 行.
+NOTIC: [8] Undefined index: username E:\wamp\www\ThinkAdmin\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 112 行.
+NOTIC: [8] Undefined index: mphone E:\wamp\www\ThinkAdmin\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 113 行.
+NOTIC: [8] Undefined index: create_at E:\wamp\www\ThinkAdmin\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 114 行.
+NOTIC: [8] Undefined index: update_at E:\wamp\www\ThinkAdmin\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 115 行.
+NOTIC: [8] Undefined index: login_ip E:\wamp\www\ThinkAdmin\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 116 行.
+NOTIC: [8] Undefined index: type E:\wamp\www\ThinkAdmin\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 118 行.
+NOTIC: [8] Undefined index: type E:\wamp\www\ThinkAdmin\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 119 行.
+NOTIC: [8] Undefined index: type E:\wamp\www\ThinkAdmin\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 120 行.
+NOTIC: [8] Undefined index: status E:\wamp\www\ThinkAdmin\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 122 行.
+NOTIC: [8] Undefined index: status E:\wamp\www\ThinkAdmin\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 123 行.
+NOTIC: [8] Undefined variable: show E:\wamp\www\ThinkAdmin\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 129 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2016-02-16T14:00:22+08:00 ] ::1 /ThinkAdmin/admin.php?m=Admin&c=member&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `member` [ RunTime:0.0720s ]
+NOTIC: [8] Undefined variable: where E:\wamp\www\ThinkAdmin\Application\Admin\Controller\MemberController.class.php 第 24 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `member` LIMIT 1   [ RunTime:0.0680s ]
+NOTIC: [8] Undefined variable: where E:\wamp\www\ThinkAdmin\Application\Admin\Controller\MemberController.class.php 第 27 行.
+SQL: SELECT * FROM `member` ORDER BY id DESC LIMIT 0,2   [ RunTime:0.0690s ]
+SQL: SHOW COLUMNS FROM `grocery` [ RunTime:0.0680s ]
+NOTIC: [8] Undefined variable: where E:\wamp\www\ThinkAdmin\Application\Admin\Controller\MemberController.class.php 第 28 行.
+SQL: SELECT * FROM `grocery` ORDER BY id DESC LIMIT 0,2   [ RunTime:0.0680s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: username E:\wamp\www\ThinkAdmin\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 112 行.
+NOTIC: [8] Undefined index: mphone E:\wamp\www\ThinkAdmin\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 113 行.
+NOTIC: [8] Undefined index: create_at E:\wamp\www\ThinkAdmin\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 114 行.
+NOTIC: [8] Undefined index: update_at E:\wamp\www\ThinkAdmin\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 115 行.
+NOTIC: [8] Undefined index: login_ip E:\wamp\www\ThinkAdmin\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 116 行.
+NOTIC: [8] Undefined index: type E:\wamp\www\ThinkAdmin\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 118 行.
+NOTIC: [8] Undefined index: type E:\wamp\www\ThinkAdmin\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 119 行.
+NOTIC: [8] Undefined index: type E:\wamp\www\ThinkAdmin\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 120 行.
+NOTIC: [8] Undefined index: status E:\wamp\www\ThinkAdmin\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 122 行.
+NOTIC: [8] Undefined index: status E:\wamp\www\ThinkAdmin\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 123 行.
+NOTIC: [8] Undefined index: username E:\wamp\www\ThinkAdmin\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 112 行.
+NOTIC: [8] Undefined index: mphone E:\wamp\www\ThinkAdmin\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 113 行.
+NOTIC: [8] Undefined index: create_at E:\wamp\www\ThinkAdmin\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 114 行.
+NOTIC: [8] Undefined index: update_at E:\wamp\www\ThinkAdmin\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 115 行.
+NOTIC: [8] Undefined index: login_ip E:\wamp\www\ThinkAdmin\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 116 行.
+NOTIC: [8] Undefined index: type E:\wamp\www\ThinkAdmin\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 118 行.
+NOTIC: [8] Undefined index: type E:\wamp\www\ThinkAdmin\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 119 行.
+NOTIC: [8] Undefined index: type E:\wamp\www\ThinkAdmin\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 120 行.
+NOTIC: [8] Undefined index: status E:\wamp\www\ThinkAdmin\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 122 行.
+NOTIC: [8] Undefined index: status E:\wamp\www\ThinkAdmin\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 123 行.
+NOTIC: [8] Undefined variable: show E:\wamp\www\ThinkAdmin\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 129 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-02-16T14:01:58+08:00 ] ::1 /ThinkAdmin/admin.php?m=Admin&c=member&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `member` [ RunTime:0.0720s ]
+NOTIC: [8] Undefined variable: where E:\wamp\www\ThinkAdmin\Application\Admin\Controller\MemberController.class.php 第 24 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `member` LIMIT 1   [ RunTime:0.0680s ]
+NOTIC: [8] Undefined variable: where E:\wamp\www\ThinkAdmin\Application\Admin\Controller\MemberController.class.php 第 27 行.
+SQL: SELECT * FROM `member` ORDER BY id DESC LIMIT 0,2   [ RunTime:0.0690s ]
+SQL: SHOW COLUMNS FROM `grocery` [ RunTime:0.0660s ]
+NOTIC: [8] Undefined variable: where E:\wamp\www\ThinkAdmin\Application\Admin\Controller\MemberController.class.php 第 28 行.
+SQL: SELECT * FROM `grocery` ORDER BY id DESC LIMIT 0,2   [ RunTime:0.0680s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: username E:\wamp\www\ThinkAdmin\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 112 行.
+NOTIC: [8] Undefined index: mphone E:\wamp\www\ThinkAdmin\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 113 行.
+NOTIC: [8] Undefined index: create_at E:\wamp\www\ThinkAdmin\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 114 行.
+NOTIC: [8] Undefined index: update_at E:\wamp\www\ThinkAdmin\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 115 行.
+NOTIC: [8] Undefined index: login_ip E:\wamp\www\ThinkAdmin\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 116 行.
+NOTIC: [8] Undefined index: type E:\wamp\www\ThinkAdmin\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 118 行.
+NOTIC: [8] Undefined index: type E:\wamp\www\ThinkAdmin\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 119 行.
+NOTIC: [8] Undefined index: type E:\wamp\www\ThinkAdmin\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 120 行.
+NOTIC: [8] Undefined index: status E:\wamp\www\ThinkAdmin\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 122 行.
+NOTIC: [8] Undefined index: status E:\wamp\www\ThinkAdmin\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 123 行.
+NOTIC: [8] Undefined index: username E:\wamp\www\ThinkAdmin\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 112 行.
+NOTIC: [8] Undefined index: mphone E:\wamp\www\ThinkAdmin\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 113 行.
+NOTIC: [8] Undefined index: create_at E:\wamp\www\ThinkAdmin\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 114 行.
+NOTIC: [8] Undefined index: update_at E:\wamp\www\ThinkAdmin\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 115 行.
+NOTIC: [8] Undefined index: login_ip E:\wamp\www\ThinkAdmin\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 116 行.
+NOTIC: [8] Undefined index: type E:\wamp\www\ThinkAdmin\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 118 行.
+NOTIC: [8] Undefined index: type E:\wamp\www\ThinkAdmin\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 119 行.
+NOTIC: [8] Undefined index: type E:\wamp\www\ThinkAdmin\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 120 行.
+NOTIC: [8] Undefined index: status E:\wamp\www\ThinkAdmin\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 122 行.
+NOTIC: [8] Undefined index: status E:\wamp\www\ThinkAdmin\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 123 行.
+NOTIC: [8] Undefined variable: show E:\wamp\www\ThinkAdmin\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 129 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-02-16T14:05:00+08:00 ] ::1 /ThinkAdmin/admin.php?m=Admin&c=links&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `links` [ RunTime:0.0700s ]
+NOTIC: [8] Undefined variable: where E:\wamp\www\ThinkAdmin\Application\Admin\Controller\LinksController.class.php 第 24 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `links` LIMIT 1   [ RunTime:0.0670s ]
+NOTIC: [8] Undefined variable: where E:\wamp\www\ThinkAdmin\Application\Admin\Controller\LinksController.class.php 第 27 行.
+SQL: SELECT * FROM `links` LIMIT 0,15   [ RunTime:0.0690s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.051003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.051003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-02-16T14:07:29+08:00 ] ::1 /ThinkAdmin/admin.php?m=Admin&c=links&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `links` [ RunTime:0.0720s ]
+NOTIC: [8] Undefined variable: where E:\wamp\www\ThinkAdmin\Application\Admin\Controller\LinksController.class.php 第 24 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `links` LIMIT 1   [ RunTime:0.0690s ]
+NOTIC: [8] Undefined variable: where E:\wamp\www\ThinkAdmin\Application\Admin\Controller\LinksController.class.php 第 27 行.
+SQL: SELECT * FROM `links` LIMIT 0,15   [ RunTime:0.0690s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-02-16T17:10:47+08:00 ] ::1 /ThinkAdmin/admin.php?m=Admin&c=links&a=details&id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `linkdeta` [ RunTime:0.0670s ]
+SQL: SELECT * FROM `linkdeta` WHERE ( linkid=1 ) ORDER BY sortnu  [ RunTime:0.0630s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: v E:\wamp\www\ThinkAdmin\Application\Runtime\Cache\Admin\e9b07c52fd1774dc5307a83c024193fc.php 第 110 行.
+NOTIC: [8] Undefined variable: v E:\wamp\www\ThinkAdmin\Application\Runtime\Cache\Admin\e9b07c52fd1774dc5307a83c024193fc.php 第 110 行.
+NOTIC: [8] Undefined variable: page E:\wamp\www\ThinkAdmin\Application\Runtime\Cache\Admin\e9b07c52fd1774dc5307a83c024193fc.php 第 114 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-02-16T17:10:51+08:00 ] ::1 /ThinkAdmin/admin.php?m=Admin&c=links&a=updatedeta&id=33&linkid=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `linkdeta` [ RunTime:0.0720s ]
+SQL: SELECT * FROM `linkdeta` WHERE `id` = 33 LIMIT 1   [ RunTime:0.0680s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-02-16T17:11:30+08:00 ] ::1 /ThinkAdmin/admin.php?m=Admin&c=links&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `links` [ RunTime:0.0650s ]
+NOTIC: [8] Undefined variable: where E:\wamp\www\ThinkAdmin\Application\Admin\Controller\LinksController.class.php 第 24 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `links` LIMIT 1   [ RunTime:0.0640s ]
+NOTIC: [8] Undefined variable: where E:\wamp\www\ThinkAdmin\Application\Admin\Controller\LinksController.class.php 第 27 行.
+SQL: SELECT * FROM `links` LIMIT 0,15   [ RunTime:0.0690s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-02-16T17:11:32+08:00 ] ::1 /ThinkAdmin/admin.php?m=Admin&c=links&a=details&id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `linkdeta` [ RunTime:0.0670s ]
+SQL: SELECT * FROM `linkdeta` WHERE ( linkid=1 ) ORDER BY sortnu  [ RunTime:0.0690s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: v E:\wamp\www\ThinkAdmin\Application\Runtime\Cache\Admin\e9b07c52fd1774dc5307a83c024193fc.php 第 110 行.
+NOTIC: [8] Undefined variable: v E:\wamp\www\ThinkAdmin\Application\Runtime\Cache\Admin\e9b07c52fd1774dc5307a83c024193fc.php 第 110 行.
+NOTIC: [8] Undefined variable: page E:\wamp\www\ThinkAdmin\Application\Runtime\Cache\Admin\e9b07c52fd1774dc5307a83c024193fc.php 第 114 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2016-02-16T17:11:34+08:00 ] ::1 /ThinkAdmin/admin.php?m=Admin&c=links&a=updatedeta&id=33&linkid=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `linkdeta` [ RunTime:0.0710s ]
+SQL: SELECT * FROM `linkdeta` WHERE `id` = 33 LIMIT 1   [ RunTime:0.0740s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-02-16T17:11:35+08:00 ] ::1 /ThinkAdmin/admin.php?m=Admin&c=links&a=updatedeta&id=33&linkid=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `linkdeta` [ RunTime:0.0670s ]
+SQL: SELECT * FROM `linkdeta` WHERE `id` = 33 LIMIT 1   [ RunTime:0.0710s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-02-16T17:12:11+08:00 ] ::1 /ThinkAdmin/admin.php?m=Admin&c=links&a=updatedeta&id=33&linkid=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `linkdeta` [ RunTime:0.0720s ]
+SQL: SELECT * FROM `linkdeta` WHERE `id` = 33 LIMIT 1   [ RunTime:0.0710s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+

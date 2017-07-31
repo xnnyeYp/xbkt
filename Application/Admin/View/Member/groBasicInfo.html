@@ -1,0 +1,44 @@
+<include file="Public/header" title="商户会员基本信息"  css="__STATIC__/css/groBasicInfo.css"/>
+<div id="page-wrapper">
+	<div class="row">
+		<div class="col-md-2 block">基本信息</div>
+	</div>
+	<form action="{:U('member/groBasicInfo')}" method="post" enctype="multipart/form-data">
+	<div class="row">
+		<div class="col-md-2 block">商户logo</div><div class="col-md-2"><img src="{$grocery_info.logo}" alt="" style="width:100%;"/></div>
+		<input type="file" name="logo" class="col-md-2 block"/>
+	</div>
+	<div class="row">
+		<div class="col-md-2 block">会员编号&会员类型</div><div class="col-md-2 block">{$grocery_info.numbering}</div><div class="col-md-2 block">商户会员</div>
+	</div>
+	<div class="row">
+		<div class="col-md-2 block">商户名称</div><input type="text" class="col-md-2 block" value="{$grocery_info.name}" name="name"/>
+	</div>
+	<div class="row">
+		<div class="col-md-2 block">商户分校</div>
+		<table cellspacing="10" id="list">
+		<foreach name="branch_info" item="vo">
+		<tr>
+			<td rowspan="2">{$key+1}</td>
+			<td><input type="text" name="area[{$vo.id}]" value="{$vo.area}"/></td>
+			<td><input type="text" name="circle[{$vo.id}]" value="{$vo.circle}"/></td>
+			<td><input type="text" name="telephone[{$vo.id}]" value="{$vo.telephone}"/></td>
+			<td rowspan="2">删除</td>
+		</tr>
+		<tr>
+			<td><input type="text" name="braName[{$vo.id}]" value="{$vo.braname}"/></td>
+			<td colspan="2"><input type="text" name="address[{$vo.id}]" value="{$vo.address}"/></td>
+			
+		</tr>
+		</foreach>
+	</table>
+	</div>
+	<div class="row">
+		<input class="col-md-2 block" type="submit" value="保存">
+	</div>
+	</from>
+	<div class="row">
+		<div class="col-md-2 block">邀请码</div><div class="col-md-2 block"<img src="" alt="" /></div>
+	</div>
+</div>
+<include file="Public/footer" />

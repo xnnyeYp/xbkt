@@ -1,50 +1,123 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8"/>
     <title>[title]</title>
-
-    <!-- Bootstrap core CSS -->
-    <link href="__STATIC__/css/bootstrap.css" rel="stylesheet">
-
-    <!-- Add custom CSS here -->
-    <link href="__STATIC__/css/sb-admin.css" rel="stylesheet">
+    <!--<link href="__STATIC__/css/bootstrap.css" rel="stylesheet">-->
+    <link href="__STATIC__/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="__STATIC__/css/style.css" />
     <link rel="stylesheet" href="__STATIC__/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="[css]">
+    <!--[if lt IE 9]>
+
+    <![endif]-->
+    <script src="__STATIC__/js/jquery-1.10.2.js"></script>
+    <script src="__STATIC__/js/bootstrap.js"></script>
+    <script src="__STATIC__/js/app.js"></script>
+    <link rel="stylesheet" href="__PUBLIC__/kindeditor/themes/default/default.css" />
+    <link rel="stylesheet" href="__PUBLIC__/kindeditor/plugins/code/prettify.css" />
+    <script charset="utf-8" src="__PUBLIC__/kindeditor/kindeditor.js"></script>
+    <script charset="utf-8" src="__PUBLIC__/kindeditor/lang/zh_CN.js"></script>
+    <script src="__STATIC__/js/prettify.js"></script>
+    <script src="__STATIC__/js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script>
+        (function($){
+            $(window).load(function(){
+
+                $("a[rel='load-content']").click(function(e){
+                    e.preventDefault();
+                    var url=$(this).attr("href");
+                    $.get(url,function(data){
+                        $(".content .mCSB_container").append(data); //load new content inside .mCSB_container
+                        //scroll-to appended content
+                        $(".content").mCustomScrollbar("scrollTo","h2:last");
+                    });
+                });
+
+                $(".content").delegate("a[href='top']","click",function(e){
+                    e.preventDefault();
+                    $(".content").mCustomScrollbar("scrollTo",$(this).attr("href"));
+                });
+
+            });
+        })(jQuery);
+    </script>
 </head>
-
 <body>
+<!--header-->
+<header>
+    <h1><img src="./Public/admin/admin_logo.png" alt=""></h1>
+    <ul class="rt_nav">
+        <li><a href="http://www.123bcb.com" target="_blank" class="website_icon">站点首页</a></li>
+        <li><a href="#" class="admin_icon">{:session('username')}</a></li>
+        <li><a href="{:U('index/setup')}" class="set_icon">修改密码</a></li>
+        <li><a href="{:U('login/logout')}" class="quit_icon">安全退出</a></li>
+    </ul>
+</header>
 
-<div id="wrapper">
-
-    <!-- Sidebar -->
-    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="{:U('index/index')}">管理后台</a>
-        </div>
-
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse navbar-ex1-collapse">
-
-            <include file="Public/sidebar" />
-
-            <ul class="nav navbar-nav navbar-right navbar-user">
-
-                <li class="dropdown user-dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> 你好,{:session('username')} <b class="caret"></b></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="#"><i class="fa fa-gear"></i> 设置</a></li>
-                        <li class="divider"></li>
-                        <li><a href="{:U('login/logout')}"><i class="fa fa-power-off"></i> 退出</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </div><!-- /.navbar-collapse -->
-    </nav>
+<!--aside nav-->
+<aside class="lt_aside_nav content mCustomScrollbar">
+    <h2><a href="{:U('index/index')}">起始页</a></h2>
+    <ul>
+        <li>
+            <dl>
+                <dt>会员管理</dt>
+                <!--当前链接则添加class:active-->
+                <dd><a href="{:U('member/index')}">普通会员</a></dd>
+                <dd><a href="{:U('member/groceryMember')}">商户会员</a></dd>
+            </dl>
+        </li>
+        <li>
+            <dl>
+                <dt>分类管理</dt>
+                <dd><a href="{:U('category/index',array('tab'=>1))}">分类列表</a></dd>
+            </dl>
+        </li>
+        <li>
+            <dl>
+                <dt>文章管理</dt>
+                <dd><a href="{:U('article/index')}">文章列表</a></dd>
+                <dd><a href="{:U('article/add')}">添加文章</a></dd>
+            </dl>
+        </li>
+        <li>
+            <dl>
+                <dt>课程管理</dt>
+                <dd><a href="{:U('course/index')}">课程列表</a></dd>
+                <dd><a href="{:U('course/add')}">创建课程</a></dd>
+            </dl>
+        </li>
+        <li>
+            <dl>
+                <dt>订单管理</dt>
+                <dd><a href="{:U('order/index')}">订单列表(<?php echo $_SESSION['order']['total'];?>)</a></dd>
+            </dl>
+        </li>
+        <li>
+            <dl>
+                <dt>链接管理</dt>
+                <dd><a href="{:U('links/index')}">链接列表</a></dd>
+            </dl>
+        </li>
+        <!--<li>-->
+            <!--<dl>-->
+                <!--<dt>积分管理</dt>-->
+                <!--<dd><a href="{:U('point/index')}">积分列表</a></dd>-->
+            <!--</dl>-->
+        <!--</li>-->
+        <li>
+            <p class="btm_infor">© 小宝课堂 版权所有</p>
+        </li>
+    </ul>
+</aside>
+<script>
+    $(function(){
+        $('a').each(function () {
+            var href = window.location.href;
+            if(href.indexOf($(this).attr('href')) != -1 && $(this).attr('href') !='http://www.123bcb.com'){
+                $(this).addClass('active');
+                return false;
+            }
+        });
+    });
+</script>

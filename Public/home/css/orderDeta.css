@@ -1,0 +1,168 @@
+body{
+	padding-bottom: 1rem;
+}
+.downOrder{
+	font-size:0;
+	letter-spacing: 0.015rem;
+}
+.downOrder>a{
+	/*display:inline-block;*/
+	float:left;
+	width:50%;
+	text-align:center;
+	line-height:0.752rem;
+	font-size:0.18rem;
+	color:#5d5d5d;
+}
+.detail2{
+	border:none;
+	font-size:0.205rem;
+	/* padding-bottom:0; */
+}
+.detail2>p{
+	clear:both;
+	padding-top:0.1rem;
+	color:#5f5f5f;
+}
+.borderBottom{
+	border-bottom:1px solid #c6c6c6;
+}
+.right>p{
+	line-height: 0.4rem;
+}
+.numb{
+	margin-bottom:0;
+}
+.now{
+	font-size:0.24rem;
+	color:#ff4c0a;
+}
+.old{
+	font-size:0.17rem;
+	color:#ced1d9;
+	text-decoration: line-through;
+	margin-left:0.1rem;
+}
+.step1{
+	text-align:center;
+	font-size:0;
+}
+.step1 p{
+	font-size:0.239rem;
+	color:#101010;
+	margin-bottom:0.5rem;
+	/* line-height:1rem; */
+}
+.step1 input,.step2 input,.reward,.finish,.close,.cancelOrder,.cancelBtn{
+	width:90%;
+	margin:0 5%;
+	background:#98d261;
+	border:1px solid #98d261;
+	border-radius:5px;
+	line-height:0.692rem;
+	color:#FFF;
+}
+.step2{
+	text-align:center;
+}
+.step2>div{
+	padding:0.1rem 0.35rem;
+	font-size:0.21rem;
+	color:#FFF;
+	background:#98d261;
+	line-height:0.4rem;
+	text-align:left;
+}
+.step2 form{
+	margin-top:0.8rem;
+	font-size:0;
+}
+.step3{
+	text-align:center;
+	font-size:0;
+}
+.reward,.finish,.close{
+	font-size:0.273rem;
+	text-align:center;
+}
+.reward,.close,.cancelOrder{
+	display:inline-block;
+	margin:0.5rem 0 0.15rem 0;
+	/* letter-spacing: 2px; */
+}
+.write{
+	width:90%;
+	background:#e5e5e5;
+	color:#c5c5c5;
+	line-height:0.47rem;
+	border:1px solid #e5e5e5;
+	border-radius:0.05rem;
+	text-indent:8px;
+	margin-top:0.25rem;
+}
+/* 订单详情-体验阶段 */
+.position,.tiyanTime,.tiyanReward,.tiyanComment,.classMoney,.closeBtn{
+	font-size:0.213rem;
+	color:#6b6b6b;
+	line-height:0.4rem;
+	padding:0.1rem 0.3rem;
+}
+.position{
+	border-bottom:1px solid #e7e7e7;
+}
+.classMoney{
+	text-align:right;
+	margin-top:0.3rem;
+}
+.closeBtn{
+	margin-top:0.1rem;
+}
+.close{
+	margin:0 5%;
+}
+.now{
+	font-size:0.28rem;
+}
+.old{
+	font-size:0.2rem;
+}
+/* 订单详情-预约阶段 */
+.yuyue{
+	font-size:0.256rem;
+	text-align:center;
+}
+.yuyue>p{
+	line-height:0.778rem;
+	padding:0 0.3rem;
+	color:#6b6b6b;
+	text-align:left;
+}
+.yuyue>div{
+	background:#ffab40;
+	padding:0.25rem 0.3rem;
+	color:#FFF;
+	line-height:0.35rem;
+}
+/* 取消订单 */
+.cancelContent{
+	text-align:center;
+}
+.cancelContent>form{
+	font-size:0;
+	width:100%;
+	margin-top:0.4rem;
+}
+.reason{
+	display:inline-block;
+	padding:0.2rem;
+	height:1.514rem;
+	width:84%;
+	border:1px solid #aaaaaa;
+	border-radius:5px;
+	overflow: hidden;
+	color:#aaa;
+	text-align:left;
+}
+.cancelBtn{
+	margin-top:0.8rem;
+}

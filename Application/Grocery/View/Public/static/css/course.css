@@ -1,0 +1,41 @@
+.course{
+    display: inline-block;
+    width:450px;
+    height: 400px;
+    margin-left: 80px;
+    margin-top: 20px;
+}
+.img img{
+    width:340px;
+    heigth:320px;
+}
+.img{
+    text-align: center;
+}
+.course_name,.course_price,.branch, .address,.option{
+    height:49px;
+    margin-top: 10px;
+    background: #98d261;
+    text-align: center;
+    font-size: 20px;
+    line-height: 50px;
+}
+.course_name,.course_price,.option{
+    width:450px;
+}
+.branch,.address{
+    width:220px;
+}
+.branch{
+    float: left;
+}
+.address{
+    display: inline-block;
+    margin-left: 10px;
+}
+.details{
+    border: 1px;width: 100%;background-color: #eeeeee;
+}
+.details img{
+    width: 40%;
+}

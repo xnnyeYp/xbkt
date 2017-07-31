@@ -1,26 +1,20 @@
 <ul class="nav navbar-nav side-nav">
-    <li><a href="{:U('index/index')}"><i class="fa fa-dashboard"></i> 仪表盘</a></li>
+    <li><a href="{:U('index/index')}"><i class="fa fa-dashboard"></i> 我的主页</a></li>
     <li class="dropdown">
-        <a href="{:U('category/index')}"><i class="fa fa-reorder"></i> 分类管理</a>
+        <a href="{:U('order/index')}"><i class="fa fa-reorder"></i> 我的订单(<span style="color: red">{$_SESSION['no_process']}</span>)</a>
     </li>
     <li class="dropdown">
-        <a href="{:U('post/index')}"><i class="fa fa-edit"></i> 文章管理</a>
+        <a href="{:U('course/index')}"><i class="fa fa-edit"></i> 我的课程</a>
     </li>
     <li class="dropdown">
-        <a href="{:U('page/index')}"><i class="fa fa-file-text-o"></i> 单页管理 </a>
+        <a href="{:U('article/index')}"><i class="fa fa-file-text-o"></i>  我的文章</a>
     </li>
     <li class="dropdown">
-        <a href="{:U('member/index')}"><i class="fa fa-users"></i> 用户管理</a>  
-    </li>
-     <li class="dropdown">
-        <a href="{:U('links/index')}"><i class="fa fa-link"></i> 链接管理</a>
-    </li>
-    <li class="dropdown">
-        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-cog"></i> 系统设置 <b class="caret"></b></a>
-        <ul class="dropdown-menu">
-            <li><a href="{:U('setting/index')}">自定义字段</a></li>
-            <li><a href="#">系统优化</a></li>
-            <li><a href="#">缓存管理</a></li>
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-cog"></i> 我的设置 <b class="caret"></b></a>
+        <ul class="dropdown-menu" >
+            <li><a href="{:U('setup/index')}"><i class="fa fa-gear"></i> 账户信息</a></li>
+            <li><a href="{:U('setup/branch_list')}"><i class="fa fa-gear"></i> 分校列表</a></li>
         </ul>
     </li>
+
 </ul>

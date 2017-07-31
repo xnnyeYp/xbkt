@@ -1,0 +1,125 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta  content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" 
+name="viewport">
+<title>文章详情</title>
+<link href='/Public/home/css/all.css' type="text/css" rel='stylesheet' />
+<link href='/Public/home/css/articlesDeta.css' type="text/css" rel='stylesheet' />
+<script src="/Public/home/js/rem.js" type="text/javascript"></script>
+<script src="/Public/home/js/jquery.js" type="text/javascript"></script>
+<script src="/Public/home/js/articleDeta.js" type="text/javascript"></script>
+<script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+</head>
+<body>
+	<div class="head">
+		<p class="title"><a href="{:U('article/index')}" class="titleLeft"></a><span>文章详情</span></p>
+	</div>
+	<div class="content">
+		<div class="heading">
+			<p class="name">{$article['title']}<a href="#">{$article['cate']}</a></p>
+			<div class="data">
+				<span>{$article['createtime']|date='Y-m-d',###}</span><a href="#">{$article['numbering']}</a>
+				<ul>
+					<li class="watch">{$article['readnum']}</li>
+					<li class="nice">{$article['praisenum']}</li>
+					<li class="comment">{$article['share_count']}</li>
+				</ul>
+			</div>
+
+		</div>
+		<div class="text">
+			<!--<ul>-->
+				<!--<li class="text-li1"><span>{$article['point']/$article['praisenum']*10|round}%</span>口碑</li>-->
+				<!--<li class="paddingLi">|</li>-->
+				<!--<li>打赏积分:<span>{$article['point']}</span></li>-->
+				<!--<li class="paddingLi">|</li>-->
+				<!--<li>销售积分:<span>{$article['praisenum']*10}</span></li>-->
+			<!--</ul>-->
+			<div class="word"><img src="{$article['image']}" /></div>
+			<div class="description">
+				<p>{$article['content']|htmlspecialchars_decode}</p>
+			</div>
+		</div>
+	</div>
+	<div class="footer">
+		<ul>
+			<!--<li><a href="{:U('article/praise',array('id'=>$article['id']))}">-->
+				<!--<img src="/Public/home/images/articlesDeta/niceBigIcon.gif" alt="#" />-->
+				<!--<p>打赏(<span>{$article['praisenum']}</span>)</p>-->
+			<!--</a></li>-->
+			<!--<li class='shareBut'>-->
+				<!--<img src="/Public/home/images/articlesDeta/shareIcon.gif" alt="#" />-->
+				<!--<p>分享(<span>{$article['share_count']}</span>)</p>-->
+			<!--</li>-->
+			<li></li>
+			<li id="collect">
+				<img src="/Public/home/images/articlesDeta/saveIcon.gif" alt="#" />
+				<p>收藏(<span>{$collect_num}</span>)</p>
+				<input type="hidden" value="{:U('article/collect_ajax',array('id'=>$article['id']))}" id="collect_url">
+			</li>
+		</ul>
+	</div>
+	<div class='shade'></div>
+
+	<script>
+		wx.config({
+			debug: false, // 开启调试模式,调用的所有api的返回值会在客户端alert出来，若要查看传入的参数，可以在pc端打开，参数信息会通过log打出，仅在pc端时才会打印。
+			appId: '{$js_sign['appid']}', // 必填，公众号的唯一标识
+			timestamp: {$js_sign['timestamp']}, // 必填，生成签名的时间戳
+			nonceStr: '{$js_sign["noncestr"]}', // 必填，生成签名的随机串
+			signature: '{$js_sign["signature"]}',// 必填，签名，见附录1
+			jsApiList: [
+				'onMenuShareTimeline',
+				'onMenuShareAppMessage',
+				'onMenuShareQQ',
+				'onMenuShareWeibo',
+				'onMenuShareQZon'
+			] // 必填，需要使用的JS接口列表，所有JS接口列表见附录2
+		});
+		wx.ready(function () {
+				var share_data = {
+					title: '{$article["title"]}',
+					desc: '小宝课堂精选文章',
+					link: 'http://www.123bcb.com{:U("article/details",array("id"=>$article["id"]))}',
+					imgUrl: 'http://www.123bcb.com{$article["image"]}',
+					trigger: function (res) {
+					},
+					success: function (res) {
+						$.ajax({
+							url:'/article/article_share',
+							data:{
+								'article_id':{$article['id']},
+							},
+							type:'post',
+							success:function(data){
+								$('.shareBut').find('span').text(data);
+							},
+						});
+					},
+					cancel: function (res) {
+					},
+					fail: function (res) {
+					}
+				};
+				wx.onMenuShareAppMessage(share_data);
+				wx.onMenuShareTimeline(share_data);
+				wx.onMenuShareQQ(share_data);
+				wx.onMenuShareQZone(share_data);
+		});
+		/*$('.shareBut').click(function(){
+			$.ajax({
+				url:'/article/article_share',
+				data:{
+					'article_id':{$article['id']},
+				},
+				type:'post',
+				success:function(data){
+					alert(data)
+				},
+			});
+		});*/
+	</script>
+</body>
+</html>

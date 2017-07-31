@@ -1,0 +1,59 @@
+<include file="Public/header" title="分校列表" />
+<section class="rt_wrap content mCustomScrollbar">
+    <div id="page-wrapper">
+
+        <div class="row">
+            <!--<div class="col-md-6">-->
+                <!--<span><a href="{:U('setup/update_branch',array('action'=>'add'))}" class="btn btn-success">添加分校</a></span>-->
+
+            <!--</div>-->
+            <!-- <div class="col-md-6">
+                 <form action="{:U('order/index')}" method="post">
+                     <div class="form-group input-group">
+                         <input type="text" class="form-control" name="key" placeholder="输入分类标题或者别名关键词搜索">
+                         <span class="input-group-btn">
+                           <button class="btn btn-default" type="button"><i class="fa fa-search"></i></button>
+                         </span>
+                     </div>
+                 </form>-->
+
+        </div>
+        <table class="table table-hover table-striped">
+            <thead>
+            <tr>
+                <th>分校名</th>
+                <th>区域</th>
+                <th>商圈</th>
+                <th>电话</th>
+                <th>地址</th>
+                <th>状态</th>
+               <th>操作</th>
+            </tr>
+            </thead>
+            <tbody>
+            <foreach name="branchs" item="v">
+                <tr>
+                    <td><span>{$v.braname}</span></td>
+                    <td><span>{$v.area}</span></td>
+                    <td><span>{$v.circle}</span></td>
+                    <td><span>{$v.telephone}</span></td>
+                    <td><span>{$v.address}</span></td>
+                    <td><span>
+                    <if condition="$v['status'] eq 1">正常
+                        <else />冻结
+                    </if>
+                </span></td>
+                    <if condition="$myself['type'] eq 1"><td><a href="{:U('setup/update_branch',array('id'=>$v['id'],'action'=>'update'))}">查看</a> </td>
+                </tr>
+            </foreach>
+            </tbody>
+        </table>
+        {$page}
+    </div>
+</section>
+
+
+
+
+
+<include file="Public/footer" />

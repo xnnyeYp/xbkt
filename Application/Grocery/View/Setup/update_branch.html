@@ -1,0 +1,78 @@
+<include file="Public/header" title="添加/更新分校" />
+<section class="rt_wrap content mCustomScrollbar">
+    <div id="page-wrapper">
+        <form action="{:U('setup/update_branch',array('action'=>$action))}" method="post" enctype="multipart/form-data">
+
+            <div class="form-group">
+                <label>分校名称</label>
+                <input type="text" class="form-control" value="{$branch['braname']}" name="braName">
+            </div>
+
+            <div class="form-group">
+                <label>区域</label>
+                <input name="area" value="{$branch['area']}" class="form-control" type="text">
+            </div>
+            <div class="form-group">
+                <label>商圈</label>
+                <input name="circle" value="{$branch['circle']}" class="form-control" type="text">
+            </div>
+            <div class="form-group">
+                <label>地址</label>
+                <input name="address" value="{$branch['address']}" class="form-control" type="text">
+            </div>
+            <div class="form-group">
+                <label>状态</label>
+                <select name="status" class="form-control">
+                    <option value="1">正常</option>
+                    <option value="2">冻结</option>
+                </select>
+            </div>
+
+         <!--   <div class="form-group">
+                <button class="btn btn-success" id="submit" >保存</button>
+                <button class="btn btn-success" onclick="javascript:history.back(-1)" >取消</button>
+            </div>-->
+        </form>
+    </div>
+</section>
+
+
+<include file="Public/footer" />
+<script>
+    $(function(){
+        $('[name=type]').val({$branch['type']});
+        $('[name=staus]').val({$branch['status']});
+        $('#submit').click(function(){
+            var i = true;
+            $('input[type=text]').each(function(){
+                if(!check_input($(this))){
+                    i = false;
+                    return false;
+                }
+            });
+
+            if('{$action}' == 'do_add'){
+                if(!check_input($('[name=password]'))){
+                    return false;
+                }
+                if(!check_input($('[name=confirm_password]'))){
+                    return false;
+                }
+                if($('[name=password]').val() != $('[name=confirm_password]').val()){
+                    alert('两次密码输入不一致！');
+                    $('[name=password]').focus();
+                }
+            }
+
+            return i;
+        });
+
+        $('input[type=text]').each(function(){
+            $(this).change(function () {
+                $(this).css('border','1px solid #cccccc');
+            });
+        });
+        $('select').attr("disabled",true);
+        $('.form-control').attr("readonly","readonly");
+    })
+</script>
